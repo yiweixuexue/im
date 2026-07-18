@@ -85,7 +85,7 @@ button, input, textarea, select { font: inherit; }
 .split-heading > p { margin: 0 0 5px; color: #716e66; font-family: "Songti SC", serif; font-size: 14px; line-height: 2; letter-spacing: .08em; }
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .service-card { border-top: 1px solid var(--ink); padding-top: 14px; }
-.service-art { position: relative; height: 340px; overflow: hidden; background: #c8c2b7; }
+.service-art { position: relative; height: auto; aspect-ratio: 1323 / 1189; overflow: hidden; background: #c8c2b7; }
 .service-art::before, .service-art::after { content: ""; position: absolute; }
 .service-art::before { inset: 7% 18% -10%; border-radius: 48% 48% 10% 10%; background: linear-gradient(145deg, rgba(255,255,255,.5), rgba(46,45,42,.42)); filter: blur(.2px); }
 .service-art::after { inset: 0; background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.25) 48%, transparent 62%); }
@@ -94,7 +94,7 @@ button, input, textarea, select { font: inherit; }
   background-image: var(--modern-chinese-women-image);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
 }
 .service-art-01::before { display: none; }
 .service-art-01::after { background: linear-gradient(180deg, rgba(21,21,19,.2), transparent 28%); }
@@ -296,7 +296,6 @@ button, input, textarea, select { font: inherit; }
   .manifesto { grid-template-columns: 1fr; }
   .vertical-note, .orchid-seal { display: none; }
   .service-grid { grid-template-columns: 1fr; gap: 54px; }
-  .service-art { height: 440px; }
   .service-card > p:last-of-type { min-height: auto; }
   .system-layout { grid-template-columns: 1fr; gap: 65px; }
   .system-title { padding: 0 0 58px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
@@ -338,7 +337,6 @@ button, input, textarea, select { font: inherit; }
   .button { padding-inline: 23px; }
   .split-heading { display: block; }
   .split-heading > p, .split-heading > a { margin-top: 24px; }
-  .service-art { height: 350px; }
   .system-list li { grid-template-columns: 48px 1fr; gap: 18px; }
   .system-list li > span { width: 42px; height: 42px; }
   .footer-top { grid-template-columns: 1fr; }
