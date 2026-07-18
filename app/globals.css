@@ -99,7 +99,15 @@ button, input, textarea, select { font: inherit; }
 .service-art-01::before { display: none; }
 .service-art-01::after { background: linear-gradient(180deg, rgba(21,21,19,.2), transparent 28%); }
 .service-art-02 { background: linear-gradient(150deg, #c8c2b7, #5e5d58); }
-.service-art-03 { background: linear-gradient(150deg, #c8c4bc, #85837d); }
+.service-art-03 {
+  background-color: #b88b5d;
+  background-image: var(--mens-tailoring-home-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.service-art-03::before { display: none; }
+.service-art-03::after { background: linear-gradient(180deg, rgba(21,21,19,.26), transparent 30%); }
 .service-art span { position: absolute; top: 16px; left: 18px; z-index: 2; color: rgba(255,255,255,.78); font-family: Georgia, serif; font-size: 12px; letter-spacing: .2em; }
 .service-en { margin: 22px 0 10px; color: #868178; font-size: 9px; letter-spacing: .19em; }
 .service-card h3 { margin: 0; font-family: "Songti SC", serif; font-size: 25px; font-weight: 400; letter-spacing: .09em; }

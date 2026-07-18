@@ -20,6 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <style>{`:root {
           --hero-image: url("${siteBasePath}/images/hero.png");
           --modern-chinese-women-image: url("${siteBasePath}/images/modern-chinese-women.png");
+          --mens-tailoring-home-image: url("${siteBasePath}/images/mens-tailoring-home.png");
           --lookbook-women-image: url("${siteBasePath}/images/lookbook-women.webp");
           --lookbook-men-image: url("${siteBasePath}/images/lookbook-men.png");
         }`}</style>
