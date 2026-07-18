@@ -89,7 +89,13 @@ button, input, textarea, select { font: inherit; }
 .service-art::before, .service-art::after { content: ""; position: absolute; }
 .service-art::before { inset: 7% 18% -10%; border-radius: 48% 48% 10% 10%; background: linear-gradient(145deg, rgba(255,255,255,.5), rgba(46,45,42,.42)); filter: blur(.2px); }
 .service-art::after { inset: 0; background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.25) 48%, transparent 62%); }
-.service-art-01 { background: linear-gradient(150deg, #dbd5ca, #a4a197); }
+.service-art-01 {
+  background-image: url("/images/modern-chinese-women.png");
+  background-position: center;
+  background-size: cover;
+}
+.service-art-01::before { display: none; }
+.service-art-01::after { background: linear-gradient(180deg, rgba(21,21,19,.2), transparent 28%); }
 .service-art-02 { background: linear-gradient(150deg, #c8c2b7, #5e5d58); }
 .service-art-03 { background: linear-gradient(150deg, #c8c4bc, #85837d); }
 .service-art span { position: absolute; top: 16px; left: 18px; z-index: 2; color: rgba(255,255,255,.78); font-family: Georgia, serif; font-size: 12px; letter-spacing: .2em; }
