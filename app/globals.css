@@ -248,10 +248,27 @@ button, input, textarea, select { font: inherit; }
 .lb-modern-chinese { background-image: var(--modern-chinese-women-image); }
 .lb-qipao { background-image: var(--qipao-atelier-home-image); }
 .lb-men { background-image: var(--mens-tailoring-home-image); }
-.lb-detail { background-image: linear-gradient(rgba(21,21,19,.1),rgba(21,21,19,.1)), var(--lookbook-women-image); background-size: 190%; background-position: 52% 14%; }
+.lb-detail { background-image: linear-gradient(rgba(21,21,19,.1),rgba(21,21,19,.1)), var(--craftsmanship-home-image); background-size: cover; background-position: center; }
 .gallery-work > div:last-child { display: flex; justify-content: space-between; align-items: baseline; padding-top: 18px; border-bottom: 1px solid var(--line); }
 .gallery-work p { color: #858178; font-size: 9px; letter-spacing: .16em; }
 .gallery-work h2 { margin: 0 0 14px; font: 400 26px "Songti SC", serif; letter-spacing: .15em; }
+.modern-chinese-gallery { padding-block: 92px 150px; }
+.lookbook-detail-section { padding-top: 0; }
+.lookbook-detail-heading { margin-bottom: 28px; border-top: 1px solid var(--line); padding-top: 24px; }
+.lookbook-detail-heading p { margin: 0; color: #858178; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.modern-chinese-gallery-grid { columns: 3 280px; column-gap: 28px; }
+.modern-chinese-gallery-grid figure { margin: 0 0 28px; break-inside: avoid; }
+.modern-chinese-gallery-grid button { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.modern-chinese-gallery-grid button:focus-visible { outline: 1px solid var(--ink); outline-offset: 5px; }
+.modern-chinese-gallery-grid img { display: block; width: 100%; height: auto; }
+.modern-chinese-lightbox { position: fixed; z-index: 20; inset: 0; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 26px; padding: 38px; background: rgba(17, 17, 15, .94); }
+.modern-chinese-lightbox-image { min-width: 0; max-height: calc(100svh - 76px); text-align: center; }
+.modern-chinese-lightbox-image img { display: block; width: auto; max-width: 100%; max-height: calc(100svh - 110px); margin: 0 auto; }
+.modern-chinese-lightbox-image p { margin: 14px 0 0; color: rgba(255,255,255,.72); font: 10px Georgia, serif; letter-spacing: .15em; }
+.modern-chinese-lightbox-nav, .modern-chinese-lightbox-close { appearance: none; border: 0; color: white; background: transparent; cursor: pointer; }
+.modern-chinese-lightbox-nav { padding: 14px; font: 300 36px/1 Georgia, serif; }
+.modern-chinese-lightbox-close { position: absolute; top: 20px; right: 26px; padding: 8px; font: 300 34px/1 Arial, sans-serif; }
+.modern-chinese-lightbox-nav:focus-visible, .modern-chinese-lightbox-close:focus-visible { outline: 1px solid white; outline-offset: 4px; }
 .lookbook-note { padding-block: 118px; background: #dfdbd2; text-align: center; }
 .lookbook-note h2 { font-size: clamp(36px, 4vw, 56px); }
 .lookbook-note > div > p:not(.eyebrow) { max-width: 650px; margin: 26px auto 32px; color: #6f6c65; font: 14px/2 "Songti SC", serif; }
@@ -342,6 +359,10 @@ button, input, textarea, select { font: inherit; }
   .lookbook-index nav { overflow-x: auto; padding-bottom: 14px; white-space: nowrap; }
   .lookbook-index > p { margin-top: 14px; }
   .lookbook-gallery { gap: 75px 20px; }
+  .modern-chinese-gallery-grid { columns: 2 260px; column-gap: 20px; }
+  .modern-chinese-gallery-grid figure { margin-bottom: 20px; }
+  .modern-chinese-lightbox { gap: 8px; padding: 24px 8px; }
+  .modern-chinese-lightbox-nav { padding: 8px; font-size: 28px; }
   .gallery-work.tall, .gallery-work.short { grid-column: span 6; }
   .gallery-work.wide { grid-column: 1 / -1; }
   .gallery-image, .gallery-work.short .gallery-image { min-height: 620px; }
@@ -350,6 +371,8 @@ button, input, textarea, select { font: inherit; }
 @media (max-width: 560px) {
   .shell { width: calc(100% - 32px); }
   .shell-wide { width: calc(100% - 32px); }
+  .modern-chinese-gallery { padding-bottom: 100px; }
+  .modern-chinese-gallery-grid { columns: 1; }
   .hero { height: 100svh; min-height: 680px; }
   .hero-content { padding-bottom: 112px; }
   .hero h1 { font-size: 52px; }
