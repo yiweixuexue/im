@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const filters = [
   { id: "all", label: "全部" },
@@ -19,12 +19,44 @@ const works = [
   { number: "04", title: "手作细节", meta: "HANDCRAFT DETAILS · I'm_", className: "lb-detail", size: "tall", filter: "craft" },
 ] as const;
 
+const modernChineseImages = [
+  "lookbook-modern-chinese-01.png",
+  "lookbook-modern-chinese-02.png",
+  "lookbook-modern-chinese-03.png",
+  "lookbook-modern-chinese-04.png",
+  "lookbook-modern-chinese-05.png",
+  "lookbook-modern-chinese-06.png",
+  "lookbook-modern-chinese-07.png",
+  "lookbook-modern-chinese-08.png",
+  "lookbook-modern-chinese-09.png",
+] as const;
+
+const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export function LookbookGallery() {
   const [activeFilter, setActiveFilter] = useState<FilterId>("all");
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const visibleWorks = useMemo(
     () => works.filter((work) => activeFilter === "all" || work.filter === activeFilter),
     [activeFilter],
   );
+
+  useEffect(() => {
+    if (selectedImageIndex === null) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSelectedImageIndex(null);
+      if (event.key === "ArrowLeft") {
+        setSelectedImageIndex((currentIndex) => currentIndex === null ? 0 : (currentIndex - 1 + modernChineseImages.length) % modernChineseImages.length);
+      }
+      if (event.key === "ArrowRight") {
+        setSelectedImageIndex((currentIndex) => currentIndex === null ? 0 : (currentIndex + 1) % modernChineseImages.length);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex]);
 
   return (
     <>
@@ -43,22 +75,68 @@ export function LookbookGallery() {
         </nav>
         <p>SELECTED STORIES · 2026</p>
       </section>
-      <section aria-live="polite" className="shell lookbook-gallery">
-        {visibleWorks.map((work) => (
-          <article className={`gallery-work ${work.size}`} key={work.title}>
-            <button
-              aria-label={`选择${work.title}作品`}
-              className="gallery-work-select"
-              onClick={() => setActiveFilter(work.filter)}
-              type="button"
-            />
-            <div className={`gallery-image ${work.className}`} role="img" aria-label={`${work.title}系列示例图`}>
-              <span>{work.number}</span>
-            </div>
-            <div><p>{work.meta}</p><h2>{work.title}</h2></div>
-          </article>
-        ))}
-      </section>
+      {activeFilter === "women" && (
+        <section aria-label="新中式作品图集" className="shell modern-chinese-gallery">
+          <div className="modern-chinese-gallery-grid">
+            {modernChineseImages.map((image, index) => (
+              <figure key={image}>
+                <button aria-label={`放大查看新中式服装作品 ${String(index + 1).padStart(2, "0")}`} onClick={() => setSelectedImageIndex(index)} type="button">
+                  <img alt={`新中式服装作品 ${String(index + 1).padStart(2, "0")}`} loading="lazy" src={`${siteBasePath}/images/${image}`} />
+                </button>
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
+      {activeFilter !== "women" && (
+        <section aria-live="polite" className="shell lookbook-gallery">
+          {visibleWorks.map((work) => (
+            <article className={`gallery-work ${work.size}`} key={work.title}>
+              <button
+                aria-label={`选择${work.title}作品`}
+                className="gallery-work-select"
+                onClick={() => setActiveFilter(work.filter)}
+                type="button"
+              />
+              <div className={`gallery-image ${work.className}`} role="img" aria-label={`${work.title}系列示例图`}>
+                <span>{work.number}</span>
+              </div>
+              <div><p>{work.meta}</p><h2>{work.title}</h2></div>
+            </article>
+          ))}
+        </section>
+      )}
+      {selectedImageIndex !== null && (
+        <div aria-label="新中式服装作品预览" aria-modal="true" className="modern-chinese-lightbox" onClick={() => setSelectedImageIndex(null)} role="dialog">
+          <button aria-label="关闭图片预览" className="modern-chinese-lightbox-close" onClick={() => setSelectedImageIndex(null)} type="button">×</button>
+          <button
+            aria-label="查看上一张图片"
+            className="modern-chinese-lightbox-nav previous"
+            onClick={(event) => {
+              event.stopPropagation();
+              setSelectedImageIndex((currentIndex) => currentIndex === null ? 0 : (currentIndex - 1 + modernChineseImages.length) % modernChineseImages.length);
+            }}
+            type="button"
+          >
+            ←
+          </button>
+          <div className="modern-chinese-lightbox-image" onClick={(event) => event.stopPropagation()}>
+            <img alt={`新中式服装作品 ${String(selectedImageIndex + 1).padStart(2, "0")}`} src={`${siteBasePath}/images/${modernChineseImages[selectedImageIndex]}`} />
+            <p>{String(selectedImageIndex + 1).padStart(2, "0")} / {String(modernChineseImages.length).padStart(2, "0")}</p>
+          </div>
+          <button
+            aria-label="查看下一张图片"
+            className="modern-chinese-lightbox-nav next"
+            onClick={(event) => {
+              event.stopPropagation();
+              setSelectedImageIndex((currentIndex) => currentIndex === null ? 0 : (currentIndex + 1) % modernChineseImages.length);
+            }}
+            type="button"
+          >
+            →
+          </button>
+        </div>
+      )}
     </>
   );
 }
