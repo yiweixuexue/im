@@ -25,6 +25,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           --lookbook-women-image: url("${siteBasePath}/images/lookbook-women.webp");
           --lookbook-men-image: url("${siteBasePath}/images/lookbook-men.png");
           --craftsmanship-home-image: url("${siteBasePath}/images/DSC08884-2.jpg");
+          --scene-home-image: url("${siteBasePath}/images/1-出门旗袍DSC03800.jpg");
+          --accessories-home-image: url("${siteBasePath}/images/1-出门旗袍DSC03845.JPG");
         }`}</style>
         {children}
       </body>

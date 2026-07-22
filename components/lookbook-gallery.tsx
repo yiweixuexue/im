@@ -8,15 +8,19 @@ const filters = [
   { id: "qipao", label: "旗袍" },
   { id: "men", label: "男士正装" },
   { id: "craft", label: "手作细节" },
+  { id: "scene", label: "情景" },
+  { id: "accessories", label: "配饰" },
 ] as const;
 
 type FilterId = (typeof filters)[number]["id"];
 
 const works = [
-  { number: "01", title: "新中式", meta: "MODERN CHINESE · I'm_", className: "lb-modern-chinese", size: "tall", filter: "women" },
-  { number: "02", title: "旗袍", meta: "HERITAGE QIPAO · I'm_", className: "lb-qipao", size: "short", filter: "qipao" },
-  { number: "03", title: "男士正装", meta: "MENS TAILORING · I'm_", className: "lb-men", size: "short", filter: "men" },
-  { number: "04", title: "手作细节", meta: "HANDCRAFT DETAILS · I'm_", className: "lb-detail", size: "tall", filter: "craft" },
+  { number: "01", title: "新中式", meta: "MODERN CHINESE · I'm_", className: "lb-modern-chinese", size: "equal", filter: "women" },
+  { number: "02", title: "旗袍", meta: "HERITAGE QIPAO · I'm_", className: "lb-qipao", size: "equal", filter: "qipao" },
+  { number: "03", title: "男士正装", meta: "MENS TAILORING · I'm_", className: "lb-men", size: "equal", filter: "men" },
+  { number: "04", title: "手作细节", meta: "HANDCRAFT DETAILS · I'm_", className: "lb-detail", size: "equal", filter: "craft" },
+  { number: "05", title: "情景", meta: "SCENE & STORY · I'm_", className: "lb-scene", size: "equal", filter: "scene" },
+  { number: "06", title: "配饰", meta: "ACCESSORIES · I'm_", className: "lb-accessories", size: "equal", filter: "accessories" },
 ] as const;
 
 const qipaoImages = [
@@ -90,14 +94,61 @@ const modernChineseImages = [
   "lookbook-modern-chinese-09.png",
 ] as const;
 
+const sceneImages = [
+  "1-晨袍DSC03061.jpg",
+  "1-晨袍DSC03266.JPG",
+  "2-准备DSCF4649.jpg",
+  "2-接亲DSC04225.jpg",
+  "3-场景摆拍IMG_5831.jpg",
+  "3-敬酒开香槟DSC06038.jpg",
+  "1-出门旗袍DSC03800.jpg",
+  "1-出门旗袍DSC03941.jpg",
+  "1-出门旗袍IMG_4472.jpg",
+  "1-出门旗袍IMG_4500.jpg",
+  "1-出门旗袍IMG_4663.jpg",
+  "2-上下车DSC04727.jpg",
+  "2-上下车DSC04751.jpg",
+  "2-上下车DSC04796.jpg",
+  "2-上下车DSC04816.jpg",
+  "2-上下车IMG_5192.JPG",
+  "3-典礼DSC05072.jpg",
+  "3-典礼DSC05283.jpg",
+  "3-典礼DSC05382.jpg",
+  "3-典礼DSC05658.jpg",
+  "3-典礼IMG_5503.jpg",
+  "婚礼九宫格6.jpg",
+  "中国女人的美不需要牌子来定义2.jpg",
+  "中国女人的美不需要牌子来定义1.jpg",
+] as const;
+
+const accessoriesImages = [
+  "tb_image_share_1784665581868.png",
+  "tb_image_share_1784665640661.png",
+  "tb_image_share_1784665705951.png",
+  "tb_image_share_1784665878254.jpg",
+  "tb_image_share_1784665775896.jpg",
+  "tb_image_share_1784665731841.jpg",
+  "tb_image_share_1784665830187-2.jpg",
+  "tb_image_share_1784665833746-2.jpg",
+  "1-出门旗袍DSC03669.JPG",
+  "1-出门旗袍DSC04143.JPG",
+  "0-静物DSCF4639.JPG",
+  "1-出门旗袍DSC03670.JPG",
+  "1-晨袍DSC02862.JPG",
+  "1-出门旗袍DSC05043.JPG",
+  "1-出门旗袍DSC05001.JPG",
+  "1-晨袍IMG_4083.JPG",
+  "1-出门旗袍DSC03672.JPG",
+] as const;
+
 const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function LookbookGallery() {
   const [activeFilter, setActiveFilter] = useState<FilterId>("all");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const [selectedGallery, setSelectedGallery] = useState<"main" | "details">("main");
-  const galleryImages = activeFilter === "qipao" ? qipaoImages : activeFilter === "men" ? mensImages : activeFilter === "craft" ? craftsmanshipImages : modernChineseImages;
-  const galleryLabel = activeFilter === "qipao" ? "旗袍" : activeFilter === "men" ? "男士正装" : activeFilter === "craft" ? "手作细节" : "新中式";
+  const galleryImages = activeFilter === "qipao" ? qipaoImages : activeFilter === "men" ? mensImages : activeFilter === "craft" ? craftsmanshipImages : activeFilter === "scene" ? sceneImages : activeFilter === "accessories" ? accessoriesImages : modernChineseImages;
+  const galleryLabel = activeFilter === "qipao" ? "旗袍" : activeFilter === "men" ? "男士正装" : activeFilter === "craft" ? "手作细节" : activeFilter === "scene" ? "情景" : activeFilter === "accessories" ? "配饰" : "新中式";
   const detailImages = activeFilter === "men" ? mensDetailImages : qipaoDetailImages;
   const lightboxImages = selectedGallery === "details" ? detailImages : galleryImages;
   const visibleWorks = useMemo(
@@ -139,7 +190,7 @@ export function LookbookGallery() {
         </nav>
         <p>SELECTED STORIES · 2026</p>
       </section>
-      {(activeFilter === "women" || activeFilter === "qipao" || activeFilter === "men" || activeFilter === "craft") && (
+      {(activeFilter === "women" || activeFilter === "qipao" || activeFilter === "men" || activeFilter === "craft" || activeFilter === "scene" || activeFilter === "accessories") && (
         <section aria-label={galleryLabel + "作品图集"} className="shell modern-chinese-gallery">
           <div className="modern-chinese-gallery-grid">
             {galleryImages.map((image, index) => (

@@ -238,6 +238,7 @@ button, input, textarea, select { font: inherit; }
 .gallery-work { position: relative; }
 .gallery-work.tall { grid-column: span 7; }
 .gallery-work.short { grid-column: span 5; }
+.gallery-work.equal { grid-column: span 6; }
 .gallery-work.wide { grid-column: 2 / 12; }
 .gallery-work-select { position: absolute; z-index: 1; inset: 0; width: 100%; border: 0; background: transparent; cursor: pointer; }
 .gallery-work-select:focus-visible { outline: 1px solid var(--ink); outline-offset: 6px; }
@@ -248,6 +249,10 @@ button, input, textarea, select { font: inherit; }
 .lb-modern-chinese { background-image: var(--modern-chinese-women-image); }
 .lb-qipao { background-image: var(--qipao-atelier-home-image); }
 .lb-men { background-image: var(--mens-tailoring-home-image); }
+.lb-scene { background-image: var(--scene-home-image); background-size: cover; background-position: center; }
+.lb-accessories { background-image: var(--accessories-home-image); background-size: cover; background-position: center; }
+.lb-placeholder { display: grid; min-height: inherit; place-items: center; border: 1px solid var(--line); background: #e8e3da; color: #8b877f; }
+.lb-placeholder::after { content: "COMING SOON"; font-size: 9px; letter-spacing: .2em; }
 .lb-detail { background-image: linear-gradient(rgba(21,21,19,.1),rgba(21,21,19,.1)), var(--craftsmanship-home-image); background-size: cover; background-position: center; }
 .gallery-work > div:last-child { display: flex; justify-content: space-between; align-items: baseline; padding-top: 18px; border-bottom: 1px solid var(--line); }
 .gallery-work p { color: #858178; font-size: 9px; letter-spacing: .16em; }
