@@ -10,7 +10,7 @@ This repository includes a GitHub Actions workflow that builds and publishes the
 4. Open the **Actions** tab and select **Deploy to GitHub Pages**.
 5. If no run has started, choose **Run workflow** → **Run workflow**.
 6. Wait for the workflow to finish. The site will be available at:
-   `https://yiweixuexue.github.io/chuweiwo/`
+   `https://imartisan.me/`
 
 Future pushes to `main` will update the live site automatically.
 
@@ -22,4 +22,4 @@ The first real form submission triggers an activation email from FormSubmit to `
 
 Run `npm run build:github`. The generated static site is written to the ignored `out` directory.
 
-If the GitHub repository is renamed, update `/chuweiwo` in the `build:github` script in `package.json` to match the new repository name.
+The production site is built at the domain root for `imartisan.me`. The development preview is available under `/dev`.
