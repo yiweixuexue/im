@@ -68,7 +68,8 @@ jobs:
         working-directory: development
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: /im/dev
+          NEXT_PUBLIC_BASE_PATH: /dev
+
         run: npx next build
 
       - name: Add dev preview to the Pages artifact
