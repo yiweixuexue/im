@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function CeremonialCustomPage() {
       <SiteHeader market="en" tone="light" />
       <main id="main-content">
         <section className="market-hero ceremonial-market-hero">
-          <img src="/images/site/custom-ceremony.webp" alt="Couple in coordinated Chinese-inspired ceremonial clothing" />
+          <SiteImage src="/images/site/custom-ceremony.webp" alt="Couple in coordinated Chinese-inspired ceremonial clothing" />
           <div className="market-hero-shade" aria-hidden="true" />
           <div className="shell market-hero-copy">
             <p className="eyebrow">SELECT CEREMONIAL CUSTOM</p>

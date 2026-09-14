@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function AboutPage() {
         <section className="about-origin section-space">
           <div className="shell about-origin-grid">
             <div className="about-origin-image">
-              <img src="/images/site/founder-portrait.webp" alt="Yiwei Xue, founder and artisan behind ImArtisan" loading="lazy" />
+              <SiteImage src="/images/site/founder-portrait.webp" alt="Yiwei Xue, founder and artisan behind ImArtisan" loading="lazy" />
               <span>YIWEI XUE · ARTISAN & CREATIVE DIRECTOR</span>
             </div>
             <div className="about-origin-copy" lang="zh-CN">

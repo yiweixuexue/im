@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -70,7 +71,7 @@ export default function LookbookPage() {
           {works.map((work, index) => (
             <article className={`gallery-work ${work.size}`} key={work.title}>
               <figure className="gallery-image">
-                <img src={work.image} alt={work.alt} loading={index > 0 ? "lazy" : undefined} />
+                <SiteImage src={work.image} alt={work.alt} loading={index > 0 ? "lazy" : undefined} />
                 <span aria-hidden="true">0{index + 1}</span>
               </figure>
               <div className="gallery-caption">

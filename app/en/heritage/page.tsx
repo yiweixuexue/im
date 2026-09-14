@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProductCard } from "../../../components/product-card";
+import { SiteImage } from "../../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function HeritageCollectionPage() {
       <SiteHeader market="en" tone="light" />
       <main id="main-content">
         <section className="market-hero heritage-market-hero">
-          <img src="/images/site/blue-peony-bag.webp" alt="Blue peony evening bag with traditional Bian embroidery" />
+          <SiteImage src="/images/site/blue-peony-bag.webp" alt="Blue peony evening bag with traditional Bian embroidery" />
           <div className="market-hero-shade" aria-hidden="true" />
           <div className="shell market-hero-copy">
             <p className="eyebrow">IMARTISAN · HERITAGE COLLECTION</p>
@@ -116,7 +117,7 @@ export default function HeritageCollectionPage() {
         <section className="craft-explainer section-space">
           <div className="shell craft-explainer-grid">
             <div className="craft-explainer-image">
-              <img src="/images/site/blue-peony-detail.webp" alt="Close detail showing tonal embroidery stitches" loading="lazy" />
+              <SiteImage src="/images/site/blue-peony-detail.webp" alt="Close detail showing tonal embroidery stitches" loading="lazy" />
               <span>THREAD AS SHADE, LINE AND LIGHT</span>
             </div>
             <div>
@@ -155,12 +156,12 @@ export default function HeritageCollectionPage() {
               </a>
             </div>
           </div>
-          <img src="/images/site/gift-packaging.webp" alt="Kraft gift box tied with an ivory ribbon" loading="lazy" />
+          <SiteImage src="/images/site/gift-packaging.webp" alt="Kraft gift box tied with an ivory ribbon" loading="lazy" />
         </section>
 
         <section className="custom-supplement section-space">
           <div className="shell custom-supplement-grid">
-            <img src="/images/site/custom-ceremony.webp" alt="Chinese-inspired ceremonial custom clothing" loading="lazy" />
+            <SiteImage src="/images/site/custom-ceremony.webp" alt="Chinese-inspired ceremonial custom clothing" loading="lazy" />
             <div>
               <p className="eyebrow">SELECT CEREMONIAL CUSTOM</p>
               <h2>For a small number of meaningful commissions</h2>

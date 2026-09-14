@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -51,7 +52,7 @@ export default function CarePage() {
 
         <section className="care-intro section-space shell">
           <div className="care-intro-image">
-            <img src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box with ivory ribbon" loading="lazy" />
+            <SiteImage src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box with ivory ribbon" loading="lazy" />
           </div>
           <div>
             <p className="eyebrow">GIFT-READY BY DEFAULT</p>

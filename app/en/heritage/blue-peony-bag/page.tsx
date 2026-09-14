@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -28,11 +29,11 @@ export default function BluePeonyBagPage() {
         <section className="product-detail shell-wide">
           <div className="product-gallery">
             <figure>
-              <img src="/images/site/blue-peony-bag.webp" alt="Front of the blue peony Bian embroidery evening bag" />
+              <SiteImage src="/images/site/blue-peony-bag.webp" alt="Front of the blue peony Bian embroidery evening bag" />
               <figcaption>FRONT · PAINTERLY PEONY PANEL</figcaption>
             </figure>
             <figure>
-              <img src="/images/site/blue-peony-detail.webp" alt="Close detail of blue and ivory peony embroidery" />
+              <SiteImage src="/images/site/blue-peony-detail.webp" alt="Close detail of blue and ivory peony embroidery" />
               <figcaption>DETAIL · STITCH DIRECTION AND TONAL LAYERING</figcaption>
             </figure>
           </div>
@@ -99,7 +100,7 @@ export default function BluePeonyBagPage() {
         <section className="product-use section-space">
           <div className="shell product-use-grid">
             <div className="product-use-image">
-              <img src="/images/site/blue-peony-detail.webp" alt="Blue peony embroidery in close view" loading="lazy" />
+              <SiteImage src="/images/site/blue-peony-detail.webp" alt="Blue peony embroidery in close view" loading="lazy" />
             </div>
             <div>
               <p className="eyebrow">WEAR · DISPLAY · KEEP</p>

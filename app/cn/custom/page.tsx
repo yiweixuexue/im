@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function ChineseCustomPage() {
       <SiteHeader market="cn" tone="light" />
       <main id="main-content">
         <section className="market-hero custom-market-hero">
-          <img src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼旗袍与男士正装定制" />
+          <SiteImage src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼旗袍与男士正装定制" />
           <div className="market-hero-shade" aria-hidden="true" />
           <div className="shell market-hero-copy">
             <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
@@ -100,15 +101,15 @@ export default function ChineseCustomPage() {
           />
           <div className="custom-lookbook-grid">
             <figure className="lookbook-feature">
-              <img src="/images/lookbook-women.webp" alt="黑色长款旗袍定制" loading="lazy" />
+              <SiteImage src="/images/lookbook-women.webp" alt="黑色长款旗袍定制" loading="lazy" />
               <figcaption><span>旗袍定制</span><strong>含蓄的线条，也可以很有力量</strong></figcaption>
             </figure>
             <figure>
-              <img src="/images/site/silk-jacket.webp" alt="粉色真丝新中式女上衣" loading="lazy" />
+              <SiteImage src="/images/site/silk-jacket.webp" alt="粉色真丝新中式女上衣" loading="lazy" />
               <figcaption><span>女士新中式</span><strong>不过度设计的日常表达</strong></figcaption>
             </figure>
             <figure>
-              <img src="/images/site/blue-shirt.webp" alt="蓝色棉麻新中式男上衣" loading="lazy" />
+              <SiteImage src="/images/site/blue-shirt.webp" alt="蓝色棉麻新中式男上衣" loading="lazy" />
               <figcaption><span>男士服装</span><strong>传统结构进入当代生活</strong></figcaption>
             </figure>
           </div>
@@ -168,7 +169,7 @@ export default function ChineseCustomPage() {
               </ul>
             </div>
             <div className="wechat-card">
-              <img src="/images/wechat-qr.png" alt="屮微我品牌微信二维码" width="632" height="632" loading="lazy" />
+              <SiteImage src="/images/wechat-qr.png" alt="屮微我品牌微信二维码" width="632" height="632" loading="lazy" />
               <div><span>微信扫一扫</span><strong>预约灵感对谈</strong><p>添加时请备注“定制咨询”</p></div>
             </div>
           </div>

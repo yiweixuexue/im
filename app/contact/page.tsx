@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function ContactPage() {
               <p>适用于新中式、旗袍、男士正装、婚礼与家庭整体定制。</p>
             </div>
             <div className="contact-wechat-row">
-              <img src="/images/wechat-qr.png" alt="屮微我品牌微信二维码" width="632" height="632" />
+              <SiteImage src="/images/wechat-qr.png" alt="屮微我品牌微信二维码" width="632" height="632" />
               <div>
                 <strong>微信扫一扫</strong>
                 <p>添加时请备注“定制咨询”，并简单说明穿着场合与预计日期。</p>

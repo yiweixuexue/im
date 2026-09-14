@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ProductCard } from "../components/product-card";
+import { SiteImage } from "../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../components/site-shell";
 
 const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
@@ -11,7 +12,7 @@ export default function Home() {
       <main id="main-content">
         <section className="gateway-hero" id="choose-your-path" aria-labelledby="gateway-title">
           <Link className="gateway-panel gateway-cn" href="/cn/custom" lang="zh-CN">
-            <img src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼定制服装案例" />
+            <SiteImage src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼定制服装案例" />
             <span className="gateway-shade" aria-hidden="true" />
             <div className="gateway-panel-copy">
               <p>CHINA · BESPOKE CLOTHING</p>
@@ -21,7 +22,7 @@ export default function Home() {
           </Link>
 
           <Link className="gateway-panel gateway-en" href="/en/heritage">
-            <img src="/images/site/chanhua-making.webp" alt="Hands shaping a traditional wrapped silk flower" />
+            <SiteImage src="/images/site/chanhua-making.webp" alt="Hands shaping a traditional wrapped silk flower" />
             <span className="gateway-shade" aria-hidden="true" />
             <div className="gateway-panel-copy">
               <p>INTERNATIONAL · HERITAGE CRAFT</p>
@@ -126,7 +127,7 @@ export default function Home() {
         <section className="home-custom section-space" lang="zh-CN">
           <div className="shell home-custom-grid">
             <div className="home-custom-image">
-              <img src="/images/site/studio-tailoring.webp" alt="屮微我工作室服装制作过程" loading="lazy" />
+              <SiteImage src="/images/site/studio-tailoring.webp" alt="屮微我工作室服装制作过程" loading="lazy" />
               <p>THE ATELIER · 杭州</p>
             </div>
             <div className="home-custom-copy">
@@ -181,17 +182,17 @@ export default function Home() {
             />
             <div className="journal-tease-grid">
               <Link href="/journal#heritage" className="journal-tease-card">
-                <img src="/images/site/blue-peony-detail.webp" alt="Detail of blue peony Bian embroidery" loading="lazy" />
+                <SiteImage src="/images/site/blue-peony-detail.webp" alt="Detail of blue peony Bian embroidery" loading="lazy" />
                 <span>HERITAGE JOURNAL</span>
                 <h3>From brush-like shading to thread</h3>
               </Link>
               <Link href="/journal#studio" className="journal-tease-card">
-                <img src="/images/site/chanhua-making.webp" alt="Hands cutting velvet for a wrapped flower" loading="lazy" />
+                <SiteImage src="/images/site/chanhua-making.webp" alt="Hands cutting velvet for a wrapped flower" loading="lazy" />
                 <span>STUDIO JOURNAL</span>
                 <h3>Why patient hands still matter</h3>
               </Link>
               <Link href="/journal#notes" className="journal-tease-card">
-                <img src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box and ribbon" loading="lazy" />
+                <SiteImage src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box and ribbon" loading="lazy" />
                 <span>IMARTISAN NOTES</span>
                 <h3>A gift, including when it is for yourself</h3>
               </Link>

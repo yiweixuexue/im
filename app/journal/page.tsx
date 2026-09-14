@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteImage } from "../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function JournalPage() {
           <section className={"journal-chapter section-space journal-chapter-" + (index + 1)} id={column.id} key={column.id}>
             <div className="shell journal-chapter-grid">
               <div className="journal-chapter-image">
-                <img src={column.image} alt={column.title + " feature"} loading="lazy" />
+                <SiteImage src={column.image} alt={column.title + " feature"} loading="lazy" />
                 <span>{column.number}</span>
               </div>
               <div className="journal-chapter-copy">

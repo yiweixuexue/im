@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteImage } from "./site-image";
 
 export function ProductCard({
   title,
@@ -19,7 +20,7 @@ export function ProductCard({
   const content = (
     <>
       <div className="product-card-image">
-        <img src={image} alt={`${title} · ${chinese}`} loading="lazy" decoding="async" />
+        <SiteImage src={image} alt={`${title} · ${chinese}`} loading="lazy" decoding="async" />
         {tag ? <span>{tag}</span> : null}
       </div>
       <div className="product-card-copy">
