@@ -1,134 +1,201 @@
 import Link from "next/link";
-import { SiteFooter, SiteHeader } from "../components/site-shell";
+import { ProductCard } from "../components/product-card";
+import { SectionHeading, SiteFooter, SiteHeader } from "../components/site-shell";
 
-const services = [
-  {
-    no: "01",
-    title: "女士新中式定制",
-    en: "MODERN CHINESE",
-    copy: "从日常雅集到重要场合，以体型、气质与生活方式为尺度，重塑东方衣着的当代表达。",
-  },
-  {
-    no: "02",
-    title: "旗袍定制",
-    en: "QIPAO ATELIER",
-    copy: "保留旗袍的含蓄风骨，以现代剪裁、精细滚边与非遗盘扣，成就贴合身体也贴合自我的一袭。",
-  },
-  {
-    no: "03",
-    title: "男士正装定制",
-    en: "MEN'S TAILORING",
-    copy: "在中式礼序与现代廓形之间寻找平衡，为婚礼、商务与正式场合定制沉静有度的东方正装。",
-  },
-];
+const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
 
 export default function Home() {
   return (
-    <div className="site-page">
-      <SiteHeader />
-      <main>
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-media" aria-hidden="true" />
-          <div className="hero-veil" />
-          <div className="hero-content shell">
-            <p className="eyebrow light">CHUWEIWO · BESPOKE ATELIER</p>
-            <h1 id="hero-title">为你，裁一身<br />东方风骨</h1>
-            <p className="hero-copy">
-              以命理气韵为灵感，以一对一专属设计与非遗手作，
-              将衣裳做成只属于你的自我表达。
-            </p>
-            <div className="hero-actions">
-              <Link className="button button-light" href="/services">了解定制</Link>
-              <Link className="text-link text-link-light" href="/consultation">预约量身 <span>↗</span></Link>
+    <div className="site-page home-page">
+      <SiteHeader market="home" tone="light" />
+      <main id="main-content">
+        <section className="gateway-hero" id="choose-your-path" aria-labelledby="gateway-title">
+          <Link className="gateway-panel gateway-cn" href="/cn/custom" lang="zh-CN">
+            <img src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼定制服装案例" />
+            <span className="gateway-shade" aria-hidden="true" />
+            <div className="gateway-panel-copy">
+              <p>CHINA · BESPOKE CLOTHING</p>
+              <h2>为中国客户<br />探索定制服装</h2>
+              <span className="gateway-action">进入中文站 <b aria-hidden="true">↗</b></span>
             </div>
+          </Link>
+
+          <Link className="gateway-panel gateway-en" href="/en/heritage">
+            <img src="/images/site/chanhua-making.webp" alt="Hands shaping a traditional wrapped silk flower" />
+            <span className="gateway-shade" aria-hidden="true" />
+            <div className="gateway-panel-copy">
+              <p>INTERNATIONAL · HERITAGE CRAFT</p>
+              <h2>Discover craft<br />made to be lived with</h2>
+              <span className="gateway-action">Enter international site <b aria-hidden="true">↗</b></span>
+            </div>
+          </Link>
+
+          <div className="gateway-center">
+            <p className="gateway-kicker">IMARTISAN · 屮微我</p>
+            <h1 id="gateway-title">
+              <span lang="zh-CN">于微小处，看见真我</span>
+              <small>Seeing the self in the details.</small>
+            </h1>
+            <p>东方审美定制服装 · Chinese heritage craft</p>
           </div>
-          <p className="hero-mark">I&apos;M_</p>
-          <div className="hero-scroll"><span />向下</div>
+          <div className="gateway-scroll" aria-hidden="true">
+            <span /> CHOOSE YOUR PATH
+          </div>
         </section>
 
-        <section className="manifesto shell section-space">
-          <p className="vertical-note">品牌理念 · BRAND PHILOSOPHY</p>
-          <div className="manifesto-main">
-            <p className="eyebrow">MICRO SELF · TRUE SELF</p>
-            <h2>微观自我，找到自我，做自己</h2>
+        <section className="home-dual section-space shell" aria-labelledby="dual-title">
+          <SectionHeading
+            eyebrow="ONE PHILOSOPHY · TWO PATHS"
+            title="同一种价值观，两条清晰的转化路径"
+            intro="屮微我不把同一批产品推给所有人。我们从真实市场需求出发，让定制服装与传统工艺各自在最适合它们的场景里被理解。"
+          />
+          <div className="dual-grid" id="dual-title">
+            <article lang="zh-CN">
+              <span>01 · CHINA</span>
+              <h3>一件真正属于你的衣服</h3>
+              <p>
+                在中国，我们以一对一风格设计、量体试样和手工细节，把模糊的期待转化为可穿、可久留的衣服。
+              </p>
+              <Link className="arrow-link" href="/cn/custom">
+                了解定制服务 <span aria-hidden="true">→</span>
+              </Link>
+            </article>
+            <article>
+              <span>02 · INTERNATIONAL</span>
+              <h3>Objects that carry a living tradition</h3>
+              <p>
+                Internationally, ImArtisan introduces thoughtfully selected Chinese craft through its makers,
+                materials, cultural context and place in contemporary life.
+              </p>
+              <Link className="arrow-link" href="/en/heritage">
+                Explore heritage craft <span aria-hidden="true">→</span>
+              </Link>
+            </article>
+          </div>
+        </section>
+
+        <section className="featured-collection section-space">
+          <div className="shell">
+            <SectionHeading
+              eyebrow="THE IMARTISAN EDIT"
+              title="Tradition, translated into objects for now"
+              intro="Pieces chosen for the intelligence of their making—not simply for looking ‘traditional.’"
+            />
+            <div className="product-grid">
+              <ProductCard
+                title="Blue Peony Evening Bag"
+                chinese="蓝色牡丹汴绣包"
+                craft="TRADITIONAL BIAN EMBROIDERY"
+                image="/images/site/blue-peony-bag.webp"
+                href="/en/heritage/blue-peony-bag"
+                tag="FEATURED"
+              />
+              <ProductCard
+                title="Red Peony Evening Bag"
+                chinese="红色牡丹汴绣包"
+                craft="TRADITIONAL BIAN EMBROIDERY"
+                image="/images/site/red-peony-bag.webp"
+                href={etsyShop}
+              />
+              <ProductCard
+                title="Olive Berry Hair Ornament"
+                chinese="橄榄枝缠花发饰"
+                craft="HAND-WRAPPED SILK THREAD"
+                image="/images/site/olive-hairpin.webp"
+                href={etsyShop}
+              />
+              <ProductCard
+                title="Tulip Brooch"
+                chinese="郁金香缠花胸针"
+                craft="CONTEMPORARY CHANHUA"
+                image="/images/site/tulip-brooch.webp"
+                href={etsyShop}
+              />
+            </div>
+            <div className="collection-actions">
+              <Link className="button button-ink" href="/en/heritage">
+                View the collection
+              </Link>
+              <a className="text-link" href={etsyShop} target="_blank" rel="noreferrer">
+                Shop availability on Etsy <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-custom section-space" lang="zh-CN">
+          <div className="shell home-custom-grid">
+            <div className="home-custom-image">
+              <img src="/images/site/studio-tailoring.webp" alt="屮微我工作室服装制作过程" loading="lazy" />
+              <p>THE ATELIER · 杭州</p>
+            </div>
+            <div className="home-custom-copy">
+              <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
+              <h2>从“认识你”开始，<br />而不是从一件现成衣服开始。</h2>
+              <p>
+                命理气韵提供色彩与材质的灵感，一对一设计回应体型、场合与生活方式，手工细节让衣服拥有无法复制的温度。
+              </p>
+              <div className="custom-pillars">
+                <span>命理气韵</span>
+                <span>专属风格</span>
+                <span>非遗手作</span>
+              </div>
+              <Link className="button button-paper" href="/cn/custom">
+                开始了解定制
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-belief section-space shell">
+          <div className="belief-mark" aria-hidden="true">
+            屮
+          </div>
+          <div>
+            <p className="eyebrow">WHY IMARTISAN</p>
+            <h2>
+              We do not use heritage as decoration. We ask what a craft means, who carries it, and how it can
+              remain alive.
+            </h2>
+          </div>
+          <div className="belief-copy">
+            <p lang="zh-CN">
+              “屮微我”意为微观自我、找到自我、做自己。世界并非非黑即白，人的美也不应只有一种标准。
+            </p>
             <p>
-              “屮微我”相信，真正的高级并非追随同一种标准，
-              而是看见每个人不同的身体、经历与精神气质。
-              我们以衣为媒，在细微之处辨认你，并将这份独一无二，郑重地穿在身上。
+              ImArtisan brings that belief into objects: fewer pieces, clearer provenance, careful use, and a
+              longer relationship between people and what they choose to keep.
             </p>
-            <Link className="text-link" href="/story">读品牌故事 <span>↗</span></Link>
-          </div>
-          <div className="orchid-seal" aria-hidden="true">
-            <span>屮</span>
-            <small>微我</small>
-          </div>
-        </section>
-
-        <section className="services-section section-space">
-          <div className="shell section-heading split-heading">
-            <div>
-              <p className="eyebrow">BESPOKE SERVICES</p>
-              <h2>三大定制线</h2>
-            </div>
-            <p>从一场重要相见，到一生值得珍藏的时刻，<br />让每一次穿着都有来由，也有余韵。</p>
-          </div>
-          <div className="shell service-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.no}>
-                <div className={`service-art service-art-${service.no}`} aria-hidden="true">
-                  <span>{service.no}</span>
-                </div>
-                <p className="service-en">{service.en}</p>
-                <h3>{service.title}</h3>
-                <p>{service.copy}</p>
-                <Link aria-label={`查看${service.title}`} href="/services">→</Link>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="system-section section-space">
-          <div className="shell system-layout">
-            <div className="system-title">
-              <p className="eyebrow light">OUR BESPOKE SYSTEM</p>
-              <h2>一件衣裳，<br />三重专属。</h2>
-              <p>从“认识你”开始，完成一件真正属于你的衣服。</p>
-            </div>
-            <ol className="system-list">
-              <li><span>壹</span><div><h3>命理气韵</h3><p>理解你的五行气质与人生场景，让色彩、材质与寓意彼此呼应。</p></div></li>
-              <li><span>贰</span><div><h3>一对一设计</h3><p>结合体型、风格与衣橱需求，建立不被成衣尺码限制的专属方案。</p></div></li>
-              <li><span>叁</span><div><h3>非遗精工手作</h3><p>盘扣、滚边、刺绣与细节收口，由手艺人的时间赋予温度。</p></div></li>
-            </ol>
-          </div>
-        </section>
-
-        <section className="lookbook-tease shell section-space">
-          <div className="section-heading split-heading">
-            <div>
-              <p className="eyebrow">SELECTED STORIES</p>
-              <h2>衣裳与人，相互成就</h2>
-            </div>
-            <Link className="text-link" href="/lookbook">浏览 Lookbook <span>↗</span></Link>
-          </div>
-          <div className="lookbook-pair">
-            <Link className="lookbook-tile women" href="/lookbook">
-              <div className="lookbook-image" />
-              <div><p>HERITAGE QIPAO · 2026</p><h3>兰影</h3></div>
-            </Link>
-            <Link className="lookbook-tile men" href="/lookbook">
-              <div className="lookbook-image" />
-              <div><p>MODERN CEREMONY · 2026</p><h3>留白</h3></div>
+            <Link className="arrow-link" href="/about">
+              Read our story <span aria-hidden="true">→</span>
             </Link>
           </div>
         </section>
 
-        <section className="cta-section">
-          <div className="cta-ink" aria-hidden="true" />
-          <div className="shell cta-inner">
-            <p className="eyebrow">BEGIN YOUR BESPOKE JOURNEY</p>
-            <h2>你的故事，值得被好好裁制。</h2>
-            <p>预约一次初步沟通，从场合、风格与真实需求开始。</p>
-            <Link className="button button-dark" href="/consultation">预约咨询</Link>
+        <section className="journal-tease section-space">
+          <div className="shell">
+            <SectionHeading
+              eyebrow="CULTURE · PROCESS · NOTES"
+              title="Three ways into the story"
+              intro="Understand the cultural source, watch the work take shape, and meet the point of view behind the selection."
+            />
+            <div className="journal-tease-grid">
+              <Link href="/journal#heritage" className="journal-tease-card">
+                <img src="/images/site/blue-peony-detail.webp" alt="Detail of blue peony Bian embroidery" loading="lazy" />
+                <span>HERITAGE JOURNAL</span>
+                <h3>From brush-like shading to thread</h3>
+              </Link>
+              <Link href="/journal#studio" className="journal-tease-card">
+                <img src="/images/site/chanhua-making.webp" alt="Hands cutting velvet for a wrapped flower" loading="lazy" />
+                <span>STUDIO JOURNAL</span>
+                <h3>Why patient hands still matter</h3>
+              </Link>
+              <Link href="/journal#notes" className="journal-tease-card">
+                <img src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box and ribbon" loading="lazy" />
+                <span>IMARTISAN NOTES</span>
+                <h3>A gift, including when it is for yourself</h3>
+              </Link>
+            </div>
           </div>
         </section>
       </main>
