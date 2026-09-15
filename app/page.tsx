@@ -47,8 +47,8 @@ export default function Home() {
         <section className="home-dual section-space shell" aria-labelledby="dual-title">
           <SectionHeading
             eyebrow="ONE PHILOSOPHY · TWO PATHS"
-            title="同一种价值观，两条清晰的转化路径"
-            intro="屮微我不把同一批产品推给所有人。我们从真实市场需求出发，让定制服装与传统工艺各自在最适合它们的场景里被理解。"
+            title="同一种匠心，两种与你相遇的方式"
+            intro="从一件为你而作的衣服，到一件承载手艺与时间的作品，屮微我与 ImArtisan 以不同的方式，让东方审美自然融入当下生活。"
           />
           <div className="dual-grid" id="dual-title">
             <article lang="zh-CN">
