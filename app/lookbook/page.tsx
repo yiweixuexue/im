@@ -2,52 +2,33 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../components/site-shell";
+import { lookbookCollections, lookbookWorks, type CollectionGroup } from "./collections";
 
 export const metadata: Metadata = {
-  title: "Lookbook｜定制作品",
-  description: "浏览屮微我旗袍、婚礼礼服、女士新中式、男士服装与手工细节。",
+  title: "Lookbook｜作品合集",
+  description: "按婚礼、旗袍、女士新中式、男士定制、手作工艺与配饰礼物，浏览屮微我作品合集。",
 };
 
-const works = [
+const collectionGroups: Array<{
+  id: string;
+  group: CollectionGroup;
+  eyebrow: string;
+  title: string;
+  intro: string;
+}> = [
   {
-    title: "相见",
-    meta: "婚礼与仪式 · CEREMONY",
-    note: "两个人不必穿成同一种风格，也可以在材质、色彩和分寸上彼此呼应。",
-    image: "/images/site/custom-ceremony.webp",
-    alt: "屮微我中式婚礼旗袍与男士正装",
-    size: "wide",
+    id: "services",
+    group: "service",
+    eyebrow: "SERVICE & OCCASION",
+    title: "按服务与场合浏览",
+    intro: "从一次具体的相见开始：婚礼整体定制、女士旗袍与男士正装，各自拥有不同的设计判断。",
   },
   {
-    title: "兰影",
-    meta: "旗袍定制 · QIPAO",
-    note: "线条安静地跟随身体，让正式感不以牺牲舒适为代价。",
-    image: "/images/lookbook-women.webp",
-    alt: "黑色长款旗袍造型",
-    size: "tall",
-  },
-  {
-    title: "一件真丝上衣",
-    meta: "女士新中式 · EVERYDAY",
-    note: "盘扣、斜襟和轻盈面料，不只属于节日，也进入日常衣橱。",
-    image: "/images/site/silk-jacket.webp",
-    alt: "粉色真丝新中式女士上衣",
-    size: "short",
-  },
-  {
-    title: "见山",
-    meta: "男士服装 · MENSWEAR",
-    note: "克制的立领与宽松结构，为当代生活保留东方气韵。",
-    image: "/images/site/blue-shirt.webp",
-    alt: "蓝色棉麻新中式男士上衣",
-    size: "short",
-  },
-  {
-    title: "手作的时间",
-    meta: "缠花细节 · HANDCRAFT",
-    note: "当细小的丝线、花瓣和手势被保留下来，衣着也有了可被记住的温度。",
-    image: "/images/site/chanhua-worn.webp",
-    alt: "佩戴在新中式服装上的传统缠花饰品",
-    size: "tall",
+    id: "products",
+    group: "product",
+    eyebrow: "PRODUCT & CRAFT",
+    title: "按产品与工艺浏览",
+    intro: "从可进入日常的衣服，到制作过程与随身小物，看见品牌完整的产品语言。",
   },
 ];
 
@@ -57,28 +38,95 @@ export default function LookbookPage() {
       <SiteHeader market="cn" tone="paper" />
       <main id="main-content">
         <section className="paper-hero shell lookbook-hero">
-          <p className="eyebrow">LOOKBOOK · SELECTED WORKS</p>
-          <h1>每一件衣裳，<br />都因一个真实的人而完整。</h1>
-          <p>从仪式礼服到日常新中式，我们记录的不只是成衣，也记录衣服怎样进入身体、关系与生活。</p>
+          <p className="eyebrow">LOOKBOOK · CURATED COLLECTIONS</p>
+          <h1>从一个合集出发，<br />看见一件衣裳的完整故事。</h1>
+          <p>按产品、服务与真实场合进入不同作品合集；每一组都从轮廓延伸到细节、工艺与穿着关系。</p>
         </section>
 
-        <section className="lookbook-index shell" aria-label="作品范围">
-          <p>旗袍 · 婚礼礼服 · 女士新中式 · 男士服装 · 手作细节</p>
-          <span>SELECTED STUDIES · 2026</span>
-        </section>
+        <nav className="lookbook-index shell" aria-label="Lookbook 合集导航">
+          <p>
+            <a href="#services">服务与场合</a> · <a href="#products">产品与工艺</a> · <a href="#selected-studies">精选掠影</a>
+          </p>
+          <span>06 COLLECTIONS · 48 STUDIES</span>
+        </nav>
 
-        <section className="lookbook-gallery shell">
-          {works.map((work, index) => (
-            <article className={`gallery-work ${work.size}`} key={work.title}>
-              <figure className="gallery-image">
-                <SiteImage src={work.image} alt={work.alt} loading={index > 0 ? "lazy" : undefined} />
-                <span aria-hidden="true">0{index + 1}</span>
-              </figure>
-              <div className="gallery-caption">
-                <p>{work.meta}</p>
-                <h2>{work.title}</h2>
-                <p>{work.note}</p>
+        <section className="lookbook-collection-section shell" aria-label="作品合集">
+          {collectionGroups.map((group, groupIndex) => {
+            const collections = lookbookCollections.filter((collection) => collection.group === group.group);
+
+            return (
+              <div className="lookbook-collection-group" id={group.id} key={group.id}>
+                <header className="lookbook-group-heading">
+                  <p className="eyebrow">{group.eyebrow}</p>
+                  <div>
+                    <h2>{group.title}</h2>
+                    <p>{group.intro}</p>
+                  </div>
+                </header>
+
+                <div className="lookbook-collection-grid">
+                  {collections.map((collection, cardIndex) => (
+                    <Link
+                      className="lookbook-collection-card"
+                      href={`/lookbook/${collection.slug}`}
+                      key={collection.slug}
+                      aria-label={`查看${collection.title}合集`}
+                    >
+                      <figure>
+                        <SiteImage
+                          src={collection.cover.image}
+                          alt={collection.cover.alt}
+                          loading={groupIndex === 0 && cardIndex === 0 ? undefined : "lazy"}
+                          decoding="async"
+                          style={{ objectPosition: collection.cover.position }}
+                        />
+                        <span aria-hidden="true">{collection.number}</span>
+                      </figure>
+                      <div className="lookbook-collection-card-copy">
+                        <p>{collection.kind}</p>
+                        <h3>{collection.title}</h3>
+                        <span>{collection.english}</span>
+                        <p>{collection.deck}</p>
+                        <div>
+                          <small>{String(collection.studies.length + 1).padStart(2, "0")} STUDIES</small>
+                          <b aria-hidden="true">↗</b>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
+            );
+          })}
+        </section>
+
+        <section className="lookbook-gallery-heading shell" id="selected-studies">
+          <p className="eyebrow">SELECTED STUDIES · ALL COLLECTIONS</p>
+          <div>
+            <h2>全系列掠影</h2>
+            <p>保留原有的编辑式浏览节奏；点击任一作品，可继续进入它所属的完整合集。</p>
+          </div>
+        </section>
+
+        <section className="lookbook-gallery shell" aria-label="精选作品">
+          {lookbookWorks.map((work, index) => (
+            <article className={`gallery-work ${work.size}`} key={work.title}>
+              <Link className="gallery-work-link" href={`/lookbook/${work.collection}`}>
+                <figure className="gallery-image">
+                  <SiteImage
+                    src={work.image}
+                    alt={work.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                </figure>
+                <div className="gallery-caption">
+                  <p>{work.meta}</p>
+                  <h2>{work.title}</h2>
+                  <p>{work.note}</p>
+                </div>
+              </Link>
             </article>
           ))}
         </section>
