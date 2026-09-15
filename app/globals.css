@@ -1293,7 +1293,9 @@ select {
 
 .wechat-card img {
   width: 190px;
+  height: auto;
   aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .wechat-card span {
@@ -2258,6 +2260,9 @@ select {
 
 .contact-wechat-row img {
   width: 160px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .contact-wechat-row strong {

@@ -16,7 +16,7 @@ Future pushes to `main` will update the live site automatically.
 
 ## Contact form activation
 
-The first real form submission triggers an activation email from FormSubmit to `yiweixuexue@gmail.com`. Open that message and confirm the form once. Submissions made after confirmation will be delivered to that inbox.
+The first real form submission triggers an activation email from FormSubmit to `imartisanme@gmail.com`. Open that message and confirm the form once. Submissions made after confirmation will be delivered to that inbox.
 
 ## Local GitHub Pages build
 
