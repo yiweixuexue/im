@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 
-const SUBMISSION_ENDPOINT = "https://formsubmit.co/ajax/yiweixuexue@gmail.com";
+const SUBMISSION_ENDPOINT = "https://formsubmit.co/ajax/imartisanme@gmail.com";
 
 export function ConsultationForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -56,7 +56,7 @@ export function ConsultationForm() {
       <button className="button button-dark" type="submit" disabled={status === "sending"}>
         {status === "sending" ? "正在提交…" : "提交预约意向"}
       </button>
-      {status === "error" && <p className="form-error" role="alert">提交没有成功，请稍后重试，或直接发送邮件至 yiweixuexue@gmail.com。</p>}
+      {status === "error" && <p className="form-error" role="alert">提交没有成功，请稍后重试，或直接发送邮件至 imartisanme@gmail.com。</p>}
       <p className="form-hint">提交后，我们会尽快通过您留下的联系方式回复。</p>
     </form>
   );

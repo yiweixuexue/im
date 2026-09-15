@@ -57,8 +57,8 @@ export default function ContactPage() {
               <a href="https://www.instagram.com/imartisan_/" target="_blank" rel="noreferrer">
                 <span><small>PROCESS & DAILY STORIES</small><strong>Instagram · @ImArtisan_</strong></span><b aria-hidden="true">↗</b>
               </a>
-              <a href="mailto:yiweixuexue@gmail.com">
-                <span><small>GENERAL & COLLABORATION</small><strong>yiweixuexue@gmail.com</strong></span><b aria-hidden="true">↗</b>
+              <a href="mailto:imartisanme@gmail.com">
+                <span><small>GENERAL & COLLABORATION</small><strong>imartisanme@gmail.com</strong></span><b aria-hidden="true">↗</b>
               </a>
             </div>
             <p className="contact-response-note">Please include the product or project name, destination country and any relevant date. Replies are usually sent within 1–2 business days.</p>
