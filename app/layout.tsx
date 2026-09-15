@@ -5,29 +5,33 @@ const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: {
-    default: "屮微我｜新中式定制",
-    template: "%s｜屮微我",
+    default: "ImArtisan · 屮微我",
+    template: "%s · ImArtisan",
   },
-  description: "屮微我新中式定制工作室，以命理气韵、一对一专属设计与非遗手作，定制独属于你的东方风骨。",
+  description:
+    "屮微我东方审美定制服装与 ImArtisan 中国传统工艺精品：为中国客户提供专属定制，为国际客户呈现当代生活中的东方手艺。",
+  keywords: [
+    "ImArtisan",
+    "屮微我",
+    "Chinese heritage craft",
+    "新中式定制",
+    "旗袍定制",
+    "Bian embroidery",
+  ],
   other: { "codex-preview": "development" },
-  icons: { icon: `${siteBasePath}/favicon.svg`, shortcut: `${siteBasePath}/favicon.svg` },
+  icons: {
+    icon: `${siteBasePath}/favicon.svg`,
+    shortcut: `${siteBasePath}/favicon.svg`,
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body>
-        <style>{`:root {
-          --hero-image: url("${siteBasePath}/images/hero.png");
-          --modern-chinese-women-image: url("${siteBasePath}/images/modern-chinese-women.png");
-          --qipao-atelier-home-image: url("${siteBasePath}/images/qipao-atelier-home.png");
-          --mens-tailoring-home-image: url("${siteBasePath}/images/mens-tailoring-home.png");
-          --lookbook-women-image: url("${siteBasePath}/images/lookbook-women.webp");
-          --lookbook-men-image: url("${siteBasePath}/images/lookbook-men.png");
-          --craftsmanship-home-image: url("${siteBasePath}/images/DSC08884-2.jpg");
-          --scene-home-image: url("${siteBasePath}/images/1-出门旗袍DSC03800.jpg");
-          --accessories-home-image: url("${siteBasePath}/images/1-出门旗袍DSC03845.JPG");
-        }`}</style>
+        <a className="skip-link" href="#main-content">
+          Skip to content / 跳至正文
+        </a>
         {children}
       </body>
     </html>
