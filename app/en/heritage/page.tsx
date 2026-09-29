@@ -59,14 +59,64 @@ export default function HeritageCollectionPage() {
           </div>
         </section>
 
+        <section className="heritage-partner-feature section-space">
+          <div className="shell heritage-partner-grid">
+            <div className="heritage-partner-visuals">
+              <SiteImage
+                src="/images/site/lacquer/panda-wall.webp"
+                alt="Chengdu lacquer wall artwork featuring pandas and bamboo"
+                loading="lazy"
+              />
+              <SiteImage
+                src="/images/site/lacquer/teapot.webp"
+                alt="Textured Chengdu lacquer teapot"
+                loading="lazy"
+              />
+              <span>NEW PARTNER · 成都</span>
+            </div>
+            <div className="heritage-partner-copy">
+              <p className="eyebrow">NEW ARTISAN PARTNER · CHENGDU LACQUERWARE</p>
+              <h2>A new chapter in lacquer, built one layer at a time</h2>
+              <p>
+                Meet ImArtisan’s newest partner from Chengdu. Natural lacquer, repeated polishing and hand-worked
+                decoration give tea ware, adornments and objects for the home their depth and quiet lustre.
+              </p>
+              <div className="heritage-partner-notes" aria-label="Collection themes">
+                <span>TEA WARE</span>
+                <span>ADORNMENT</span>
+                <span>OBJECTS FOR THE HOME</span>
+              </div>
+              <Link className="button button-ink" href="/en/heritage/chengdu-lacquerware">
+                Meet the partner
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="heritage-collection section-space" id="collection">
           <div className="shell">
             <SectionHeading
               eyebrow="THE IMARTISAN EDIT · CURRENT SELECTION"
               title="Objects chosen to be used, gifted and kept"
-              intro="Current availability and dispatch timing are shown in the Etsy shop."
+              intro="Follow each object for its story and current availability."
             />
             <div className="product-grid product-grid-heritage">
+              <ProductCard
+                title="Chengdu Lacquerware for Tea"
+                chinese="成都漆器 · 茶器"
+                craft="NATURAL LACQUER · HAND FINISHED"
+                image="/images/site/lacquer/red-cup.webp"
+                href="/en/heritage/chengdu-lacquerware"
+                tag="NEW PARTNER"
+              />
+              <ProductCard
+                title="Chengdu Lacquer Adornments"
+                chinese="成都漆饰"
+                craft="WEARABLE LACQUER OBJECTS"
+                image="/images/site/lacquer/red-pendant.webp"
+                href="/en/heritage/chengdu-lacquerware#objects"
+                tag="COLLECTION STORY"
+              />
               <ProductCard
                 title="Blue Peony Evening Bag"
                 chinese="蓝色牡丹汴绣包"
