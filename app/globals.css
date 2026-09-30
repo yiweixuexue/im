@@ -4905,3 +4905,634 @@ select {
     aspect-ratio: auto;
   }
 }
+
+/* Taihe Xiangtang blended-incense partner */
+.incense-partner-feature {
+  background: #ebe2d3;
+}
+
+.incense-partner-feature .heritage-partner-visuals > img:first-child {
+  object-position: center 42%;
+}
+
+.incense-partner-feature .heritage-partner-visuals > img:nth-child(2) {
+  border-color: #ebe2d3;
+  object-position: center;
+}
+
+.incense-partner-feature .heritage-partner-visuals > span {
+  background: #80623e;
+}
+
+.incense-page {
+  background: #f6f1e8;
+}
+
+.incense-hero {
+  display: grid;
+  width: 100%;
+  min-height: 820px;
+  height: 100svh;
+  max-height: 1040px;
+  grid-template-columns: minmax(500px, 0.9fr) minmax(0, 1.1fr);
+  background: #252017;
+  color: white;
+}
+
+.incense-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 142px clamp(50px, 7vw, 112px) 74px;
+}
+
+.incense-back {
+  display: inline-block;
+  margin-bottom: clamp(58px, 8vh, 92px);
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.incense-hero-copy .eyebrow,
+.incense-principles .eyebrow,
+.incense-final .eyebrow {
+  color: #d3af76;
+}
+
+.incense-hero-copy h1 {
+  max-width: 720px;
+  margin: 0;
+  font: 400 clamp(59px, 6.2vw, 94px) / 1.02 var(--serif);
+  letter-spacing: -0.052em;
+}
+
+.incense-chinese {
+  margin: 22px 0 0;
+  color: #d3af76;
+  font: 21px var(--serif);
+  letter-spacing: 0.13em;
+}
+
+.incense-hero-lead {
+  max-width: 600px;
+  margin: 33px 0 38px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.incense-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+}
+
+.incense-hero-visual {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #9a754d;
+}
+
+.incense-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.incense-hero-visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(37, 32, 23, 0.25), transparent 27%);
+  content: "";
+  pointer-events: none;
+}
+
+.incense-hero-visual figcaption {
+  position: absolute;
+  right: 28px;
+  bottom: 27px;
+  z-index: 1;
+  padding: 11px 14px;
+  background: rgba(37, 32, 23, 0.82);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+}
+
+.incense-intro {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1.03fr) minmax(340px, 0.97fr);
+  gap: clamp(40px, 6vw, 88px);
+  align-items: start;
+}
+
+.incense-intro-title h2,
+.incense-principles-head h2,
+.incense-collection-head h2,
+.incense-bracelet-copy h2,
+.incense-final h2 {
+  margin: 0;
+  font: 400 clamp(43px, 4.8vw, 68px) / 1.17 var(--serif);
+  letter-spacing: -0.04em;
+}
+
+.incense-intro-copy {
+  padding-top: 41px;
+}
+
+.incense-intro-copy p {
+  margin: 0 0 25px;
+  color: var(--ash);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.incense-context {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.incense-context article {
+  display: grid;
+  min-height: 235px;
+  align-content: space-between;
+  padding: 27px 28px 31px;
+}
+
+.incense-context article + article {
+  border-left: 1px solid var(--line);
+}
+
+.incense-context span {
+  color: #9a7244;
+  font: 12px var(--serif);
+}
+
+.incense-context strong {
+  margin-top: 58px;
+  font: 400 clamp(25px, 2.6vw, 37px) var(--serif);
+  letter-spacing: 0.05em;
+}
+
+.incense-context p {
+  margin: 10px 0 0;
+  color: var(--ash);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.incense-principles {
+  margin-top: 132px;
+  background: #2a261f;
+  color: white;
+}
+
+.incense-principles-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  gap: clamp(70px, 10vw, 150px);
+  align-items: end;
+}
+
+.incense-principles-head > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.incense-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 84px;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.incense-principles-grid article {
+  min-height: 300px;
+  padding: 27px 25px 33px;
+}
+
+.incense-principles-grid article + article {
+  border-left: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.incense-principles-grid span {
+  color: #d3af76;
+  font: 11px var(--serif);
+}
+
+.incense-principles-grid strong {
+  display: block;
+  margin-top: 92px;
+  color: rgba(255, 255, 255, 0.9);
+  font: 400 clamp(25px, 2.4vw, 35px) var(--serif);
+  letter-spacing: 0.12em;
+}
+
+.incense-principles-grid p {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.incense-collection-head {
+  display: grid;
+  grid-template-columns: 0.52fr 1.48fr;
+  gap: clamp(48px, 8vw, 118px);
+  align-items: start;
+}
+
+.incense-collection-head > div > p {
+  max-width: 690px;
+  margin: 27px 0 0;
+  color: var(--ash);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.incense-studies {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 96px 24px;
+  margin-top: 132px;
+  align-items: start;
+}
+
+.incense-study {
+  margin: 0;
+}
+
+.incense-study:nth-child(1) {
+  grid-column: 1 / 7;
+}
+
+.incense-study:nth-child(2) {
+  grid-column: 8 / 13;
+  margin-top: 132px;
+}
+
+.incense-study:nth-child(3) {
+  grid-column: 2 / 6;
+}
+
+.incense-study:nth-child(4) {
+  grid-column: 7 / 13;
+  margin-top: 76px;
+}
+
+.incense-study:nth-child(5) {
+  grid-column: 1 / 5;
+  margin-top: 58px;
+}
+
+.incense-study:nth-child(6) {
+  grid-column: 6 / 12;
+}
+
+.incense-study:nth-child(7) {
+  grid-column: 2 / 6;
+}
+
+.incense-study:nth-child(8) {
+  grid-column: 7 / 12;
+  margin-top: 94px;
+}
+
+.incense-study img {
+  width: 100%;
+  aspect-ratio: 0.64;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.88);
+}
+
+.incense-study:nth-child(1) img,
+.incense-study:nth-child(4) img,
+.incense-study:nth-child(6) img {
+  aspect-ratio: 0.76;
+}
+
+.incense-study figcaption,
+.incense-bracelet figcaption {
+  margin-top: 13px;
+  color: var(--ash);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  line-height: 1.6;
+}
+
+.incense-bracelet {
+  background: #e8dfd1;
+}
+
+.incense-bracelet-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 34px 24px;
+  align-items: start;
+}
+
+.incense-bracelet figure {
+  margin: 0;
+}
+
+.incense-bracelet-flat {
+  grid-column: 1 / 8;
+}
+
+.incense-bracelet-flat img {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.incense-bracelet-copy {
+  grid-column: 9 / 13;
+  padding-top: clamp(45px, 8vw, 118px);
+}
+
+.incense-bracelet-copy > p:not(.eyebrow) {
+  margin: 27px 0 0;
+  color: var(--ash);
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.incense-bracelet-copy .arrow-link {
+  margin-top: 34px;
+}
+
+.incense-bracelet-worn {
+  grid-column: 2 / 6;
+  margin-top: 86px !important;
+}
+
+.incense-bracelet-worn img {
+  width: 100%;
+  aspect-ratio: 0.74;
+  object-fit: cover;
+}
+
+.incense-bracelet-detail {
+  grid-column: 7 / 13;
+  margin-top: 218px !important;
+}
+
+.incense-bracelet-detail img {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.incense-final {
+  background: #27231d;
+  color: white;
+}
+
+.incense-final-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(70px, 10vw, 150px);
+  align-items: end;
+}
+
+.incense-final-grid > div:last-child > p {
+  margin: 0 0 34px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+@media (max-width: 1100px) {
+  .incense-hero {
+    grid-template-columns: minmax(430px, 0.94fr) minmax(0, 1.06fr);
+  }
+
+  .incense-hero-copy {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: 980px) {
+  .incense-hero {
+    min-height: 760px;
+    grid-template-columns: 0.98fr 1.02fr;
+  }
+
+  .incense-hero-copy {
+    padding: 132px 35px 58px;
+  }
+
+  .incense-back {
+    margin-bottom: 48px;
+  }
+
+  .incense-hero-copy h1 {
+    font-size: clamp(50px, 7vw, 67px);
+  }
+
+  .incense-intro {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+  }
+
+  .incense-intro .vertical-label {
+    display: none;
+  }
+
+  .incense-principles-head,
+  .incense-final-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .incense-principles-head > p,
+  .incense-final-grid > div:last-child {
+    max-width: 680px;
+  }
+
+  .incense-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .incense-principles-grid article:nth-child(3) {
+    border-left: 0;
+  }
+
+  .incense-principles-grid article:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  }
+
+  .incense-collection-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .incense-studies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 68px 22px;
+    margin-top: 96px;
+  }
+
+  .incense-study:nth-child(n) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .incense-study:nth-child(2n) {
+    margin-top: 82px;
+  }
+
+  .incense-study img,
+  .incense-study:nth-child(1) img,
+  .incense-study:nth-child(4) img,
+  .incense-study:nth-child(6) img {
+    aspect-ratio: 0.67;
+  }
+
+  .incense-bracelet-flat {
+    grid-column: 1 / 8;
+  }
+
+  .incense-bracelet-copy {
+    grid-column: 8 / 13;
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .incense-hero {
+    height: auto;
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
+
+  .incense-hero-copy {
+    min-height: 730px;
+    padding: 132px 28px 70px;
+  }
+
+  .incense-back {
+    margin-bottom: 60px;
+  }
+
+  .incense-hero-copy h1 {
+    font-size: clamp(52px, 15vw, 66px);
+  }
+
+  .incense-hero-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .incense-hero-visual {
+    height: 710px;
+  }
+
+  .incense-intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .incense-intro-title h2,
+  .incense-principles-head h2,
+  .incense-collection-head h2,
+  .incense-bracelet-copy h2,
+  .incense-final h2 {
+    font-size: 39px;
+  }
+
+  .incense-intro-copy {
+    padding-top: 0;
+  }
+
+  .incense-context {
+    grid-template-columns: 1fr;
+  }
+
+  .incense-context article {
+    min-height: auto;
+    padding: 27px 0 30px;
+  }
+
+  .incense-context article + article {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .incense-context strong {
+    margin-top: 42px;
+  }
+
+  .incense-principles {
+    margin-top: 88px;
+  }
+
+  .incense-principles-grid {
+    grid-template-columns: 1fr;
+    margin-top: 62px;
+  }
+
+  .incense-principles-grid article {
+    min-height: 230px;
+  }
+
+  .incense-principles-grid article + article {
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+    border-left: 0;
+  }
+
+  .incense-principles-grid strong {
+    margin-top: 62px;
+  }
+
+  .incense-studies {
+    grid-template-columns: 1fr;
+    gap: 62px;
+    margin-top: 78px;
+  }
+
+  .incense-study:nth-child(2n) {
+    margin-top: 0;
+  }
+
+  .incense-study img,
+  .incense-study:nth-child(1) img,
+  .incense-study:nth-child(4) img,
+  .incense-study:nth-child(6) img {
+    aspect-ratio: auto;
+  }
+
+  .incense-bracelet-grid {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+  .incense-bracelet-flat,
+  .incense-bracelet-copy,
+  .incense-bracelet-worn,
+  .incense-bracelet-detail {
+    grid-column: auto;
+    margin-top: 0 !important;
+  }
+
+  .incense-bracelet-copy {
+    padding-top: 0;
+  }
+
+  .incense-bracelet-worn img {
+    aspect-ratio: auto;
+  }
+}
