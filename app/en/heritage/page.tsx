@@ -7,7 +7,7 @@ import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site
 export const metadata: Metadata = {
   title: "Heritage Collection",
   description:
-    "Explore ImArtisan's edit of Chinese embroidery, hand-wrapped floral ornaments and thoughtful objects, with clear cultural and material context.",
+    "Explore ImArtisan's edit of Chinese blended incense, lacquerware, embroidery and hand-wrapped floral ornaments, with clear cultural and material context.",
 };
 
 const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
@@ -59,6 +59,40 @@ export default function HeritageCollectionPage() {
           </div>
         </section>
 
+        <section className="heritage-partner-feature incense-partner-feature section-space">
+          <div className="shell heritage-partner-grid">
+            <div className="heritage-partner-visuals">
+              <SiteImage
+                src="/images/site/incense/round-cloud.webp"
+                alt="Round Taihe Xiangtang incense plaque with cloud-scroll relief"
+                loading="lazy"
+              />
+              <SiteImage
+                src="/images/site/incense/bracelet-worn.webp"
+                alt="Taihe Xiangtang blended-incense bracelet worn on the wrist"
+                loading="lazy"
+              />
+              <span>NEW PARTNER · 开封</span>
+            </div>
+            <div className="heritage-partner-copy">
+              <p className="eyebrow">NEW ARTISAN PARTNER · TAIHE XIANGTANG</p>
+              <h2>Fragrance, shaped for daily life</h2>
+              <p>
+                From Kaifeng, Taihe Xiangtang composes blended incense into carved plaques, pendants and a small
+                wrist ornament—forms designed to bring scent into the pace of everyday wearing.
+              </p>
+              <div className="heritage-partner-notes" aria-label="Collection themes">
+                <span>INCENSE PLAQUES</span>
+                <span>WEARABLE FORMS</span>
+                <span>KAIFENG HERITAGE</span>
+              </div>
+              <Link className="button button-ink" href="/en/heritage/taihe-xiangtang">
+                Discover Taihe Xiangtang
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="heritage-partner-feature section-space">
           <div className="shell heritage-partner-grid">
             <div className="heritage-partner-visuals">
@@ -72,13 +106,13 @@ export default function HeritageCollectionPage() {
                 alt="Textured Chengdu lacquer teapot"
                 loading="lazy"
               />
-              <span>NEW PARTNER · 成都</span>
+              <span>PARTNER · 成都</span>
             </div>
             <div className="heritage-partner-copy">
-              <p className="eyebrow">NEW ARTISAN PARTNER · CHENGDU LACQUERWARE</p>
+              <p className="eyebrow">ARTISAN PARTNER · CHENGDU LACQUERWARE</p>
               <h2>A new chapter in lacquer, built one layer at a time</h2>
               <p>
-                Meet ImArtisan’s newest partner from Chengdu. Natural lacquer, repeated polishing and hand-worked
+                Meet ImArtisan’s partner from Chengdu. Natural lacquer, repeated polishing and hand-worked
                 decoration give tea ware, adornments and objects for the home their depth and quiet lustre.
               </p>
               <div className="heritage-partner-notes" aria-label="Collection themes">
@@ -101,6 +135,22 @@ export default function HeritageCollectionPage() {
               intro="Follow each object for its story and current availability."
             />
             <div className="product-grid product-grid-heritage">
+              <ProductCard
+                title="Taihe Blended-Incense Plaques"
+                chinese="太和香堂 · 合香香牌"
+                craft="CLASSICAL HE XIANG · KAIFENG"
+                image="/images/site/incense/round-cloud.webp"
+                href="/en/heritage/taihe-xiangtang"
+                tag="NEW PARTNER"
+              />
+              <ProductCard
+                title="Taihe He Xiang Bracelet"
+                chinese="太和香堂 · 合香手链"
+                craft="WEARABLE INCENSE ORNAMENT"
+                image="/images/site/incense/bracelet-worn-portrait.webp"
+                href="/en/heritage/taihe-xiangtang#bracelet"
+                tag="NEW FORM"
+              />
               <ProductCard
                 title="Chengdu Lacquerware for Tea"
                 chinese="成都漆器 · 茶器"
