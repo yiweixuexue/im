@@ -11,6 +11,7 @@ type NavItem = {
 
 const navByMarket: Record<Market, NavItem[]> = {
   home: [
+    { label: "Partnerships", href: "/en/partnerships" },
     { label: "About", href: "/about" },
     { label: "Journal", href: "/journal" },
     { label: "Contact", href: "/contact" },
@@ -27,10 +28,9 @@ const navByMarket: Record<Market, NavItem[]> = {
   en: [
     { label: "Home", href: "/" },
     { label: "Heritage Collection", href: "/en/heritage" },
+    { label: "Gifts & Partnerships", href: "/en/partnerships" },
     { label: "Craft Journal", href: "/journal" },
     { label: "About", href: "/about#english" },
-    { label: "Care & Shipping", href: "/care" },
-    { label: "Ceremonial Custom", href: "/en/custom" },
     { label: "Contact", href: "/contact" },
   ],
 };
@@ -155,10 +155,12 @@ export function SiteFooter() {
         <div className="footer-column">
           <p>INTERNATIONAL</p>
           <Link href="/en/heritage">Heritage Collection</Link>
+          <Link href="/en/partnerships">Gifts & Partnerships</Link>
           <a href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">
             Shop on Etsy
           </a>
           <Link href="/care">Care & Shipping</Link>
+          <Link href="/en/custom">Ceremonial Custom</Link>
         </div>
         <div className="footer-column">
           <p>STUDIO</p>

@@ -51,6 +51,9 @@ export default function ContactPage() {
               <p>For product questions, Etsy orders, press, maker relationships and selected ceremonial commissions.</p>
             </div>
             <div className="contact-link-list">
+              <Link href="/en/partnerships#inquiry">
+                <span><small>BUSINESS & CULTURAL PARTNERSHIPS</small><strong>Gifts, wholesale & cultural programs</strong></span><b aria-hidden="true">↗</b>
+              </Link>
               <a href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">
                 <span><small>SHOP & ORDER MESSAGES</small><strong>Etsy · ImArtisanStudio</strong></span><b aria-hidden="true">↗</b>
               </a>

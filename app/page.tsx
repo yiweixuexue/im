@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PartnershipInvitation } from "../components/partnership-invitation";
 import { ProductCard } from "../components/product-card";
 import { SiteImage } from "../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../components/site-shell";
@@ -123,6 +124,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <PartnershipInvitation />
 
         <section className="home-custom section-space" lang="zh-CN">
           <div className="shell home-custom-grid">
