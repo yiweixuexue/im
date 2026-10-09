@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PartnershipInvitation } from "../../../components/partnership-invitation";
 import { ProductCard } from "../../../components/product-card";
 import { SiteImage } from "../../../components/site-image";
 import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site-shell";
@@ -258,6 +259,8 @@ export default function HeritageCollectionPage() {
           </div>
           <SiteImage src="/images/site/gift-packaging.webp" alt="Kraft gift box tied with an ivory ribbon" loading="lazy" />
         </section>
+
+        <PartnershipInvitation />
 
         <section className="custom-supplement section-space">
           <div className="shell custom-supplement-grid">
