@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ContactLeadForm } from "../../components/contact-lead-form";
 import { SiteImage } from "../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../components/site-shell";
 
@@ -65,6 +66,7 @@ export default function ContactPage() {
               </a>
             </div>
             <p className="contact-response-note">Please include the product or project name, destination country and any relevant date. Replies are usually sent within 1–2 business days.</p>
+            <ContactLeadForm />
           </article>
         </section>
 
