@@ -51,6 +51,7 @@ export default function ContactPage() {
               <h2>Craft, orders & collaborations</h2>
               <p>For product questions, Etsy orders, press, maker relationships and selected ceremonial commissions.</p>
             </div>
+            <ContactLeadForm />
             <div className="contact-link-list">
               <Link href="/en/partnerships#inquiry">
                 <span><small>BUSINESS & CULTURAL PARTNERSHIPS</small><strong>Gifts, wholesale & cultural programs</strong></span><b aria-hidden="true">↗</b>
@@ -66,7 +67,6 @@ export default function ContactPage() {
               </a>
             </div>
             <p className="contact-response-note">Please include the product or project name, destination country and any relevant date. Replies are usually sent within 1–2 business days.</p>
-            <ContactLeadForm />
           </article>
         </section>
 
