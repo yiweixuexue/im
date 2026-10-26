@@ -16,8 +16,8 @@ export default function Home() {
             <SiteImage src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼定制服装案例" />
             <span className="gateway-shade" aria-hidden="true" />
             <div className="gateway-panel-copy">
-              <p>CHINA · BESPOKE CLOTHING</p>
-              <h2>为中国客户<br />探索定制服装</h2>
+              <p>BESPOKE CLOTHING · CHINA</p>
+              <h2>从你的生活出发<br />定制真正适合的衣服</h2>
               <span className="gateway-action">进入中文站 <b aria-hidden="true">↗</b></span>
             </div>
           </Link>
@@ -26,8 +26,8 @@ export default function Home() {
             <SiteImage src="/images/site/chanhua-making.webp" alt="Hands shaping a traditional wrapped silk flower" />
             <span className="gateway-shade" aria-hidden="true" />
             <div className="gateway-panel-copy">
-              <p>INTERNATIONAL · HERITAGE CRAFT</p>
-              <h2>Discover craft<br />made to be lived with</h2>
+              <p>HERITAGE CRAFT · INTERNATIONAL</p>
+              <h2>Craft with a past.<br />A place in life today.</h2>
               <span className="gateway-action">Enter international site <b aria-hidden="true">↗</b></span>
             </div>
           </Link>
@@ -81,37 +81,40 @@ export default function Home() {
             <SectionHeading
               eyebrow="THE IMARTISAN EDIT"
               title="Tradition, translated into objects for now"
-              intro="Pieces chosen for the intelligence of their making—not simply for looking ‘traditional.’"
+              intro="Start with objects you can enjoy now. Explore the makers, techniques and ideas that give them depth."
             />
             <div className="product-grid">
               <ProductCard
-                title="Blue Peony Evening Bag"
-                chinese="蓝色牡丹汴绣包"
-                craft="TRADITIONAL BIAN EMBROIDERY"
-                image="/images/site/blue-peony-bag.webp"
-                href="/en/heritage/blue-peony-bag"
-                tag="FEATURED"
-              />
-              <ProductCard
-                title="Red Peony Evening Bag"
-                chinese="红色牡丹汴绣包"
-                craft="TRADITIONAL BIAN EMBROIDERY"
-                image="/images/site/red-peony-bag.webp"
-                href={etsyShop}
+                title="Tulip Wrapped-Flower Brooch"
+                chinese="郁金香缠花胸针"
+                craft="CHANHUA · THREAD-WRAPPED FLORAL ART"
+                image="/images/site/tulip-brooch.webp"
+                href="/en/heritage/chanhua"
+                status="available"
               />
               <ProductCard
                 title="Olive Berry Hair Ornament"
                 chinese="橄榄枝缠花发饰"
-                craft="HAND-WRAPPED SILK THREAD"
-                image="/images/site/olive-hairpin.webp"
-                href={etsyShop}
+                craft="CHANHUA · HAND-WRAPPED THREAD"
+                image="/images/site/chanhua-worn.webp"
+                href="/en/heritage/chanhua"
+                status="available"
               />
               <ProductCard
-                title="Tulip Brooch"
-                chinese="郁金香缠花胸针"
-                craft="CONTEMPORARY CHANHUA"
-                image="/images/site/tulip-brooch.webp"
-                href={etsyShop}
+                title="Embroidered Lion Charm"
+                chinese="醒狮刺绣挂件"
+                craft="EMBROIDERED TEXTILE ORNAMENT"
+                image="/images/site/lion-charm.webp"
+                href="/en/heritage/lion-charm"
+                status="available"
+              />
+              <ProductCard
+                title="Blended-Incense Plaques"
+                chinese="太和香堂 · 合香香牌"
+                craft="HE XIANG · KAIFENG"
+                image="/images/site/incense/round-cloud.webp"
+                href="/en/heritage/taihe-xiangtang"
+                status="coming"
               />
             </div>
             <div className="collection-actions">
@@ -119,9 +122,33 @@ export default function Home() {
                 View the collection
               </Link>
               <a className="text-link" href={etsyShop} target="_blank" rel="noreferrer">
-                Shop availability on Etsy <span aria-hidden="true">↗</span>
+                Browse current Etsy listings <span aria-hidden="true">↗</span>
               </a>
             </div>
+          </div>
+        </section>
+
+
+        <section className="bridge-section section-space shell" aria-labelledby="bridge-heading">
+          <div className="bridge-image">
+            <SiteImage src="/images/site/chanhua-making.webp" alt="Hands shaping a wrapped-thread flower ornament" loading="lazy" />
+          </div>
+          <div className="bridge-copy">
+            <p className="eyebrow">WHAT IMARTISAN DOES</p>
+            <h2 id="bridge-heading">A bridge between the maker and the life of the object.</h2>
+            <p>We listen in both directions: to the knowledge and working limits of each craft, and to the needs of the people who choose to live with it. Our role is not to decide what everyone should find beautiful, but to make meaningful connections possible.</p>
+            <Link className="arrow-link" href="/makers">Meet the makers &amp; studios <span aria-hidden="true">→</span></Link>
+          </div>
+        </section>
+        <section className="studio-story section-space">
+          <div className="shell studio-story-grid">
+            <div>
+              <p className="eyebrow">FROM CRAFT TO CONTEMPORARY LIFE</p>
+              <h2>Not every craft belongs on every object.</h2>
+              <p>Each new idea begins with a question about suitability. A fine embroidered panel and a frequently handled hair accessory have very different demands for durability, structure and care.</p>
+              <Link className="arrow-link" href="/journal/where-craft-belongs">Follow our product-development thinking <span aria-hidden="true">→</span></Link>
+            </div>
+            <SiteImage src="/images/site/lacquer/process-painting.webp" alt="Hand decoration during a traditional lacquer process" loading="lazy" />
           </div>
         </section>
 
@@ -137,12 +164,12 @@ export default function Home() {
               <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
               <h2>从“认识你”开始，<br />而不是从一件现成衣服开始。</h2>
               <p>
-                命理气韵提供色彩与材质的灵感，一对一设计回应体型、场合与生活方式，手工细节让衣服拥有无法复制的温度。
+                以真实生活、体型、场合与个人偏好为起点，通过一对一设计、试衣调整和传统手工细节，让衣服贴近穿着者的需要。传统文化灵感可以自由选择，而非必需。
               </p>
               <div className="custom-pillars">
-                <span>命理气韵</span>
+                <span>理解需求</span>
                 <span>专属风格</span>
-                <span>非遗手作</span>
+                <span>传统手工细节</span>
               </div>
               <Link className="button button-paper" href="/cn/custom">
                 开始了解定制
@@ -189,10 +216,10 @@ export default function Home() {
                 <span>HERITAGE JOURNAL</span>
                 <h3>From brush-like shading to thread</h3>
               </Link>
-              <Link href="/journal#studio" className="journal-tease-card">
+              <Link href="/journal/where-craft-belongs" className="journal-tease-card">
                 <SiteImage src="/images/site/chanhua-making.webp" alt="Hands cutting velvet for a wrapped flower" loading="lazy" />
                 <span>STUDIO JOURNAL</span>
-                <h3>Why patient hands still matter</h3>
+                <h3>Where does a craft truly belong?</h3>
               </Link>
               <Link href="/journal#notes" className="journal-tease-card">
                 <SiteImage src="/images/site/gift-packaging.webp" alt="ImArtisan gift-ready kraft box and ribbon" loading="lazy" />
