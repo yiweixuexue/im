@@ -5653,3 +5653,52 @@ select {
     aspect-ratio: auto;
   }
 }
+
+
+/* ImArtisan editorial refresh · October 2026 */
+.product-card-image .product-status{position:absolute;top:16px;left:16px;right:auto;bottom:auto;padding:9px 12px;background:#f7f3eb;color:#232923;letter-spacing:.12em;font-size:10px;font-weight:700;border:1px solid rgba(30,41,34,.15);z-index:2}
+.product-card-image .product-status-available{background:#e5ece5;color:#304b39}
+.product-card-image .product-status-coming{background:#ece7dc;color:#64543a}
+.product-card-image .product-status-past{background:#edeae5;color:#65635e}
+.bridge-section{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,7vw,110px);align-items:center}
+.bridge-image img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.bridge-copy h2,.studio-story h2,.editorial-hero h1,.editorial-article h1{font-family:var(--serif);font-weight:400;line-height:1.1;letter-spacing:-.025em}
+.bridge-copy h2,.studio-story h2{font-size:clamp(34px,4vw,65px);margin:0 0 28px}
+.bridge-copy>p:not(.eyebrow),.studio-story p:not(.eyebrow){font-size:clamp(15px,1.35vw,18px);line-height:1.85;color:var(--ash);max-width:620px}
+.studio-story{background:var(--paper-deep)}
+.studio-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,100px);align-items:center}
+.studio-story-grid>img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.editorial-hero{padding-top:clamp(150px,16vw,230px);padding-bottom:clamp(65px,9vw,130px);max-width:960px}
+.editorial-hero h1{font-size:clamp(48px,7.4vw,104px);margin:0 0 30px}
+.editorial-hero>p:not(.eyebrow){max-width:700px;color:var(--ash);font-size:clamp(16px,1.65vw,22px);line-height:1.7}
+.editorial-hero .button{margin-top:22px}
+.editorial-hero .availability-note{font-size:13px!important;max-width:630px;margin-top:18px}
+.editorial-media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding-bottom:110px}
+.editorial-media-grid figure,.editorial-article figure{margin:0}
+.editorial-media-grid img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.editorial-media-grid figcaption,.editorial-article figcaption{font-size:10px;letter-spacing:.12em;color:var(--ash);line-height:1.7;padding-top:14px}
+.editorial-media-grid-short{grid-template-columns:1fr 1fr;align-items:center}
+.editorial-media-grid-short h2,.editorial-section h2,.editorial-article h2{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.15}
+.editorial-media-grid-short>div>p,.editorial-section>p:not(.eyebrow),.editorial-article p{font-size:17px;color:var(--ash);line-height:1.85}
+.editorial-section{max-width:900px;padding-block:90px 135px}
+.maker-editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding-bottom:50px}
+.maker-editorial-grid img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.maker-editorial-grid article .eyebrow{margin:22px 0 12px;font-size:10px}
+.maker-editorial-grid h2{font:400 clamp(23px,2.4vw,34px)/1.3 var(--serif);margin:0 0 14px}
+.maker-editorial-grid article>p:not(.eyebrow){font-size:15px;line-height:1.8;color:var(--ash)}
+.editorial-article{max-width:900px;padding-top:clamp(150px,16vw,220px);padding-bottom:140px}
+.editorial-article h1{font-size:clamp(48px,7vw,92px);margin:0 0 35px}
+.editorial-article .editorial-lead{font-size:clamp(20px,2vw,28px);line-height:1.6;color:var(--ink-soft);margin-bottom:75px}
+.editorial-article figure{margin-bottom:75px}
+.editorial-article figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.editorial-article h2{margin-top:65px}
+@media(max-width:800px){
+.bridge-section,.studio-story-grid,.editorial-media-grid-short{grid-template-columns:1fr}
+.bridge-image img{aspect-ratio:5/4}
+.studio-story-grid>img{aspect-ratio:5/4}
+.editorial-media-grid,.maker-editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.editorial-media-grid{padding-bottom:65px}
+.editorial-hero{padding-top:150px;padding-bottom:65px}
+}
+@media(max-width:560px){.editorial-media-grid,.maker-editorial-grid{grid-template-columns:1fr}.editorial-hero h1{font-size:clamp(44px,11vw,60px)}.editorial-article .editorial-lead{margin-bottom:45px}.editorial-article figure{margin-bottom:45px}}
+@media(prefers-reduced-motion:reduce){.product-card,.button,.arrow-link{transition:none}}
