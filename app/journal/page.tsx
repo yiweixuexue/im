@@ -95,8 +95,8 @@ export default function JournalPage() {
                       small acts: preparing the frame, wrapping thread evenly, shaping, joining and adjusting. A
                       finished ornament looks light because the structure beneath it has been carefully controlled.
                     </p>
-                    <Link className="arrow-link" href="/en/heritage">
-                      Explore wrapped floral ornaments <span aria-hidden="true">→</span>
+                    <Link className="arrow-link" href="/journal/where-craft-belongs">
+                      Read our product-development note <span aria-hidden="true">→</span>
                     </Link>
                   </div>
                 ) : null}
@@ -117,6 +117,7 @@ export default function JournalPage() {
           </section>
         ))}
 
+        <section className="shell editorial-section"><p className="eyebrow">STUDIO JOURNAL · NEW ESSAY</p><h2>Where does a craft truly belong?</h2><p>We explore how to match a traditional technique to the daily demands of a useful object, from material and wear to cost and cultural integrity.</p><Link className="arrow-link" href="/journal/where-craft-belongs">Read the full essay →</Link></section>
         <section className="language-note section-space shell">
           <SectionHeading
             eyebrow="A NOTE ON LANGUAGE"
