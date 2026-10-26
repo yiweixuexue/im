@@ -19,13 +19,13 @@ export default function HeritageCollectionPage() {
       <SiteHeader market="en" tone="light" />
       <main id="main-content">
         <section className="market-hero heritage-market-hero">
-          <SiteImage src="/images/site/blue-peony-bag.webp" alt="Blue peony evening bag with traditional Bian embroidery" />
+          <SiteImage src="/images/site/chanhua-worn.webp" alt="Hand-wrapped silk flower ornament worn in contemporary life" />
           <div className="market-hero-shade" aria-hidden="true" />
           <div className="shell market-hero-copy">
             <p className="eyebrow">IMARTISAN · HERITAGE COLLECTION</p>
             <h1>Craft with a past.<br />Objects with a life now.</h1>
             <p>
-              Chinese heritage craft and thoughtful objects, presented through the hands, techniques and
+              Available ornaments, forthcoming collaborations and an archive of past pieces—presented through the people, techniques and
               cultural ideas that give them meaning.
             </p>
             <div className="hero-button-row">
@@ -73,10 +73,10 @@ export default function HeritageCollectionPage() {
                 alt="Taihe Xiangtang blended-incense bracelet worn on the wrist"
                 loading="lazy"
               />
-              <span>NEW PARTNER · 开封</span>
+              <span>COMING SOON · 开封</span>
             </div>
             <div className="heritage-partner-copy">
-              <p className="eyebrow">NEW ARTISAN PARTNER · TAIHE XIANGTANG</p>
+              <p className="eyebrow">COMING SOON · TAIHE XIANGTANG</p>
               <h2>Fragrance, shaped for daily life</h2>
               <p>
                 From Kaifeng, Taihe Xiangtang composes blended incense into carved plaques, pendants and a small
@@ -107,10 +107,10 @@ export default function HeritageCollectionPage() {
                 alt="Textured Chengdu lacquer teapot"
                 loading="lazy"
               />
-              <span>PARTNER · 成都</span>
+              <span>COMING SOON · 成都</span>
             </div>
             <div className="heritage-partner-copy">
-              <p className="eyebrow">ARTISAN PARTNER · CHENGDU LACQUERWARE</p>
+              <p className="eyebrow">COMING SOON · CHENGDU LACQUERWARE</p>
               <h2>A new chapter in lacquer, built one layer at a time</h2>
               <p>
                 Meet ImArtisan’s partner from Chengdu. Natural lacquer, repeated polishing and hand-worked
@@ -132,85 +132,17 @@ export default function HeritageCollectionPage() {
           <div className="shell">
             <SectionHeading
               eyebrow="THE IMARTISAN EDIT · CURRENT SELECTION"
-              title="Objects chosen to be used, gifted and kept"
-              intro="Follow each object for its story and current availability."
+              title="Discover, choose and follow the making"
+              intro="Available Now: wrapped-flower ornaments and lion charms. Coming Soon: blended incense and lacquer. Past Collection: Bian embroidery bags, kept as an archive of our work."
             />
             <div className="product-grid product-grid-heritage">
-              <ProductCard
-                title="Taihe Blended-Incense Plaques"
-                chinese="太和香堂 · 合香香牌"
-                craft="CLASSICAL HE XIANG · KAIFENG"
-                image="/images/site/incense/round-cloud.webp"
-                href="/en/heritage/taihe-xiangtang"
-                tag="NEW PARTNER"
-              />
-              <ProductCard
-                title="Taihe He Xiang Bracelet"
-                chinese="太和香堂 · 合香手链"
-                craft="WEARABLE INCENSE ORNAMENT"
-                image="/images/site/incense/bracelet-worn-portrait.webp"
-                href="/en/heritage/taihe-xiangtang#bracelet"
-                tag="NEW FORM"
-              />
-              <ProductCard
-                title="Chengdu Lacquerware for Tea"
-                chinese="成都漆器 · 茶器"
-                craft="NATURAL LACQUER · HAND FINISHED"
-                image="/images/site/lacquer/red-cup.webp"
-                href="/en/heritage/chengdu-lacquerware"
-                tag="NEW PARTNER"
-              />
-              <ProductCard
-                title="Chengdu Lacquer Adornments"
-                chinese="成都漆饰"
-                craft="WEARABLE LACQUER OBJECTS"
-                image="/images/site/lacquer/red-pendant.webp"
-                href="/en/heritage/chengdu-lacquerware#objects"
-                tag="COLLECTION STORY"
-              />
-              <ProductCard
-                title="Blue Peony Evening Bag"
-                chinese="蓝色牡丹汴绣包"
-                craft="TRADITIONAL BIAN EMBROIDERY"
-                image="/images/site/blue-peony-bag.webp"
-                href="/en/heritage/blue-peony-bag"
-                tag="STORY + DETAILS"
-              />
-              <ProductCard
-                title="Red Peony Evening Bag"
-                chinese="红色牡丹汴绣包"
-                craft="TRADITIONAL BIAN EMBROIDERY"
-                image="/images/site/red-peony-bag.webp"
-                href={etsyShop}
-              />
-              <ProductCard
-                title="Olive Berry Hair Ornament"
-                chinese="橄榄枝缠花发饰"
-                craft="HAND-WRAPPED SILK THREAD"
-                image="/images/site/chanhua-worn.webp"
-                href={etsyShop}
-              />
-              <ProductCard
-                title="Tulip Brooch"
-                chinese="郁金香缠花胸针"
-                craft="CONTEMPORARY CHANHUA"
-                image="/images/site/tulip-brooch.webp"
-                href={etsyShop}
-              />
-              <ProductCard
-                title="Lion Embroidered Charm"
-                chinese="醒狮刺绣挂件"
-                craft="EMBROIDERED TEXTILE ORNAMENT"
-                image="/images/site/lion-charm.webp"
-                href={etsyShop}
-              />
-              <ProductCard
-                title="Tulip for Ceremony"
-                chinese="郁金香缠花胸针"
-                craft="WEARABLE FLORAL ORNAMENT"
-                image="/images/site/tulip-ceremony.webp"
-                href={etsyShop}
-              />
+              <ProductCard title="Olive Berry Hair Ornament" chinese="橄榄枝缠花发饰" craft="HAND-WRAPPED SILK THREAD" image="/images/site/chanhua-worn.webp" href="/en/heritage/chanhua" status="available" />
+              <ProductCard title="Tulip Brooch" chinese="郁金香缠花胸针" craft="CONTEMPORARY CHANHUA" image="/images/site/tulip-brooch.webp" href="/en/heritage/chanhua" status="available" />
+              <ProductCard title="Lion Embroidered Charm" chinese="醒狮刺绣挂件" craft="EMBROIDERED TEXTILE ORNAMENT" image="/images/site/lion-charm.webp" href="/en/heritage/lion-charm" status="available" />
+              <ProductCard title="Taihe Blended-Incense Plaques" chinese="太和香堂 · 合香香牌" craft="HE XIANG · KAIFENG" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="coming" />
+              <ProductCard title="Chengdu Lacquerware" chinese="成都大漆产品" craft="TRADITIONAL LACQUER · CHENGDU" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="coming" />
+              <ProductCard title="Blue Peony Evening Bag" chinese="蓝色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/blue-peony-bag.webp" href="/en/heritage/blue-peony-bag" status="past" />
+              <ProductCard title="Red Peony Evening Bag" chinese="红色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/red-peony-bag.webp" href="/en/heritage/blue-peony-bag#archive" status="past" />
             </div>
           </div>
         </section>

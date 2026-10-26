@@ -152,8 +152,7 @@ export default function ChengduLacquerwarePage() {
             <div>
               <h2>Objects for daily ritual, wearing and display</h2>
               <p>
-                A first look at the partner’s range. Individual availability and detailed specifications are
-                confirmed directly with ImArtisan.
+                A first look at the partner’s range. The collection is coming soon; the images are an introduction to craft forms, not an offer to purchase.
               </p>
             </div>
           </div>
@@ -231,13 +230,13 @@ export default function ChengduLacquerwarePage() {
         <section className="lacquer-final section-space">
           <div className="shell lacquer-final-grid">
             <div>
-              <p className="eyebrow">MEET THE NEW PARTNER</p>
+              <p className="eyebrow">COMING SOON · CRAFT PREVIEW</p>
               <h2>Made in Chengdu.<br />Introduced with context.</h2>
             </div>
             <div>
               <p>
                 ImArtisan will introduce this collection gradually as each object, material and making process is
-                documented. For current pieces, sourcing enquiries or collaboration, speak with us directly.
+                documented. This collection is coming soon. Product specifications, confirmed production capacity and purchasing information will be shared once ready.
               </p>
               <Link className="button button-paper" href="/contact#international">
                 Contact ImArtisan

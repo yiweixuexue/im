@@ -9,8 +9,6 @@ export const metadata: Metadata = {
     "Discover the materials, dimensions, cultural background and care of ImArtisan's blue peony Bian embroidery evening bag.",
 };
 
-const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
-
 const productDetails = [
   ["Chinese name", "蓝色牡丹汴绣包"],
   ["Pinyin", "Lán sè mǔdān Biànxiù bāo"],
@@ -18,7 +16,7 @@ const productDetails = [
   ["Materials", "Embroidered textile panel, textile body and lining, gold-tone metal frame, top handle and chain strap"],
   ["Dimensions", "Approx. 31 W × 20.5 H × 9.2 D cm / 12.2 × 8.1 × 3.6 in"],
   ["Chain", "Approx. 44 cm / 17.3 in"],
-  ["Making & dispatch", "Produced in small quantities; current timing is confirmed on the Etsy listing"],
+  ["Collection status", "Past Collection · archived for its craftsmanship and design story; not currently available for purchase"],
 ];
 
 export default function BluePeonyBagPage() {
@@ -42,7 +40,7 @@ export default function BluePeonyBagPage() {
             <Link className="product-back" href="/en/heritage">
               ← Heritage Collection
             </Link>
-            <p className="eyebrow">THE IMARTISAN EDIT · CARRY</p>
+            <p className="eyebrow">PAST COLLECTION · DESIGN ARCHIVE</p>
             <h1>Blue Peony<br />Evening Bag</h1>
             <p className="product-chinese">蓝色牡丹汴绣包</p>
             <p className="product-lead">
@@ -50,18 +48,16 @@ export default function BluePeonyBagPage() {
               frame.
             </p>
             <div className="product-actions">
-              <a className="button button-ink" href={etsyShop} target="_blank" rel="noreferrer">
-                Check availability on Etsy
-              </a>
+              <Link className="button button-ink" href="/en/heritage#collection">Explore available pieces</Link>
               <Link className="text-link" href="/contact#international">
                 Ask a question <span aria-hidden="true">↗</span>
               </Link>
             </div>
-            <p className="availability-note">Availability, price and dispatch timing are kept current in the Etsy shop.</p>
+            <p className="availability-note">This bag belongs to our Past Collection. It is shown for its making, material and design history—not offered for sale.</p>
           </aside>
         </section>
 
-        <section className="product-story section-space">
+        <section className="product-story section-space" id="archive">
           <div className="shell product-story-grid">
             <div>
               <p className="eyebrow">CULTURAL BACKGROUND</p>
@@ -129,9 +125,7 @@ export default function BluePeonyBagPage() {
             <p className="eyebrow">MORE THAN A BAG</p>
             <h2>An image to carry. A piece of handwork to keep.</h2>
             <div>
-              <a className="button button-paper" href={etsyShop} target="_blank" rel="noreferrer">
-                Visit ImArtisanStudio on Etsy
-              </a>
+              <Link className="button button-paper" href="/en/heritage#collection">See the current collection</Link>
               <Link className="text-link text-link-light" href="/journal#heritage">
                 Read the craft story <span aria-hidden="true">→</span>
               </Link>

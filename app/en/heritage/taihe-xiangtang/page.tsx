@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 export const metadata: Metadata = {
   title: "Taihe Xiangtang Blended Incense",
   description:
-    "Meet Taihe Xiangtang, ImArtisan's new Kaifeng partner, and discover classical blended-incense plaques, wearable pendants and a he xiang bracelet.",
+    "Meet Taihe Xiangtang, ImArtisan's Kaifeng craft partner, and discover classical blended-incense plaques, wearable pendants and a he xiang bracelet.",
 };
 
 const principles = [
@@ -235,7 +235,7 @@ export default function TaiheXiangtangPage() {
         <section className="incense-final section-space">
           <div className="shell incense-final-grid">
             <div>
-              <p className="eyebrow">MEET THE NEW PARTNER</p>
+              <p className="eyebrow">COMING SOON · CRAFT PREVIEW</p>
               <h2>Discover slowly.<br />Wear closely.</h2>
             </div>
             <div>
