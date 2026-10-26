@@ -45,7 +45,7 @@ export default function ChineseCustomPage() {
           <div className="shell market-hero-copy">
             <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
             <h1>不先定义你，<br />只先理解你。</h1>
-            <p>以命理气韵为灵感，以一对一风格设计与手工细节，完成一件真正属于你的衣服。</p>
+            <p>从你的身体、场合、日常与审美选择出发，以一对一风格设计、试样调整与细致手工，完成一件真正属于你的衣服。传统文化意象可作为自愿选择的灵感。</p>
             <div className="hero-button-row">
               <Link className="button button-paper" href="/contact#wechat">
                 预约 15 分钟灵感对谈
