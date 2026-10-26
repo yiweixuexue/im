@@ -19,11 +19,11 @@ const services = [
 
 const pieces = [
   { name: "Embroidered lion charms", craft: "A SMALL GESTURE OF GOOD WISHES", image: "lion-charm.webp", alt: "Colorful embroidered Chinese lion charms with tassels", text: "A lively starting point for seasonal celebrations and guest gifting.", href: "/en/heritage#collection" },
-  { name: "Blended-incense objects", craft: "TAIHE XIANGTANG · KAIFENG", image: "incense/round-cloud.webp", alt: "Carved round incense plaque from Taihe Xiangtang", text: "Sculpted plaques and wearable forms rooted in Chinese scent culture.", href: "/en/heritage/taihe-xiangtang" },
-  { name: "Chengdu lacquerware", craft: "LAYERED COLOR & HAND FINISHING", image: "lacquer/red-pendant.webp", alt: "Red Chengdu lacquer pendant", text: "Small adornments and selected objects for distinctive retail or personal gifts.", href: "/en/heritage/chengdu-lacquerware" },
+  { name: "Blended-incense objects", craft: "TAIHE XIANGTANG · KAIFENG", image: "incense/round-cloud.webp", alt: "Carved round incense plaque from Taihe Xiangtang", text: "Coming Soon: sculpted plaques and wearable forms rooted in Chinese scent culture.", href: "/en/heritage/taihe-xiangtang" },
+  { name: "Chengdu lacquerware", craft: "LAYERED COLOR & HAND FINISHING", image: "lacquer/red-pendant.webp", alt: "Red Chengdu lacquer pendant", text: "Coming Soon: lacquer adornments and selected objects, pending product details.", href: "/en/heritage/chengdu-lacquerware" },
   { name: "Hand-wrapped floral brooches", craft: "CHANHUA · THREAD INTO PETALS", image: "tulip-brooch.webp", alt: "Hand-wrapped tulip brooches", text: "A wearable floral detail for celebrations, appreciation and thoughtful retail.", href: "/en/heritage#collection" },
-  { name: "Peony embroidery bags", craft: "BIAN EMBROIDERY · ART TO CARRY", image: "blue-peony-bag.webp", alt: "Blue peony Bian embroidered evening bag", text: "Detailed pictorial embroidery for a small number of special recipients.", href: "/en/heritage/blue-peony-bag" },
-  { name: "A personal aromatic detail", craft: "TAIHE XIANGTANG · WEARABLE INCENSE", image: "incense/bracelet-worn-portrait.webp", alt: "Taihe Xiangtang incense bracelet worn at the wrist", text: "An intimate gift to consider for individual preferences and everyday rituals.", href: "/en/heritage/taihe-xiangtang#bracelet" },
+  { name: "Peony embroidery bags", craft: "BIAN EMBROIDERY · ART TO CARRY", image: "blue-peony-bag.webp", alt: "Blue peony Bian embroidered evening bag", text: "Past Collection: shown as a design archive, not currently offered for wholesale.", href: "/en/heritage/blue-peony-bag" },
+  { name: "A personal aromatic detail", craft: "TAIHE XIANGTANG · WEARABLE INCENSE", image: "incense/bracelet-worn-portrait.webp", alt: "Taihe Xiangtang incense bracelet worn at the wrist", text: "Coming Soon: a wearable incense exploration, not yet offered for ordering.", href: "/en/heritage/taihe-xiangtang#bracelet" },
 ];
 
 const questions = [
@@ -46,7 +46,7 @@ export default function PartnershipsPage() {
             <h1>Meaningful gifts.<br /><em>Human connections.</em></h1>
             <p>Bring Chinese craftsmanship into the moments that matter to your organization. Artisan gifts, thoughtful retail collections and cultural experiences, curated with care.</p>
             <div className={styles.actions}><a className="button button-ink" href="#inquiry">Start a conversation ↗</a><a className="text-link" href="#partnerships">Find your partnership ↓</a></div>
-            <span className={styles.heroFoot}>MADE BY HANDS · CHOSEN WITH INTENTION</span>
+            <span className={styles.heroFoot}>INDEPENDENT MAKERS · THOUGHTFUL COLLABORATION</span>
           </div>
           <figure className={styles.heroImage}><SiteImage src="/images/site/blue-peony-detail.webp" alt="Close-up of peony petals rendered in fine Bian embroidery stitches" fetchPriority="high" /><figcaption>BIAN EMBROIDERY · A PAINTING EXPRESSED IN THREAD</figcaption></figure>
         </section>
@@ -58,8 +58,15 @@ export default function PartnershipsPage() {
           <div className={styles.services}>{services.map(s => <article key={s.id} id={s.id}><span className={styles.number}>{s.number}</span><div><p className="eyebrow">{s.audience}</p><h3>{s.name}</h3><p>{s.text}</p><p className={styles.examples}>{s.examples}</p><a className="arrow-link" href="#inquiry">{s.action} <span aria-hidden="true">→</span></a></div></article>)}</div>
         </section>
 
+        <section className={styles.section + " shell"} aria-labelledby="partner-paths-title">
+          <div className={styles.sectionHead}><p className="eyebrow">TWO WAYS TO BEGIN</p><h2 id="partner-paths-title">Different needs. A considered response.</h2></div>
+          <div className={styles.services}>
+            <article><span className={styles.number}>A</span><div><p className="eyebrow">FOR MUSEUMS & INDEPENDENT RETAILERS</p><h3>Wholesale &amp; retail selection</h3><p>Ask about resale-ready pieces, suggested retail prices, potential opening quantities and replenishment expectations. No unconfirmed wholesale terms are promised.</p><a className="arrow-link" href="#inquiry">Request wholesale information →</a></div></article>
+            <article><span className={styles.number}>B</span><div><p className="eyebrow">FOR ORGANIZATIONS & EVENTS</p><h3>Gifting &amp; custom projects</h3><p>Tell us the audience, quantity, budget, destination and date. We will propose an appropriate selection after checking production and delivery feasibility.</p><a className="arrow-link" href="#inquiry">Discuss a gifting project →</a></div></article>
+          </div>
+        </section>
         <section className={styles.collection} id="selection"><div className={`shell ${styles.section}`}>
-          <div className={styles.sectionHead}><p className="eyebrow">02 / THE CRAFT SELECTION</p><div><h2>Objects worth a closer look.</h2><p>A starting point for your collection or occasion. Final selection, quantities and availability are confirmed with our makers for each project.</p></div></div>
+          <div className={styles.sectionHead}><p className="eyebrow">02 / THE CRAFT SELECTION</p><div><h2>Objects worth a closer look.</h2><p>A starting point for your collection or occasion. Wrapped-flower ornaments and embroidered lion charms are available for retail discovery. Incense and lacquer collections are coming soon; Bian embroidery bags are archived. Wholesale quantities, prices and lead times must be confirmed individually.</p></div></div>
           <div className={styles.pieces}>{pieces.map(p => <article key={p.name}><Link href={p.href} aria-label={`Explore ${p.name}`}><SiteImage src={`/images/site/${p.image}`} alt={p.alt} loading="lazy" /></Link><p className="eyebrow">{p.craft}</p><h3>{p.name}</h3><p>{p.text}</p><Link className="text-link" href={p.href}>Explore the craft <span aria-hidden="true">↗</span></Link></article>)}</div>
         </div></section>
 
