@@ -4,9 +4,9 @@ import { SiteImage } from "../../../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 
 export const metadata: Metadata = {
-  title: "Yangzhou Ronghua · Velvet Flowers | Coming Soon",
+  title: "Yangzhou Ronghua · Velvet Flowers | Available Now",
   description:
-    "Discover the handcraft of Yangzhou Ronghua velvet flowers and ImArtisan's exploration of occasion wear and lasting home keepsakes. Coming Soon.",
+    "Discover the handcraft of Yangzhou Ronghua velvet flowers and ImArtisan's exploration of occasion wear and lasting home keepsakes. Available Now.",
 };
 
 export default function RonghuaPage() {
@@ -18,7 +18,7 @@ export default function RonghuaPage() {
           <Link className="product-back" href="/en/heritage#ronghua">
             ← Heritage Collection
           </Link>
-          <p className="eyebrow">COMING SOON · YANGZHOU RONGHUA</p>
+          <p className="eyebrow">AVAILABLE NOW · YANGZHOU RONGHUA</p>
           <h1>Flowers for the moment. Keepsakes for the years after.</h1>
           <p>
             Yangzhou Ronghua turns patiently shaped velvet into flowers with distinctive volume
@@ -26,11 +26,12 @@ export default function RonghuaPage() {
             and to the life that follows it.
           </p>
           <p className="availability-note">
-            Collection preview only. These pieces are not currently offered for purchase;
-            final designs, release timing and availability have not yet been confirmed.
+            Ronghua pieces are available through direct enquiry with ImArtisan, not on Etsy.
+            Please contact us to confirm the specific design, production options, price,
+            quantity, care requirements and delivery timeline.
           </p>
           <Link className="button button-ink" href="/contact#international">
-            Enquire about the collection
+            Enquire about Ronghua pieces
           </Link>
         </section>
 
@@ -73,7 +74,7 @@ export default function RonghuaPage() {
           <p>
             Ronghua is distinct from Chanhua, the thread-wrapped floral technique in our
             available collection. Ronghua's velvet texture, volume and care requirements
-            call for their own design choices and careful testing before launch.
+            call for their own design choices and care considerations when selecting a specific piece.
           </p>
           <Link className="arrow-link" href="/en/heritage/chanhua">
             Discover available Chanhua ornaments <span aria-hidden="true">→</span>
@@ -85,7 +86,7 @@ export default function RonghuaPage() {
           </div>
         </section>
       <section className="reference-detail-invitation section-space shell">
-          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>Explore examples for ceremonies, brooches and lasting floral home displays, with development status clearly marked.</p>
           <Link className="button button-ink" href="/en/heritage/library#ronghua">
