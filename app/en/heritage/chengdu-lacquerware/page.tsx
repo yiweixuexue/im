@@ -249,7 +249,7 @@ export default function ChengduLacquerwarePage() {
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>See tea-related objects, wall art and adornments together with practical considerations for each use.</p>
-          <Link className="button button-ink" href="/en/heritage/library#lacquer">
+          <Link className="button button-ink" href="/en/heritage#lacquer">
             View Chengdu lacquer forms in the Craft Library
           </Link>
         </section>
