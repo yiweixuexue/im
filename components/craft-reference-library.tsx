@@ -70,14 +70,20 @@ function ReferenceCard({
 }
 
 export function CraftReferenceLibrary() {
+  const [searchText, setSearchText] = useState("");
+  const [expandedCrafts, setExpandedCrafts] = useState<CraftId[]>([]);
   const [craftFilter, setCraftFilter] = useState<CraftFilter>("all");
   const [useFilter, setUseFilter] = useState<UseFilter>("all");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
 
+  const query = searchText.trim().toLowerCase();
   const filtered = catalog.filter((item) => {
     const craft = crafts.find((entry) => entry.id === item.craft);
-    return (craftFilter === "all" || craftFilter === item.craft)
+    const haystack = [item.name, item.form, item.howToUse, item.consideration, craft?.label, craft?.subtitle, item.id]
+      .join(" ").toLowerCase();
+    return (!query || haystack.includes(query))
+      && (craftFilter === "all" || craftFilter === item.craft)
       && (useFilter === "all" || item.uses.includes(useFilter))
       && (statusFilter === "all" || craft?.status === statusFilter);
   });
@@ -125,6 +131,15 @@ export function CraftReferenceLibrary() {
             <p>Filter by craft, intended use or collection stage. Browse real examples and build a shortlist to discuss with us.</p>
           </div>
           <div className="reference-control-row">
+            <label htmlFor="reference-search" className="reference-search">Search examples
+              <input
+                id="reference-search"
+                type="search"
+                placeholder="Try brooch, teapot, vase or wedding"
+                value={searchText}
+                onChange={(event) => setSearchText(event.target.value)}
+              />
+            </label>
             <label htmlFor="reference-craft">Craft
               <select id="reference-craft" value={craftFilter} onChange={(event) => setCraftFilter(event.target.value as CraftFilter)}>
                 <option value="all">All crafts</option>
@@ -148,7 +163,7 @@ export function CraftReferenceLibrary() {
             <button
               type="button"
               className="reference-reset"
-              onClick={() => { setCraftFilter("all"); setUseFilter("all"); setStatusFilter("all"); }}
+              onClick={() => { setSearchText(""); setCraftFilter("all"); setUseFilter("all"); setStatusFilter("all"); }}
             >
               Clear filters
             </button>
@@ -175,6 +190,8 @@ export function CraftReferenceLibrary() {
           {crafts.map((craft) => {
             const group = filtered.filter((entry) => entry.craft === craft.id);
             if (!group.length) return null;
+            const isExpanded = expandedCrafts.includes(craft.id);
+            const shown = isExpanded ? group : group.slice(0, 6);
             return (
               <section key={craft.id} id={craft.id} className="reference-craft-group" aria-labelledby={"reference-" + craft.id}>
                 <div className="reference-group-intro">
@@ -191,10 +208,21 @@ export function CraftReferenceLibrary() {
                   </div>
                 </div>
                 <div className="reference-grid">
-                  {group.map((item) => (
+                  {shown.map((item) => (
                     <ReferenceCard key={item.id} item={item} isSelected={selectedIds.includes(item.id)} onToggle={toggle} />
                   ))}
                 </div>
+                {group.length > 6 && (
+                  <button
+                    type="button"
+                    className="reference-load-more"
+                    aria-expanded={isExpanded}
+                    onClick={() => setExpandedCrafts((current) =>
+                      current.includes(craft.id) ? current.filter((id) => id !== craft.id) : [...current, craft.id])}
+                  >
+                    {isExpanded ? "Show fewer examples" : "Show all " + group.length + " examples"} <span aria-hidden="true">→</span>
+                  </button>
+                )}
               </section>
             );
           })}
