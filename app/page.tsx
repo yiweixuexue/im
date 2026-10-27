@@ -114,8 +114,11 @@ export default function Home() {
                 craft="HE XIANG · KAIFENG"
                 image="/images/site/incense/round-cloud.webp"
                 href="/en/heritage/taihe-xiangtang"
-                status="coming"
+                status="available"
               />
+              <ProductCard title="Yangzhou Velvet Flowers" chinese="扬州绒花" craft="RONGHUA · FLORAL KEEPSAKES" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="available" />
+              <ProductCard title="Chengdu Lacquerware" chinese="成都大漆" craft="LACQUER · ADORNMENT & HOME" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="available" />
+              <ProductCard title="Bian Embroidered Art" chinese="汴绣画与屏风" craft="BIAN EMBROIDERY · DISPLAY" image="/images/site/uploads-20261027/lotus-standing-screen.webp" href="/en/heritage/bian-embroidery" status="available" />
             </div>
             <div className="collection-actions">
               <Link className="button button-ink" href="/en/heritage">
@@ -124,8 +127,9 @@ export default function Home() {
               <Link className="text-link" href="/en/heritage/library">
                 Explore what each craft can become <span aria-hidden="true">→</span>
               </Link>
+              <Link className="text-link" href="/contact#international">Enquire about other crafts <span aria-hidden="true">→</span></Link>
               <a className="text-link" href={etsyShop} target="_blank" rel="noreferrer">
-                Browse current Etsy listings <span aria-hidden="true">↗</span>
+                Shop clothing, Chanhua &amp; lion charms on Etsy <span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
