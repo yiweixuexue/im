@@ -212,7 +212,7 @@ export default function HeritageCollectionPage() {
             <div className="product-grid product-grid-heritage">
               <ProductCard title="Olive Berry Hair Ornament" chinese="橄榄枝缠花发饰" craft="HAND-WRAPPED SILK THREAD" image="/images/site/chanhua-worn.webp" href="/en/heritage/chanhua" status="available" />
               <ProductCard title="Tulip Brooch" chinese="郁金香缠花胸针" craft="CONTEMPORARY CHANHUA" image="/images/site/tulip-brooch.webp" href="/en/heritage/chanhua" status="available" />
-              <ProductCard title="Yangzhou Velvet Flowers" chinese="扬州绒花" craft="RONGHUA · YANGZHOU" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="coming" />
+              <ProductCard title="Yangzhou Velvet Flowers" chinese="Yangzhou · Ronghua" craft="RONGHUA · YANGZHOU" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="coming" />
               <ProductCard title="Lion Embroidered Charm" chinese="醒狮刺绣挂件" craft="EMBROIDERED TEXTILE ORNAMENT" image="/images/site/lion-charm.webp" href="/en/heritage/lion-charm" status="available" />
               <ProductCard title="Taihe Blended-Incense Plaques" chinese="太和香堂 · 合香香牌" craft="HE XIANG · KAIFENG" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="coming" />
               <ProductCard title="Chengdu Lacquerware" chinese="成都大漆产品" craft="TRADITIONAL LACQUER · CHENGDU" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="coming" />
