@@ -33,11 +33,13 @@ function ReferenceCard({
 }) {
   const craft = crafts.find((entry) => entry.id === item.craft);
   if (!craft) return null;
+  const itemStatus = item.status ?? craft.status;
+  const onEtsy = item.craft === "chanhua" || item.craft === "lion";
   return (
     <article className="reference-card">
       <figure className="reference-card-image">
         <SiteImage src={item.image} alt={item.alt} loading="lazy" decoding="async" />
-        <StatusTag status={item.status ?? craft.status} />
+        <StatusTag status={itemStatus} />
       </figure>
       <div className="reference-card-body">
         <p className="reference-card-meta">
@@ -59,8 +61,21 @@ function ReferenceCard({
           aria-pressed={isSelected}
           onClick={() => onToggle(item.id)}
         >
-          {isSelected ? "✓ Added to shortlist" : "+ Add to enquiry shortlist"}
+          {isSelected ? "✓ Added to shortlist" : itemStatus === "past" ? "+ Save archive reference" : "+ Add to enquiry shortlist"}
         </button>
+        {itemStatus === "past" ? (
+          <Link href="/en/heritage/blue-peony-bag" className="reference-detail-link">
+            View past collection <span aria-hidden="true">↗</span>
+          </Link>
+        ) : onEtsy ? (
+          <a href={etsyShop} target="_blank" rel="noopener noreferrer" className="reference-detail-link">
+            Browse Etsy shop <span aria-hidden="true">↗</span>
+          </a>
+        ) : (
+          <Link href="/contact#international" className="reference-detail-link">
+            Enquire about sourcing <span aria-hidden="true">↗</span>
+          </Link>
+        )}
         <Link href={craft.href} className="reference-detail-link">
           Craft details <span aria-hidden="true">↗</span>
         </Link>
