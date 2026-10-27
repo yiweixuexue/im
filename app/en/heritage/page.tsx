@@ -151,8 +151,8 @@ export default function HeritageCollectionPage() {
           <div className="shell ronghua-feature-grid">
             <div className="ronghua-feature-art" aria-label="Yangzhou Ronghua craft feature">
               <p className="eyebrow">A LIVING FLORAL TRADITION</p>
-              <span className="ronghua-feature-cn" lang="zh-CN">绒花</span>
-              <p className="ronghua-feature-location">YANGZHOU · 扬州</p>
+              <span className="ronghua-feature-cn">Velvet Flowers</span>
+              <p className="ronghua-feature-location">YANGZHOU · CHINA</p>
               <span className="ronghua-feature-line" aria-hidden="true" />
               <p className="ronghua-feature-note">CRAFT FIRST. FORM FOLLOWS.</p>
             </div>
@@ -160,7 +160,7 @@ export default function HeritageCollectionPage() {
               <p className="eyebrow">CRAFT FOCUS · YANGZHOU RONGHUA</p>
               <h2 id="ronghua-title">Flowers for a moment.<br />Keepsakes for the years after.</h2>
               <p>
-                Yangzhou Ronghua (绒花) is a traditional velvet-flower craft, shaping soft,
+                Yangzhou Ronghua is a traditional velvet-flower craft, shaping soft,
                 dimensional blossoms through patient handwork. Its texture and construction
                 are distinct from Chanhua, the thread-wrapped flower technique in our available collection.
               </p>
