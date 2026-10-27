@@ -72,7 +72,7 @@ export default function PartnershipsPage() {
           <div className="partnership-library-note">
             <p className="eyebrow">A VISUAL BUYER REFERENCE</p>
             <p>Want to explore more forms and uses before making an enquiry? Browse our craft library, save reference pieces and send your shortlist. Examples are not confirmed stock, and trade terms are quoted individually.</p>
-            <Link className="button button-ink" href="/en/heritage/library">Browse the Craft &amp; Product Library</Link>
+            <Link className="button button-ink" href="/en/heritage#collection">Browse the Craft &amp; Product Library</Link>
           </div>
           <div className={styles.pieces}>{pieces.map(p => <article key={p.name}><Link href={p.href} aria-label={`Explore ${p.name}`}><SiteImage src={`/images/site/${p.image}`} alt={p.alt} loading="lazy" /></Link><p className="eyebrow">{p.craft}</p><h3>{p.name}</h3><p>{p.text}</p><Link className="text-link" href={p.href}>Explore the craft <span aria-hidden="true">↗</span></Link></article>)}</div>
         </div></section>
