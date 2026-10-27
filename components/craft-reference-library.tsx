@@ -180,7 +180,7 @@ export function CraftReferenceLibrary() {
           <div className="reference-empty">
             <h2>No matching examples yet.</h2>
             <p>Try another craft or use. Our visual archive will expand as product details are confirmed.</p>
-            <button type="button" className="button button-ink" onClick={() => { setCraftFilter("all"); setUseFilter("all"); setStatusFilter("all"); }}>
+            <button type="button" className="button button-ink" onClick={() => { setSearchText(""); setCraftFilter("all"); setUseFilter("all"); setStatusFilter("all"); }}>
               View all examples
             </button>
           </div>
