@@ -112,7 +112,7 @@ export function CraftReferenceLibrary() {
     "Requested delivery / event date:",
     "Destination:",
     "",
-    "I understand these are reference examples rather than confirmed stock or production offers, and that availability, pricing, materials and lead times need confirmation.",
+    "I understand Available Now means I may enquire about sourcing a craft form, not guaranteed inventory of each photograph. Please confirm exact availability, price, quantity, materials and lead time before ordering.",
     "",
     "Thank you.",
   ].join("\n");
@@ -155,10 +155,8 @@ export function CraftReferenceLibrary() {
             <label htmlFor="reference-status">Collection stage
               <select id="reference-status" value={statusFilter} onChange={(event) => setStatusFilter(event.target.value as StatusFilter)}>
                 <option value="all">All stages</option>
-                <option value="available">Available collections</option>
-                <option value="coming">Coming soon</option>
+                <option value="available">Available now · enquire</option>
                 <option value="past">Past collection</option>
-                <option value="reference">Reference works</option>
               </select>
             </label>
             <button
@@ -263,8 +261,9 @@ export function CraftReferenceLibrary() {
             <Link href="/en/partnerships#inquiry" className="arrow-link">
               Explore wholesale & gifting partnerships <span aria-hidden="true">→</span>
             </Link>
+            <p className="reference-shortlist-note">Other craft collections are sourced by contacting ImArtisan directly, not through Etsy.</p>
             <a className="reference-etsy" href={etsyShop} target="_blank" rel="noopener noreferrer">
-              Browse available collections on Etsy ↗
+              Shop Chanhua & lion charms on Etsy ↗
             </a>
           </div>
         </div>
