@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { SiteImage } from "./site-image";
 
-export type CollectionStatus = "available" | "coming" | "past";
+export type CollectionStatus = "available" | "past";
 const statusLabels: Record<CollectionStatus, string> = {
   available: "AVAILABLE NOW",
-  coming: "COMING SOON",
   past: "PAST COLLECTION",
 };
 
