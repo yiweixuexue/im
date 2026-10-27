@@ -257,7 +257,7 @@ export default function TaiheXiangtangPage() {
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>Compare plaques, corded pendants and wrist ornaments by use, with scent and specifications still subject to confirmation.</p>
-          <Link className="button button-ink" href="/en/heritage/library#hexiang">
+          <Link className="button button-ink" href="/en/heritage#hexiang">
             View blended-incense forms in the Craft Library
           </Link>
         </section>
