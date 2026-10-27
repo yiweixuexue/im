@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IncenseMakingStory } from "../../../../components/incense-making-story";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
@@ -163,6 +164,8 @@ export default function TaiheXiangtangPage() {
           </div>
         </section>
 
+        <IncenseMakingStory />
+
         <section className="incense-collection section-space shell" id="collection">
           <div className="incense-collection-head">
             <p className="eyebrow">THE FIRST IMARTISAN SELECTION</p>
@@ -250,7 +253,15 @@ export default function TaiheXiangtangPage() {
             </div>
           </div>
         </section>
-      </main>
+      <section className="reference-detail-invitation section-space shell">
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <h2>What can this craft become?</h2>
+          <p>Compare plaques, corded pendants and wrist ornaments by use, with scent and specifications still subject to confirmation.</p>
+          <Link className="button button-ink" href="/en/heritage/library#hexiang">
+            View blended-incense forms in the Craft Library
+          </Link>
+        </section>
+        </main>
       <SiteFooter />
     </div>
   );

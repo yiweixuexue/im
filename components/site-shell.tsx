@@ -28,6 +28,7 @@ const navByMarket: Record<Market, NavItem[]> = {
   en: [
     { label: "Home", href: "/" },
     { label: "Collection", href: "/en/heritage" },
+    { label: "Craft Library", href: "/en/heritage/library" },
     { label: "Makers", href: "/makers" },
     { label: "Gifts & Partnerships", href: "/en/partnerships" },
     { label: "Craft Journal", href: "/journal" },
@@ -76,7 +77,7 @@ export function SiteHeader({
         : { label: "中文 / EN", href: "#choose-your-path" };
 
   return (
-    <header className={`site-header site-header-${tone}`}>
+    <header className={`site-header site-header-${tone} site-header-${market}`}>
       <div className="header-inner shell-wide">
         <BrandMark light={tone === "light"} />
         <nav className="desktop-nav" aria-label={market === "cn" ? "主导航" : "Primary navigation"}>
@@ -156,6 +157,7 @@ export function SiteFooter() {
         <div className="footer-column">
           <p>INTERNATIONAL</p>
           <Link href="/en/heritage">Collection & Shop</Link>
+          <Link href="/en/heritage/library">Craft & Product Library</Link>
           <Link href="/makers">Meet the Makers</Link>
           <Link href="/en/partnerships">Gifts & Partnerships</Link>
           <a href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">

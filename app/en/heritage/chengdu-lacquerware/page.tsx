@@ -244,7 +244,15 @@ export default function ChengduLacquerwarePage() {
             </div>
           </div>
         </section>
-      </main>
+      <section className="reference-detail-invitation section-space shell">
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <h2>What can this craft become?</h2>
+          <p>See tea-related objects, wall art and adornments together with practical considerations for each use.</p>
+          <Link className="button button-ink" href="/en/heritage/library#lacquer">
+            View Chengdu lacquer forms in the Craft Library
+          </Link>
+        </section>
+        </main>
       <SiteFooter />
     </div>
   );
