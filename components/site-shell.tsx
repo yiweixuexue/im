@@ -161,7 +161,7 @@ export function SiteFooter() {
           <Link href="/makers">Meet the Makers</Link>
           <Link href="/en/partnerships">Gifts & Partnerships</Link>
           <a href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">
-            Shop on Etsy
+            Clothing, Chanhua &amp; lion charms on Etsy
           </a>
           <Link href="/care">Care & Shipping</Link>
           <Link href="/en/custom">Ceremonial Custom</Link>
