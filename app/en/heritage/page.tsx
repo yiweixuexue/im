@@ -8,7 +8,7 @@ import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site
 export const metadata: Metadata = {
   title: "Heritage Collection",
   description:
-    "Explore ImArtisan's edit of Chinese blended incense, lacquerware, embroidery and hand-wrapped floral ornaments, with clear cultural and material context.",
+    "Explore ImArtisan's Chanhua floral ornaments, forthcoming Yangzhou Ronghua velvet flowers, blended incense and Chengdu lacquerware, with clear collection availability.",
 };
 
 const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
@@ -57,6 +57,80 @@ export default function HeritageCollectionPage() {
               supported; otherwise we use precise language such as “traditional Chinese craft” or “contemporary
               work rooted in Chinese heritage.”
             </p>
+          </div>
+        </section>
+
+        <section className="heritage-partner-feature chanhua-partner-feature section-space" id="chanhua" aria-labelledby="chanhua-title">
+          <div className="shell heritage-partner-grid">
+            <div className="heritage-partner-visuals">
+              <SiteImage
+                src="/images/site/chanhua-worn.webp"
+                alt="Chanhua thread-wrapped silk flower hair ornament styled for contemporary wear"
+                loading="lazy"
+              />
+              <SiteImage
+                src="/images/site/tulip-brooch.webp"
+                alt="Hand-wrapped tulip Chanhua brooches"
+                loading="lazy"
+              />
+              <span>AVAILABLE NOW</span>
+            </div>
+            <div className="heritage-partner-copy">
+              <p className="eyebrow">AVAILABLE NOW · CHANHUA</p>
+              <h2 id="chanhua-title">A flower, shaped one thread at a time</h2>
+              <p>
+                Chanhua is the art of shaping decorative flowers through careful thread wrapping.
+                From delicate hair ornaments to floral brooches, its strength lies in the patient control
+                of form, tension and proportion—details that bring tradition into a wearable everyday object.
+              </p>
+              <div className="heritage-partner-notes" aria-label="Chanhua collection themes">
+                <span>THREAD-WRAPPED ART</span>
+                <span>HAIR ORNAMENTS</span>
+                <span>FLORAL BROOCHES</span>
+              </div>
+              <Link className="button button-ink" href="/en/heritage/chanhua">
+                Explore Chanhua
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="ronghua-feature section-space" id="ronghua" aria-labelledby="ronghua-title">
+          <div className="shell ronghua-feature-grid">
+            <div className="ronghua-feature-gallery" aria-label="Yangzhou Ronghua in everyday life">
+              <figure className="ronghua-photo ronghua-photo-home">
+                <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Handmade Yangzhou velvet flowers arranged in a porcelain vase at home" loading="lazy" />
+                <figcaption>01 / FLOWERS FOR THE HOME</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-making">
+                <SiteImage src="/images/site/ronghua/ronghua-craft-hands.webp" alt="Artisan shaping the petals of a velvet flower using a hand tool" loading="lazy" />
+                <figcaption>02 / THE MAKING</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-worn">
+                <SiteImage src="/images/site/ronghua/ronghua-worn-brooch.webp" alt="A Yangzhou velvet-flower brooch styled as a wearable accessory" loading="lazy" />
+                <figcaption>03 / WEARABLE FLORAL ART</figcaption>
+              </figure>
+            </div>
+            <div className="ronghua-feature-copy">
+              <p className="eyebrow">COMING SOON · YANGZHOU RONGHUA</p>
+              <h2 id="ronghua-title">Flowers for a moment.<br />Keepsakes for the years after.</h2>
+              <p>
+                Yangzhou Ronghua is a traditional velvet-flower craft, shaping soft,
+                dimensional blossoms through patient handwork. Its texture and construction
+                are distinct from Chanhua, the thread-wrapped flower technique in our available collection.
+              </p>
+              <p>
+                We are exploring its potential for weddings, celebrations and graduation:
+                floral adornments that can also become meaningful home displays after the occasion.
+                The right design must respect the maker’s technique and the practical needs of both uses.
+              </p>
+              <div className="ronghua-actions">
+                <Link className="button button-ink" href="/en/heritage/ronghua">Explore Yangzhou Ronghua</Link>
+                <Link className="arrow-link" href="/journal/where-craft-belongs">
+                  Our product-development approach <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -133,52 +207,17 @@ export default function HeritageCollectionPage() {
             <SectionHeading
               eyebrow="THE IMARTISAN EDIT · CURRENT SELECTION"
               title="Discover, choose and follow the making"
-              intro="Available Now: wrapped-flower ornaments and lion charms. Coming Soon: blended incense and lacquer. Past Collection: Bian embroidery bags, kept as an archive of our work."
+              intro="Available Now: wrapped-flower ornaments and lion charms. Coming Soon: Yangzhou velvet flowers, blended incense and lacquer. Past Collection: Bian embroidery bags, kept as an archive of our work."
             />
             <div className="product-grid product-grid-heritage">
               <ProductCard title="Olive Berry Hair Ornament" chinese="橄榄枝缠花发饰" craft="HAND-WRAPPED SILK THREAD" image="/images/site/chanhua-worn.webp" href="/en/heritage/chanhua" status="available" />
               <ProductCard title="Tulip Brooch" chinese="郁金香缠花胸针" craft="CONTEMPORARY CHANHUA" image="/images/site/tulip-brooch.webp" href="/en/heritage/chanhua" status="available" />
+              <ProductCard title="Yangzhou Velvet Flowers" chinese="Yangzhou · Ronghua" craft="RONGHUA · YANGZHOU" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="coming" />
               <ProductCard title="Lion Embroidered Charm" chinese="醒狮刺绣挂件" craft="EMBROIDERED TEXTILE ORNAMENT" image="/images/site/lion-charm.webp" href="/en/heritage/lion-charm" status="available" />
               <ProductCard title="Taihe Blended-Incense Plaques" chinese="太和香堂 · 合香香牌" craft="HE XIANG · KAIFENG" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="coming" />
               <ProductCard title="Chengdu Lacquerware" chinese="成都大漆产品" craft="TRADITIONAL LACQUER · CHENGDU" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="coming" />
               <ProductCard title="Blue Peony Evening Bag" chinese="蓝色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/blue-peony-bag.webp" href="/en/heritage/blue-peony-bag" status="past" />
               <ProductCard title="Red Peony Evening Bag" chinese="红色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/red-peony-bag.webp" href="/en/heritage/blue-peony-bag#archive" status="past" />
-            </div>
-          </div>
-        </section>
-
-        <section className="ronghua-feature section-space" id="ronghua" aria-labelledby="ronghua-title">
-          <div className="shell ronghua-feature-grid">
-            <div className="ronghua-feature-gallery" aria-label="Yangzhou Ronghua in everyday life">
-              <figure className="ronghua-photo ronghua-photo-home">
-                <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Handmade Yangzhou velvet flowers arranged in a porcelain vase at home" loading="lazy" />
-                <figcaption>01 / FLOWERS FOR THE HOME</figcaption>
-              </figure>
-              <figure className="ronghua-photo ronghua-photo-making">
-                <SiteImage src="/images/site/ronghua/ronghua-craft-hands.webp" alt="Artisan shaping the petals of a velvet flower using a hand tool" loading="lazy" />
-                <figcaption>02 / THE MAKING</figcaption>
-              </figure>
-              <figure className="ronghua-photo ronghua-photo-worn">
-                <SiteImage src="/images/site/ronghua/ronghua-worn-brooch.webp" alt="A Yangzhou velvet-flower brooch styled as a wearable accessory" loading="lazy" />
-                <figcaption>03 / WEARABLE FLORAL ART</figcaption>
-              </figure>
-            </div>
-            <div className="ronghua-feature-copy">
-              <p className="eyebrow">CRAFT FOCUS · YANGZHOU RONGHUA</p>
-              <h2 id="ronghua-title">Flowers for a moment.<br />Keepsakes for the years after.</h2>
-              <p>
-                Yangzhou Ronghua is a traditional velvet-flower craft, shaping soft,
-                dimensional blossoms through patient handwork. Its texture and construction
-                are distinct from Chanhua, the thread-wrapped flower technique in our available collection.
-              </p>
-              <p>
-                We are exploring its potential for weddings, celebrations and graduation:
-                floral adornments that can also become meaningful home displays after the occasion.
-                The right design must respect the maker’s technique and the practical needs of both uses.
-              </p>
-              <Link className="arrow-link" href="/journal/where-craft-belongs">
-                How we approach product development <span aria-hidden="true">→</span>
-              </Link>
             </div>
           </div>
         </section>
