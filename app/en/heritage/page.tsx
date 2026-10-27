@@ -111,14 +111,12 @@ export default function HeritageCollectionPage() {
         </section>
 
         <div id="collection" className="heritage-primary-library">
-          <div className="heritage-library-heading shell">
-            <p className="eyebrow">THE IMARTISAN EDIT · CRAFT &amp; PRODUCT LIBRARY</p>
-            <h2>Find the piece that fits your life.</h2>
+          <div className="heritage-availability-note shell">
             <p>
-              All heritage craft ranges shown are available for sourcing enquiries, but individual pictured
-              designs may vary in stock, price, materials and delivery timing. Only Chanhua and embroidered
-              lion charms are currently sold through Etsy; other crafts are sourced directly. Blue and red
-              Bian-embroidered evening bags remain a Past Collection.
+              <strong>Available Now</strong> means we can discuss sourcing a craft form, not that
+              every photographed variation is ready to ship. Chanhua and lion charms are also
+              sold on Etsy; all other craft purchases begin with an ImArtisan enquiry.
+              <Link href="/en/heritage/blue-peony-bag"> Bian-embroidered evening bags are archived.</Link>
             </p>
           </div>
           <CraftReferenceLibrary />
