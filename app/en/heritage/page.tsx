@@ -149,12 +149,19 @@ export default function HeritageCollectionPage() {
 
         <section className="ronghua-feature section-space" id="ronghua" aria-labelledby="ronghua-title">
           <div className="shell ronghua-feature-grid">
-            <div className="ronghua-feature-art" aria-label="Yangzhou Ronghua craft feature">
-              <p className="eyebrow">A LIVING FLORAL TRADITION</p>
-              <span className="ronghua-feature-cn">Velvet Flowers</span>
-              <p className="ronghua-feature-location">YANGZHOU · CHINA</p>
-              <span className="ronghua-feature-line" aria-hidden="true" />
-              <p className="ronghua-feature-note">CRAFT FIRST. FORM FOLLOWS.</p>
+            <div className="ronghua-feature-gallery" aria-label="Yangzhou Ronghua in everyday life">
+              <figure className="ronghua-photo ronghua-photo-home">
+                <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Handmade Yangzhou velvet flowers arranged in a porcelain vase at home" loading="lazy" />
+                <figcaption>01 / FLOWERS FOR THE HOME</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-making">
+                <SiteImage src="/images/site/ronghua/ronghua-craft-hands.webp" alt="Artisan shaping the petals of a velvet flower using a hand tool" loading="lazy" />
+                <figcaption>02 / THE MAKING</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-worn">
+                <SiteImage src="/images/site/ronghua/ronghua-worn-brooch.webp" alt="A Yangzhou velvet-flower brooch styled as a wearable accessory" loading="lazy" />
+                <figcaption>03 / WEARABLE FLORAL ART</figcaption>
+              </figure>
             </div>
             <div className="ronghua-feature-copy">
               <p className="eyebrow">CRAFT FOCUS · YANGZHOU RONGHUA</p>
