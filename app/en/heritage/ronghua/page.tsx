@@ -89,7 +89,7 @@ export default function RonghuaPage() {
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>Explore examples for ceremonies, brooches and lasting floral home displays, with development status clearly marked.</p>
-          <Link className="button button-ink" href="/en/heritage/library#ronghua">
+          <Link className="button button-ink" href="/en/heritage#ronghua">
             View Yangzhou Ronghua in the Craft Library
           </Link>
         </section>
