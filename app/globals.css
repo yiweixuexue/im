@@ -5702,3 +5702,18 @@ select {
 }
 @media(max-width:560px){.editorial-media-grid,.maker-editorial-grid{grid-template-columns:1fr}.editorial-hero h1{font-size:clamp(44px,11vw,60px)}.editorial-article .editorial-lead{margin-bottom:45px}.editorial-article figure{margin-bottom:45px}}
 @media(prefers-reduced-motion:reduce){.product-card,.button,.arrow-link{transition:none}}
+
+
+/* Yangzhou Ronghua editorial feature – awaiting approved product photography */
+.ronghua-feature{background:#ece7df}
+.ronghua-feature-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(35px,7vw,115px);align-items:center}
+.ronghua-feature-art{min-height:560px;padding:clamp(28px,5vw,70px);background:#dcd3c6;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;position:relative;overflow:hidden}
+.ronghua-feature-art::after{content:"";position:absolute;inset:18px;border:1px solid rgba(46,52,43,.15);pointer-events:none}
+.ronghua-feature-cn{font:400 clamp(100px,15vw,225px)/1.05 var(--serif);letter-spacing:-.08em;color:#465d55}
+.ronghua-feature-location{font-size:14px;letter-spacing:.21em;color:#515e54}
+.ronghua-feature-line{width:84px;height:1px;background:#6d746b}
+.ronghua-feature-note{font-size:10px;letter-spacing:.22em;color:#696a61}
+.ronghua-feature-copy h2{font:400 clamp(36px,4.4vw,65px)/1.13 var(--serif);letter-spacing:-.03em;margin:0 0 27px}
+.ronghua-feature-copy>p:not(.eyebrow){max-width:650px;color:var(--ash);font-size:15px;line-height:1.95;margin:0 0 22px}
+.ronghua-feature-copy .arrow-link{margin-top:18px}
+@media(max-width:800px){.ronghua-feature-grid{grid-template-columns:1fr}.ronghua-feature-art{min-height:320px}.ronghua-feature-cn{font-size:clamp(90px,22vw,155px)}}
