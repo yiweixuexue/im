@@ -4,7 +4,8 @@ import { CraftReferenceLibrary } from "../../../../components/craft-reference-li
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 
 export const metadata: Metadata = {
-  title: "Craft & Product Library | Forms, Uses & Sourcing",
+  title: "Craft & Product Library Archive | ImArtisan",
+  alternates: { canonical: "/en/heritage" },
   description:
     "Explore documented examples across Chinese traditional craft techniques. Filter by craft, occasion and intended use, then prepare a sourcing enquiry with ImArtisan.",
 };
@@ -14,7 +15,7 @@ export default function CraftLibraryPage() {
     <div className="site-page reference-library-page">
       <SiteHeader market="en" tone="paper" />
       <main id="main-content">
-        <section className="reference-hero shell">
+        <section className="reference-hero shell">\n          <Link href="/en/heritage#collection" className="arrow-link">Visit the main Heritage collection →</Link>
           <p className="eyebrow">IMARTISAN · CRAFT & PRODUCT LIBRARY</p>
           <h1>Discover what a craft can become.</h1>
           <p>
