@@ -121,6 +121,9 @@ export default function Home() {
               <Link className="button button-ink" href="/en/heritage">
                 View the collection
               </Link>
+              <Link className="text-link" href="/en/heritage/library">
+                Explore what each craft can become <span aria-hidden="true">→</span>
+              </Link>
               <a className="text-link" href={etsyShop} target="_blank" rel="noreferrer">
                 Browse current Etsy listings <span aria-hidden="true">↗</span>
               </a>
