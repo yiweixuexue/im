@@ -15,7 +15,8 @@ export default function CraftLibraryPage() {
     <div className="site-page reference-library-page">
       <SiteHeader market="en" tone="paper" />
       <main id="main-content">
-        <section className="reference-hero shell">\n          <Link href="/en/heritage#collection" className="arrow-link">Visit the main Heritage collection →</Link>
+        <section className="reference-hero shell">
+          <Link href="/en/heritage#collection" className="arrow-link">Visit the main Heritage collection →</Link>
           <p className="eyebrow">IMARTISAN · CRAFT & PRODUCT LIBRARY</p>
           <h1>Discover what a craft can become.</h1>
           <p>
