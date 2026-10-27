@@ -28,12 +28,12 @@ const careItems = [
 ];
 
 const shippingFaqs = [
-  ["Where do you ship?", "Available destinations are shown in the Etsy listing for each item. Some materials may carry destination-specific restrictions, so shipping coverage can differ by piece."],
-  ["How long will dispatch take?", "Current processing and dispatch timing is stated on each Etsy listing. Handmade and small-batch pieces may not share the same timeline; the item page is the source of truth at checkout."],
+  ["Where do you ship?", "For clothing, Chanhua and lion charms purchased on Etsy, shipping destinations appear on their listings. For directly sourced crafts such as Ronghua, incense, lacquerware and Bian embroidery art, please enquire and we will confirm the destination, shipping method and any material restrictions."],
+  ["How long will dispatch take?", "For items purchased on Etsy, refer to the individual listing and order confirmation. For other available craft ranges, we confirm whether the selected piece is in stock or made to order, together with processing and delivery estimates, before accepting an order."],
   ["Will I pay customs or import fees?", "International duties, taxes or carrier fees may be charged by the destination country and are normally the buyer’s responsibility unless the checkout explicitly states otherwise."],
   ["How is my order presented?", "Pieces are prepared in ImArtisan’s gift-ready presentation with protective inner wrapping, a kraft box or suitable protective package, ribbon and a brand card according to the object’s needs."],
   ["Can you include a gift message?", "Yes. A short handwritten message can be included at no additional charge when the text is supplied with the order."],
-  ["What if an order arrives damaged?", "Photograph the outer package, shipping label, inner protection and damaged area as soon as possible, then contact us through Etsy so we can review the shipment record and next step."],
+  ["What if an order arrives damaged?", "Photograph the outer packaging, shipping label, inner protection and damaged item. For Etsy orders, contact us through Etsy; for directly arranged orders, use your ImArtisan order contact so we can review the shipment and next steps."],
 ];
 
 export default function CarePage() {
@@ -89,7 +89,7 @@ export default function CarePage() {
           <SectionHeading
             eyebrow="SHIPPING & ORDER QUESTIONS"
             title="What to expect"
-            intro="Exact item availability, price and dispatch timing are maintained in the Etsy shop."
+            intro="Etsy contains clothing, Chanhua and lion charms only. For other available heritage crafts, contact ImArtisan directly to confirm the selected piece, price, shipping and lead time."
           />
           <div className="faq-list">
             {shippingFaqs.map(([question, answer]) => (
@@ -107,7 +107,7 @@ export default function CarePage() {
             <h2>Ask before you choose.</h2>
             <div>
               <Link className="button button-paper" href="/contact#international">Contact ImArtisan</Link>
-              <a className="text-link text-link-light" href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">Visit the Etsy shop <span aria-hidden="true">↗</span></a>
+              <a className="text-link text-link-light" href="https://www.etsy.com/shop/ImArtisanStudio" target="_blank" rel="noreferrer">Shop clothing, Chanhua &amp; lion charms on Etsy <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </section>
