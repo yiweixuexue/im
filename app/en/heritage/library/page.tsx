@@ -5,7 +5,7 @@ import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 
 export const metadata: Metadata = {
   title: "Craft & Product Library Archive | ImArtisan",
-  alternates: { canonical: "/en/heritage" },
+  alternates: { canonical: "https://imartisan.me/en/heritage/" },
   description:
     "Explore documented examples across Chinese traditional craft techniques. Filter by craft, occasion and intended use, then prepare a sourcing enquiry with ImArtisan.",
 };
