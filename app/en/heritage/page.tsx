@@ -60,6 +60,28 @@ export default function HeritageCollectionPage() {
           </div>
         </section>
 
+        <section className="library-invitation section-space" aria-labelledby="library-invitation-title">
+          <div className="shell library-invitation-grid">
+            <div>
+              <p className="eyebrow">CRAFT & PRODUCT LIBRARY</p>
+              <h2 id="library-invitation-title">See what each craft can become.</h2>
+              <p>
+                Explore finished forms across traditional techniques: hair adornments, floral
+                keepsakes, incense pendants, lacquer objects, embroidery and more. Browse by
+                craft, intended use or collection stage, then save references for a sourcing enquiry.
+              </p>
+              <Link className="button button-ink" href="/en/heritage/library">
+                Browse forms, uses &amp; examples
+              </Link>
+            </div>
+            <div className="library-invitation-images" aria-label="Examples from the craft library">
+              <SiteImage src="/images/site/chanhua-worn.webp" alt="Chanhua hair ornament" loading="lazy" />
+              <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Yangzhou Ronghua flowers arranged for the home" loading="lazy" />
+              <SiteImage src="/images/site/lacquer/red-pendant.webp" alt="Red lacquer pendant" loading="lazy" />
+            </div>
+          </div>
+        </section>
+
         <section className="heritage-partner-feature chanhua-partner-feature section-space" id="chanhua" aria-labelledby="chanhua-title">
           <div className="shell heritage-partner-grid">
             <div className="heritage-partner-visuals">
@@ -219,6 +241,7 @@ export default function HeritageCollectionPage() {
               <ProductCard title="Blue Peony Evening Bag" chinese="蓝色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/blue-peony-bag.webp" href="/en/heritage/blue-peony-bag" status="past" />
               <ProductCard title="Red Peony Evening Bag" chinese="红色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/red-peony-bag.webp" href="/en/heritage/blue-peony-bag#archive" status="past" />
             </div>
+            <div className="collection-library-link"><Link className="arrow-link" href="/en/heritage/library">Explore more forms, uses &amp; craft examples <span aria-hidden="true">→</span></Link></div>
           </div>
         </section>
 
