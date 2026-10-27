@@ -250,7 +250,15 @@ export default function TaiheXiangtangPage() {
             </div>
           </div>
         </section>
-      </main>
+      <section className="reference-detail-invitation section-space shell">
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <h2>What can this craft become?</h2>
+          <p>Compare plaques, corded pendants and wrist ornaments by use, with scent and specifications still subject to confirmation.</p>
+          <Link className="button button-ink" href="/en/heritage/library#hexiang">
+            View blended-incense forms in the Craft Library
+          </Link>
+        </section>
+        </main>
       <SiteFooter />
     </div>
   );
