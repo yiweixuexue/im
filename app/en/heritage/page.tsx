@@ -149,12 +149,16 @@ export default function HeritageCollectionPage() {
 
         <section className="ronghua-feature section-space" id="ronghua" aria-labelledby="ronghua-title">
           <div className="shell ronghua-feature-grid">
-            <div className="ronghua-feature-art" aria-label="Yangzhou Ronghua craft feature">
-              <p className="eyebrow">A LIVING FLORAL TRADITION</p>
-              <span className="ronghua-feature-cn" lang="zh-CN">绒花</span>
-              <p className="ronghua-feature-location">YANGZHOU · 扬州</p>
-              <span className="ronghua-feature-line" aria-hidden="true" />
-              <p className="ronghua-feature-note">CRAFT FIRST. FORM FOLLOWS.</p>
+            <div className="ronghua-feature-gallery" aria-label="Yangzhou Ronghua: home, making and adornment">
+              <figure className="ronghua-photo ronghua-photo-home" role="img" aria-label="Ronghua floral arrangement with softly textured blossoms displayed in a porcelain vase">
+                <figcaption>01 / FLOWERS FOR THE HOME</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-making" role="img" aria-label="Close view of hands shaping a Ronghua flower by hand">
+                <figcaption>02 / THE MAKING</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-worn" role="img" aria-label="Blue velvet-flower brooch styled on a jacket">
+                <figcaption>03 / AN OBJECT TO WEAR</figcaption>
+              </figure>
             </div>
             <div className="ronghua-feature-copy">
               <p className="eyebrow">CRAFT FOCUS · YANGZHOU RONGHUA</p>
