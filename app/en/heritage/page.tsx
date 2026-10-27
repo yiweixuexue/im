@@ -8,7 +8,7 @@ import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site
 export const metadata: Metadata = {
   title: "Heritage Collection",
   description:
-    "Explore ImArtisan's Chanhua floral ornaments, forthcoming Yangzhou Ronghua velvet flowers, blended incense and Chengdu lacquerware, with clear collection availability.",
+    "Explore ImArtisan's Chanhua floral ornaments, Yangzhou Ronghua velvet flowers, blended incense, Chengdu lacquerware and Bian embroidery artworks, with clear sourcing options.",
 };
 
 const etsyShop = "https://www.etsy.com/shop/ImArtisanStudio";
@@ -25,15 +25,15 @@ export default function HeritageCollectionPage() {
             <p className="eyebrow">IMARTISAN · HERITAGE COLLECTION</p>
             <h1>Craft with a past.<br />Objects with a life now.</h1>
             <p>
-              Available ornaments, forthcoming collaborations and an archive of past pieces—presented through the people, techniques and
+              Craft objects available to explore and source, alongside a small archive of past pieces—presented through the people, techniques and
               cultural ideas that give them meaning.
             </p>
             <div className="hero-button-row">
-              <a className="button button-paper" href={etsyShop} target="_blank" rel="noreferrer">
-                Shop on Etsy
-              </a>
-              <Link className="text-link text-link-light" href="#collection">
-                Explore the edit <span aria-hidden="true">↓</span>
+              <Link className="button button-paper" href="#collection">
+                Explore available crafts
+              </Link>
+              <Link className="text-link text-link-light" href="/contact#international">
+                Ask about sourcing <span aria-hidden="true">↗</span>
               </Link>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function HeritageCollectionPage() {
               </figure>
             </div>
             <div className="ronghua-feature-copy">
-              <p className="eyebrow">COMING SOON · YANGZHOU RONGHUA</p>
+              <p className="eyebrow">AVAILABLE NOW · YANGZHOU RONGHUA</p>
               <h2 id="ronghua-title">Flowers for a moment.<br />Keepsakes for the years after.</h2>
               <p>
                 Yangzhou Ronghua is a traditional velvet-flower craft, shaping soft,
@@ -169,10 +169,10 @@ export default function HeritageCollectionPage() {
                 alt="Taihe Xiangtang blended-incense bracelet worn on the wrist"
                 loading="lazy"
               />
-              <span>COMING SOON · 开封</span>
+              <span>AVAILABLE NOW · 开封</span>
             </div>
             <div className="heritage-partner-copy">
-              <p className="eyebrow">COMING SOON · TAIHE XIANGTANG</p>
+              <p className="eyebrow">AVAILABLE NOW · TAIHE XIANGTANG</p>
               <h2>Fragrance, shaped for daily life</h2>
               <p>
                 From Kaifeng, Taihe Xiangtang composes blended incense into carved plaques, pendants and a small
@@ -203,10 +203,10 @@ export default function HeritageCollectionPage() {
                 alt="Textured Chengdu lacquer teapot"
                 loading="lazy"
               />
-              <span>COMING SOON · 成都</span>
+              <span>AVAILABLE NOW · 成都</span>
             </div>
             <div className="heritage-partner-copy">
-              <p className="eyebrow">COMING SOON · CHENGDU LACQUERWARE</p>
+              <p className="eyebrow">AVAILABLE NOW · CHENGDU LACQUERWARE</p>
               <h2>A new chapter in lacquer, built one layer at a time</h2>
               <p>
                 Meet ImArtisan’s partner from Chengdu. Natural lacquer, repeated polishing and hand-worked
@@ -229,15 +229,16 @@ export default function HeritageCollectionPage() {
             <SectionHeading
               eyebrow="THE IMARTISAN EDIT · CURRENT SELECTION"
               title="Discover, choose and follow the making"
-              intro="Available Now: wrapped-flower ornaments and lion charms. Coming Soon: Yangzhou velvet flowers, blended incense and lacquer. Past Collection: Bian embroidery bags, kept as an archive of our work."
+              intro="Available Now: floral ornaments, embroidered lion charms, blended incense, lacquerware and Bian embroidery art. Most crafts are sourced by direct enquiry; Chanhua and lion charms are also sold on Etsy. Only Bian embroidery bags remain Past Collection."
             />
             <div className="product-grid product-grid-heritage">
               <ProductCard title="Olive Berry Hair Ornament" chinese="橄榄枝缠花发饰" craft="HAND-WRAPPED SILK THREAD" image="/images/site/chanhua-worn.webp" href="/en/heritage/chanhua" status="available" />
               <ProductCard title="Tulip Brooch" chinese="郁金香缠花胸针" craft="CONTEMPORARY CHANHUA" image="/images/site/tulip-brooch.webp" href="/en/heritage/chanhua" status="available" />
-              <ProductCard title="Yangzhou Velvet Flowers" chinese="Yangzhou · Ronghua" craft="RONGHUA · YANGZHOU" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="coming" />
+              <ProductCard title="Yangzhou Velvet Flowers" chinese="Yangzhou · Ronghua" craft="RONGHUA · YANGZHOU" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="available" />
               <ProductCard title="Lion Embroidered Charm" chinese="醒狮刺绣挂件" craft="EMBROIDERED TEXTILE ORNAMENT" image="/images/site/lion-charm.webp" href="/en/heritage/lion-charm" status="available" />
-              <ProductCard title="Taihe Blended-Incense Plaques" chinese="太和香堂 · 合香香牌" craft="HE XIANG · KAIFENG" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="coming" />
-              <ProductCard title="Chengdu Lacquerware" chinese="成都大漆产品" craft="TRADITIONAL LACQUER · CHENGDU" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="coming" />
+              <ProductCard title="Taihe Blended-Incense Plaques" chinese="太和香堂 · 合香香牌" craft="HE XIANG · KAIFENG" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="available" />
+              <ProductCard title="Chengdu Lacquerware" chinese="成都大漆产品" craft="TRADITIONAL LACQUER · CHENGDU" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="available" />
+              <ProductCard title="Bian Embroidery Wall & Table Art" chinese="汴绣装饰画与屏风" craft="BIAN EMBROIDERY · KAIFENG" image="/images/site/uploads-20261027/lotus-standing-screen.webp" href="/en/heritage/bian-embroidery" status="available" />
               <ProductCard title="Blue Peony Evening Bag" chinese="蓝色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/blue-peony-bag.webp" href="/en/heritage/blue-peony-bag" status="past" />
               <ProductCard title="Red Peony Evening Bag" chinese="红色牡丹汴绣包" craft="TRADITIONAL BIAN EMBROIDERY" image="/images/site/red-peony-bag.webp" href="/en/heritage/blue-peony-bag#archive" status="past" />
             </div>
@@ -283,9 +284,9 @@ export default function HeritageCollectionPage() {
               <Link className="button button-ink" href="/care">
                 Care & shipping
               </Link>
-              <a className="text-link" href={etsyShop} target="_blank" rel="noreferrer">
-                View the Etsy shop <span aria-hidden="true">↗</span>
-              </a>
+              <Link className="text-link" href="/contact#international">
+                Ask about gift and packaging options <span aria-hidden="true">↗</span>
+              </Link>
             </div>
           </div>
           <SiteImage src="/images/site/gift-packaging.webp" alt="Kraft gift box tied with an ivory ribbon" loading="lazy" />
