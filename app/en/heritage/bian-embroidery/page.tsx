@@ -32,7 +32,7 @@ export default function BianEmbroideryPage() {
             <p className="product-chinese">汴绣 · 屏风与装框作品</p>
             <p className="product-lead">From a circular screen to a framed peony, embroidery can become an object to live with, as well as an image to look at.</p>
             <p>Bian embroidery pictures, framed panels and tabletop screens are available to source by direct enquiry. This is a gallery of examples, not verified stock of every pictured design. We confirm maker, materials, dimensions, price, availability and delivery before accepting an order. The peony evening bags are a separate Past Collection.</p>
-            <div className="product-actions"><Link className="button button-ink" href="/contact#international">Enquire about Bian embroidery art</Link><Link className="text-link" href="/en/heritage/library#bian">Compare forms &amp; uses →</Link><a className="text-link" href="#details">Look closer ↓</a></div>
+            <div className="product-actions"><Link className="button button-ink" href="/contact#international">Enquire about Bian embroidery art</Link><Link className="text-link" href="/en/heritage#bian">Compare forms &amp; uses →</Link><a className="text-link" href="#details">Look closer ↓</a></div>
           </div>
         </section>
         <section className="craft-photo-story section-space shell" id="details">
@@ -48,7 +48,7 @@ export default function BianEmbroideryPage() {
           <p className="eyebrow">CHOOSING FOR AN INTERIOR OR A GIFT</p>
           <h2>Begin with the format and the setting.</h2>
           <p>Compare a tabletop screen, a single framed picture or a pair of vertical panels. For an enquiry, share the reference ID, intended setting and approximate space available. Dimensions, supports, framing, care and supply must be checked for the particular work.</p>
-          <Link className="button button-ink" href="/en/heritage/library#bian">Browse embroidery references</Link>
+          <Link className="button button-ink" href="/en/heritage#bian">Browse embroidery references</Link>
           <p><Link className="arrow-link" href="/en/heritage/blue-peony-bag">Explore the archived Blue Peony evening bag →</Link></p>
         </section>
       </main>
