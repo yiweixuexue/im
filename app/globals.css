@@ -5880,3 +5880,25 @@ select {
 .reference-shortlist{padding-block:75px}
 }
 @media(prefers-reduced-motion:reduce){.reference-save{transition:none}}
+
+
+/* Entry points to the buyer's form-and-use library */
+.site-header-en .desktop-nav{gap:clamp(10px,1.15vw,20px)}
+.site-header-en .desktop-nav a{font-size:11px;letter-spacing:.015em}
+.library-invitation{background:var(--paper-bright)}
+.library-invitation-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(38px,6.6vw,105px);align-items:center}
+.library-invitation h2{font:400 clamp(38px,4.6vw,66px)/1.13 var(--serif);letter-spacing:-.025em;margin:0 0 27px}
+.library-invitation p:not(.eyebrow){max-width:620px;font-size:15px;line-height:1.95;color:var(--ash);margin:0 0 34px}
+.library-invitation-images{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:520px;min-height:0}
+.library-invitation-images img{width:100%;height:100%;object-fit:cover;min-height:0}
+.library-invitation-images img:first-child{grid-row:1/3}
+.collection-library-link{margin-top:42px;padding-top:22px;border-top:1px solid var(--line)}
+.collection-library-link .arrow-link{font-size:14px}
+.partnership-library-note{margin-bottom:34px;padding:30px 35px;background:var(--paper-deep);border-left:3px solid #536558}
+.partnership-library-note .eyebrow{margin-bottom:10px;color:#536558}
+.partnership-library-note>p:not(.eyebrow){margin:0 0 22px;max-width:740px;font-size:14px;line-height:1.85}
+.reference-detail-invitation{margin-block:55px 75px;padding:38px 0;border-top:1px solid var(--line)}
+.reference-detail-invitation h2{font:400 clamp(30px,3.7vw,52px)/1.2 var(--serif);margin:0 0 16px}
+.reference-detail-invitation>p:not(.eyebrow){font-size:15px;line-height:1.9;color:var(--ash);max-width:760px;margin:0 0 24px}
+@media(max-width:980px){.library-invitation-grid{grid-template-columns:1fr}.library-invitation-images{height:430px}}
+@media(max-width:580px){.library-invitation-images{height:300px;gap:7px}.partnership-library-note{padding:22px}}
