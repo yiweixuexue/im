@@ -124,7 +124,7 @@ export default function Home() {
               <Link className="button button-ink" href="/en/heritage">
                 View the collection
               </Link>
-              <Link className="text-link" href="/en/heritage/library">
+              <Link className="text-link" href="/en/heritage#collection">
                 Explore what each craft can become <span aria-hidden="true">→</span>
               </Link>
               <Link className="text-link" href="/contact#international">Enquire about other crafts <span aria-hidden="true">→</span></Link>
