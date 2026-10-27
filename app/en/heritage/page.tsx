@@ -147,6 +147,42 @@ export default function HeritageCollectionPage() {
           </div>
         </section>
 
+        <section className="ronghua-feature section-space" id="ronghua" aria-labelledby="ronghua-title">
+          <div className="shell ronghua-feature-grid">
+            <div className="ronghua-feature-gallery" aria-label="Yangzhou Ronghua in everyday life">
+              <figure className="ronghua-photo ronghua-photo-home">
+                <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Handmade Yangzhou velvet flowers arranged in a porcelain vase at home" loading="lazy" />
+                <figcaption>01 / FLOWERS FOR THE HOME</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-making">
+                <SiteImage src="/images/site/ronghua/ronghua-craft-hands.webp" alt="Artisan shaping the petals of a velvet flower using a hand tool" loading="lazy" />
+                <figcaption>02 / THE MAKING</figcaption>
+              </figure>
+              <figure className="ronghua-photo ronghua-photo-worn">
+                <SiteImage src="/images/site/ronghua/ronghua-worn-brooch.webp" alt="A Yangzhou velvet-flower brooch styled as a wearable accessory" loading="lazy" />
+                <figcaption>03 / WEARABLE FLORAL ART</figcaption>
+              </figure>
+            </div>
+            <div className="ronghua-feature-copy">
+              <p className="eyebrow">CRAFT FOCUS · YANGZHOU RONGHUA</p>
+              <h2 id="ronghua-title">Flowers for a moment.<br />Keepsakes for the years after.</h2>
+              <p>
+                Yangzhou Ronghua is a traditional velvet-flower craft, shaping soft,
+                dimensional blossoms through patient handwork. Its texture and construction
+                are distinct from Chanhua, the thread-wrapped flower technique in our available collection.
+              </p>
+              <p>
+                We are exploring its potential for weddings, celebrations and graduation:
+                floral adornments that can also become meaningful home displays after the occasion.
+                The right design must respect the maker’s technique and the practical needs of both uses.
+              </p>
+              <Link className="arrow-link" href="/journal/where-craft-belongs">
+                How we approach product development <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="craft-explainer section-space">
           <div className="shell craft-explainer-grid">
             <div className="craft-explainer-image">
@@ -174,8 +210,8 @@ export default function HeritageCollectionPage() {
 
         <section className="gift-section section-space shell">
           <div className="gift-copy">
-            <p className="eyebrow">GIFT-READY BY DEFAULT</p>
-            <h2>A thoughtful object should arrive thoughtfully.</h2>
+            <p className="eyebrow">CONSIDERED PACKAGING · GIFT-READY</p>
+            <h2>Minimal by design.<br />Protective in transit.<br />Gift-ready on arrival.</h2>
             <p>
               ImArtisan pieces are presented as gifts whether they are chosen for someone else or for yourself.
               A complimentary handwritten message can be included when requested.
