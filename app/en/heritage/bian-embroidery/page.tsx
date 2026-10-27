@@ -27,12 +27,12 @@ export default function BianEmbroideryPage() {
           </figure></div>
           <div className="product-summary">
             <Link className="product-back" href="/en/heritage">← Heritage Collection</Link>
-            <p className="eyebrow">BIAN EMBROIDERY · SUPPLIED WORK REFERENCES</p>
+            <p className="eyebrow">AVAILABLE NOW · BIAN EMBROIDERY ART</p>
             <h1>An image made in thread.</h1>
             <p className="product-chinese">汴绣 · 屏风与装框作品</p>
             <p className="product-lead">From a circular screen to a framed peony, embroidery can become an object to live with, as well as an image to look at.</p>
-            <p>These works were supplied as Bian embroidery references. Visible stitches support their description as embroidery; individual makers, fibres, dimensions and availability remain unconfirmed.</p>
-            <div className="product-actions"><Link className="button button-ink" href="/en/heritage/library#bian">Compare forms &amp; uses</Link><a className="text-link" href="#details">Look closer ↓</a></div>
+            <p>Bian embroidery pictures, framed panels and tabletop screens are available to source by direct enquiry. This is a gallery of examples, not verified stock of every pictured design. We confirm maker, materials, dimensions, price, availability and delivery before accepting an order. The peony evening bags are a separate Past Collection.</p>
+            <div className="product-actions"><Link className="button button-ink" href="/contact#international">Enquire about Bian embroidery art</Link><Link className="text-link" href="/en/heritage/library#bian">Compare forms &amp; uses →</Link><a className="text-link" href="#details">Look closer ↓</a></div>
           </div>
         </section>
         <section className="craft-photo-story section-space shell" id="details">
