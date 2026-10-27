@@ -34,6 +34,7 @@ The site library is a **visual reference catalogue**, not a live retail inventor
 - **Available collection:** Chanhua and embroidered lion charms. This **does not** guarantee an individual photographed variant is in stock. Check active Etsy listings.
 - **Coming Soon:** Yangzhou Ronghua, blended incense and Chengdu lacquer examples. They are visual previews, not current checkout offers.
 - **Past Collection:** Bian embroidery bags; retain for design history and craftsmanship but do not market as available.
+- **Reference Work:** supplied works with no confirmed collection release or inventory status. Use per-entry status overrides to keep archived bags marked Past Collection when their craft group also contains reference works. See `craft-media-20261027.md` and its JSON inventory for the first uploaded batch.
 - A future craft can have multiple product statuses only when source data verifies *specific products* separately.
 
 ## 4. Preparing a new NAS batch

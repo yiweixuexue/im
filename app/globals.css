@@ -5911,3 +5911,19 @@ select {
 .reference-load-more:hover{background:var(--paper-deep)}
 .reference-load-more span{margin-left:12px}
 @media(max-width:680px){.reference-control-row .reference-search{grid-column:auto}}
+
+/* Supplied craft archive: keep complete framed objects visible. */
+.reference-status-reference{background:#e8e7df;color:#555d50}
+.reference-card-image img{object-fit:contain}
+.reference-card-image .reference-status-reference{background:rgba(232,231,223,.96);color:#555d50}
+.craft-photo-story h2{font:400 clamp(30px,4vw,54px)/1.15 var(--serif);max-width:850px}
+.craft-photo-lead{max-width:760px;color:var(--ash);line-height:1.9;margin:24px 0 36px}
+.craft-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 32px}
+.craft-photo-grid figure{margin:0;min-width:0}
+.craft-photo-grid img{width:100%;height:clamp(280px,38vw,520px);object-fit:contain;background:#e8e3db}
+.craft-photo-grid h3{font:400 26px/1.3 var(--serif);margin:20px 0 12px}
+.craft-photo-grid figcaption p{font-size:14px;line-height:1.9;color:var(--ash);margin:0}
+@media(max-width:640px){.craft-photo-grid{grid-template-columns:1fr;gap:32px}.craft-photo-grid img{height:420px}}
+
+.bian-reference-page .product-gallery{grid-template-columns:1fr}.bian-reference-page .product-gallery img{width:100%;height:auto;object-fit:contain}
+

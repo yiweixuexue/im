@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IncenseMakingStory } from "../../../../components/incense-making-story";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
@@ -162,6 +163,8 @@ export default function TaiheXiangtangPage() {
             </div>
           </div>
         </section>
+
+        <IncenseMakingStory />
 
         <section className="incense-collection section-space shell" id="collection">
           <div className="incense-collection-head">

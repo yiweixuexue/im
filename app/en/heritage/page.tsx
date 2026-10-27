@@ -259,6 +259,7 @@ export default function HeritageCollectionPage() {
                 Tonal shifts, stitch direction and density work together to suggest the movement of petals,
                 leaves and light.
               </p>
+              <Link className="arrow-link" href="/en/heritage/bian-embroidery">Explore embroidery screens &amp; framed works →</Link>
               <p>
                 The challenge is not simply to fill a shape. The maker must observe how an image is built, then
                 translate that observation into thread without flattening it.

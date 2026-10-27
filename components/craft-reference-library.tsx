@@ -37,7 +37,7 @@ function ReferenceCard({
     <article className="reference-card">
       <figure className="reference-card-image">
         <SiteImage src={item.image} alt={item.alt} loading="lazy" decoding="async" />
-        <StatusTag status={craft.status} />
+        <StatusTag status={item.status ?? craft.status} />
       </figure>
       <div className="reference-card-body">
         <p className="reference-card-meta">
@@ -85,7 +85,7 @@ export function CraftReferenceLibrary() {
     return (!query || haystack.includes(query))
       && (craftFilter === "all" || craftFilter === item.craft)
       && (useFilter === "all" || item.uses.includes(useFilter))
-      && (statusFilter === "all" || craft?.status === statusFilter);
+      && (statusFilter === "all" || (item.status ?? craft?.status) === statusFilter);
   });
 
   function toggle(id: string) {
@@ -102,7 +102,7 @@ export function CraftReferenceLibrary() {
     "I am interested in the following craft references:",
     ...selectedEntries.map((entry) => {
       const craft = crafts.find((c) => c.id === entry.craft);
-      return "- " + entry.id + " · " + entry.name + " (" + (craft?.label || "") + ", " + (craft?.status || "") + ")";
+      return "- " + entry.id + " · " + entry.name + " (" + (craft?.label || "") + ", " + (entry.status ?? craft?.status ?? "") + ")";
     }),
     "",
     "My organisation / project:",
@@ -158,6 +158,7 @@ export function CraftReferenceLibrary() {
                 <option value="available">Available collections</option>
                 <option value="coming">Coming soon</option>
                 <option value="past">Past collection</option>
+                <option value="reference">Reference works</option>
               </select>
             </label>
             <button

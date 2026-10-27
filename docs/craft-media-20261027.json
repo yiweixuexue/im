@@ -1,0 +1,953 @@
+{
+  "batch": "2026-10-27",
+  "authorization": "User explicitly requested web use and upload to PR #10",
+  "processing": "EXIF orientation applied; RGB WebP quality 82, max 1440px, no upscaling; no EXIF/GPS copied; no generative edits or watermark removal",
+  "images": [
+    {
+      "id": 1,
+      "group": "incense",
+      "size": [
+        6000,
+        4000
+      ],
+      "source": "incense/edited/DSC09907.jpg",
+      "sourceSha256": "5b9e389287e3329bddf67b989f2c003f2f5e421f24c5f7841008a27876975c45",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 2,
+      "group": "incense",
+      "size": [
+        6000,
+        4000
+      ],
+      "source": "incense/edited/DSC09908.jpg",
+      "sourceSha256": "2d3acc8bed676f220334d800e8794e2bdf34753b3cf99143994220618367d0ac",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 3,
+      "group": "incense",
+      "size": [
+        4000,
+        6000
+      ],
+      "source": "incense/edited/DSC09910.jpg",
+      "sourceSha256": "a18812d3e8d2ad28644ec1e0cf5d6607745bbbc7b143a357a122832ed7f229d3",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 4,
+      "group": "incense",
+      "size": [
+        6000,
+        4000
+      ],
+      "source": "incense/edited/DSC09911.jpg",
+      "sourceSha256": "596bfbed19c8c61080060af36f3f5875138bcfb7f7bc08bd4892827b265a4c1f",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 5,
+      "group": "incense",
+      "size": [
+        1588,
+        33660
+      ],
+      "source": "incense/edited/Weixin Image_20260914231157_1_94.png",
+      "sourceSha256": "1743295afa3accb2bb1b87e3c215b9bee6e62779d3c4a03f017ee07b7916ae3e",
+      "output": null,
+      "decision": "reviewed all eleven long-image segments; same brochure designs already represented in repository",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 6,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1789060067404.jpg",
+      "sourceSha256": "68282589a1014d460c8d98716cad112d6aa511a6fa899baefb17d856062b54af",
+      "output": "/images/site/uploads-20261027/tasselled-plaques.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 7,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1789060112481.jpg",
+      "sourceSha256": "741a408fa0bd179973584faea88f0f147ae183df5081c97963bf3b1a647a5a67",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 8,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1789060117110.jpg",
+      "sourceSha256": "149361012cab492e93cbaea836f320464b48f2ad26c614af21390efa6f87d4bd",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 9,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1789060139922.jpg",
+      "sourceSha256": "ad8eae3313563c014d7669cc19438179c3b0edd4a38ea3df503c8eff83160ecf",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 10,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1789495939416.jpg",
+      "sourceSha256": "fa96f25eacae2cf56b7e0f437add1571087ff12ffce18bf33dffe66f3f5eda88",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 11,
+      "group": "incense",
+      "size": [
+        1280,
+        2148
+      ],
+      "source": "incense/产品合集/mmexport1789495986933.jpg",
+      "sourceSha256": "985eb0dcb8702cd194000a97f60b0e54021014d85bc98f239daf65034b51e504",
+      "output": "/images/site/uploads-20261027/beaded-hanging-ornaments.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 12,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127251126.jpg",
+      "sourceSha256": "90150f8322dbf1df6491b5b1c7be3fbbd6792574b175e23f49dc34dad98398f1",
+      "output": "/images/site/uploads-20261027/incense-sticks-on-trays.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 13,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127271208.jpg",
+      "sourceSha256": "d4da0105433800a36c2f5b137dce26804a9de8bccd3939a9d44fa17a2b629b4e",
+      "output": null,
+      "decision": "excluded: smoke in room; not evidence of making",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 14,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127275620.jpg",
+      "sourceSha256": "8daf2f5372483ea28b413159a48da23f0c97e4b06f66cd14fcb1b4437ec65f75",
+      "output": null,
+      "decision": "excluded: smoke in room; not evidence of making",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 15,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127279068.jpg",
+      "sourceSha256": "286a9e1b1aff019115feb9d6a72031e1a1fa3cbc5bf83c00434006d5e2aa9b28",
+      "output": null,
+      "decision": "excluded: fire/oven and bread-making scene; not evidence of incense production",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 16,
+      "group": "incense",
+      "size": [
+        1280,
+        1706
+      ],
+      "source": "incense/产品合集/mmexport1793127282748.jpg",
+      "sourceSha256": "d0bf08baa4e27fe785aa455328bbd1e14c79186a17182e0dd28146515fefded4",
+      "output": null,
+      "decision": "excluded: fire/oven and bread-making scene; not evidence of incense production",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 17,
+      "group": "incense",
+      "size": [
+        810,
+        1440
+      ],
+      "source": "incense/产品合集/mmexport1793127310595.jpg",
+      "sourceSha256": "f3803d945f6491d8770722bd6f1eb2004307c56e72187c10a3cdfcb87c94f0c2",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 18,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127329551.jpg",
+      "sourceSha256": "b65a8802b473ace495f88f73e163c874678425fc112e6f67c47d6185f0e26ff8",
+      "output": "/images/site/uploads-20261027/incense-stick-bundles.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 19,
+      "group": "incense",
+      "size": [
+        1280,
+        1708
+      ],
+      "source": "incense/产品合集/mmexport1793127332363.jpg",
+      "sourceSha256": "87e77aa31627fceeacd1c7d1b1c32c163a4c73bdf728a156c2add3d4e19f578b",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 20,
+      "group": "incense",
+      "size": [
+        1280,
+        1708
+      ],
+      "source": "incense/产品合集/mmexport1793127335218.jpg",
+      "sourceSha256": "b5762679f4ecd78e7ac6b8caa0034a7791f7af884202013fba1926cc8b498eb2",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 21,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127564510.jpg",
+      "sourceSha256": "d97fc444d5b04c6962fcf813034e6ee7f59f039131ca5214571eb2dc4eabe239",
+      "output": "/images/site/uploads-20261027/incense-tube-set.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 22,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127595194.jpg",
+      "sourceSha256": "93551082e487fb4eaf47bbb0660ae822d8cb93293c157477d22f10128b030768",
+      "output": "/images/site/uploads-20261027/incense-pendant-finishing.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 23,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127624229.jpg",
+      "sourceSha256": "5340d092138f5303884e67ae63b749efdfd4d22f486620dace008006dc1d9efc",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 24,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127629291.jpg",
+      "sourceSha256": "4c2cef8a7a353faf822f8ac0befc8a9a95c65e7555bfeb1104578d47a72f4a36",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 25,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127679117.jpg",
+      "sourceSha256": "38dacd7e13b6c54cfafba45c338c5f5a1193160c9607a9b795d7231cc0d59e7f",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 26,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127683752.jpg",
+      "sourceSha256": "e8e5c9cd070f8b17002239cef9255059cad2caff900d1d9e51ca9b1462844016",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 27,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127688211.jpg",
+      "sourceSha256": "39f58f1c14ac2c174260b95c5e097fd1797bd3358e840ede787618e26d1c2c12",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 28,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127691996.jpg",
+      "sourceSha256": "86b35e99a6f558fb4c1a6604c775431b31e9c6d6ca784d77ed7432412235095e",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 29,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127695056.jpg",
+      "sourceSha256": "164a5a8164d8ba473d4ee82700ba43039949ff311b1b64de3dc3ab8b58dceaf1",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 30,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127709609.jpg",
+      "sourceSha256": "23cc5772ab3e49b43864d5d6310cd4eeb67ed72c9acdebefa1fb0b74f59839c1",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 31,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127712668.jpg",
+      "sourceSha256": "cf81b03ff7d5c1bc48f2c98234db704854d838d0cb0469b1a93fe991db95e07e",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 32,
+      "group": "incense",
+      "size": [
+        1280,
+        960
+      ],
+      "source": "incense/产品合集/mmexport1793127716151.jpg",
+      "sourceSha256": "80b8667c248a576d5ba1c2340bb93c71488d481e1da7bcd51f1712480cf01fee",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 33,
+      "group": "incense",
+      "size": [
+        1280,
+        960
+      ],
+      "source": "incense/产品合集/mmexport1793127721655.jpg",
+      "sourceSha256": "80b8667c248a576d5ba1c2340bb93c71488d481e1da7bcd51f1712480cf01fee",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 34,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127739450.jpg",
+      "sourceSha256": "84bc93c1119042553557d8ec7ca8bf775ccd9eec0a64305ba9404fd337a1e4b1",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 35,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127741828.jpg",
+      "sourceSha256": "7a21f5c4b0debd7f28d3f1ac650e1a20a3e687f35275eae3f75d62e7738f7e0a",
+      "output": "/images/site/uploads-20261027/powder-in-mortar.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 36,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127745059.jpg",
+      "sourceSha256": "9aabad379a7dec79d337efa61bcb98266094a0c9acb6c6e8f2451e57892dd578",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 37,
+      "group": "incense",
+      "size": [
+        1442,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127748187.jpg",
+      "sourceSha256": "69b7d185adaca764c3e98485580aba96525f90a94ab68fe8cb9698cefaa01036",
+      "output": "/images/site/uploads-20261027/bead-and-plaque-bracelet.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 38,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127765058.jpg",
+      "sourceSha256": "150fb3d2ed793d576ad964144ccaccd7bc995322e9760bd6d36a2f046b95f70c",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 39,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127767557.jpg",
+      "sourceSha256": "d4011ffea285b3556a0378539517c77baafc647b04ed35a6346cf3460e002c7d",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 40,
+      "group": "incense",
+      "size": [
+        1708,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127771259.jpg",
+      "sourceSha256": "62bb3a1654859431aa66223e539af07ad188b4d8cd9d01520bb8035fe20dfa87",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 41,
+      "group": "incense",
+      "size": [
+        1644,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127774060.jpg",
+      "sourceSha256": "fa08e194ec15ee2aec7db6c316e961695f45192a47700cabdf6b686b727f0b78",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 42,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127777420.jpg",
+      "sourceSha256": "e3dbef276f2867e5578642aa6c4e367a649dcc65e7adebcc282168257db58af3",
+      "output": "/images/site/uploads-20261027/incense-presentation-set.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 43,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127780043.jpg",
+      "sourceSha256": "c9203947e1d45bb3549694919a49a85bc3e6c3faf228b0d59cdbbe75de3f50ea",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 44,
+      "group": "incense",
+      "size": [
+        1706,
+        1280
+      ],
+      "source": "incense/产品合集/mmexport1793127782558.jpg",
+      "sourceSha256": "99464263c7ed3b4bbff7e2aa433d165017330b57934e3c7e30c421881f832da2",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 45,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127785347.jpg",
+      "sourceSha256": "921cd8c86a4d1f3ac2068a11afb4a0896bbbc092713058940e3f65620c9f488e",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 46,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127798743.jpg",
+      "sourceSha256": "d9e34329e4063d5776fac8c531d06538912f962da800401ec8ca46df2d15ce36",
+      "output": "/images/site/uploads-20261027/sculptural-incense-figure.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 47,
+      "group": "incense",
+      "size": [
+        1280,
+        1708
+      ],
+      "source": "incense/产品合集/mmexport1793127811950.jpg",
+      "sourceSha256": "617653dd0b1bcae81de465ca5823cc978e6d5e0a37a1b178c73d6fb4f3e2f6fd",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 48,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127815280.jpg",
+      "sourceSha256": "efdb64421a1beddce7dc3d4da6f50a2ac92d22ad7c27c0f035280dc9058a8f3e",
+      "output": "/images/site/uploads-20261027/multicolour-bead-bracelet.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 49,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127818151.jpg",
+      "sourceSha256": "2d0938dab122152dcd15e28e00d1fea8c45d677570fe3327b653e8a51c2e47c6",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 50,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127820562.jpg",
+      "sourceSha256": "1b1387016dde1baa3d50c1182c413edf8ddb9d72c2a348b5233bfa5549329b15",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 51,
+      "group": "incense",
+      "size": [
+        1440,
+        1080
+      ],
+      "source": "incense/产品合集/mmexport1793127825095.jpg",
+      "sourceSha256": "9ce2dd0b001a07e71fa998c28f49a667d4d9ad3164214e7810b3c80128eb4a06",
+      "output": "/images/site/uploads-20261027/corded-plaque-assortment.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 52,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127832154.jpg",
+      "sourceSha256": "f3aa136d026e42d78ab2be6cd5b296170c855aa7c570d28fb2dcb3d609b94cf8",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 53,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127839771.jpg",
+      "sourceSha256": "2d6aa595925efe2f90d45ca7ff4fa7bb0554659377919fec62ae676e559ad3c6",
+      "output": "/images/site/uploads-20261027/dragon-relief-plaque.webp",
+      "decision": "published",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 54,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127859035.jpg",
+      "sourceSha256": "6818fdbe593787f828af0eac76cf9c9282379879ce6537127951521e71d12cce",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 55,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127870715.jpg",
+      "sourceSha256": "bbf43888c3bfbf72d8e5041c4a22022ec94ab252fe4a38a117bfd15d8cc86727",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 56,
+      "group": "incense",
+      "size": [
+        1440,
+        1920
+      ],
+      "source": "incense/产品合集/mmexport1793127872767.jpg",
+      "sourceSha256": "173de74aef80efc6ac408269585692a7f45dc917dfba77277d870c0cec0d392b",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "He Xiang batch; specific ingredients and production claims unverified"
+    },
+    {
+      "id": 57,
+      "group": "objects",
+      "size": [
+        2992,
+        2992
+      ],
+      "source": "objects/20250228_150521.jpg",
+      "sourceSha256": "dbb7ec915d07f2e7bff113206f014636f453f10d56cc479abdbc1e09e5eeb7a6",
+      "output": "/images/site/uploads-20261027/lotus-screen-detail.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 58,
+      "group": "objects",
+      "size": [
+        2992,
+        2992
+      ],
+      "source": "objects/20250228_150527.jpg",
+      "sourceSha256": "af1b965d2aafd33f7c5525a9fe76936dab011484c6b45ce100810129760870f2",
+      "output": "/images/site/uploads-20261027/lotus-standing-screen.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 59,
+      "group": "objects",
+      "size": [
+        2992,
+        2992
+      ],
+      "source": "objects/20250228_150538.jpg",
+      "sourceSha256": "fda1d312476e8b276de03ee35e9a99f854d1acca5751573fed953ce2ecd4c2cc",
+      "output": "/images/site/uploads-20261027/panda-standing-screen.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 60,
+      "group": "objects",
+      "size": [
+        2992,
+        2992
+      ],
+      "source": "objects/20250228_150550.jpg",
+      "sourceSha256": "5945e58fd91b6e4f63b7bc26416e1b3a6ae65075e60f49ea723bd9fedf2a6f3a",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 61,
+      "group": "objects",
+      "size": [
+        3000,
+        4000
+      ],
+      "source": "objects/20250228_150557.jpg",
+      "sourceSha256": "ed92a9b7f63bb29c592bd3eb1278e9f685abf705eab1264d97a76ce04c9be153",
+      "output": "/images/site/uploads-20261027/dragon-vase-picture.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 62,
+      "group": "objects",
+      "size": [
+        3000,
+        4000
+      ],
+      "source": "objects/20250228_150558.jpg",
+      "sourceSha256": "c8d6516e43b765677e1d846ff3242c3b171e6d74039568a4c7f6be25ee9c7b35",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 63,
+      "group": "objects",
+      "size": [
+        3000,
+        4000
+      ],
+      "source": "objects/20250228_154240.jpg",
+      "sourceSha256": "c965b2420d53bef430005add7dedf927ff5f69dbbe749f75315bde3c0dda7988",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 64,
+      "group": "objects",
+      "size": [
+        3000,
+        4000
+      ],
+      "source": "objects/20250228_154251.jpg",
+      "sourceSha256": "4f441d9fe55f6c1f6d613e0490dd553663a437c448e9931d974397b1d1b86ff6",
+      "output": "/images/site/uploads-20261027/orchid-framed-picture.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 65,
+      "group": "objects",
+      "size": [
+        2252,
+        4000
+      ],
+      "source": "objects/20250228_161701.jpg",
+      "sourceSha256": "2db8b8ca5466ad5156ebdcda887d3770c2110974cc117455d04dd10e7933f037",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 66,
+      "group": "objects",
+      "size": [
+        2252,
+        4000
+      ],
+      "source": "objects/20250228_161945.jpg",
+      "sourceSha256": "d66a864d4c330fe5f4e16122a1ae98a7511dfdd270c6fc781c63cff0ebb348fd",
+      "output": null,
+      "decision": "reviewed, not selected (alternate view, duplicate, existing image or supporting context)",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 67,
+      "group": "objects",
+      "size": [
+        2252,
+        4000
+      ],
+      "source": "objects/20250228_162042.jpg",
+      "sourceSha256": "d0acaa70ecaaa16353aa03b96d5a09296516ea06abd8903b49a03f38fc4808c6",
+      "output": "/images/site/uploads-20261027/paired-vertical-panels.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 68,
+      "group": "objects",
+      "size": [
+        2252,
+        4000
+      ],
+      "source": "objects/20250228_162127.jpg",
+      "sourceSha256": "e8c50938c62ad74fa7394f2c06d208cd5fa433cd8fa352fe9142b70946065a3d",
+      "output": null,
+      "decision": "reviewed, not selected: redundant supporting view",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 69,
+      "group": "objects",
+      "size": [
+        2252,
+        4000
+      ],
+      "source": "objects/20250228_162135.jpg",
+      "sourceSha256": "b2ac494cd3192b5f797193d9b292d24c93b347fcca96d75aa3a703a421da0edf",
+      "output": "/images/site/uploads-20261027/blue-panel-detail.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 70,
+      "group": "objects",
+      "size": [
+        1440,
+        1445
+      ],
+      "source": "objects/mmexport1789060353563.jpg",
+      "sourceSha256": "8a3a9216942199de601da19718d4deb14f420682417877b56c999137641b0b39",
+      "output": "/images/site/uploads-20261027/peony-butterfly-picture.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 71,
+      "group": "objects",
+      "size": [
+        1918,
+        1964
+      ],
+      "source": "objects/mmexport1789060358046.jpg",
+      "sourceSha256": "9ce80989ef044f715336ab1cb4f229d7372fc27ac23cd10be8c4f4ef6cc0d81b",
+      "output": "/images/site/uploads-20261027/pink-peony-picture.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    },
+    {
+      "id": 72,
+      "group": "objects",
+      "size": [
+        1916,
+        1918
+      ],
+      "source": "objects/mmexport1789060381830.jpg",
+      "sourceSha256": "9d3b38ebbc392173ac6f0ffd7a68d2662623c76aef1697d7b41bb4624fb61274",
+      "output": "/images/site/uploads-20261027/landscape-picture.webp",
+      "decision": "published",
+      "classification": "embroidery reference, user-supplied Bian context; visible stitches, no named maker attribution"
+    }
+  ],
+  "otherMedia": [
+    {
+      "source": "incense/edited/太和香堂 · 合香香牌.pdf",
+      "decision": "All 15 pages rendered and inspected. Cover identifies Taihe Xiangtang; remaining pages show pendant forms already represented. Not republished."
+    },
+    {
+      "source": "objects/20250228_162212.mp4",
+      "decision": "Entire 11-second visual sequence inspected at one-second intervals. Camera pans over finished vertical embroidery panels; no making process. Not republished; still photos cover same works."
+    }
+  ]
+}

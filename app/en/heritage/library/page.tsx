@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 export const metadata: Metadata = {
   title: "Craft & Product Library | Forms, Uses & Sourcing",
   description:
-    "Explore 26 documented examples across Chinese traditional craft techniques. Filter by craft, occasion and intended use, then prepare a sourcing enquiry with ImArtisan.",
+    "Explore documented examples across Chinese traditional craft techniques. Filter by craft, occasion and intended use, then prepare a sourcing enquiry with ImArtisan.",
 };
 
 export default function CraftLibraryPage() {
@@ -54,7 +54,7 @@ export default function CraftLibraryPage() {
             Images are examples of work, not a promise that every pictured design is currently in stock
             or can be reproduced. An “Available Collection” label describes the craft range, not guaranteed
             availability of the exact photograph. “Coming Soon” collections are previews, while “Past
-            Collection” examples are retained for design and technique reference only. Photos, materials,
+            Collection” examples are retained for design and technique reference only. A “Reference Work” label documents supplied work without assigning a release or stock status. Photos, materials,
             safety and care guidance, prices, quantities and production lead times are confirmed for
             a particular project before an order is agreed.
           </p>

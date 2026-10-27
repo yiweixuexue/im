@@ -135,9 +135,9 @@ export default function BluePeonyBagPage() {
       <section className="reference-detail-invitation section-space shell">
           <p className="eyebrow">EXPLORE FORMS &amp; USES · PAST COLLECTION</p>
           <h2>What can this craft become?</h2>
-          <p>Explore past embroidered bags in the archive and how such work has been used in occasion styling.</p>
-          <Link className="button button-ink" href="/en/heritage/library#bian">
-            View Bian embroidery references in the Craft Library
+          <p>Compare archived bags with supplied standing-screen and framed-picture references.</p>
+          <Link className="button button-ink" href="/en/heritage/bian-embroidery">
+            Explore Bian embroidery pictures and screens
           </Link>
         </section>
         </main>

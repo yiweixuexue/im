@@ -1,5 +1,5 @@
 export type CraftId = "chanhua" | "ronghua" | "hexiang" | "lacquer" | "bian" | "lion";
-export type CatalogStatus = "available" | "coming" | "past";
+export type CatalogStatus = "available" | "coming" | "past" | "reference";
 export type UseId = "wear" | "ceremony" | "gift" | "home" | "ritual";
 
 export type CraftEntry = {
@@ -21,6 +21,7 @@ export type CatalogEntry = {
   uses: UseId[];
   howToUse: string;
   consideration: string;
+  status?: CatalogStatus;
 };
 
 export const uses: { id: UseId; label: string }[] = [
@@ -35,6 +36,7 @@ export const statusLabels: Record<CatalogStatus, string> = {
   available: "AVAILABLE COLLECTION",
   coming: "COMING SOON",
   past: "PAST COLLECTION",
+  reference: "REFERENCE WORK",
 };
 
 export const crafts: CraftEntry[] = [
@@ -42,7 +44,7 @@ export const crafts: CraftEntry[] = [
   { id: "ronghua", label: "Yangzhou Ronghua · Velvet Flowers", subtitle: "RONGHUA · VELVET FLOWERS", status: "coming", href: "/en/heritage/ronghua", summary: "Soft, sculptural flowers explored as wearable accents and lasting display pieces after an important occasion." },
   { id: "hexiang", label: "He Xiang · Blended Incense", subtitle: "TAIHE XIANGTANG · KAIFENG", status: "coming", href: "/en/heritage/taihe-xiangtang", summary: "Fragrant compositions shaped into plaques, pendants and wrist ornaments. Scents and final specifications remain to be confirmed." },
   { id: "lacquer", label: "Chengdu Lacquerware", subtitle: "LACQUER · CHENGDU", status: "coming", href: "/en/heritage/chengdu-lacquerware", summary: "Layered lacquer translated into adornments, display objects and tea-related forms. Usability is assessed piece by piece." },
-  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "past", href: "/en/heritage/blue-peony-bag", summary: "Examples from a past collection illustrate fine pictorial embroidery. The bags shown are not currently offered for sale." },
+  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "reference", href: "/en/heritage/bian-embroidery", summary: "Pictorial embroidery in standing screens, framed pictures and vertical panels, alongside archived bags. Reference works have no confirmed release or stock status." },
   { id: "lion", label: "Embroidered Lion Charms", subtitle: "TEXTILE EMBROIDERY · LION MOTIFS", status: "available", href: "/en/heritage/lion-charm", summary: "Expressive small textile charms for personal accessories and celebratory gifting. Check current listings for individual designs." },
 ];
 
@@ -186,13 +188,13 @@ export const catalog: CatalogEntry[] = [
     consideration: "Potential food or beverage use cannot be assumed.",
   },
   {
-    id: "BX-01", craft: "bian", name: "Blue Peony Evening Bag", form: "Evening bag",
+    id: "BX-01", craft: "bian", status: "past", name: "Blue Peony Evening Bag", form: "Evening bag",
     image: "/images/site/blue-peony-bag.webp", alt: "Blue peony Bian embroidery evening bag",
     uses: ["ceremony", "wear"], howToUse: "A past design showing pictorial embroidery carried with occasion wear.",
     consideration: "Past Collection only. Protect embroidery from abrasion; this bag is not currently for sale.",
   },
   {
-    id: "BX-02", craft: "bian", name: "Red Peony Evening Bag", form: "Evening bag",
+    id: "BX-02", craft: "bian", status: "past", name: "Red Peony Evening Bag", form: "Evening bag",
     image: "/images/site/red-peony-bag.webp", alt: "Red peony Bian embroidery evening bag",
     uses: ["ceremony", "wear"], howToUse: "A design archive example for formal attire and embroidery study.",
     consideration: "Past Collection only; not a currently available item or confirmed wholesale option.",
@@ -202,5 +204,244 @@ export const catalog: CatalogEntry[] = [
     image: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels",
     uses: ["gift", "wear", "ceremony"], howToUse: "Attach where the specific hardware permits, or give as a joyful keepsake.",
     consideration: "Check current variants, hardware, dimensions and prices with the active Etsy listing.",
+  },
+
+  {
+    "id": "HX-09",
+    "craft": "hexiang",
+    "name": "Tasselled Plaque Pair",
+    "form": "Hanging ornaments",
+    "image": "/images/site/uploads-20261027/tasselled-plaques.webp",
+    "alt": "Tasselled Plaque Pair shown in the user-supplied craft archive",
+    "uses": [
+      "gift",
+      "home"
+    ],
+    "howToUse": "A reference for suspended decorative scent forms with knotted cords and long tassels.",
+    "consideration": "Confirm hanging position, fragrance and cord construction; pictured designs are not confirmed stock."
+  },
+  {
+    "id": "HX-10",
+    "craft": "hexiang",
+    "name": "Beaded Hanging Ornaments",
+    "form": "Corded ornaments",
+    "image": "/images/site/uploads-20261027/beaded-hanging-ornaments.webp",
+    "alt": "Beaded Hanging Ornaments shown in the user-supplied craft archive",
+    "uses": [
+      "gift",
+      "home"
+    ],
+    "howToUse": "Explore a vertical arrangement of beads and shaped ornaments for a display setting.",
+    "consideration": "The composition of each bead and the intended mounting need confirmation."
+  },
+  {
+    "id": "HX-11",
+    "craft": "hexiang",
+    "name": "Bead & Plaque Wrist Ornament",
+    "form": "Bracelet",
+    "image": "/images/site/uploads-20261027/bead-and-plaque-bracelet.webp",
+    "alt": "Bead & Plaque Wrist Ornament shown in the user-supplied craft archive",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "Compare round beads with a shaped relief plaque in a wrist-sized form.",
+    "consideration": "Fit, ingredient composition and skin-contact guidance remain unverified."
+  },
+  {
+    "id": "HX-12",
+    "craft": "hexiang",
+    "name": "Multicolour Bead Bracelet",
+    "form": "Bracelet",
+    "image": "/images/site/uploads-20261027/multicolour-bead-bracelet.webp",
+    "alt": "Multicolour Bead Bracelet shown in the user-supplied craft archive",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "A colour and arrangement reference for a beaded wrist ornament.",
+    "consideration": "Do not infer the material or fragrance of every coloured bead from the photo."
+  },
+  {
+    "id": "HX-13",
+    "craft": "hexiang",
+    "name": "Corded Relief Plaques",
+    "form": "Pendant assortment",
+    "image": "/images/site/uploads-20261027/corded-plaque-assortment.webp",
+    "alt": "Corded Relief Plaques shown in the user-supplied craft archive",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "Compare plaque shapes and cord arrangements when discussing a personal ornament.",
+    "consideration": "Each motif, fitting and wearing instruction must be confirmed separately."
+  },
+  {
+    "id": "HX-14",
+    "craft": "hexiang",
+    "name": "Dragon Relief Plaque",
+    "form": "Relief ornament",
+    "image": "/images/site/uploads-20261027/dragon-relief-plaque.webp",
+    "alt": "Dragon Relief Plaque shown in the user-supplied craft archive",
+    "uses": [
+      "gift",
+      "home"
+    ],
+    "howToUse": "A close view of a sculptural dragon-face motif for visual reference.",
+    "consideration": "Handheld scale is illustrative; dimensions, hanging fittings and composition are unconfirmed."
+  },
+  {
+    "id": "HX-15",
+    "craft": "hexiang",
+    "name": "Sculptural Incense Figure",
+    "form": "Display figure",
+    "image": "/images/site/uploads-20261027/sculptural-incense-figure.webp",
+    "alt": "Sculptural Incense Figure shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "Explore a freestanding sculptural form within the supplied incense archive.",
+    "consideration": "The figure identity, material formula, dimensions and intended scent use need confirmation."
+  },
+  {
+    "id": "HX-16",
+    "craft": "hexiang",
+    "name": "Incense Sticks in Tubes",
+    "form": "Packaged stick incense",
+    "image": "/images/site/uploads-20261027/incense-tube-set.webp",
+    "alt": "Incense Sticks in Tubes shown in the user-supplied craft archive",
+    "uses": [
+      "ritual",
+      "gift"
+    ],
+    "howToUse": "A reference for stick incense presented in individual tubes.",
+    "consideration": "Confirm composition and maker instructions before burning; use a suitable holder and ventilation, never leave burning incense unattended."
+  },
+  {
+    "id": "HX-17",
+    "craft": "hexiang",
+    "name": "Mixed-Form Presentation Set",
+    "form": "Boxed reference set",
+    "image": "/images/site/uploads-20261027/incense-presentation-set.webp",
+    "alt": "Mixed-Form Presentation Set shown in the user-supplied craft archive",
+    "uses": [
+      "gift",
+      "ritual"
+    ],
+    "howToUse": "See how a wrist ornament and packaged incense can be arranged together for gifting.",
+    "consideration": "Packaging shown is a reference; contents, quantities and availability are not a confirmed offer."
+  },
+  {
+    "id": "BX-03",
+    "craft": "bian",
+    "name": "Lotus Standing Screen",
+    "form": "Circular standing screen",
+    "image": "/images/site/uploads-20261027/lotus-standing-screen.webp",
+    "alt": "Lotus Standing Screen shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "Display as a tabletop focal point, allowing room around the circular frame.",
+    "consideration": "Confirm base stability, dimensions and whether both faces are intended for viewing."
+  },
+  {
+    "id": "BX-04",
+    "craft": "bian",
+    "name": "Panda & Bamboo Screen",
+    "form": "Circular standing screen",
+    "image": "/images/site/uploads-20261027/panda-standing-screen.webp",
+    "alt": "Panda & Bamboo Screen shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A pictorial textile reference for a shelf or tabletop display.",
+    "consideration": "Exact fibres, dimensions, maker and availability have not been established."
+  },
+  {
+    "id": "BX-05",
+    "craft": "bian",
+    "name": "Dragon Vase Picture",
+    "form": "Framed embroidery picture",
+    "image": "/images/site/uploads-20261027/dragon-vase-picture.webp",
+    "alt": "Dragon Vase Picture shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A framed image of a vase with dragon and floral motifs for interior display.",
+    "consideration": "This is a picture of a vessel; confirm frame dimensions and hanging fittings."
+  },
+  {
+    "id": "BX-06",
+    "craft": "bian",
+    "name": "Orchid & Butterfly Picture",
+    "form": "Framed embroidery picture",
+    "image": "/images/site/uploads-20261027/orchid-framed-picture.webp",
+    "alt": "Orchid & Butterfly Picture shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A small botanical composition for an interior display or gift discussion.",
+    "consideration": "Frame materials, scale and wall or tabletop fittings require confirmation."
+  },
+  {
+    "id": "BX-07",
+    "craft": "bian",
+    "name": "Paired Vertical Floral Panels",
+    "form": "Framed vertical panels",
+    "image": "/images/site/uploads-20261027/paired-vertical-panels.webp",
+    "alt": "Paired Vertical Floral Panels shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "Compare two slender floral compositions as a paired interior display.",
+    "consideration": "Confirm whether panels can be sourced together, their measurements and mounting requirements."
+  },
+  {
+    "id": "BX-08",
+    "craft": "bian",
+    "name": "Peonies & Butterflies",
+    "form": "Framed embroidery picture",
+    "image": "/images/site/uploads-20261027/peony-butterfly-picture.webp",
+    "alt": "Peonies & Butterflies shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A floral picture that brings layered colour into a room or gift setting.",
+    "consideration": "Protect from direct sunlight; confirm textile, frame, care and availability for any enquiry."
+  },
+  {
+    "id": "BX-09",
+    "craft": "bian",
+    "name": "Pink Peony Picture",
+    "form": "Framed embroidery picture",
+    "image": "/images/site/uploads-20261027/pink-peony-picture.webp",
+    "alt": "Pink Peony Picture shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A close floral composition for a wall display or personal gift reference.",
+    "consideration": "The photo does not establish dimensions, fibres or production availability."
+  },
+  {
+    "id": "BX-10",
+    "craft": "bian",
+    "name": "Mountain Landscape Picture",
+    "form": "Framed embroidery picture",
+    "image": "/images/site/uploads-20261027/landscape-picture.webp",
+    "alt": "Mountain Landscape Picture shown in the user-supplied craft archive",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A landscape reference for a quiet interior display.",
+    "consideration": "Confirm dimensions, hanging method and care; no named artist or place attribution is supplied."
   },
 ];
