@@ -19,11 +19,13 @@ const services = [
 
 const pieces = [
   { name: "Embroidered lion charms", craft: "A SMALL GESTURE OF GOOD WISHES", image: "lion-charm.webp", alt: "Colorful embroidered Chinese lion charms with tassels", text: "A lively starting point for seasonal celebrations and guest gifting.", href: "/en/heritage#collection" },
-  { name: "Blended-incense objects", craft: "TAIHE XIANGTANG · KAIFENG", image: "incense/round-cloud.webp", alt: "Carved round incense plaque from Taihe Xiangtang", text: "Coming Soon: sculpted plaques and wearable forms rooted in Chinese scent culture.", href: "/en/heritage/taihe-xiangtang" },
-  { name: "Chengdu lacquerware", craft: "LAYERED COLOR & HAND FINISHING", image: "lacquer/red-pendant.webp", alt: "Red Chengdu lacquer pendant", text: "Coming Soon: lacquer adornments and selected objects, pending product details.", href: "/en/heritage/chengdu-lacquerware" },
+  { name: "Blended-incense objects", craft: "TAIHE XIANGTANG · KAIFENG", image: "incense/round-cloud.webp", alt: "Carved round incense plaque from Taihe Xiangtang", text: "Available Now by direct enquiry: sculpted scent plaques and wearable forms. Confirm the selected formula and quantity.", href: "/en/heritage/taihe-xiangtang" },
+  { name: "Chengdu lacquerware", craft: "LAYERED COLOR & HAND FINISHING", image: "lacquer/red-pendant.webp", alt: "Red Chengdu lacquer pendant", text: "Available Now by direct enquiry: lacquer adornments and objects for the home. Confirm specification and feasibility.", href: "/en/heritage/chengdu-lacquerware" },
   { name: "Hand-wrapped floral brooches", craft: "CHANHUA · THREAD INTO PETALS", image: "tulip-brooch.webp", alt: "Hand-wrapped tulip brooches", text: "A wearable floral detail for celebrations, appreciation and thoughtful retail.", href: "/en/heritage#collection" },
+  { name: "Bian Embroidered Home Art", craft: "BIAN EMBROIDERY · WALL & TABLE ART", image: "uploads-20261027/lotus-standing-screen.webp", alt: "Lotus embroidered tabletop screen", text: "Available Now by direct enquiry: embroidered standing screens and framed art.", href: "/en/heritage/bian-embroidery" },
+  { name: "Yangzhou Velvet Flowers", craft: "RONGHUA · FLORAL ART", image: "ronghua/ronghua-worn-brooch.webp", alt: "Velvet floral brooch for formal attire", text: "Available Now by direct enquiry: floral brooches, wearable ornaments and home displays.", href: "/en/heritage/ronghua" },
   { name: "Peony embroidery bags", craft: "BIAN EMBROIDERY · ART TO CARRY", image: "blue-peony-bag.webp", alt: "Blue peony Bian embroidered evening bag", text: "Past Collection: shown as a design archive, not currently offered for wholesale.", href: "/en/heritage/blue-peony-bag" },
-  { name: "A personal aromatic detail", craft: "TAIHE XIANGTANG · WEARABLE INCENSE", image: "incense/bracelet-worn-portrait.webp", alt: "Taihe Xiangtang incense bracelet worn at the wrist", text: "Coming Soon: a wearable incense exploration, not yet offered for ordering.", href: "/en/heritage/taihe-xiangtang#bracelet" },
+  { name: "A personal aromatic detail", craft: "TAIHE XIANGTANG · WEARABLE INCENSE", image: "incense/bracelet-worn-portrait.webp", alt: "Taihe Xiangtang incense bracelet worn at the wrist", text: "Available Now by direct enquiry: wearable incense forms. Confirm fit, aromatic composition and sourcing terms.", href: "/en/heritage/taihe-xiangtang#bracelet" },
 ];
 
 const questions = [
@@ -66,7 +68,7 @@ export default function PartnershipsPage() {
           </div>
         </section>
         <section className={styles.collection} id="selection"><div className={`shell ${styles.section}`}>
-          <div className={styles.sectionHead}><p className="eyebrow">02 / THE CRAFT SELECTION</p><div><h2>Objects worth a closer look.</h2><p>A starting point for your collection or occasion. Wrapped-flower ornaments and embroidered lion charms are available for retail discovery. Incense and lacquer collections are coming soon; Bian embroidery bags are archived. Wholesale quantities, prices and lead times must be confirmed individually.</p></div></div>
+          <div className={styles.sectionHead}><p className="eyebrow">02 / THE CRAFT SELECTION</p><div><h2>Objects worth a closer look.</h2><p>A starting point for your collection or occasion. All craft collections are Available Now for direct sourcing enquiries, including incense, Ronghua, lacquer and Bian embroidered home art. Chanhua and lion charms are additionally sold on Etsy. Only Bian embroidery evening bags remain Past Collection. Wholesale pricing, quantities and lead times require an individual quote.</p></div></div>
           <div className="partnership-library-note">
             <p className="eyebrow">A VISUAL BUYER REFERENCE</p>
             <p>Want to explore more forms and uses before making an enquiry? Browse our craft library, save reference pieces and send your shortlist. Examples are not confirmed stock, and trade terms are quoted individually.</p>
