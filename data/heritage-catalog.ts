@@ -1,5 +1,5 @@
 export type CraftId = "chanhua" | "ronghua" | "hexiang" | "lacquer" | "bian" | "lion";
-export type CatalogStatus = "available" | "coming" | "past" | "reference";
+export type CatalogStatus = "available" | "past";
 export type UseId = "wear" | "ceremony" | "gift" | "home" | "ritual";
 
 export type CraftEntry = {
@@ -33,18 +33,16 @@ export const uses: { id: UseId; label: string }[] = [
 ];
 
 export const statusLabels: Record<CatalogStatus, string> = {
-  available: "AVAILABLE COLLECTION",
-  coming: "COMING SOON",
+  available: "AVAILABLE NOW",
   past: "PAST COLLECTION",
-  reference: "REFERENCE WORK",
 };
 
 export const crafts: CraftEntry[] = [
   { id: "chanhua", label: "Chanhua · Thread-Wrapped Flowers", subtitle: "CHANHUA · FLORAL ORNAMENTS", status: "available", href: "/en/heritage/chanhua", summary: "Thread-wrapped forms for hair, clothing and personal occasions. Individual designs and current stock are verified on Etsy." },
-  { id: "ronghua", label: "Yangzhou Ronghua · Velvet Flowers", subtitle: "RONGHUA · VELVET FLOWERS", status: "coming", href: "/en/heritage/ronghua", summary: "Soft, sculptural flowers explored as wearable accents and lasting display pieces after an important occasion." },
-  { id: "hexiang", label: "He Xiang · Blended Incense", subtitle: "TAIHE XIANGTANG · KAIFENG", status: "coming", href: "/en/heritage/taihe-xiangtang", summary: "Fragrant compositions shaped into plaques, pendants and wrist ornaments. Scents and final specifications remain to be confirmed." },
-  { id: "lacquer", label: "Chengdu Lacquerware", subtitle: "LACQUER · CHENGDU", status: "coming", href: "/en/heritage/chengdu-lacquerware", summary: "Layered lacquer translated into adornments, display objects and tea-related forms. Usability is assessed piece by piece." },
-  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "reference", href: "/en/heritage/bian-embroidery", summary: "Pictorial embroidery in standing screens, framed pictures and vertical panels, alongside archived bags. Reference works have no confirmed release or stock status." },
+  { id: "ronghua", label: "Yangzhou Ronghua · Velvet Flowers", subtitle: "RONGHUA · VELVET FLOWERS", status: "available", href: "/en/heritage/ronghua", summary: "Soft, sculptural floral works for wearing, gifting and lasting display. Available by direct enquiry; pictured variants and pricing need confirmation." },
+  { id: "hexiang", label: "He Xiang · Blended Incense", subtitle: "TAIHE XIANGTANG · KAIFENG", status: "available", href: "/en/heritage/taihe-xiangtang", summary: "Incense plaques, pendants, bracelets and gift forms available for direct sourcing enquiries. Confirm scent, materials, quantity and care for each selection." },
+  { id: "lacquer", label: "Chengdu Lacquerware", subtitle: "LACQUER · CHENGDU", status: "available", href: "/en/heritage/chengdu-lacquerware", summary: "Lacquer adornments, display pieces and tea-related forms available by enquiry. Functional suitability and exact specifications are assessed piece by piece." },
+  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "available", href: "/en/heritage/bian-embroidery", summary: "Pictorial embroidery in standing screens, framed pictures and vertical panels is available by enquiry. The embroidered evening bags alone remain archived as Past Collection." },
   { id: "lion", label: "Embroidered Lion Charms", subtitle: "TEXTILE EMBROIDERY · LION MOTIFS", status: "available", href: "/en/heritage/lion-charm", summary: "Expressive small textile charms for personal accessories and celebratory gifting. Check current listings for individual designs." },
 ];
 
@@ -77,13 +75,13 @@ export const catalog: CatalogEntry[] = [
     id: "RH-01", craft: "ronghua", name: "Velvet-Flower Brooch", form: "Wearable floral art",
     image: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory",
     uses: ["wear", "ceremony", "gift"], howToUse: "A sculptural flower accent for a ceremony or special outfit.",
-    consideration: "Coming Soon: finished designs, fastenings and wear testing are not yet confirmed.",
+    consideration: "Available by enquiry. Confirm the fastening, finish, care and stock or production options for the specific brooch.",
   },
   {
     id: "RH-02", craft: "ronghua", name: "Velvet Flowers in a Vase", form: "Floral home display",
     image: "/images/site/ronghua/ronghua-home-vase.webp", alt: "Velvet flowers composed in a porcelain vase",
     uses: ["home", "gift", "ceremony"], howToUse: "Display in a vase as an enduring floral arrangement or keepsake.",
-    consideration: "A craft reference; final dimensions, display fittings and release details are pending.",
+    consideration: "Available by enquiry. Confirm dimensions, display fittings, care and sourcing options for the selected arrangement.",
   },
   {
     id: "HX-01", craft: "hexiang", name: "Cloud Relief Incense Plaque", form: "Scented plaque",
@@ -95,7 +93,7 @@ export const catalog: CatalogEntry[] = [
     id: "HX-02", craft: "hexiang", name: "Floral Relief Incense Plaque", form: "Scented plaque",
     image: "/images/site/incense/round-floral.webp", alt: "Round incense plaque with layered floral relief",
     uses: ["ritual", "gift"], howToUse: "A small aromatic object chosen for its carved form and composition.",
-    consideration: "Shown as a coming-soon reference, not currently available to order.",
+    consideration: "Available for a sourcing enquiry; confirm the precise composition, selected design and fulfilment terms.",
   },
   {
     id: "HX-03", craft: "hexiang", name: "Gourd Pendant", form: "Corded scent pendant",
@@ -107,7 +105,7 @@ export const catalog: CatalogEntry[] = [
     id: "HX-04", craft: "hexiang", name: "Rabbit-Motif Ornament", form: "Decorative scent ornament",
     image: "/images/site/incense/rabbit.webp", alt: "Blended-incense ornament with rabbit design and tassel",
     uses: ["gift", "ritual"], howToUse: "A symbolic gift form within the scented-object tradition.",
-    consideration: "Reference work; motif, composition and supply would need confirmation.",
+    consideration: "Available by enquiry; confirm motif, composition, quantity and supply for the particular design.",
   },
   {
     id: "HX-05", craft: "hexiang", name: "Narrative Relief Plaque", form: "Rectangular scent plaque",
@@ -119,7 +117,7 @@ export const catalog: CatalogEntry[] = [
     id: "HX-06", craft: "hexiang", name: "Leaf-Form Pendant", form: "Scent pendant",
     image: "/images/site/incense/leaf-form.webp", alt: "Leaf-form incense ornament with vein details",
     uses: ["wear", "ritual", "gift"], howToUse: "An example of portable fragrance in a nature-inspired form.",
-    consideration: "Release timing, wearing instructions and exact fragrance are unconfirmed.",
+    consideration: "Enquire about the exact fragrance, wearing instructions, price and fulfilment lead time.",
   },
   {
     id: "HX-07", craft: "hexiang", name: "He Xiang Wrist Ornament", form: "Aromatic wrist ornament",
@@ -131,7 +129,7 @@ export const catalog: CatalogEntry[] = [
     id: "HX-08", craft: "hexiang", name: "Slender Corded Ornament", form: "Corded scent form",
     image: "/images/site/incense/slender-form.webp", alt: "Slender blended-incense ornament on a decorative cord",
     uses: ["wear", "ritual"], howToUse: "A compact example of fragrance given a wearable shape.",
-    consideration: "Display reference only; do not assume a specific composition or stock.",
+    consideration: "Available by enquiry. Confirm the specific formula, cord construction and current supply.",
   },
   {
     id: "LC-01", craft: "lacquer", name: "Lacquer Tea Vessel", form: "Tea-related object",
@@ -161,13 +159,13 @@ export const catalog: CatalogEntry[] = [
     id: "LC-05", craft: "lacquer", name: "Lacquer Pendant Necklaces", form: "Neck adornment",
     image: "/images/site/lacquer/necklaces.webp", alt: "Two handmade lacquer pendant necklaces",
     uses: ["wear", "gift"], howToUse: "A small area of lacquer colour and texture worn close to the body.",
-    consideration: "Pendant dimensions, weight and hardware specifications are pending.",
+    consideration: "Confirm pendant dimensions, weight, hardware specifications and current availability when enquiring.",
   },
   {
     id: "LC-06", craft: "lacquer", name: "Red Drop Lacquer Pendant", form: "Pendant",
     image: "/images/site/lacquer/red-pendant.webp", alt: "Red drop-shaped lacquer pendant",
     uses: ["wear", "gift", "ceremony"], howToUse: "A restrained focal point for a contemporary or formal outfit.",
-    consideration: "Do not assume every illustrated design is available for production.",
+    consideration: "Available by enquiry; confirm the exact design, quantities and production feasibility.",
   },
   {
     id: "LC-07", craft: "lacquer", name: "Panda & Bamboo Wall Artwork", form: "Wall art",
@@ -330,7 +328,7 @@ export const catalog: CatalogEntry[] = [
       "ritual"
     ],
     "howToUse": "See how a wrist ornament and packaged incense can be arranged together for gifting.",
-    "consideration": "Packaging shown is a reference; contents, quantities and availability are not a confirmed offer."
+    "consideration": "Available to enquire about as a gift selection; confirm exact packaging, contents, quantities, price and lead time."
   },
   {
     "id": "BX-03",
@@ -358,7 +356,7 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "A pictorial textile reference for a shelf or tabletop display.",
-    "consideration": "Exact fibres, dimensions, maker and availability have not been established."
+    "consideration": "Enquire to confirm exact fibres, dimensions, maker attribution and current stock or production options."
   },
   {
     "id": "BX-05",
@@ -386,7 +384,7 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "A small botanical composition for an interior display or gift discussion.",
-    "consideration": "Frame materials, scale and wall or tabletop fittings require confirmation."
+    "consideration": "Available by enquiry; confirm frame materials, dimensions, mounting fittings and supply."
   },
   {
     "id": "BX-07",
@@ -400,7 +398,7 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "Compare two slender floral compositions as a paired interior display.",
-    "consideration": "Confirm whether panels can be sourced together, their measurements and mounting requirements."
+    "consideration": "Available by enquiry; confirm whether both panels can be sourced together, dimensions and mounting."
   },
   {
     "id": "BX-08",
@@ -414,7 +412,7 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "A floral picture that brings layered colour into a room or gift setting.",
-    "consideration": "Protect from direct sunlight; confirm textile, frame, care and availability for any enquiry."
+    "consideration": "Protect from direct sunlight; confirm textile, frame, care and availability in your sourcing enquiry."
   },
   {
     "id": "BX-09",
@@ -428,7 +426,7 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "A close floral composition for a wall display or personal gift reference.",
-    "consideration": "The photo does not establish dimensions, fibres or production availability."
+    "consideration": "Enquire to confirm dimensions, fibres and stock or production options for the pictured style."
   },
   {
     "id": "BX-10",
@@ -442,6 +440,6 @@ export const catalog: CatalogEntry[] = [
       "gift"
     ],
     "howToUse": "A landscape reference for a quiet interior display.",
-    "consideration": "Confirm dimensions, hanging method and care; no named artist or place attribution is supplied."
+    "consideration": "Available by enquiry; confirm dimensions, hanging method and care. No named artist attribution is supplied."
   },
 ];
