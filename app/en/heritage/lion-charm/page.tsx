@@ -7,7 +7,7 @@ export default function LionCharmPage(){return <div className="site-page"><SiteH
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE COLLECTION</p>
           <h2>What can this craft become?</h2>
           <p>Review the illustrated charm and its potential uses before checking the current assortment.</p>
-          <Link className="button button-ink" href="/en/heritage/library#lion">
+          <Link className="button button-ink" href="/en/heritage#lion">
             View embroidered charm examples in the Craft Library
           </Link>
         </section>
