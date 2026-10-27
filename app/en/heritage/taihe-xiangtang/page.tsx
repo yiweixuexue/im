@@ -78,7 +78,7 @@ export default function TaiheXiangtangPage() {
             <Link className="incense-back" href="/en/heritage">
               ← Heritage Collection
             </Link>
-            <p className="eyebrow">NEW ARTISAN PARTNER · KAIFENG, CHINA</p>
+            <p className="eyebrow">AVAILABLE NOW · KAIFENG, CHINA</p>
             <h1>Fragrance, composed to be carried.</h1>
             <p className="incense-chinese">太和香堂 · 古法合香香牌</p>
             <p className="incense-hero-lead">
@@ -173,8 +173,8 @@ export default function TaiheXiangtangPage() {
               <h2>One fragrance tradition, many forms</h2>
               <p>
                 Round plaques, auspicious silhouettes and slender pendants turn scent into an object of personal
-                choice. This preview focuses on visible form; aromatic compositions, sizing and current
-                availability are confirmed directly with ImArtisan.
+                choice. This collection is available to source through ImArtisan directly, not via Etsy.
+                Confirm the selected fragrance, materials, sizing, price, quantity and delivery details with us.
               </p>
             </div>
           </div>
@@ -238,23 +238,23 @@ export default function TaiheXiangtangPage() {
         <section className="incense-final section-space">
           <div className="shell incense-final-grid">
             <div>
-              <p className="eyebrow">COMING SOON · CRAFT PREVIEW</p>
+              <p className="eyebrow">AVAILABLE NOW · CRAFT PREVIEW</p>
               <h2>Discover slowly.<br />Wear closely.</h2>
             </div>
             <div>
               <p>
-                ImArtisan is introducing Taihe Xiangtang’s collection with the cultural context and product detail
-                each piece deserves. For current forms, aromatic compositions or sourcing enquiries, speak with us
-                directly.
+                Taihe Xiangtang’s incense forms are available through direct ImArtisan enquiries.
+                Share the pictured style or reference number and your intended use. We will confirm the
+                available composition, specifications, quantities, price and lead time before an order.
               </p>
               <Link className="button button-paper" href="/contact#international">
-                Contact ImArtisan
+                Enquire about available incense
               </Link>
             </div>
           </div>
         </section>
       <section className="reference-detail-invitation section-space shell">
-          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>Compare plaques, corded pendants and wrist ornaments by use, with scent and specifications still subject to confirmation.</p>
           <Link className="button button-ink" href="/en/heritage/library#hexiang">
