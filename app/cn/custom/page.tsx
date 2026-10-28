@@ -7,6 +7,7 @@ import { SiteFooter, SiteHeader } from "../../../components/site-shell";
 export const metadata: Metadata = {
   title: "定制服装｜作品图库、选款与定制咨询",
   description: "浏览屮微我真实服装作品，按旗袍、女士新中式、男士定制及婚礼场景筛选，了解版型、材料和可调整细节，保存参考并预约一对一定制沟通。",
+  alternates: { languages: { "zh-CN": "/cn/custom/", en: "/en/bespoke/" } },
 };
 
 const steps = [
@@ -38,7 +39,7 @@ const faqs = [
 export default function ChineseCustomPage() {
   return (
     <div className="site-page bespoke-landing" lang="zh-CN">
-      <SiteHeader market="cn" tone="paper" customPage />
+      <SiteHeader market="cn" tone="paper" customPage customLocale="zh" />
       <main id="main-content">
         <section className="bespoke-editorial-hero shell-wide" aria-labelledby="bespoke-hero-title">
           <div className="bespoke-hero-copy">
