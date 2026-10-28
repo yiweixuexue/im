@@ -18,7 +18,7 @@ const services = [
 ];
 
 const pieces = [
-  { name: "Embroidered lion charms", craft: "A SMALL GESTURE OF GOOD WISHES", image: "lion-charm.webp", alt: "Colorful embroidered Chinese lion charms with tassels", text: "A lively starting point for seasonal celebrations and guest gifting.", href: "/en/heritage#collection" },
+  { name: "Embroidered lion charms", craft: "BIAN EMBROIDERY · LION CHARMS", image: "lion-charm.webp", alt: "Colorful embroidered Chinese lion charms with tassels", text: "Bian-embroidered lion charms for festive gifting, also listed on Etsy.", href: "/en/heritage#collection" },
   { name: "Blended-incense objects", craft: "TAIHE XIANGTANG · KAIFENG", image: "incense/round-cloud.webp", alt: "Carved round incense plaque from Taihe Xiangtang", text: "Available Now by direct enquiry: sculpted scent plaques and wearable forms. Confirm the selected formula and quantity.", href: "/en/heritage/taihe-xiangtang" },
   { name: "Chengdu lacquerware", craft: "LAYERED COLOR & HAND FINISHING", image: "lacquer/red-pendant.webp", alt: "Red Chengdu lacquer pendant", text: "Available Now by direct enquiry: lacquer adornments and objects for the home. Confirm specification and feasibility.", href: "/en/heritage/chengdu-lacquerware" },
   { name: "Hand-wrapped floral brooches", craft: "CHANHUA · THREAD INTO PETALS", image: "tulip-brooch.webp", alt: "Hand-wrapped tulip brooches", text: "A wearable floral detail for celebrations, appreciation and thoughtful retail.", href: "/en/heritage#collection" },
