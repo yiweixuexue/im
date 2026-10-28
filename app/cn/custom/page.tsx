@@ -91,7 +91,7 @@ export default function ChineseCustomPage() {
           <div className="shell">
             <div className="bespoke-section-intro">
               <p className="eyebrow"><B zh="了解制作过程" en="THE BESPOKE JOURNEY · HOW IT WORKS" /></p>
-              <h2 id="bespoke-process-title"><B zh="每一步都有目的，也值得被看见。" en="Every step has a purpose." /></h2>
+              <h2 id="bespoke-process-title"><B zh="每一步都有意义，也值得被看见。" en="Every step has a purpose." /></h2>
               <p><B zh="从初次沟通到完成制作，关键不是加快每一步，而是尽早发现不适合的地方，并把决定讲清楚。" en="From the first conversation to the final pressing, the aim is to discover what works and explain each decision clearly." /></p>
             </div>
             <ol className="bespoke-process-grid">
