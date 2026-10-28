@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import { IncenseMakingStory } from "../../../../components/incense-making-story";
 import Link from "next/link";
@@ -261,6 +262,7 @@ export default function TaiheXiangtangPage() {
             View blended-incense forms in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="He Xiang blended-incense objects" />
         </main>
       <SiteFooter />
     </div>
