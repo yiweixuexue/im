@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -14,4 +15,5 @@ export default function ChanhuaPage() { return <div className="site-page"><SiteH
             View Chanhua ornaments in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="Chanhua floral ornaments" />
         </main><SiteFooter /></div> }
