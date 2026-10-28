@@ -36,6 +36,16 @@ const navByMarket: Record<Market, NavItem[]> = {
   ],
 };
 
+const bespokeEnglishNav: NavItem[] = [
+  { label: "Home", href: "/" },
+  { label: "Bespoke Clothing", href: "/en/bespoke" },
+  { label: "Browse Designs", href: "/en/bespoke#works" },
+  { label: "How It Works", href: "/en/bespoke#process" },
+  { label: "Lookbook", href: "/lookbook" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
 export function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <Link
@@ -55,11 +65,11 @@ const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 function NavLink({ item, customPage = false }: { item: NavItem; customPage?: boolean }) {
   // Use the browser's native hash navigation. Next.js Link may treat a hash
   // appended to /cn/custom differently on GitHub Pages /dev with trailing slashes.
-  const customAnchor = item.href.match(/^\/cn\/custom\/?#(works|process)$/);
+  const customAnchor = item.href.match(/^\/(cn\/custom|en\/bespoke)\/?#(works|process)$/);
   if (customAnchor) {
     const href = customPage
-      ? `#${customAnchor[1]}`
-      : `${siteBasePath}/cn/custom/#${customAnchor[1]}`;
+      ? `#${customAnchor[2]}`
+      : `${siteBasePath}/${customAnchor[1]}/#${customAnchor[2]}`;
     return <a href={href}>{item.label}</a>;
   }
   if (item.external) {
@@ -76,24 +86,30 @@ export function SiteHeader({
   market = "home",
   tone = "paper",
   customPage = false,
+  customLocale,
 }: {
   market?: Market;
   tone?: Tone;
   customPage?: boolean;
+  customLocale?: "zh" | "en";
 }) {
-  const marketLink =
-    market === "cn"
-      ? { label: "EN", href: "/en/heritage" }
-      : market === "en"
-        ? { label: "中文", href: "/cn/custom" }
-        : { label: "中文 / EN", href: "#choose-your-path" };
+  const marketLink = customLocale === "zh"
+    ? { label: "EN", href: "/en/bespoke" }
+    : customLocale === "en"
+      ? { label: "中文", href: "/cn/custom" }
+      : market === "cn"
+        ? { label: "EN", href: "/en/heritage" }
+        : market === "en"
+          ? { label: "中文", href: "/cn/custom" }
+          : { label: "中文 / EN", href: "#choose-your-path" };
+  const currentNav = customLocale === "en" ? bespokeEnglishNav : navByMarket[market];
 
   return (
     <header className={`site-header site-header-${tone} site-header-${market}`}>
       <div className="header-inner shell-wide">
         <BrandMark light={tone === "light"} />
-        <nav className="desktop-nav" aria-label={market === "cn" ? "主导航" : "Primary navigation"}>
-          {navByMarket[market].map((item) => (
+        <nav className="desktop-nav" aria-label={customLocale === "en" ? "Bespoke navigation" : market === "cn" ? "主导航" : "Primary navigation"}>
+          {currentNav.map((item) => (
             <NavLink key={`${item.href}-${item.label}`} item={item} customPage={customPage} />
           ))}
         </nav>
@@ -111,8 +127,8 @@ export function SiteHeader({
               <BrandMark />
               <span>MENU</span>
             </div>
-            <nav aria-label={market === "cn" ? "移动端导航" : "Mobile navigation"}>
-              {navByMarket[market].map((item, index) => (
+            <nav aria-label={customLocale === "en" ? "Mobile bespoke navigation" : market === "cn" ? "移动端导航" : "Mobile navigation"}>
+              {currentNav.map((item, index) => (
                 <div key={`${item.href}-${item.label}`}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <NavLink item={item} customPage={customPage} />
@@ -163,6 +179,7 @@ export function SiteFooter() {
         <div className="footer-column">
           <p>中国客户 · CHINA</p>
           <Link href="/cn/custom">定制服装</Link>
+          <Link href="/en/bespoke">Bespoke Clothing · English</Link>
           <a href={`${siteBasePath}/cn/custom/#works`}>作品选款与灵感图库</a>
           <Link href="/lookbook">完整 Lookbook</Link>
           <Link href="/contact#wechat">微信预约</Link>
