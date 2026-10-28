@@ -1,12 +1,12 @@
 # ImArtisan Craft & Product Library · Content Workflow
 
-The site library is a **visual reference catalogue**, not a live retail inventory or a promise that every historical/partner work can be reproduced. It supports buyer education, use-case discovery and enquiries. Live prices, lead times and purchase links remain on verified Etsy / Faire listings or in individual quotes.
+The site library is a **visual reference catalogue**, not a live retail inventory or a promise that every historical/partner work can be reproduced. It supports buyer education, use-case discovery and enquiries. Etsy lists clothing, Chanhua and lion charms; other available craft ranges are sourced through direct quotations. Verify Faire availability per live product rather than assuming publication.
 
 ## 1. Decide whether an image belongs in the public gallery
 
 - Confirm ownership/permission for commercial website display and maker attribution when appropriate.
 - Photograph must clearly show a finished craft form, its use, and/or credible making process. Process images belong on the craft story page; reference catalogue cards should preferably show finished forms.
-- Keep different craft techniques distinct. **Ronghua (velvet-flower craft)** is not the same as **Chanhua (thread-wrapped floral craft)**.
+- Keep different craft techniques distinct. **Ronghua (velvet-flower craft)** is not the same as **Chanhua (thread-wrapped floral craft)**. **Embroidered lion charms are a Bian embroidery product form**, not a separate heritage technique.
 - Do not treat reference samples or prototype tests as purchasable listings.
 - Multiple camera angles of one object are useful on a detail page, but generally count as **one** reference object in the browsing catalogue unless they demonstrate a meaningful use-case variation.
 
@@ -22,20 +22,20 @@ The site library is a **visual reference catalogue**, not a live retail inventor
 | Uses | wear, ceremony | Tag only demonstrated or reasonable use contexts |
 | How it can be used | A floral accent for a ceremony | Practical, not only poetic |
 | Considerations | Confirm fit, finish and structural testing | Be accurate about limitations |
-| Collection status | Coming Soon | Status belongs to craft range until SKU-level facts are verified |
+| Collection status | Available Now or Past Collection | All craft collections are available for sourcing enquiry; only Bian embroidered evening bags are archived |
 | Maker / workshop | Pending attribution approval | Credit only after permission and identity verification |
 | Sales status | Not confirmed | Never automatically infer from image |
 | Materials / dimensions / care | To confirm | Require maker confirmation before publishing exact specs |
 | B2B details | MOQ, lead time, wholesale, ability to reproduce | Confirm separately; never guess |
 | Product-page link | Existing verified detail route | Avoid misleading general Etsy links as product-specific CTAs |
 
-## 3. Collection status policy
+## 3. Availability versus sales-channel policy (confirmed October 27, 2026)
 
-- **Available collection:** Chanhua and embroidered lion charms. This **does not** guarantee an individual photographed variant is in stock. Check active Etsy listings.
-- **Coming Soon:** Yangzhou Ronghua, blended incense and Chengdu lacquer examples. They are visual previews, not current checkout offers.
-- **Past Collection:** Bian embroidery bags; retain for design history and craftsmanship but do not market as available.
-- **Reference Work:** supplied works with no confirmed collection release or inventory status. Use per-entry status overrides to keep archived bags marked Past Collection when their craft group also contains reference works. See `craft-media-20261027.md` and its JSON inventory for the first uploaded batch.
-- A future craft can have multiple product statuses only when source data verifies *specific products* separately.
+- **Available Now:** Chanhua, Yangzhou Ronghua, He Xiang incense forms, Chengdu lacquerware, and Bian embroidery (including embroidered lion charms and framed / tabletop artworks). “Available Now” indicates ImArtisan can handle a sourcing enquiry for that product category; it **does not mean the exact photographed variant is in ready-to-ship inventory**. Verify variant, producer, materials, specifications, price, quantity, timeframe and feasibility for every enquiry.
+- **Past Collection:** Only the blue/red peony Bian embroidery **evening bags**; retain for design history and do not show a checkout or wholesale availability.
+- **Etsy sales channel:** Only **clothing, Chanhua and embroidered lion charms** are currently on Etsy. Show Etsy shop / exact verified listing links only for those categories. Etsy product availability is defined by the live listing.
+- **Direct ImArtisan enquiry:** Yangzhou Ronghua, incense, lacquerware and Bian embroidered wall/table artworks are **not currently listed on Etsy**. Their purchasing/sourcing actions should use the website contact form or craft-reference shortlist email.
+- Do not misrepresent “available for sourcing enquiry” as unconditional immediate dispatch, identical reproduction of every reference photo, or a confirmed wholesale price. Update specific item status only with maker evidence.
 
 ## 4. Preparing a new NAS batch
 

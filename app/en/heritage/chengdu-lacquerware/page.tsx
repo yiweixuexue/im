@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -57,7 +58,7 @@ export default function ChengduLacquerwarePage() {
             <Link className="lacquer-back" href="/en/heritage">
               ← Heritage Collection
             </Link>
-            <p className="eyebrow">NEW ARTISAN PARTNER · CHENGDU, CHINA</p>
+            <p className="eyebrow">AVAILABLE NOW · CHENGDU, CHINA</p>
             <h1>Chengdu lacquerware, shaped by time.</h1>
             <p className="lacquer-chinese">成都漆器</p>
             <p className="lacquer-hero-lead">
@@ -152,7 +153,7 @@ export default function ChengduLacquerwarePage() {
             <div>
               <h2>Objects for daily ritual, wearing and display</h2>
               <p>
-                A first look at the partner’s range. The collection is coming soon; the images are an introduction to craft forms, not an offer to purchase.
+                Available to source through direct ImArtisan enquiry, not on Etsy. The photographs show examples of possible forms; specific styles, prices, quantities, care and lead times must be confirmed.
               </p>
             </div>
           </div>
@@ -230,28 +231,30 @@ export default function ChengduLacquerwarePage() {
         <section className="lacquer-final section-space">
           <div className="shell lacquer-final-grid">
             <div>
-              <p className="eyebrow">COMING SOON · CRAFT PREVIEW</p>
+              <p className="eyebrow">AVAILABLE NOW · CRAFT PREVIEW</p>
               <h2>Made in Chengdu.<br />Introduced with context.</h2>
             </div>
             <div>
               <p>
-                ImArtisan will introduce this collection gradually as each object, material and making process is
-                documented. This collection is coming soon. Product specifications, confirmed production capacity and purchasing information will be shared once ready.
+                Chengdu lacquerware is available to source through ImArtisan directly. Choose a pictured
+                piece or product form, then enquire to confirm material, dimensions, care, stock or
+                production feasibility, price and lead time. Food-contact safety is not assumed for vessels.
               </p>
               <Link className="button button-paper" href="/contact#international">
-                Contact ImArtisan
+                Enquire about lacquer pieces
               </Link>
             </div>
           </div>
         </section>
       <section className="reference-detail-invitation section-space shell">
-          <p className="eyebrow">EXPLORE FORMS &amp; USES · COMING SOON</p>
+          <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
           <p>See tea-related objects, wall art and adornments together with practical considerations for each use.</p>
-          <Link className="button button-ink" href="/en/heritage/library#lacquer">
+          <Link className="button button-ink" href="/en/heritage#lacquer">
             View Chengdu lacquer forms in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="Chengdu lacquerware" />
         </main>
       <SiteFooter />
     </div>

@@ -1,11 +1,12 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
 import { SiteFooter, SiteHeader } from "../../../../components/site-shell";
 
 export const metadata: Metadata = {
-  title: "Bian Embroidery | Pictures, Screens & Object Forms",
-  description: "Explore supplied Bian embroidery references through standing screens, framed floral pictures and vertical panels, with close views of stitch direction and finishing.",
+  title: "Bian Embroidery | Wall Art, Screens & Lion Charms",
+  description: "Discover Bian embroidery in framed floral art, tabletop screens and embroidered lion charms. Explore practical uses, embroidery details and different purchasing routes.",
 };
 
 const studies = [
@@ -27,12 +28,12 @@ export default function BianEmbroideryPage() {
           </figure></div>
           <div className="product-summary">
             <Link className="product-back" href="/en/heritage">← Heritage Collection</Link>
-            <p className="eyebrow">BIAN EMBROIDERY · SUPPLIED WORK REFERENCES</p>
+            <p className="eyebrow">AVAILABLE NOW · BIAN EMBROIDERY</p>
             <h1>An image made in thread.</h1>
             <p className="product-chinese">汴绣 · 屏风与装框作品</p>
-            <p className="product-lead">From a circular screen to a framed peony, embroidery can become an object to live with, as well as an image to look at.</p>
-            <p>These works were supplied as Bian embroidery references. Visible stitches support their description as embroidery; individual makers, fibres, dimensions and availability remain unconfirmed.</p>
-            <div className="product-actions"><Link className="button button-ink" href="/en/heritage/library#bian">Compare forms &amp; uses</Link><a className="text-link" href="#details">Look closer ↓</a></div>
+            <p className="product-lead">From framed pictures and tabletop screens to embroidered lion charms, Bian embroidery can become a piece for the home or a small object to carry.</p>
+            <p>Bian embroidery includes framed art, tabletop screens and embroidered lion charms. Artworks are available by direct ImArtisan enquiry; lion charms are also listed on Etsy. Exact designs, materials, quantities, prices and delivery require confirmation. Only the peony evening bags remain Past Collection.</p>
+            <div className="product-actions"><Link className="button button-ink" href="/contact#international">Enquire about Bian embroidery art</Link><Link className="text-link" href="/en/heritage#bian">Compare forms &amp; uses →</Link><a className="text-link" href="#details">Look closer ↓</a></div>
           </div>
         </section>
         <section className="craft-photo-story section-space shell" id="details">
@@ -44,14 +45,27 @@ export default function BianEmbroideryPage() {
             <figcaption><h3>{item.title}</h3><p>{item.text}</p></figcaption>
           </figure>)}</div>
         </section>
+        <section className="shell editorial-media-grid editorial-media-grid-short" aria-labelledby="bian-lion-title">
+          <figure>
+            <SiteImage src="/images/site/lion-charm.webp" alt="Colorful Bian-embroidered lion charms with tassels" loading="lazy" />
+            <figcaption>BIAN EMBROIDERY · LION CHARMS</figcaption>
+          </figure>
+          <div>
+            <p className="eyebrow">ANOTHER FORM OF BIAN EMBROIDERY</p>
+            <h2 id="bian-lion-title">An embroidered charm to take with you.</h2>
+            <p>While framed embroidery brings handwork into the home, embroidered lion charms bring it into everyday accessories and celebratory gifting. These charms are part of the same Bian embroidery craft collection, with a separate Etsy purchasing route.</p>
+            <Link className="button button-ink" href="/en/heritage/lion-charm">Explore lion charms &amp; Etsy availability</Link>
+          </div>
+        </section>
         <section className="reference-detail-invitation section-space shell">
           <p className="eyebrow">CHOOSING FOR AN INTERIOR OR A GIFT</p>
           <h2>Begin with the format and the setting.</h2>
           <p>Compare a tabletop screen, a single framed picture or a pair of vertical panels. For an enquiry, share the reference ID, intended setting and approximate space available. Dimensions, supports, framing, care and supply must be checked for the particular work.</p>
-          <Link className="button button-ink" href="/en/heritage/library#bian">Browse embroidery references</Link>
+          <Link className="button button-ink" href="/en/heritage#bian">Browse embroidery references</Link>
           <p><Link className="arrow-link" href="/en/heritage/blue-peony-bag">Explore the archived Blue Peony evening bag →</Link></p>
         </section>
-      </main>
+      <CraftCustomizationInvitation craft="Bian embroidery, including home art and lion charms" />
+        </main>
       <SiteFooter />
     </div>
   );

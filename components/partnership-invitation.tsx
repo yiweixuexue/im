@@ -5,7 +5,7 @@ import styles from "./partnerships.module.css";
 export function PartnershipInvitation() {
   return (
     <section className={`${styles.invitation} shell`} aria-labelledby="partnership-invitation-title">
-      <SiteImage src="/images/site/gift-packaging.webp" alt="ImArtisan kraft gift box finished with a ribbon" loading="lazy" />
+      <SiteImage src="/images/site/packaging/floral-brooch-open-gift-box.webp" alt="Floral brooch presented in an open lilac gift box with black velvet lining and a ribbon pull" loading="lazy" />
       <div>
         <p className="eyebrow">FOR BUSINESSES & CULTURAL INSTITUTIONS</p>
         <h2 id="partnership-invitation-title">Give something with a story.</h2>

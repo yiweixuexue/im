@@ -33,11 +33,13 @@ function ReferenceCard({
 }) {
   const craft = crafts.find((entry) => entry.id === item.craft);
   if (!craft) return null;
+  const itemStatus = item.status ?? craft.status;
+  const onEtsy = item.salesChannel === "etsy" || (item.craft === "chanhua" && item.salesChannel !== "enquiry");
   return (
     <article className="reference-card">
       <figure className="reference-card-image">
         <SiteImage src={item.image} alt={item.alt} loading="lazy" decoding="async" />
-        <StatusTag status={item.status ?? craft.status} />
+        <StatusTag status={itemStatus} />
       </figure>
       <div className="reference-card-body">
         <p className="reference-card-meta">
@@ -59,9 +61,22 @@ function ReferenceCard({
           aria-pressed={isSelected}
           onClick={() => onToggle(item.id)}
         >
-          {isSelected ? "✓ Added to shortlist" : "+ Add to enquiry shortlist"}
+          {isSelected ? "✓ Added to shortlist" : itemStatus === "past" ? "+ Save archive reference" : "+ Add to enquiry shortlist"}
         </button>
-        <Link href={craft.href} className="reference-detail-link">
+        {itemStatus === "past" ? (
+          <Link href="/en/heritage/blue-peony-bag" className="reference-detail-link">
+            View past collection <span aria-hidden="true">↗</span>
+          </Link>
+        ) : onEtsy ? (
+          <a href={etsyShop} target="_blank" rel="noopener noreferrer" className="reference-detail-link">
+            Browse Etsy shop <span aria-hidden="true">↗</span>
+          </a>
+        ) : (
+          <Link href="/contact#international" className="reference-detail-link">
+            Enquire about sourcing <span aria-hidden="true">↗</span>
+          </Link>
+        )}
+        <Link href={item.id === "LE-01" ? "/en/heritage/lion-charm" : craft.href} className="reference-detail-link">
           Craft details <span aria-hidden="true">↗</span>
         </Link>
       </div>
@@ -112,7 +127,7 @@ export function CraftReferenceLibrary() {
     "Requested delivery / event date:",
     "Destination:",
     "",
-    "I understand these are reference examples rather than confirmed stock or production offers, and that availability, pricing, materials and lead times need confirmation.",
+    "I understand Available Now means I may enquire about sourcing a craft form, not guaranteed inventory of each photograph. Please confirm exact availability, price, quantity, materials and lead time before ordering.",
     "",
     "Thank you.",
   ].join("\n");
@@ -128,7 +143,7 @@ export function CraftReferenceLibrary() {
               <p className="eyebrow">DISCOVER BY TECHNIQUE OR PURPOSE</p>
               <h2>Find the form that fits.</h2>
             </div>
-            <p>Filter by craft, intended use or collection stage. Browse real examples and build a shortlist to discuss with us.</p>
+            <p>Filter by craft or use, explore practical details, and build a shortlist. Custom work is welcome across every craft, with possibilities confirmed with each maker.</p>
           </div>
           <div className="reference-control-row">
             <label htmlFor="reference-search" className="reference-search">Search examples
@@ -155,10 +170,8 @@ export function CraftReferenceLibrary() {
             <label htmlFor="reference-status">Collection stage
               <select id="reference-status" value={statusFilter} onChange={(event) => setStatusFilter(event.target.value as StatusFilter)}>
                 <option value="all">All stages</option>
-                <option value="available">Available collections</option>
-                <option value="coming">Coming soon</option>
+                <option value="available">Available now · enquire</option>
                 <option value="past">Past collection</option>
-                <option value="reference">Reference works</option>
               </select>
             </label>
             <button
@@ -189,7 +202,8 @@ export function CraftReferenceLibrary() {
 
         <div className="reference-craft-groups">
           {crafts.map((craft) => {
-            const group = filtered.filter((entry) => entry.craft === craft.id);
+            const group = filtered.filter((entry) => entry.craft === craft.id)
+              .sort((a, b) => Number(a.status === "past") - Number(b.status === "past"));
             if (!group.length) return null;
             const isExpanded = expandedCrafts.includes(craft.id);
             const shown = isExpanded ? group : group.slice(0, 6);
@@ -203,9 +217,14 @@ export function CraftReferenceLibrary() {
                   </div>
                   <div>
                     <p>{craft.summary}</p>
-                    <Link href={craft.href} className="arrow-link">
-                      Explore this craft <span aria-hidden="true">→</span>
-                    </Link>
+                    <div className="reference-group-links">
+                      <Link href={craft.href} className="arrow-link">
+                        Explore this craft <span aria-hidden="true">→</span>
+                      </Link>
+                      <Link href="/contact#international" className="reference-custom-link">
+                        <span aria-hidden="true">✦</span> Customization available · Enquire <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="reference-grid">
@@ -263,8 +282,9 @@ export function CraftReferenceLibrary() {
             <Link href="/en/partnerships#inquiry" className="arrow-link">
               Explore wholesale & gifting partnerships <span aria-hidden="true">→</span>
             </Link>
+            <p className="reference-shortlist-note">Other craft collections are sourced by contacting ImArtisan directly, not through Etsy.</p>
             <a className="reference-etsy" href={etsyShop} target="_blank" rel="noopener noreferrer">
-              Browse available collections on Etsy ↗
+              Shop Chanhua & lion charms on Etsy ↗
             </a>
           </div>
         </div>

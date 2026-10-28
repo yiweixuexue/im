@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -10,8 +11,9 @@ export default function ChanhuaPage() { return <div className="site-page"><SiteH
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE COLLECTION</p>
           <h2>What can this craft become?</h2>
           <p>Compare hair ornaments, brooches and ways to wear them before choosing a current listing.</p>
-          <Link className="button button-ink" href="/en/heritage/library#chanhua">
+          <Link className="button button-ink" href="/en/heritage#chanhua">
             View Chanhua ornaments in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="Chanhua floral ornaments" />
         </main><SiteFooter /></div> }
