@@ -442,4 +442,305 @@ export const catalog: CatalogEntry[] = [
     "howToUse": "A landscape reference for a quiet interior display.",
     "consideration": "Available by enquiry; confirm dimensions, hanging method and care. No named artist attribution is supplied."
   },
+  {
+    "id": "RH-03",
+    "craft": "ronghua",
+    "name": "Red Bridal Floral Hair Comb",
+    "form": "Ceremonial hair comb",
+    "image": "/images/site/ronghua/collection/red-bridal-hair-comb.webp",
+    "alt": "Red floral velvet flower hair comb with decorative drops",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "A decorative floral comb to anchor a bridal or ceremonial hairstyle.",
+    "consideration": "Confirm comb size, weight, attachment and how it fits the intended hairstyle."
+  },
+  {
+    "id": "RH-04",
+    "craft": "ronghua",
+    "name": "Red Blossom Floral Pair",
+    "form": "Floral embellishments",
+    "image": "/images/site/ronghua/collection/red-floral-pair.webp",
+    "alt": "Two small red velvet blossom ornaments",
+    "uses": [
+      "wear",
+      "gift",
+      "ceremony"
+    ],
+    "howToUse": "Small flower accents suitable for a personal styling or gifting discussion.",
+    "consideration": "Fittings and whether the pair is designed for clothing or hair must be confirmed."
+  },
+  {
+    "id": "RH-05",
+    "craft": "ronghua",
+    "name": "Coral Leaf Lapel Brooch",
+    "form": "Floral lapel ornament",
+    "image": "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp",
+    "alt": "Warm red and coral leaf-shaped velvet flower worn on a dark jacket",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "Add a statement floral detail to a jacket or formal outfit.",
+    "consideration": "Confirm pin attachment, dimensions and compatibility with delicate fabrics."
+  },
+  {
+    "id": "RH-06",
+    "craft": "ronghua",
+    "name": "Goldfish-Inspired Floral Ornaments",
+    "form": "Fish-motif decorative accessories",
+    "image": "/images/site/ronghua/collection/goldfish-floral-clips.webp",
+    "alt": "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish",
+    "uses": [
+      "wear",
+      "gift",
+      "ceremony"
+    ],
+    "howToUse": "Explore a playful fish motif for hair or garment embellishment.",
+    "consideration": "Check the intended fastening and whether pieces are sold singly or as a pair."
+  },
+  {
+    "id": "RH-07",
+    "craft": "ronghua",
+    "name": "Purple Floral Cluster",
+    "form": "Clustered flower ornament",
+    "image": "/images/site/ronghua/collection/purple-floral-arrangement.webp",
+    "alt": "Layered dark-purple and lavender velvet flowers with dangling accents",
+    "uses": [
+      "wear",
+      "ceremony",
+      "gift"
+    ],
+    "howToUse": "Consider a sculptural floral cluster for a special outfit or display.",
+    "consideration": "The mounting method, overall weight and exact flower arrangement need confirmation."
+  },
+  {
+    "id": "RH-08",
+    "craft": "ronghua",
+    "name": "Blue Floral Hairpin",
+    "form": "Statement hairpin",
+    "image": "/images/site/ronghua/collection/blue-floral-hairpin.webp",
+    "alt": "Bright blue cluster of velvet flowers attached to a long hairpin",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "A prominent blue floral accent for an updo or special-occasion hairstyle.",
+    "consideration": "Confirm hairpin length, securing method and suitability for hair thickness."
+  },
+  {
+    "id": "RH-09",
+    "craft": "ronghua",
+    "name": "Scarlet-and-Ivory Lily Motif",
+    "form": "Decorative flower stem",
+    "image": "/images/site/ronghua/collection/red-white-lily-flower.webp",
+    "alt": "Red-and-white lily-shaped velvet flower detail against a dark background",
+    "uses": [
+      "wear",
+      "ceremony",
+      "home"
+    ],
+    "howToUse": "A bold flower design for a wearable accent or small display arrangement.",
+    "consideration": "Confirm the supporting structure and whether the pictured example has a wearable fitting."
+  },
+  {
+    "id": "RH-10",
+    "craft": "ronghua",
+    "name": "Blue Bird Floral Sculpture",
+    "form": "Bird-shaped decorative ornament",
+    "image": "/images/site/ronghua/collection/blue-bird-sculpture.webp",
+    "alt": "Small blue bird-shaped velvet ornament presented in a display box",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "An illustrative bird form for a shelf, display box or special gift.",
+    "consideration": "Display stand, fragility, dimensions and packaging should be confirmed."
+  },
+  {
+    "id": "RH-11",
+    "craft": "ronghua",
+    "name": "Violet Floral Vase Arrangement",
+    "form": "Floral home arrangement",
+    "image": "/images/site/ronghua/collection/violet-floral-vase.webp",
+    "alt": "Lavender velvet flowers arranged in a decorated porcelain vase",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "An enduring flower arrangement for a console, shelf or celebration keepsake.",
+    "consideration": "The vase and flowers may be separate pieces; clarify what is included."
+  },
+  {
+    "id": "RH-12",
+    "craft": "ronghua",
+    "name": "Violet Statement Lapel Brooch",
+    "form": "Wearable floral arrangement",
+    "image": "/images/site/ronghua/collection/violet-brooch-worn.webp",
+    "alt": "Lavender and violet floral corsage worn at the shoulder",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "A statement floral accent on an outer layer for important occasions.",
+    "consideration": "Confirm weight, fastening and fabric suitability before ordering."
+  },
+  {
+    "id": "RH-13",
+    "craft": "ronghua",
+    "name": "Blue Blossom Hair Accent",
+    "form": "Blue floral accessory",
+    "image": "/images/site/ronghua/collection/blue-flower-hair-clip.webp",
+    "alt": "Close-up of a blue flower ornament with decorative beads",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "A delicate blue flower accent for hair or clothing styling.",
+    "consideration": "Request the exact clip or pin configuration; the photograph alone does not verify the fitting."
+  },
+  {
+    "id": "RH-14",
+    "craft": "ronghua",
+    "name": "Pink Blossom Barrette",
+    "form": "Flower hair clip",
+    "image": "/images/site/ronghua/collection/pink-blossom-hair-clip.webp",
+    "alt": "Pink blossoms arranged along a gold-toned hair clip",
+    "uses": [
+      "wear",
+      "ceremony",
+      "gift"
+    ],
+    "howToUse": "A romantic floral barrette for a half-up hairstyle or celebration.",
+    "consideration": "Check clip size, grip and how the flower shape sits when worn."
+  },
+  {
+    "id": "RH-15",
+    "craft": "ronghua",
+    "name": "Peacock-Feather Brooch",
+    "form": "Feather-motif adornment",
+    "image": "/images/site/ronghua/collection/peacock-feather-brooch.webp",
+    "alt": "Two iridescent blue-green feather-shaped velvet elements",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "A peacock-feather-inspired accent for a jacket or ceremonial outfit.",
+    "consideration": "Confirm the brooch attachment, length and finish with the maker."
+  },
+  {
+    "id": "RH-16",
+    "craft": "ronghua",
+    "name": "Bamboo Leaf Brooch",
+    "form": "Botanical lapel ornament",
+    "image": "/images/site/ronghua/collection/bamboo-leaf-brooch.webp",
+    "alt": "Green-grey bamboo leaf-shaped botanical brooch",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "Add a restrained botanical detail to knitwear, a jacket or coat.",
+    "consideration": "Confirm fastening and handling requirements for fine pointed leaves."
+  },
+  {
+    "id": "RH-17",
+    "craft": "ronghua",
+    "name": "Framed Botanical Craft Art",
+    "form": "Framed velvet-flower composition",
+    "image": "/images/site/ronghua/collection/framed-bamboo-art.webp",
+    "alt": "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork",
+    "uses": [
+      "home",
+      "gift"
+    ],
+    "howToUse": "A framed botanical piece for a shelf, desk or interior display.",
+    "consideration": "Check artwork dimensions, framing, mounting and the original inscription."
+  },
+  {
+    "id": "RH-18",
+    "craft": "ronghua",
+    "name": "Apricot Blossom Brooch",
+    "form": "Soft orange floral brooch",
+    "image": "/images/site/ronghua/collection/peach-blossom-brooch.webp",
+    "alt": "Apricot-coloured floral brooch with layered rounded petals",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "A softly coloured flower accent for a neutral jacket or gift.",
+    "consideration": "Confirm pin security and care before wearing on fine fabric."
+  },
+  {
+    "id": "RH-19",
+    "craft": "ronghua",
+    "name": "Lavender Orchid Brooch",
+    "form": "Orchid-inspired brooch",
+    "image": "/images/site/ronghua/collection/lavender-orchid-brooch.webp",
+    "alt": "Purple orchid blossom cluster arranged as a floral accessory",
+    "uses": [
+      "wear",
+      "gift",
+      "ceremony"
+    ],
+    "howToUse": "An orchid-like flower accent to wear on a lapel or celebratory outfit.",
+    "consideration": "Confirm scale, colour variation and exact fastening."
+  },
+  {
+    "id": "RH-20",
+    "craft": "ronghua",
+    "name": "Golden Ginkgo Brooch",
+    "form": "Ginkgo leaf motif",
+    "image": "/images/site/ronghua/collection/golden-ginkgo-brooch.webp",
+    "alt": "Bright golden-yellow fan-shaped ginkgo leaf brooch",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "Bring an autumn botanical motif to a jacket or scarf.",
+    "consideration": "Confirm pin closure, leaf durability and compatibility with the garment."
+  },
+  {
+    "id": "RH-21",
+    "craft": "ronghua",
+    "name": "Golden Ginkgo Earrings",
+    "form": "Dangling botanical earrings",
+    "image": "/images/site/ronghua/collection/ginkgo-earrings.webp",
+    "alt": "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs",
+    "uses": [
+      "wear",
+      "ceremony",
+      "gift"
+    ],
+    "howToUse": "Wear a light botanical accent as a matching earring pair.",
+    "consideration": "Confirm weight, earring material, fit and sensitivity-related specifications."
+  },
+  {
+    "id": "RH-22",
+    "craft": "ronghua",
+    "name": "Olive Branch Lapel Brooch",
+    "form": "Green botanical brooch",
+    "image": "/images/site/ronghua/collection/olive-branch-brooch-worn.webp",
+    "alt": "Green leafy brooch worn on a navy patterned garment",
+    "uses": [
+      "wear",
+      "gift"
+    ],
+    "howToUse": "A subtle botanical accent for an everyday jacket or formal outfit.",
+    "consideration": "Confirm closure and safe attachment to the chosen fabric."
+  },
+  {
+    "id": "RH-23",
+    "craft": "ronghua",
+    "name": "Red Plum Floral Hair Claw",
+    "form": "Floral hair claw",
+    "image": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+    "alt": "Red plum blossom decoration on a dark hair claw",
+    "uses": [
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "A decorative hair claw combining a practical grip with traditional floral ornament.",
+    "consideration": "Confirm the claw mechanism, grip strength, tooth durability and safe regular-use testing."
+  },
 ];
