@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -51,7 +52,8 @@ export default function BianEmbroideryPage() {
           <Link className="button button-ink" href="/en/heritage#bian">Browse embroidery references</Link>
           <p><Link className="arrow-link" href="/en/heritage/blue-peony-bag">Explore the archived Blue Peony evening bag →</Link></p>
         </section>
-      </main>
+      <CraftCustomizationInvitation craft="Bian embroidered home art" />
+        </main>
       <SiteFooter />
     </div>
   );
