@@ -8,6 +8,36 @@ import { bespokeWorks, clothingOccasions, clothingTypes, type ClothingType, type
 type ClothingFilter = ClothingType | "all";
 type OccasionFilter = ClothingOccasion | "all";
 
+const workSections: Array<{
+  id: string;
+  eyebrow: string;
+  title: string;
+  intro: string;
+  types: ClothingType[];
+}> = [
+  {
+    id: "women",
+    eyebrow: "01 · WOMENSWEAR",
+    title: "女装 · 旗袍与日常衣橱",
+    intro: "从一件贴合身体的旗袍，到可以反复搭配的马甲与外套。先理解自己的生活，再决定设计细节。",
+    types: ["qipao", "women"],
+  },
+  {
+    id: "men",
+    eyebrow: "02 · MENSWEAR",
+    title: "男装 · 正装与当代中式",
+    intro: "以肩线、比例、面料和活动舒适度为出发点，寻找得体而不拘束的男装表达。",
+    types: ["men"],
+  },
+  {
+    id: "wedding",
+    eyebrow: "03 · COUPLE & CEREMONY",
+    title: "婚礼与双人造型",
+    intro: "单独整理需要统筹两个人和一整天仪式的参考，不把婚礼穿搭简单归入男装或女装。",
+    types: ["ceremony"],
+  },
+];
+
 function BespokeCard({ work, saved, onToggle }: { work: BespokeWork; saved: boolean; onToggle: (id: string) => void }) {
   return (
     <article className="bespoke-work-card">
@@ -50,6 +80,10 @@ export function BespokeWorkLibrary() {
     (occasion === "all" || work.occasions.includes(occasion)) &&
     (!normalized || [work.title, work.category, work.bestFor, work.choices, work.consider, work.id].join(" ").toLowerCase().includes(normalized))
   );
+  const displayedGroups = workSections.map((group) => ({
+    ...group,
+    works: visible.filter((work) => group.types.includes(work.type)),
+  })).filter((group) => group.works.length > 0);
   const summary = [
     "屮微我｜定制服装咨询参考",
     "我感兴趣的作品：",
@@ -115,11 +149,31 @@ export function BespokeWorkLibrary() {
           <span>已选 {selectedWorks.length} 件灵感参考</span>
         </div>
         {visible.length ? (
-          <div className="bespoke-work-grid">
-            {visible.map((work) =>
-              <BespokeCard key={work.id} work={work} saved={selected.includes(work.id)} onToggle={toggle} />
-            )}
-          </div>
+          <>
+            <nav className="bespoke-groups-nav" aria-label="按女装、男装或婚礼作品区域浏览">
+              {displayedGroups.map((group) => (
+                <a key={group.id} href={`#${group.id}`}>
+                  {group.title} <span>{group.works.length} 件参考</span>
+                </a>
+              ))}
+            </nav>
+            {displayedGroups.map((group) => (
+              <section className="bespoke-work-section" id={group.id} key={group.id} aria-labelledby={`bespoke-${group.id}-title`}>
+                <div className="bespoke-group-heading">
+                  <div>
+                    <p className="eyebrow">{group.eyebrow}</p>
+                    <h3 id={`bespoke-${group.id}-title`}>{group.title}</h3>
+                  </div>
+                  <p>{group.intro}</p>
+                </div>
+                <div className="bespoke-work-grid">
+                  {group.works.map((work) =>
+                    <BespokeCard key={work.id} work={work} saved={selected.includes(work.id)} onToggle={toggle} />
+                  )}
+                </div>
+              </section>
+            ))}
+          </>
         ) : (
           <div className="bespoke-no-results"><h3>暂时没有符合条件的作品。</h3><p>可以尝试其他场合或服装类型；没有现成参考的想法也可以向我们提出。</p><button type="button" className="button button-ink" onClick={resetFilters}>查看所有作品</button></div>
         )}
