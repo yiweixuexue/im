@@ -103,7 +103,7 @@ export default function Home() {
               <ProductCard
                 title="Embroidered Lion Charm"
                 chinese="醒狮刺绣挂件"
-                craft="EMBROIDERED TEXTILE ORNAMENT"
+                craft="BIAN EMBROIDERY · LION CHARM"
                 image="/images/site/lion-charm.webp"
                 href="/en/heritage/lion-charm"
                 status="available"
