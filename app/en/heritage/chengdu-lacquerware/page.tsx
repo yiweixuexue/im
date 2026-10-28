@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -253,6 +254,7 @@ export default function ChengduLacquerwarePage() {
             View Chengdu lacquer forms in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="Chengdu lacquerware" />
         </main>
       <SiteFooter />
     </div>
