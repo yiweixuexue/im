@@ -151,7 +151,7 @@ export function BespokeWorkLibrary({ locale = "zh" }: { locale?: Locale }) {
     "预算范围（可选） / Budget (optional):", "希望保留或调整的设计细节 / Details to retain or adjust:", "",
     "以上为参考案例，不代表复刻现货；具体面料、版型、工艺、价格与周期需要进一步沟通确认。",
   ].join("\n") : [
-    "Chuweiwo · Bespoke clothing consultation", "Design references of interest:",
+    "ImArtisan · Bespoke clothing consultation", "Design references of interest:",
     ...selectedWorks.map((work) => work.id + " · " + bespokeEnglish[work.id].title),
     "", "Occasion:", "Desired wearing date:", "City / fitting arrangements:",
     "Budget range (optional):", "Details to retain or adjust:", "",

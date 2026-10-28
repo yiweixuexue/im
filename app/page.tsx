@@ -141,7 +141,7 @@ export default function Home() {
               <p>THE ATELIER · 杭州</p>
             </div>
             <div className="home-custom-copy">
-              <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
+              <p className="eyebrow">ImArtisan BESPOKE · 屮微我定制</p>
               <h2>从“认识你”开始，<br />而不是从一件现成衣服开始。</h2>
               <p>
                 以真实生活、体型、场合与个人偏好为起点，通过一对一设计、试衣调整和传统手工细节，让衣服贴近穿着者的需要。传统文化灵感可以自由选择，而非必需。

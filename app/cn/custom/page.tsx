@@ -44,7 +44,7 @@ export default function ChineseCustomPage() {
       <main id="main-content">
         <section className="bespoke-editorial-hero shell-wide" aria-labelledby="bespoke-hero-title">
           <div className="bespoke-hero-copy">
-            <p className="eyebrow"><B zh="屮微我 · 一对一服装定制" en="CHUWEIWO · ONE-TO-ONE BESPOKE CLOTHING" /></p>
+            <p className="eyebrow"><B zh="屮微我 · 一对一服装定制" en="ImArtisan · ONE-TO-ONE BESPOKE CLOTHING" /></p>
             <h1 id="bespoke-hero-title"><B zh="从一件喜欢的衣服，开始属于你的定制。" en="Start with a piece you love. Make it truly yours." /></h1>
             <p><B zh="看见真实作品，也看见背后的选择。按款式与场合找到喜欢的方向，了解哪些细节可以调整，以及怎样让衣服真正适合你的身体和生活。" en="See real garments and the decisions behind them. Explore by style or occasion, understand what can be changed, and find a path toward clothes that fit your body and life." /></p>
             <div className="bespoke-hero-actions">
