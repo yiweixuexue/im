@@ -34,7 +34,7 @@ function ReferenceCard({
   const craft = crafts.find((entry) => entry.id === item.craft);
   if (!craft) return null;
   const itemStatus = item.status ?? craft.status;
-  const onEtsy = item.craft === "chanhua" || item.craft === "lion";
+  const onEtsy = item.salesChannel === "etsy" || (item.craft === "chanhua" && item.salesChannel !== "enquiry");
   return (
     <article className="reference-card">
       <figure className="reference-card-image">
@@ -76,7 +76,7 @@ function ReferenceCard({
             Enquire about sourcing <span aria-hidden="true">↗</span>
           </Link>
         )}
-        <Link href={craft.href} className="reference-detail-link">
+        <Link href={item.id === "LE-01" ? "/en/heritage/lion-charm" : craft.href} className="reference-detail-link">
           Craft details <span aria-hidden="true">↗</span>
         </Link>
       </div>
@@ -202,7 +202,8 @@ export function CraftReferenceLibrary() {
 
         <div className="reference-craft-groups">
           {crafts.map((craft) => {
-            const group = filtered.filter((entry) => entry.craft === craft.id);
+            const group = filtered.filter((entry) => entry.craft === craft.id)
+              .sort((a, b) => Number(a.status === "past") - Number(b.status === "past"));
             if (!group.length) return null;
             const isExpanded = expandedCrafts.includes(craft.id);
             const shown = isExpanded ? group : group.slice(0, 6);
