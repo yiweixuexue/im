@@ -178,8 +178,8 @@ export default function Home() {
                 <span>专属风格</span>
                 <span>传统手工细节</span>
               </div>
-              <Link className="button button-paper" href="/cn/custom">
-                开始了解定制
+              <Link className="button button-paper" href="/cn/custom#works">
+                浏览作品，探索定制
               </Link>
             </div>
           </div>
