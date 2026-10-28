@@ -50,7 +50,18 @@ export function BrandMark({ light = false }: { light?: boolean }) {
   );
 }
 
-function NavLink({ item }: { item: NavItem }) {
+const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function NavLink({ item, customPage = false }: { item: NavItem; customPage?: boolean }) {
+  // Use the browser's native hash navigation. Next.js Link may treat a hash
+  // appended to /cn/custom differently on GitHub Pages /dev with trailing slashes.
+  const customAnchor = item.href.match(/^\/cn\/custom\/?#(works|process)$/);
+  if (customAnchor) {
+    const href = customPage
+      ? `#${customAnchor[1]}`
+      : `${siteBasePath}/cn/custom/#${customAnchor[1]}`;
+    return <a href={href}>{item.label}</a>;
+  }
   if (item.external) {
     return (
       <a href={item.href} target="_blank" rel="noreferrer">
@@ -64,9 +75,11 @@ function NavLink({ item }: { item: NavItem }) {
 export function SiteHeader({
   market = "home",
   tone = "paper",
+  customPage = false,
 }: {
   market?: Market;
   tone?: Tone;
+  customPage?: boolean;
 }) {
   const marketLink =
     market === "cn"
@@ -81,7 +94,7 @@ export function SiteHeader({
         <BrandMark light={tone === "light"} />
         <nav className="desktop-nav" aria-label={market === "cn" ? "主导航" : "Primary navigation"}>
           {navByMarket[market].map((item) => (
-            <NavLink key={`${item.href}-${item.label}`} item={item} />
+            <NavLink key={`${item.href}-${item.label}`} item={item} customPage={customPage} />
           ))}
         </nav>
         <Link className="market-switch" href={marketLink.href}>
@@ -102,7 +115,7 @@ export function SiteHeader({
               {navByMarket[market].map((item, index) => (
                 <div key={`${item.href}-${item.label}`}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  <NavLink item={item} />
+                  <NavLink item={item} customPage={customPage} />
                 </div>
               ))}
             </nav>
@@ -150,7 +163,7 @@ export function SiteFooter() {
         <div className="footer-column">
           <p>中国客户 · CHINA</p>
           <Link href="/cn/custom">定制服装</Link>
-          <Link href="/cn/custom#works">作品选款与灵感图库</Link>
+          <a href={`${siteBasePath}/cn/custom/#works`}>作品选款与灵感图库</a>
           <Link href="/lookbook">完整 Lookbook</Link>
           <Link href="/contact#wechat">微信预约</Link>
         </div>
