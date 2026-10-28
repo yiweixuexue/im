@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MobileMenu } from "./mobile-menu";
 
 type Market = "home" | "cn" | "en";
 type Tone = "light" | "paper";
@@ -20,7 +21,7 @@ const navByMarket: Record<Market, NavItem[]> = {
     { label: "首页", href: "/" },
     { label: "定制服装", href: "/cn/custom" },
     { label: "定制流程", href: "/cn/custom#process" },
-    { label: "Lookbook", href: "/lookbook" },
+    { label: "作品选款", href: "/cn/custom#works" },
     { label: "品牌故事", href: "/about" },
     { label: "文化与手艺", href: "/journal" },
     { label: "联系我们", href: "/contact" },
@@ -36,6 +37,7 @@ const navByMarket: Record<Market, NavItem[]> = {
   ],
 };
 
+
 export function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <Link
@@ -50,7 +52,18 @@ export function BrandMark({ light = false }: { light?: boolean }) {
   );
 }
 
-function NavLink({ item }: { item: NavItem }) {
+const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function NavLink({ item, customPage = false }: { item: NavItem; customPage?: boolean }) {
+  // Use the browser's native hash navigation. Next.js Link may treat a hash
+  // appended to /cn/custom differently on GitHub Pages /dev with trailing slashes.
+  const customAnchor = item.href.match(/^\/(cn\/custom|en\/bespoke)\/?#(works|process)$/);
+  if (customAnchor) {
+    const href = customPage
+      ? `#${customAnchor[2]}`
+      : `${siteBasePath}/${customAnchor[1]}/#${customAnchor[2]}`;
+    return <a href={href}>{item.label}</a>;
+  }
   if (item.external) {
     return (
       <a href={item.href} target="_blank" rel="noreferrer">
@@ -64,31 +77,29 @@ function NavLink({ item }: { item: NavItem }) {
 export function SiteHeader({
   market = "home",
   tone = "paper",
+  customPage = false,
 }: {
   market?: Market;
   tone?: Tone;
+  customPage?: boolean;
 }) {
-  const marketLink =
-    market === "cn"
-      ? { label: "EN", href: "/en/heritage" }
-      : market === "en"
-        ? { label: "中文", href: "/cn/custom" }
-        : { label: "中文 / EN", href: "#choose-your-path" };
+  const currentNav = navByMarket[market];
+  const paths = <nav className="business-paths" aria-label="业务方向 / Explore our services">
+    <Link href="/cn/custom/" aria-current={market === "cn" ? "location" : undefined}><span lang="zh-CN">服装定制</span><span lang="en">Bespoke Clothing</span></Link>
+    <Link href="/en/heritage/" aria-current={market === "en" ? "location" : undefined}><span lang="zh-CN">非遗手工艺</span><span lang="en">Heritage Crafts</span></Link>
+  </nav>;
 
   return (
     <header className={`site-header site-header-${tone} site-header-${market}`}>
       <div className="header-inner shell-wide">
         <BrandMark light={tone === "light"} />
         <nav className="desktop-nav" aria-label={market === "cn" ? "主导航" : "Primary navigation"}>
-          {navByMarket[market].map((item) => (
-            <NavLink key={`${item.href}-${item.label}`} item={item} />
+          {currentNav.map((item) => (
+            <NavLink key={`${item.href}-${item.label}`} item={item} customPage={customPage} />
           ))}
         </nav>
-        <Link className="market-switch" href={marketLink.href}>
-          {marketLink.label}
-          <span aria-hidden="true">↗</span>
-        </Link>
-        <details className="mobile-menu">
+        {paths}
+        <MobileMenu>
           <summary aria-label="Open navigation / 打开导航">
             <i />
             <i />
@@ -99,18 +110,16 @@ export function SiteHeader({
               <span>MENU</span>
             </div>
             <nav aria-label={market === "cn" ? "移动端导航" : "Mobile navigation"}>
-              {navByMarket[market].map((item, index) => (
+              {currentNav.map((item, index) => (
                 <div key={`${item.href}-${item.label}`}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  <NavLink item={item} />
+                  <NavLink item={item} customPage={customPage} />
                 </div>
               ))}
             </nav>
-            <Link className="mobile-market-link" href={marketLink.href}>
-              {marketLink.label} <span aria-hidden="true">↗</span>
-            </Link>
+            {paths}
           </div>
-        </details>
+        </MobileMenu>
       </div>
     </header>
   );
@@ -148,13 +157,15 @@ export function SiteFooter() {
           <p>Seeing the self in the details.</p>
         </div>
         <div className="footer-column">
-          <p>中国客户 · CHINA</p>
+          <p>服装定制 · BESPOKE CLOTHING</p>
           <Link href="/cn/custom">定制服装</Link>
-          <Link href="/lookbook">作品 Lookbook</Link>
+
+          <a href={`${siteBasePath}/cn/custom/#works`}>作品选款与灵感图库</a>
+          <Link href="/lookbook">完整 Lookbook</Link>
           <Link href="/contact#wechat">微信预约</Link>
         </div>
         <div className="footer-column">
-          <p>INTERNATIONAL</p>
+          <p>非遗手工艺 · HERITAGE CRAFTS</p>
           <Link href="/en/heritage">Heritage Craft &amp; Product Library</Link>
           <Link href="/makers">Meet the Makers</Link>
           <Link href="/en/partnerships">Gifts & Partnerships</Link>

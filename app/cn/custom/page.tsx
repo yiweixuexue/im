@@ -1,187 +1,141 @@
+import { Bilingual as B } from "../../../components/bilingual";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BespokeWorkLibrary } from "../../../components/bespoke-work-library";
 import { SiteImage } from "../../../components/site-image";
-import { SectionHeading, SiteFooter, SiteHeader } from "../../../components/site-shell";
+import { SiteFooter, SiteHeader } from "../../../components/site-shell";
 
 export const metadata: Metadata = {
-  title: "定制服装",
-  description:
-    "屮微我以一对一风格设计、量体试样与手工细节，为婚礼、正式场合、家庭合影和日常新中式提供专属定制。",
+  title: "服装定制 / Bespoke Clothing｜作品与咨询",
+  description: "浏览屮微我真实服装作品，按旗袍、女士新中式、男士定制及婚礼场景筛选，了解版型、材料和可调整细节，保存参考并预约一对一定制沟通。",
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/cn/custom/` },
 };
 
-const scenarios = [
-  ["婚礼与敬酒", "让新娘旗袍、新郎正装与婚礼空间形成完整的视觉关系。"],
-  ["商务与正式场合", "克制、得体、有辨识度，在重要相见中仍然保持真实的自己。"],
-  ["家庭合影与纪念", "不追求整齐复制，而是让每位家人的气质彼此呼应。"],
-  ["日常新中式", "用可反复搭配的面料与廓形，让东方审美进入真实生活。"],
+const steps = [
+  ["01", "说出需求|||Share your needs", "告诉我们穿着场合、日期、预算、喜欢与不喜欢的感觉，也可以只带来一张参考图。|||Tell us the occasion, date, budget and the things you like or dislike. A single reference photo is enough to begin."],
+  ["02", "设计沟通|||Design conversation", "通过初步对谈确认风格、身体需求、使用场景与制作可行性。|||Discuss style, physical comfort, use cases and the feasibility of different ideas."],
+  ["03", "方案与报价|||Proposal & quote", "提出廓形、面料、色彩及工艺方向，说明预计费用、周期与下一步。|||Review a proposed silhouette, fabric, colors, craft details and provisional cost and schedule."],
+  ["04", "确认面料|||Choose materials", "根据实际样布、垂坠和手感选择材料，并确认重要设计细节。|||Consider real fabric samples for texture and drape, then confirm the key design decisions."],
+  ["05", "量体与建档|||Measurements & profile", "综合尺寸、体态和活动习惯记录需求；异地客户需要确认可靠的量体方式。|||Record measurements, posture and movement needs. Remote measurements need suitable arrangements."],
+  ["06", "毛坯试样|||Trial fitting", "通过试样观察站立、落座、行走等状态，调整版型和活动空间。|||Assess the toile while standing, sitting and walking, then adjust fit and ease of movement."],
+  ["07", "正式制作|||Making & finishing", "裁剪、缝制、细节处理、整烫与检查，根据项目选用合适手工工艺。|||Cutting, sewing, selected hand details, pressing and inspection follow the confirmed plan."],
+  ["08", "交付与养护|||Delivery & care", "提供穿搭和保养建议；与客户沟通后续尺寸或版型记录的维护。|||Discuss styling, care and any relevant fitting notes to retain for later."],
 ];
 
-const steps = [
-  ["01", "初识需求", "了解场合、日期、预算与当前最困扰你的穿着问题。"],
-  ["02", "灵感沟通", "用 15 分钟语音或视频对谈，确认气质、偏好与不喜欢的方向。"],
-  ["03", "方案与报价", "将需求转为清晰的廓形、色彩、细节建议和制作范围。"],
-  ["04", "面料与设计确认", "寄送或现场选择面料小样，确认设计图与所有关键细节。"],
-  ["05", "量体建档", "记录静态尺寸、体态与活动习惯，建立长期个人定制档案。"],
-  ["06", "打版试衣", "制作毛坯样衣，通过站立、坐姿和行走调整动态合身度。"],
-  ["07", "制作与完善", "正式裁剪、缝制、盘扣与手工细节，并完成整烫检查。"],
-  ["08", "交付与养护", "提供搭配和洗护建议，后续持续维护尺寸与定制记录。"],
+const decisions = [
+  { number: "01", title: "先看身体与动作|||Start with the body in motion", image: "/images/lookbook/handcraft-patterns.webp", alt: "悬挂的不同服装试样和毛坯裁片|||Clothing samples and trial patterns in a studio", copy: "领型、肩线、腰线和衣长不只是视觉比例。坐下、转身、抬手的舒适感，需要在试样时一并考虑。|||Collar, shoulders, waist and length influence both proportion and movement. Sitting, reaching and turning are part of fitting." },
+  { number: "02", title: "再看面料与生活|||Choose cloth for real life", image: "/images/site/silk-texture.webp", alt: "丝质面料的柔和光泽与纹理特写|||Close-up of softly lustrous silk", copy: "同一种版型在不同面料里会呈现不同性格。透度、垂坠、保暖、清洗及穿着频率，都应该影响选择。|||The same pattern can feel different in another material. Drape, transparency, warmth, care and frequency of wear should guide the choice." },
+  { number: "03", title: "最后完成手工细节|||Finish with considered handwork", image: "/images/lookbook/handcraft-hand-finishing.webp", alt: "裁缝以双手处理衣料边缘的手工收口|||Tailor carefully finishing a garment edge by hand", copy: "盘扣、滚边、里布与缝份要适合这件衣服，而非为了装饰而添加。精细收口往往藏在看不见的地方。|||Frog buttons, piping, lining and seam finishes belong where they serve the garment. Considered craftsmanship often lives in unseen details." },
 ];
 
 const faqs = [
-  ["为什么定制通常需要 2–4 周？", "时间用于沟通、设计、面料确认、量体、毛坯试样、修改、正式制作与最终检查。复杂刺绣、特殊面料或跨城寄送可能需要更长时间，我们会在确认方案时说明。"],
-  ["我没有明确想法，也可以预约吗？", "可以。你只需要带来真实场合、穿着困扰，以及喜欢或不喜欢的直觉参考。把模糊想法转化为可执行方案，本来就是设计服务的一部分。"],
-  ["异地客户可以定制吗？", "可以先进行远程灵感沟通。是否适合完整远程定制，会根据品类、时间和试衣条件判断；重要礼服与复杂版型会优先建议可完成试样调整的方式。"],
-  ["定制开始前需要准备什么？", "准备穿着日期、场合、预算范围、喜欢与不喜欢的参考图，以及一件目前最合身或最困扰你的衣服即可。"],
+  ["所有图片里的衣服都可以直接下单吗？|||Can I order the exact pieces pictured?", "这些是实际作品及设计参考，不是现货商城。我们会根据你的场合、体型和预算讨论适合的形制；具体款式、面料和工艺的可执行性需要确认。|||These are real work examples and design references, not ready-made stock. We discuss the forms and details suited to your needs; reproducing a particular cloth or design is not guaranteed."],
+  ["我能根据参考款调整颜色、领型或长度吗？|||Can I change the color, collar or length?", "可以提出希望保留或修改的部分。是否可行由面料、结构、工艺、试衣条件和制作周期共同决定，确认方案后再制作。|||You're welcome to request changes. Feasibility depends on fabric, construction, technique, fitting conditions and schedule. We agree on a plan before making."],
+  ["定制通常需要多久？|||How long does bespoke clothing take?", "常规项目通常需要约 2–4 周，实际取决于面料、工艺难度、试样修改和排期。婚礼、复杂刺绣或异地项目请更早咨询；确认时间前不保证交付日期。|||Many standard projects take approximately 2–4 weeks. Embroidery, wedding work, additional fittings or remote arrangements may take longer. Delivery dates are confirmed individually."],
+  ["不在本地，能远程定制吗？|||Can I order remotely?", "可以先远程沟通。是否适合全程远程定制，要结合具体品类、准确量体和试衣调整的条件判断；复杂贴身礼服通常更依赖现场试样。|||An initial consultation can be remote. Full remote bespoke work depends on reliable measurements and appropriate fitting arrangements. Close-fitting formal garments generally benefit from an in-person fitting."],
+  ["不喜欢中式元素，也可以定制吗？|||Do I have to choose Chinese-inspired styling?", "当然可以。设计从你的需求出发，并不要求每个人接受同一种审美。中式细节、传统纹样和文化意象都是可以讨论的选项，而非必须添加的元素。|||Not at all. Your personal preferences come first. Traditional motifs, Chinese-inspired lines and heritage details are possibilities, never obligations."],
+  ["第一次咨询要准备什么？|||What should I prepare for a consultation?", "最有用的是场合、希望穿着的日期、所在城市、预算范围，以及喜欢和不喜欢的图片。暂时没有明确款式也可以开始沟通。|||Share your occasion, desired wearing date, city, approximate budget and any images you like or dislike. You can begin without a specific design in mind."],
 ];
 
 export default function ChineseCustomPage() {
   return (
-    <div className="site-page" lang="zh-CN">
-      <SiteHeader market="cn" tone="light" />
+    <div className="site-page bespoke-landing" lang="zh-CN">
+      <SiteHeader market="cn" tone="paper" customPage />
       <main id="main-content">
-        <section className="market-hero custom-market-hero">
-          <SiteImage src="/images/site/custom-ceremony.webp" alt="屮微我中式婚礼旗袍与男士正装定制" />
-          <div className="market-hero-shade" aria-hidden="true" />
-          <div className="shell market-hero-copy">
-            <p className="eyebrow">CHUWEIWO BESPOKE · 屮微我定制</p>
-            <h1>不先定义你，<br />只先理解你。</h1>
-            <p>从你的身体、场合、日常与审美选择出发，以一对一风格设计、试样调整与细致手工，完成一件真正属于你的衣服。传统文化意象可作为自愿选择的灵感。</p>
-            <div className="hero-button-row">
-              <Link className="button button-paper" href="/contact#wechat">
-                预约 15 分钟灵感对谈
-              </Link>
-              <Link className="text-link text-link-light" href="#process">
-                查看完整流程 <span aria-hidden="true">↓</span>
-              </Link>
+        <section className="bespoke-editorial-hero shell-wide" aria-labelledby="bespoke-hero-title">
+          <div className="bespoke-hero-copy">
+            <p className="eyebrow"><B zh="屮微我 · 一对一服装定制" en="ImArtisan · ONE-TO-ONE BESPOKE CLOTHING" /></p>
+            <h1 id="bespoke-hero-title"><B zh={"从一件喜欢的衣服，\n开始属于你的定制。"} en="Start with a piece you love. Make it truly yours." /></h1>
+            <p><B zh="看见真实作品，也看见背后的选择。按款式与场合找到喜欢的方向，了解哪些细节可以调整，以及怎样让衣服真正适合你的身体和生活。" en="See real garments and the decisions behind them. Explore by style or occasion, understand what can be changed, and find a path toward clothes that fit your body and life." /></p>
+            <div className="bespoke-hero-actions">
+              <a className="button button-ink" href="#works"><B zh="浏览作品与选款 ↓" en="Browse designs ↓" /></a>
+              <Link className="arrow-link" href="/contact#wechat"><B zh="咨询定制方案 →" en="Discuss your project →" /></Link>
             </div>
+            <p className="bespoke-hero-small"><B zh="中国客户定制服务 · 一对一沟通 · 按实际方案报价" en="CHINA-BASED BESPOKE SERVICE · INDIVIDUAL CONSULTATION · PROJECT-SPECIFIC QUOTES" /></p>
           </div>
-          <p className="market-hero-note">雅致国风 · 匠心私定 · 三位一体专属高定</p>
-        </section>
-
-        <section className="definition-section section-space shell">
-          <p className="vertical-label">WHAT BESPOKE MEANS</p>
-          <div>
-            <p className="eyebrow">定制是什么</p>
-            <h2>不是把你放进一个尺码，<br />而是为你建立一套衣着语言。</h2>
-          </div>
-          <div className="definition-copy">
-            <p>
-              我们从你的体型、气质、生活方式和真实场合出发。颜色为什么适合你，廓形怎样回应身体，细节如何表达而不过度——每一个决定都有来由。
-            </p>
-            <p>
-              定制的目标不是制造一件只能穿一次的“作品”，而是让衣服在重要时刻托住你，也能在之后的生活里继续被穿着。
-            </p>
+          <div className="bespoke-hero-collage" aria-label="旗袍、女士新中式与男士正装作品">
+            <SiteImage src="/images/lookbook/qipao-blue.webp" alt="月蓝缎面旗袍的佩戴造型" />
+            <SiteImage src="/images/lookbook/womens-vest-ivory.webp" alt="月白盘扣马甲与花纹口袋" loading="lazy" />
+            <SiteImage src="/images/lookbook/mens-formal-suit.webp" alt="深色男士西装的人台展示" loading="lazy" />
           </div>
         </section>
 
-        <section className="scenario-section section-space">
-          <div className="shell">
-            <SectionHeading
-              eyebrow="OCCASIONS"
-              title="为重要时刻，也为真正的日常"
-              intro="场合决定正式程度，但不决定你必须成为谁。"
-            />
-            <div className="scenario-grid">
-              {scenarios.map(([title, copy], index) => (
-                <article key={title}>
-                  <span>0{index + 1}</span>
-                  <h3>{title}</h3>
-                  <p>{copy}</p>
-                </article>
-              ))}
-            </div>
-          </div>
+        <section className="bespoke-three-promises shell" aria-label="如何使用定制作品图库">
+          <article><span><B zh="01 · LOOK" en="01 · LOOK" /></span><h2><B zh="看款式与场合" en="Explore the possibilities" /></h2><p><B zh="按旗袍、女士、男士与婚礼方向筛选真实作品。" en="Browse qipao, womenswear, menswear and wedding outfits." /></p></article>
+          <article><span><B zh="02 · THINK" en="02 · THINK" /></span><h2><B zh="想清楚自己的需要" en="Consider what works for you" /></h2><p><B zh="看见可调整的细节，也了解实际穿着中的限制。" en="Explore adjustable details and what matters in daily wear." /></p></article>
+          <article><span><B zh="03 · TALK" en="03 · TALK" /></span><h2><B zh="带着参考来沟通" en="Bring your references" /></h2><p><B zh="保存心仪案例，说明日期、预算和希望改善的穿衣问题。" en="Save pieces and share your date, budget and fit priorities." /></p></article>
         </section>
 
-        <section className="custom-lookbook section-space shell">
-          <SectionHeading
-            eyebrow="SELECTED WORKS"
-            title="真正的风格，来自具体的人"
-            intro="礼服、日常新中式与男士服装使用不同的设计逻辑，却共享同一种尊重个体的尺度。"
-          />
-          <div className="custom-lookbook-grid">
-            <figure className="lookbook-feature">
-              <SiteImage src="/images/lookbook-women.webp" alt="黑色长款旗袍定制" loading="lazy" />
-              <figcaption><span>旗袍定制</span><strong>含蓄的线条，也可以很有力量</strong></figcaption>
-            </figure>
-            <figure>
-              <SiteImage src="/images/site/silk-jacket.webp" alt="粉色真丝新中式女上衣" loading="lazy" />
-              <figcaption><span>女士新中式</span><strong>不过度设计的日常表达</strong></figcaption>
-            </figure>
-            <figure>
-              <SiteImage src="/images/site/blue-shirt.webp" alt="蓝色棉麻新中式男上衣" loading="lazy" />
-              <figcaption><span>男士服装</span><strong>传统结构进入当代生活</strong></figcaption>
-            </figure>
-          </div>
-          <Link className="arrow-link lookbook-more" href="/lookbook">
-            浏览完整 Lookbook <span aria-hidden="true">→</span>
-          </Link>
-        </section>
+        <BespokeWorkLibrary />
 
-        <section className="pillars-section section-space">
-          <div className="shell pillars-layout">
-            <div className="pillars-title">
-              <p className="eyebrow">THREE-PART BESPOKE SYSTEM</p>
-              <h2>一件衣裳，<br />三重专属。</h2>
-              <p>三者不是附加卖点，而是同一个设计判断的不同维度。</p>
-            </div>
-            <div className="pillars-list">
-              <article><span>壹</span><div><h3>命理气韵</h3><p>将五行与个人气质作为色彩、材质和寓意的灵感来源，不做机械套用。</p></div></article>
-              <article><span>贰</span><div><h3>一对一专属风格</h3><p>结合体型、衣橱、职业和场景，建立不被成衣尺码限制的个人方案。</p></div></article>
-              <article><span>叁</span><div><h3>非遗级手作细节</h3><p>盘扣、滚边、刺绣与精细收口，由手艺人的时间让衣服获得温度。</p></div></article>
-            </div>
+        <section className="bespoke-beyond shell section-space" id="design-decisions" aria-labelledby="bespoke-design-title">
+          <div className="bespoke-section-intro">
+            <p className="eyebrow"><B zh="不只是一张好看的照片" en="BEYOND THE PHOTO · FIT, FABRIC &amp; HANDWORK" /></p>
+            <h2 id="bespoke-design-title"><B zh="好看，是开始。适合，才是定制的重点。" en={"Beautiful is the beginning.\nRight for you is the goal."} /></h2>
+            <p><B zh="一件服装的美感来自整体选择：身体、动作、材料与工艺之间是否互相成全。我们不把某一种东方审美作为标准答案。" en="Clothing comes together through choices about the wearer, movement, material and technique. There is no single correct style for everyone." /></p>
           </div>
-        </section>
-
-        <section className="process-section section-space shell" id="process">
-          <SectionHeading
-            eyebrow="THE BESPOKE JOURNEY"
-            title="从初识，到长期陪伴"
-            intro="每一步都在降低信息误差，也在让衣服更接近你真实的生活。"
-          />
-          <ol className="process-grid">
-            {steps.map(([no, title, copy]) => (
-              <li key={no}>
-                <span>{no}</span>
-                <h3>{title}</h3>
-                <p>{copy}</p>
-              </li>
+          <div className="bespoke-decisions-grid">
+            {decisions.map((item) => (
+              <article key={item.number}>
+                <SiteImage src={item.image} alt={item.alt.replace("|||", " / ")} loading="lazy" />
+                <p className="eyebrow">{item.number}<B zh="· THE MAKING" en="· THE MAKING" /></p>
+                <h3><B text={item.title} /></h3>
+                <p><B text={item.copy} /></p>
+              </article>
             ))}
-          </ol>
-          <div className="timeline-note">
-            <strong>通常制作周期：2–4 周</strong>
-            <p>重要日期建议提前沟通。复杂工艺、特殊面料与旺季排期会在确认方案前如实说明。</p>
+          </div>
+          <Link href="/lookbook/handcraft" className="arrow-link"><B zh="查看更多手作与试样细节 →" en="Explore making and fitting details →" /></Link>
+        </section>
+
+        <section className="bespoke-process-section section-space" id="process" aria-labelledby="bespoke-process-title">
+          <div className="shell">
+            <div className="bespoke-section-intro">
+              <p className="eyebrow"><B zh="了解制作过程" en="THE BESPOKE JOURNEY · HOW IT WORKS" /></p>
+              <h2 id="bespoke-process-title"><B zh="每一步都有意义，也值得被看见。" en="Every step has a purpose." /></h2>
+              <p><B zh="从初次沟通到完成制作，关键不是加快每一步，而是尽早发现不适合的地方，并把决定讲清楚。" en="From the first conversation to the final pressing, the aim is to discover what works and explain each decision clearly." /></p>
+            </div>
+            <ol className="bespoke-process-grid">
+              {steps.map(([number, heading, copy]) => (
+                <li key={number}>
+                  <span>{number}</span>
+                  <h3><B text={heading} /></h3>
+                  <p><B text={copy} /></p>
+                </li>
+              ))}
+            </ol>
+            <div className="bespoke-timeline-note">
+              <strong><B zh="常规制作参考：约 2–4 周" en="Typical reference: approximately 2–4 weeks" /></strong>
+              <p><B zh="具体日期需根据设计复杂度、面料、试样、制作排期及运输条件确认；不以参考周期作为交付承诺。" en="Actual timing depends on design complexity, fabric, fittings, production capacity and shipping. This is not a delivery guarantee." /></p>
+            </div>
           </div>
         </section>
 
-        <section className="consultation-band section-space" id="wechat">
-          <div className="shell consultation-band-grid">
+        <section className="bespoke-book-section section-space" id="consultation" aria-labelledby="bespoke-consultation-title">
+          <div className="shell bespoke-book-grid">
             <div>
-              <p className="eyebrow">15-MINUTE INSPIRATION CONVERSATION</p>
-              <h2>先聊清楚，再决定是否开始。</h2>
-              <p>
-                你可以通过语音或视频，说说场合、期待和以往穿衣的困扰。初次对谈不要求你准备完整答案，也不急于促成订单。
-              </p>
-              <ul>
-                <li>适合第一次接触定制的人</li>
-                <li>可提前确认档期与制作可行性</li>
-                <li>沟通后提供设计方向与面料建议</li>
-              </ul>
+              <p className="eyebrow"><B zh="开始定制" en="START WITH A CONVERSATION" /></p>
+              <h2 id="bespoke-consultation-title"><B zh="先把想法聊清楚，再决定要不要做。" en="Discuss the idea before committing to a piece." /></h2>
+              <p><B zh="你可以从一件喜欢的衣服、一场即将到来的活动，或一个长期的穿着困扰开始。我们先确认是否有合适的版型与制作路径，再讨论方案、价格和时间。" en="Come with a garment you love, an approaching occasion or a fit problem you want to solve. We first assess a suitable design and fitting path, then discuss a proposal, quote and timeframe." /></p>
+              <Link href="/contact#wechat" className="button button-paper"><B zh="查看微信预约方式 →" en="WeChat consultation details →" /></Link>
+              <Link href="/lookbook" className="bespoke-book-lookbook"><B zh="继续浏览完整 Lookbook ↗" en="Explore the full Lookbook ↗" /></Link>
             </div>
-            <div className="wechat-card">
-              <SiteImage src="/images/wechat-qr.png" alt="屮微我品牌微信二维码" width="632" height="632" loading="lazy" />
-              <div><span>微信扫一扫</span><strong>预约灵感对谈</strong><p>添加时请备注“定制咨询”</p></div>
+            <div className="bespoke-wechat-note">
+              <SiteImage src="/images/wechat-qr.png" alt="屮微我定制服装微信咨询二维码" width="632" height="632" loading="lazy" />
+              <div><p className="eyebrow"><B zh="WECHAT CONSULTATION" en="WECHAT CONSULTATION" /></p><h3><B zh="微信扫码咨询" en="Scan to start a conversation" /></h3><p><B zh="添加时备注「定制咨询」，如已在上方保存作品，请附上复制的参考编号。" en="Mention “Bespoke enquiry” when connecting. If you saved designs, include their reference IDs." /></p></div>
             </div>
           </div>
         </section>
 
-        <section className="faq-section section-space shell">
-          <SectionHeading eyebrow="FREQUENTLY ASKED" title="常见问题" />
-          <div className="faq-list">
+        <section className="bespoke-faq shell section-space" aria-labelledby="bespoke-faq-title">
+          <div className="bespoke-section-intro">
+            <p className="eyebrow"><B zh="常见问题" en="FREQUENTLY ASKED" /></p>
+            <h2 id="bespoke-faq-title"><B zh="提前了解，选择才更从容。" en="Questions worth asking before you begin." /></h2>
+          </div>
+          <div className="bespoke-faq-list">
             {faqs.map(([question, answer]) => (
               <details key={question}>
-                <summary>{question}<span aria-hidden="true">＋</span></summary>
-                <p>{answer}</p>
+                <summary><B text={question} /><span aria-hidden="true">＋</span></summary>
+                <p><B text={answer} /></p>
               </details>
             ))}
           </div>
