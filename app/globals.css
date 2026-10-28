@@ -6201,3 +6201,45 @@ html{scroll-behavior:smooth}
   .bespoke-work-section,.bespoke-work-section+.bespoke-work-section{margin-top:43px}
   .bespoke-group-heading{padding:22px 0 25px}
 }
+
+/* Two fixed business destinations, shared by every header. */
+.business-paths{display:flex;gap:0;flex-shrink:0;border:1px solid currentColor;border-radius:3px}
+.business-paths a{display:flex;flex-direction:column;justify-content:center;padding:10px 12px;min-height:52px;line-height:1.35;font-size:12px;text-align:center}
+.business-paths a+a{border-left:1px solid currentColor}
+.business-paths a span[lang=en]{font-size:10px;margin-top:3px;letter-spacing:.015em}
+.business-paths a[aria-current=location]{background:#e2d7c5;color:#24332c}
+.business-paths a:hover{background:#ddd4c3;color:#24332c}
+.business-paths a:focus-visible{outline:2px solid #9c683b;outline-offset:4px}
+.mobile-menu-panel .business-paths{margin-top:28px;color:var(--ink)}
+.mobile-menu-panel .business-paths a{flex:1}
+.bilingual{display:block;min-width:0}
+.bilingual-en{display:block;margin-top:.42em;font-family:var(--sans, sans-serif);font-size:.84em;font-weight:400;line-height:1.6;letter-spacing:0;opacity:.85}
+.bespoke-hero-copy h1 .bilingual{display:inline}
+.bespoke-hero-copy h1 .bilingual-en{font-size:.44em;max-width:29ch;margin-top:.65em;line-height:1.35}
+.bespoke-hero-copy h1 br{display:none}
+.bespoke-work-content h3 .bilingual-en{font-size:16px}
+.bespoke-process-grid li .bilingual,.bespoke-process-grid li .bilingual-en{font:inherit;color:inherit}
+.bespoke-process-grid li .bilingual-en{font-size:.88em;line-height:1.6;margin-top:.5em}
+.bespoke-faq-list summary>.bilingual{font-size:inherit;color:inherit}
+.bespoke-faq-list details[open] summary>.bilingual{transform:none}
+.bespoke-faq-list summary .bilingual-en{font-size:13px;color:var(--ash)}
+.bespoke-groups-nav a .bilingual{white-space:normal;font-size:inherit;color:inherit}
+.bespoke-groups-nav a .bilingual-en{white-space:normal;font-size:11px}
+.bespoke-work-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.bespoke-work-content{padding-bottom:24px}
+.bespoke-filter-panel label{min-width:0}
+.bespoke-filter-panel select,.bespoke-filter-panel input{width:100%;min-width:0}
+.bespoke-book-lookbook{max-width:100%;width:fit-content}
+.bespoke-route-bridge{padding-top:180px;min-height:70vh}
+@media(max-width:1350px){.desktop-nav{display:none}.header-inner{justify-content:space-between}.mobile-menu{display:block}}
+@media(max-width:850px){.bespoke-work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){
+.header-inner>.business-paths{display:none}
+.bespoke-work-grid,.bespoke-process-grid{grid-template-columns:1fr}
+.bespoke-hero-copy h1{font-size:42px}
+.bespoke-hero-copy h1 .bilingual-en{font-size:22px;max-width:none}
+.bespoke-three-promises h2{font-size:24px}
+.bespoke-groups-nav a{gap:12px}
+.bespoke-results{flex-wrap:wrap;gap:8px}
+.bespoke-work-actions .bilingual-en{font-size:11px}
+}

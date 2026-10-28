@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MobileMenu } from "./mobile-menu";
 
 type Market = "home" | "cn" | "en";
 type Tone = "light" | "paper";
@@ -36,15 +37,6 @@ const navByMarket: Record<Market, NavItem[]> = {
   ],
 };
 
-const bespokeEnglishNav: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Bespoke Clothing", href: "/en/bespoke" },
-  { label: "Browse Designs", href: "/en/bespoke#works" },
-  { label: "How It Works", href: "/en/bespoke#process" },
-  { label: "Lookbook", href: "/lookbook" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
 
 export function BrandMark({ light = false }: { light?: boolean }) {
   return (
@@ -86,38 +78,28 @@ export function SiteHeader({
   market = "home",
   tone = "paper",
   customPage = false,
-  customLocale,
 }: {
   market?: Market;
   tone?: Tone;
   customPage?: boolean;
-  customLocale?: "zh" | "en";
 }) {
-  const marketLink = customLocale === "zh"
-    ? { label: "EN", href: "/en/bespoke" }
-    : customLocale === "en"
-      ? { label: "中文", href: "/cn/custom" }
-      : market === "cn"
-        ? { label: "EN", href: "/en/heritage" }
-        : market === "en"
-          ? { label: "中文", href: "/cn/custom" }
-          : { label: "中文 / EN", href: "#choose-your-path" };
-  const currentNav = customLocale === "en" ? bespokeEnglishNav : navByMarket[market];
+  const currentNav = navByMarket[market];
+  const paths = <nav className="business-paths" aria-label="业务方向 / Explore our services">
+    <Link href="/cn/custom/" aria-current={market === "cn" ? "location" : undefined}><span lang="zh-CN">服装定制</span><span lang="en">Bespoke Clothing</span></Link>
+    <Link href="/en/heritage/" aria-current={market === "en" ? "location" : undefined}><span lang="zh-CN">非遗手工艺</span><span lang="en">Heritage Crafts</span></Link>
+  </nav>;
 
   return (
     <header className={`site-header site-header-${tone} site-header-${market}`}>
       <div className="header-inner shell-wide">
         <BrandMark light={tone === "light"} />
-        <nav className="desktop-nav" aria-label={customLocale === "en" ? "Bespoke navigation" : market === "cn" ? "主导航" : "Primary navigation"}>
+        <nav className="desktop-nav" aria-label={market === "cn" ? "主导航" : "Primary navigation"}>
           {currentNav.map((item) => (
             <NavLink key={`${item.href}-${item.label}`} item={item} customPage={customPage} />
           ))}
         </nav>
-        <Link className="market-switch" href={marketLink.href}>
-          {marketLink.label}
-          <span aria-hidden="true">↗</span>
-        </Link>
-        <details className="mobile-menu">
+        {paths}
+        <MobileMenu>
           <summary aria-label="Open navigation / 打开导航">
             <i />
             <i />
@@ -127,7 +109,7 @@ export function SiteHeader({
               <BrandMark />
               <span>MENU</span>
             </div>
-            <nav aria-label={customLocale === "en" ? "Mobile bespoke navigation" : market === "cn" ? "移动端导航" : "Mobile navigation"}>
+            <nav aria-label={market === "cn" ? "移动端导航" : "Mobile navigation"}>
               {currentNav.map((item, index) => (
                 <div key={`${item.href}-${item.label}`}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
@@ -135,11 +117,9 @@ export function SiteHeader({
                 </div>
               ))}
             </nav>
-            <Link className="mobile-market-link" href={marketLink.href}>
-              {marketLink.label} <span aria-hidden="true">↗</span>
-            </Link>
+            {paths}
           </div>
-        </details>
+        </MobileMenu>
       </div>
     </header>
   );
@@ -177,15 +157,15 @@ export function SiteFooter() {
           <p>Seeing the self in the details.</p>
         </div>
         <div className="footer-column">
-          <p>中国客户 · CHINA</p>
+          <p>服装定制 · BESPOKE CLOTHING</p>
           <Link href="/cn/custom">定制服装</Link>
-          <Link href="/en/bespoke">Bespoke Clothing · English</Link>
+
           <a href={`${siteBasePath}/cn/custom/#works`}>作品选款与灵感图库</a>
           <Link href="/lookbook">完整 Lookbook</Link>
           <Link href="/contact#wechat">微信预约</Link>
         </div>
         <div className="footer-column">
-          <p>INTERNATIONAL</p>
+          <p>非遗手工艺 · HERITAGE CRAFTS</p>
           <Link href="/en/heritage">Heritage Craft &amp; Product Library</Link>
           <Link href="/makers">Meet the Makers</Link>
           <Link href="/en/partnerships">Gifts & Partnerships</Link>
