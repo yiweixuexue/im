@@ -6259,3 +6259,8 @@ html{scroll-behavior:smooth}
 
 .bespoke-results .bespoke-result-count{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}
 .bespoke-result-count strong{font-size:18px;font-weight:500;white-space:nowrap}
+
+/* Balance bilingual heading lines without leaving isolated final words. */
+.bespoke-hero-copy h1 .bilingual>span,
+.bespoke-library-head h2 .bilingual>span,
+.bespoke-group-heading h3 .bilingual>span{display:block;text-wrap:balance}
