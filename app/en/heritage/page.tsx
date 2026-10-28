@@ -88,10 +88,10 @@ export default function HeritageCollectionPage() {
               TRADITIONAL CRAFT · CONTEMPORARY LIFE · CUSTOMIZATION WELCOME
             </p>
           </div>
-          <div className="heritage-library-hero-images" aria-label="Three crafted objects: a Chanhua floral brooch, a worn Ronghua corsage, and a lacquer vessel">
+          <div className="heritage-library-hero-images" aria-label="Three craft stories: a Chanhua tulip brooch, Ronghua plum blossom and bird arrangement, and a burning incense ritual">
             <SiteImage src="/images/site/tulip-brooch.webp" alt="Red Chanhua tulip brooch with carefully wrapped petals on a pale background" />
-            <SiteImage src="/images/site/ronghua/collection/violet-brooch-worn.webp" alt="Lavender Yangzhou Ronghua floral brooch worn with a modern grey garment" loading="lazy" />
-            <SiteImage src="/images/site/lacquer/maple-vessel.webp" alt="Black Chengdu lacquer home vessel with maple-leaf decoration" loading="lazy" />
+            <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Yangzhou Ronghua plum blossom and blue bird arrangement in a white vase, a joyful seasonal display" loading="lazy" />
+            <SiteImage src="/images/site/incense/incense-burning-ritual.webp" alt="A lit incense stick releasing swirling smoke in a serene tea setting" loading="lazy" />
           </div>
         </section>
 
