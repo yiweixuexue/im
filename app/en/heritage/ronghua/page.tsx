@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -93,6 +94,7 @@ export default function RonghuaPage() {
             View Yangzhou Ronghua in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="Yangzhou Ronghua velvet flowers" />
         </main>
       <SiteFooter />
     </div>
