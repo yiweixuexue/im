@@ -19,7 +19,7 @@ const bilingualLabels = {
   "bestFor": "适合什么场合 / WHERE IT WORKS BEST",
   "choices": "可以讨论哪些调整 / WHAT CAN BE CUSTOMIZED",
   "consider": "选择前要考虑 / BEFORE CHOOSING",
-  "eyebrow": "BESPOKE WORKS · 穿着参考图库 / BESPOKE WORKS · THE DESIGN LIBRARY",
+  "eyebrow": "穿着参考图库 / BESPOKE WORKS · THE DESIGN LIBRARY",
   "heading": "从作品出发，找到适合自己的方向。 / Find a direction that feels like you.",
   "intro": "每张图片都是一次设计讨论的起点。先看穿着场景、可以调整的细节，以及试衣前需要考虑的事；不必先选定某件衣服。 / Every photo starts a design conversation. Explore the occasions each piece suits, what you might adjust, and what to consider before a fitting.",
   "keyword": "搜索作品或细节 / Search designs or details",
@@ -30,7 +30,6 @@ const bilingualLabels = {
   "allOccasions": "所有穿着场合 / All occasions",
   "clear": "清除筛选 / Clear filters",
   "showing": "正在展示 / Showing",
-  "of": " /  / of",
   "samples": "个作品参考 / design references",
   "picked": "已选 / Saved:",
   "pickedSuffix": "件灵感参考 / references",
@@ -81,7 +80,7 @@ const bilingualLabels = {
   "emptyText": "可以尝试其他场合或服装类型；没有现成参考的想法也可以向我们提出。 / Try a different garment type or occasion. You can also enquire about an idea without an exact visual reference.",
   "emptyAction": "查看所有作品 / Show all designs",
   "archiveNote": "图片为设计和制作参考，不是现货目录，也不代表所有相同面料、刺绣或细节均可复刻。是否接受定制及实际制作方式，均以一对一确认的方案为准。 / These are examples of past design work, not ready-to-ship inventory or a guarantee of exact reproduction. Every garment is discussed individually, including material, fit, technique, price and timing.",
-  "shortlistEyebrow": "YOUR INSPIRATION LIST · 我的定制灵感 / YOUR INSPIRATION LIST",
+  "shortlistEyebrow": "我的定制灵感 / YOUR INSPIRATION LIST",
   "shortlistTitle": "带着喜欢的细节，开始一次对话。 / Begin with what catches your eye.",
   "shortlistIntro": "不用急着选定款式。你可以保存几件参考作品，把编号与想修改的地方发给我们；也可以从自己的生活场景和穿着难题说起。 / Save a few references and bring their IDs and the changes you have in mind to a consultation. You can also start with a practical wardrobe need.",
   "wechat": "查看微信咨询方式 → / WeChat consultation details →",
@@ -195,8 +194,8 @@ export function BespokeWorkLibrary({ locale = "zh" }: { locale?: Locale }) {
           <button type="button" className="bespoke-clear" onClick={resetFilters}><B text={t.clear} /></button>
         </div>
         <div className="bespoke-results" role="status" aria-live="polite">
-          <span><B text={t.showing} /> <strong>{visible.length}</strong> <B text={t.of} /> {bespokeWorks.length} <B text={t.samples} /></span>
-          <span><B text={t.picked} /> {selectedWorks.length} <B text={t.pickedSuffix} /></span>
+          <span className="bespoke-result-count"><B text={t.showing} /><strong>{visible.length}{visible.length !== bespokeWorks.length ? ` / ${bespokeWorks.length}` : ""}</strong><B text={t.samples} /></span>
+          <span className="bespoke-result-count"><B text={t.picked} /><strong>{selectedWorks.length}</strong><B text={t.pickedSuffix} /></span>
         </div>
         {visible.length ? <>
           <nav className="bespoke-groups-nav" aria-label={t.navLabel}>

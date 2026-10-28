@@ -101,13 +101,13 @@ export const bespokeWorks: BespokeWork[] = [
     lookbook: "womenswear",
   },
   {
-    id: "BW-09", title: "墨色盘扣短外套", category: "女士 · 外套",
+    id: "BW-09", title: "墨色盘扣短外套", category: "男士 · 外套",
     image: "/images/lookbook/womens-jacket-black.webp", alt: "带盘扣和窄滚边的黑色新中式短外套",
-    type: "women", occasions: ["everyday", "formal"],
+    type: "men", occasions: ["everyday", "formal"],
     bestFor: "希望一件黑色外套适用于通勤、聚会与轻正式场合。",
     choices: "可讨论肩宽、衣长、领型、滚边及盘扣的存在感。",
     consider: "确认计划的内搭厚度、活动幅度及所需保暖程度。",
-    lookbook: "womenswear",
+    lookbook: "menswear",
   },
   {
     id: "BW-10", title: "月白轻薄长袖上衣", category: "女士 · 上衣",

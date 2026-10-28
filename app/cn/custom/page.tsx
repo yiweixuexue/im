@@ -70,7 +70,7 @@ export default function ChineseCustomPage() {
 
         <section className="bespoke-beyond shell section-space" id="design-decisions" aria-labelledby="bespoke-design-title">
           <div className="bespoke-section-intro">
-            <p className="eyebrow"><B zh="BEYOND THE PHOTO · 不只是一张好看的照片" en="BEYOND THE PHOTO · FIT, FABRIC &amp; HANDWORK" /></p>
+            <p className="eyebrow"><B zh="不只是一张好看的照片" en="BEYOND THE PHOTO · FIT, FABRIC &amp; HANDWORK" /></p>
             <h2 id="bespoke-design-title"><B zh="好看，是开始。适合，才是定制的重点。" en="Beautiful is the beginning. Right for you is the goal." /></h2>
             <p><B zh="一件服装的美感来自整体选择：身体、动作、材料与工艺之间是否互相成全。我们不把某一种东方审美作为标准答案。" en="Clothing comes together through choices about the wearer, movement, material and technique. There is no single correct style for everyone." /></p>
           </div>
@@ -90,7 +90,7 @@ export default function ChineseCustomPage() {
         <section className="bespoke-process-section section-space" id="process" aria-labelledby="bespoke-process-title">
           <div className="shell">
             <div className="bespoke-section-intro">
-              <p className="eyebrow"><B zh="THE BESPOKE JOURNEY · 了解制作过程" en="THE BESPOKE JOURNEY · HOW IT WORKS" /></p>
+              <p className="eyebrow"><B zh="了解制作过程" en="THE BESPOKE JOURNEY · HOW IT WORKS" /></p>
               <h2 id="bespoke-process-title"><B zh="每一步都有目的，也值得被看见。" en="Every step has a purpose." /></h2>
               <p><B zh="从初次沟通到完成制作，关键不是加快每一步，而是尽早发现不适合的地方，并把决定讲清楚。" en="From the first conversation to the final pressing, the aim is to discover what works and explain each decision clearly." /></p>
             </div>
@@ -113,7 +113,7 @@ export default function ChineseCustomPage() {
         <section className="bespoke-book-section section-space" id="consultation" aria-labelledby="bespoke-consultation-title">
           <div className="shell bespoke-book-grid">
             <div>
-              <p className="eyebrow"><B zh="START WITH A CONVERSATION · 开始定制" en="START WITH A CONVERSATION" /></p>
+              <p className="eyebrow"><B zh="开始定制" en="START WITH A CONVERSATION" /></p>
               <h2 id="bespoke-consultation-title"><B zh="先把想法聊清楚，再决定要不要做。" en="Discuss the idea before committing to a piece." /></h2>
               <p><B zh="你可以从一件喜欢的衣服、一场即将到来的活动，或一个长期的穿着困扰开始。我们先确认是否有合适的版型与制作路径，再讨论方案、价格和时间。" en="Come with a garment you love, an approaching occasion or a fit problem you want to solve. We first assess a suitable design and fitting path, then discuss a proposal, quote and timeframe." /></p>
               <Link href="/contact#wechat" className="button button-paper"><B zh="查看微信预约方式 →" en="WeChat consultation details →" /></Link>
@@ -128,7 +128,7 @@ export default function ChineseCustomPage() {
 
         <section className="bespoke-faq shell section-space" aria-labelledby="bespoke-faq-title">
           <div className="bespoke-section-intro">
-            <p className="eyebrow"><B zh="FREQUENTLY ASKED · 常见问题" en="FREQUENTLY ASKED" /></p>
+            <p className="eyebrow"><B zh="常见问题" en="FREQUENTLY ASKED" /></p>
             <h2 id="bespoke-faq-title"><B zh="提前了解，选择才更从容。" en="Questions worth asking before you begin." /></h2>
           </div>
           <div className="bespoke-faq-list">

@@ -6245,3 +6245,6 @@ html{scroll-behavior:smooth}
 }
 .bespoke-process-grid li .bilingual>span:not(.bilingual-en),.bespoke-faq-list summary .bilingual>span:not(.bilingual-en){font:inherit;color:inherit}
 @media(max-width:620px){.header-inner{grid-template-columns:1fr auto}}
+
+.bespoke-results .bespoke-result-count{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bespoke-result-count strong{font-size:18px;font-weight:500;white-space:nowrap}

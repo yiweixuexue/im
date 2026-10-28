@@ -18,3 +18,15 @@ test('legacy English bridge is canonical and overseas ceremony stays independent
  const s=html('en/bespoke');assert.match(s,/href="\/dev\/cn\/custom\/"/);assert.match(s,/noindex/);assert.ok(html('en/custom').includes('main-content'));
 });
 
+
+test('shared English labels and unfiltered totals render only once, jacket belongs to menswear',()=>{
+ const s=html('cn/custom');
+ for(const label of ['01 · LOOK','02 · THINK','03 · TALK','THE BESPOKE JOURNEY'])assert.equal(s.split(label).length-1,1,label);
+ const result=s.match(/class="bespoke-results"[\s\S]*?<\/section>/)[0].split('<nav')[0];
+ assert.equal((result.match(/>15</g)||[]).length,1);
+ const women=s.split('id="women"')[1].split('id="men"')[0];
+ const men=s.split('id="men"')[1].split('id="wedding"')[0];
+ assert.equal((women.match(/class="bespoke-work-card"/g)||[]).length,8);
+ assert.equal((men.match(/class="bespoke-work-card"/g)||[]).length,6);
+ assert.ok(!women.includes('BW-09'));assert.ok(men.includes('BW-09'));assert.ok(men.includes('Menswear · Jacket'));
+});
