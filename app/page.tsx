@@ -84,41 +84,14 @@ export default function Home() {
               intro="Start with objects you can enjoy now. Explore the makers, techniques and ideas that give them depth."
             />
             <div className="product-grid">
-              <ProductCard
-                title="Tulip Wrapped-Flower Brooch"
-                chinese="郁金香缠花胸针"
-                craft="CHANHUA · THREAD-WRAPPED FLORAL ART"
-                image="/images/site/tulip-brooch.webp"
-                href="/en/heritage/chanhua"
-                status="available"
-              />
-              <ProductCard
-                title="Olive Berry Hair Ornament"
-                chinese="橄榄枝缠花发饰"
-                craft="CHANHUA · HAND-WRAPPED THREAD"
-                image="/images/site/chanhua-worn.webp"
-                href="/en/heritage/chanhua"
-                status="available"
-              />
-              <ProductCard
-                title="Embroidered Lion Charm"
-                chinese="醒狮刺绣挂件"
-                craft="BIAN EMBROIDERY · LION CHARM"
-                image="/images/site/lion-charm.webp"
-                href="/en/heritage/lion-charm"
-                status="available"
-              />
-              <ProductCard
-                title="Blended-Incense Plaques"
-                chinese="太和香堂 · 合香香牌"
-                craft="HE XIANG · KAIFENG"
-                image="/images/site/incense/round-cloud.webp"
-                href="/en/heritage/taihe-xiangtang"
-                status="available"
-              />
-              <ProductCard title="Yangzhou Velvet Flowers" chinese="扬州绒花" craft="RONGHUA · FLORAL KEEPSAKES" image="/images/site/ronghua/ronghua-worn-brooch.webp" href="/en/heritage/ronghua" status="available" />
-              <ProductCard title="Chengdu Lacquerware" chinese="成都大漆" craft="LACQUER · ADORNMENT & HOME" image="/images/site/lacquer/red-pendant.webp" href="/en/heritage/chengdu-lacquerware" status="available" />
-              <ProductCard title="Bian Embroidered Art" chinese="汴绣画与屏风" craft="BIAN EMBROIDERY · DISPLAY" image="/images/site/uploads-20261027/lotus-standing-screen.webp" href="/en/heritage/bian-embroidery" status="available" />
+              <ProductCard title="Tulip Wrapped-Flower Brooch" chinese="郁金香缠花胸针" craft="CHANHUA · THREAD-WRAPPED FLOWERS" image="/images/site/tulip-brooch.webp" href="/en/heritage/chanhua" status="available" />
+              <ProductCard title="Plum & Bluebird Velvet Flowers" chinese="喜上眉梢 · 扬州绒花花艺" craft="RONGHUA · FLORAL HOME ART" image="/images/site/ronghua/ronghua-home-vase.webp" href="/en/heritage/ronghua" status="available" />
+              <ProductCard title="Embroidered Lion Charm" chinese="汴绣醒狮挂件" craft="BIAN EMBROIDERY · ACCESSORIES" image="/images/site/lion-charm.webp" href="/en/heritage/lion-charm" status="available" />
+              <ProductCard title="Carved Blended-Incense Plaque" chinese="太和香堂 · 合香香牌" craft="HE XIANG · FRAGRANCE OBJECT" image="/images/site/incense/round-cloud.webp" href="/en/heritage/taihe-xiangtang" status="available" />
+              <ProductCard title="Olive Berry Hair Ornament" chinese="橄榄枝缠花发饰" craft="CHANHUA · HAIR ORNAMENT" image="/images/site/chanhua-worn.webp" href="/en/heritage/chanhua" status="available" />
+              <ProductCard title="Ginkgo Velvet-Flower Earrings" chinese="银杏绒花耳饰" craft="RONGHUA · WEARABLE FLORAL ART" image="/images/site/ronghua/collection/ginkgo-earrings.webp" href="/en/heritage/ronghua" status="available" />
+              <ProductCard title="Panda & Bamboo Lacquer Art" chinese="成都大漆 · 熊猫竹影墙饰" craft="CHENGDU LACQUER · WALL ART" image="/images/site/lacquer/panda-wall.webp" href="/en/heritage/chengdu-lacquerware" status="available" />
+              <ProductCard title="Peonies & Butterflies Embroidery" chinese="汴绣 · 牡丹蝴蝶装饰画" craft="BIAN EMBROIDERY · HOME ART" image="/images/site/uploads-20261027/peony-butterfly-picture.webp" href="/en/heritage/bian-embroidery" status="available" />
             </div>
             <div className="collection-actions">
               <Link className="button button-ink" href="/en/heritage">
