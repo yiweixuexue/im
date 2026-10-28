@@ -84,7 +84,7 @@ const bilingualLabels = {
   "shortlistTitle": "带着喜欢的细节，开始一次对话。 / Begin with what catches your eye.",
   "shortlistIntro": "不用急着选定款式。你可以保存几件参考作品，把编号与想修改的地方发给我们；也可以从自己的生活场景和穿着难题说起。 / Save a few references and bring their IDs and the changes you have in mind to a consultation. You can also start with a practical wardrobe need.",
   "wechat": "查看微信咨询方式 → / WeChat consultation details →",
-  "selectedTitle": "SELECTED REFERENCES",
+  "selectedTitle": "已选参考 / SELECTED REFERENCES",
   "remove": "移除 / Remove",
   "copy": "复制咨询清单 / Copy consultation notes",
   "copied": "已复制。可以粘贴到微信，补上日期、城市和偏好。 / Copied. Paste these notes into WeChat and add your dates, location and preferences.",
@@ -225,7 +225,7 @@ export function BespokeWorkLibrary({ locale = "zh" }: { locale?: Locale }) {
             <Link href="/contact#wechat" className="button button-ink"><B text={t.wechat} /></Link>
           </div>
           <div className="bespoke-shortlist-result">
-            <p className="eyebrow">{selectedWorks.length} <B text={t.selectedTitle} /></p>
+            <p className="eyebrow bespoke-shortlist-count"><strong>{selectedWorks.length}</strong><B text={t.selectedTitle} /></p>
             {selectedWorks.length ? <>
               <ul>{selectedWorks.map((work) => <li key={work.id}>
                 <span>{work.id} · <B zh={work.title} en={bespokeEnglish[work.id].title} /></span>

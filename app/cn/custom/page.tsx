@@ -71,7 +71,7 @@ export default function ChineseCustomPage() {
         <section className="bespoke-beyond shell section-space" id="design-decisions" aria-labelledby="bespoke-design-title">
           <div className="bespoke-section-intro">
             <p className="eyebrow"><B zh="不只是一张好看的照片" en="BEYOND THE PHOTO · FIT, FABRIC &amp; HANDWORK" /></p>
-            <h2 id="bespoke-design-title"><B zh="好看，是开始。适合，才是定制的重点。" en="Beautiful is the beginning. Right for you is the goal." /></h2>
+            <h2 id="bespoke-design-title"><B zh="好看，是开始。适合，才是定制的重点。" en={"Beautiful is the beginning.\nRight for you is the goal."} /></h2>
             <p><B zh="一件服装的美感来自整体选择：身体、动作、材料与工艺之间是否互相成全。我们不把某一种东方审美作为标准答案。" en="Clothing comes together through choices about the wearer, movement, material and technique. There is no single correct style for everyone." /></p>
           </div>
           <div className="bespoke-decisions-grid">
