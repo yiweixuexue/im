@@ -6120,8 +6120,8 @@ select {
 .bespoke-faq-list details{border-bottom:1px solid var(--line);padding:20px 0}
 .bespoke-faq-list summary{display:flex;justify-content:space-between;gap:20px;align-items:center;cursor:pointer;font-size:17px;font-weight:500;list-style:none}
 .bespoke-faq-list summary::-webkit-details-marker{display:none}
-.bespoke-faq-list summary span{font-size:22px;font-weight:400;color:#536558}
-.bespoke-faq-list details[open] summary span{transform:rotate(45deg)}
+.bespoke-faq-list summary>span:last-child{font-size:22px;font-weight:400;color:#536558}
+.bespoke-faq-list details[open] summary>span:last-child{transform:rotate(45deg)}
 .bespoke-faq-list details>p{max-width:850px;font-size:14px;line-height:1.9;color:var(--ash);margin:18px 0 0}
 @media(max-width:1080px){
 .bespoke-editorial-hero{grid-template-columns:1fr}
@@ -6161,7 +6161,7 @@ select {
 .bespoke-faq-list summary{font-size:15px}
 }
 @media(max-width:380px){.bespoke-process-grid{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.bespoke-faq-list details[open] summary span{transform:none}}
+@media(prefers-reduced-motion:reduce){.bespoke-faq-list details[open] summary>span:last-child{transform:none}}
 
 
 /* Separate women's, men's and ceremony references without compromising filters */
@@ -6243,3 +6243,4 @@ html{scroll-behavior:smooth}
 .bespoke-results{flex-wrap:wrap;gap:8px}
 .bespoke-work-actions .bilingual-en{font-size:11px}
 }
+.bespoke-process-grid li .bilingual>span:not(.bilingual-en),.bespoke-faq-list summary .bilingual>span:not(.bilingual-en){font:inherit;color:inherit}
