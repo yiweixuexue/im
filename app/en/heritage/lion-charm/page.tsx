@@ -1,3 +1,4 @@
+import { CraftCustomizationInvitation } from "../../../../components/craft-customization-invitation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteImage } from "../../../../components/site-image";
@@ -11,4 +12,5 @@ export default function LionCharmPage(){return <div className="site-page"><SiteH
             View embroidered charm examples in the Craft Library
           </Link>
         </section>
+        <CraftCustomizationInvitation craft="embroidered lion charms" />
         </main><SiteFooter/></div>}
