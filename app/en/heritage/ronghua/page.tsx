@@ -10,6 +10,17 @@ export const metadata: Metadata = {
     "Discover the handcraft of Yangzhou Ronghua velvet flowers and ImArtisan's exploration of occasion wear and lasting home keepsakes. Available Now.",
 };
 
+const ronghuaForms = [
+  { name: "Bridal hair comb", image: "red-bridal-hair-comb", alt: "Red velvet-flower comb with ornamental hanging details" },
+  { name: "Floral hairpin", image: "blue-floral-hairpin", alt: "Blue floral arrangement on a long hairpin" },
+  { name: "Lapel flower", image: "violet-brooch-worn", alt: "Violet velvet-flower corsage worn on a shoulder" },
+  { name: "Ginkgo earrings", image: "ginkgo-earrings", alt: "Yellow ginkgo flower earrings displayed as a pair" },
+  { name: "Decorative hair claw", image: "red-plum-hair-claw", alt: "Red plum flowers fitted to a dark hair claw" },
+  { name: "Home floral arrangement", image: "violet-floral-vase", alt: "Violet flowers arranged in a porcelain vase" },
+  { name: "Bird sculpture", image: "blue-bird-sculpture", alt: "Blue bird-shaped floral sculpture in a display box" },
+  { name: "Framed botanical art", image: "framed-bamboo-art", alt: "Framed bamboo leaf composition with original calligraphy" },
+];
+
 export default function RonghuaPage() {
   return (
     <div className="site-page">
@@ -63,6 +74,35 @@ export default function RonghuaPage() {
           </figure>
         </section>
 
+        <section className="shell ronghua-form-section section-space" aria-labelledby="ronghua-form-title">
+          <div className="ronghua-form-heading">
+            <div>
+              <p className="eyebrow">FROM THE COLLECTION · DIFFERENT FORMS</p>
+              <h2 id="ronghua-form-title">More than a single kind of flower.</h2>
+            </div>
+            <p>
+              Discover Ronghua as bridal combs, hairpins, hair claws, brooches,
+              earrings, floral arrangements and display art. Each form asks for a
+              different fitting, structure and care approach.
+            </p>
+          </div>
+          <div className="ronghua-form-grid">
+            {ronghuaForms.map((item) => (
+              <figure key={item.image}>
+                <SiteImage
+                  src={`/images/site/ronghua/collection/${item.image}.webp`}
+                  alt={item.alt}
+                  loading="lazy"
+                />
+                <figcaption>{item.name}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <Link className="button button-ink" href="/en/heritage#ronghua">
+            Browse all 23 Ronghua references &amp; uses
+          </Link>
+        </section>
+
         <section className="shell editorial-section" id="making">
           <p className="eyebrow">WHY RONGHUA</p>
           <h2>One flower, two lives.</h2>
@@ -89,7 +129,7 @@ export default function RonghuaPage() {
       <section className="reference-detail-invitation section-space shell">
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
-          <p>Explore examples for ceremonies, brooches and lasting floral home displays, with development status clearly marked.</p>
+          <p>Explore 23 documented forms including wedding combs, floral brooches, earrings, hair accessories, bird sculptures and home arrangements. Each design is available for sourcing enquiry, subject to its individual specifications.</p>
           <Link className="button button-ink" href="/en/heritage#ronghua">
             View Yangzhou Ronghua in the Craft Library
           </Link>
