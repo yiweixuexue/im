@@ -80,12 +80,12 @@ export default function HeritageCollectionPage() {
               <a className="button button-ink" href="#collection">
                 Browse crafts &amp; objects ↓
               </a>
-              <Link className="arrow-link" href="#craft-stories">
-                Discover the makers &amp; processes <span aria-hidden="true">→</span>
+              <Link className="arrow-link" href="#customize">
+                Explore customization <span aria-hidden="true">→</span>
               </Link>
             </div>
             <p className="heritage-library-hero-note">
-              AVAILABLE NOW BY ENQUIRY · CHANHUA &amp; LION CHARMS ALSO ON ETSY · BIAN EMBROIDERY BAGS ARCHIVED
+              TRADITIONAL CRAFT · CONTEMPORARY LIFE · CUSTOMIZATION WELCOME
             </p>
           </div>
           <div className="heritage-library-hero-images" aria-label="Examples of objects in the collection">
@@ -111,16 +111,45 @@ export default function HeritageCollectionPage() {
         </section>
 
         <div id="collection" className="heritage-primary-library">
-          <div className="heritage-availability-note shell">
-            <p>
-              <strong>Available Now</strong> means we can discuss sourcing a craft form, not that
-              every photographed variation is ready to ship. Chanhua and lion charms are also
-              sold on Etsy; all other craft purchases begin with an ImArtisan enquiry.
-              <Link href="/en/heritage/blue-peony-bag"> Bian-embroidered evening bags are archived.</Link>
-            </p>
-          </div>
           <CraftReferenceLibrary />
         </div>
+
+        <section className="heritage-custom-section section-space" id="customize" aria-labelledby="heritage-custom-title">
+          <div className="shell heritage-custom-grid">
+            <div className="heritage-custom-visual">
+              <SiteImage
+                src="/images/site/ronghua/ronghua-craft-hands.webp"
+                alt="A maker shaping a flower through traditional handwork"
+                loading="lazy"
+              />
+              <span>CUSTOM WORK · MADE IN CONVERSATION</span>
+            </div>
+            <div className="heritage-custom-copy">
+              <p className="eyebrow">CUSTOMIZATION ACROSS EVERY CRAFT</p>
+              <h2 id="heritage-custom-title">The right object starts with your idea.</h2>
+              <p>
+                Every heritage craft in our collection is open to customization enquiries.
+                Whether you are selecting a meaningful personal piece, developing an event gift,
+                or sourcing a distinctive retail collection, tell us what you have in mind.
+              </p>
+              <p>
+                We work with the makers to explore suitable forms, colors, motifs, scale,
+                presentation and quantities. What can be changed depends on the technique,
+                material and the maker&apos;s creative decisions; each proposal, cost and timeline
+                is confirmed before production. Archived Bian embroidery evening bags
+                remain a Past Collection.
+              </p>
+              <div className="heritage-custom-actions">
+                <Link className="button button-ink" href="/contact#international">
+                  Discuss a custom project
+                </Link>
+                <Link className="arrow-link" href="/en/partnerships">
+                  Wholesale &amp; gifting enquiries <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="heritage-stories-section section-space" id="craft-stories" aria-labelledby="craft-stories-heading">
           <div className="shell">
