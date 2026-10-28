@@ -88,10 +88,10 @@ export default function HeritageCollectionPage() {
               TRADITIONAL CRAFT · CONTEMPORARY LIFE · CUSTOMIZATION WELCOME
             </p>
           </div>
-          <div className="heritage-library-hero-images" aria-label="Examples of objects in the collection">
-            <SiteImage src="/images/site/chanhua-worn.webp" alt="Handmade Chanhua hair ornament worn in contemporary life" />
-            <SiteImage src="/images/site/ronghua/ronghua-home-vase.webp" alt="Yangzhou Ronghua velvet flowers arranged in a vase" loading="lazy" />
-            <SiteImage src="/images/site/uploads-20261027/lotus-standing-screen.webp" alt="Bian embroidered lotus tabletop screen" loading="lazy" />
+          <div className="heritage-library-hero-images" aria-label="Three crafted objects: a Chanhua floral brooch, a worn Ronghua corsage, and a lacquer vessel">
+            <SiteImage src="/images/site/tulip-brooch.webp" alt="Red Chanhua tulip brooch with carefully wrapped petals on a pale background" />
+            <SiteImage src="/images/site/ronghua/collection/violet-brooch-worn.webp" alt="Lavender Yangzhou Ronghua floral brooch worn with a modern grey garment" loading="lazy" />
+            <SiteImage src="/images/site/lacquer/maple-vessel.webp" alt="Black Chengdu lacquer home vessel with maple-leaf decoration" loading="lazy" />
           </div>
         </section>
 
