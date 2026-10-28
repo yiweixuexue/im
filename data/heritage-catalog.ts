@@ -22,6 +22,7 @@ export type CatalogEntry = {
   howToUse: string;
   consideration: string;
   status?: CatalogStatus;
+  salesChannel?: "etsy" | "enquiry";
 };
 
 export const uses: { id: UseId; label: string }[] = [
@@ -42,7 +43,7 @@ export const crafts: CraftEntry[] = [
   { id: "ronghua", label: "Yangzhou Ronghua · Velvet Flowers", subtitle: "RONGHUA · VELVET FLOWERS", status: "available", href: "/en/heritage/ronghua", summary: "Soft, sculptural floral works for wearing, gifting and lasting display. Available by direct enquiry; pictured variants and pricing need confirmation." },
   { id: "hexiang", label: "He Xiang · Blended Incense", subtitle: "TAIHE XIANGTANG · KAIFENG", status: "available", href: "/en/heritage/taihe-xiangtang", summary: "Incense plaques, pendants, bracelets and gift forms available for direct sourcing enquiries. Confirm scent, materials, quantity and care for each selection." },
   { id: "lacquer", label: "Chengdu Lacquerware", subtitle: "LACQUER · CHENGDU", status: "available", href: "/en/heritage/chengdu-lacquerware", summary: "Lacquer adornments, display pieces and tea-related forms available by enquiry. Functional suitability and exact specifications are assessed piece by piece." },
-  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "available", href: "/en/heritage/bian-embroidery", summary: "Bian embroidery includes framed artwork, standing screens and embroidered lion charms. Artworks are available by direct enquiry, while lion charms are also sold on Etsy. Only the peony evening bags are Past Collection." },
+  { id: "bian", label: "Bian Embroidery", subtitle: "BIAN EMBROIDERY · KAIFENG", status: "available", href: "/en/heritage/bian-embroidery", summary: "Bian embroidery includes framed artwork, standing screens and embroidered lion charms. Artworks are available by direct enquiry, while lion charms are also sold on Etsy. Only the peony evening bags are Past Collection." },
 ];
 
 export const catalog: CatalogEntry[] = [
