@@ -20,7 +20,7 @@ const navByMarket: Record<Market, NavItem[]> = {
     { label: "首页", href: "/" },
     { label: "定制服装", href: "/cn/custom" },
     { label: "定制流程", href: "/cn/custom#process" },
-    { label: "Lookbook", href: "/lookbook" },
+    { label: "作品选款", href: "/cn/custom#works" },
     { label: "品牌故事", href: "/about" },
     { label: "文化与手艺", href: "/journal" },
     { label: "联系我们", href: "/contact" },
@@ -150,7 +150,8 @@ export function SiteFooter() {
         <div className="footer-column">
           <p>中国客户 · CHINA</p>
           <Link href="/cn/custom">定制服装</Link>
-          <Link href="/lookbook">作品 Lookbook</Link>
+          <Link href="/cn/custom#works">作品选款与灵感图库</Link>
+          <Link href="/lookbook">完整 Lookbook</Link>
           <Link href="/contact#wechat">微信预约</Link>
         </div>
         <div className="footer-column">
