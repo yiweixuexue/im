@@ -143,7 +143,7 @@ export function CraftReferenceLibrary() {
               <p className="eyebrow">DISCOVER BY TECHNIQUE OR PURPOSE</p>
               <h2>Find the form that fits.</h2>
             </div>
-            <p>Filter by craft, intended use or collection stage. Browse real examples and build a shortlist to discuss with us.</p>
+            <p>Filter by craft or use, explore practical details, and build a shortlist. Custom work is welcome across every craft, with possibilities confirmed with each maker.</p>
           </div>
           <div className="reference-control-row">
             <label htmlFor="reference-search" className="reference-search">Search examples
@@ -216,9 +216,14 @@ export function CraftReferenceLibrary() {
                   </div>
                   <div>
                     <p>{craft.summary}</p>
-                    <Link href={craft.href} className="arrow-link">
-                      Explore this craft <span aria-hidden="true">→</span>
-                    </Link>
+                    <div className="reference-group-links">
+                      <Link href={craft.href} className="arrow-link">
+                        Explore this craft <span aria-hidden="true">→</span>
+                      </Link>
+                      <Link href="/contact#international" className="reference-custom-link">
+                        <span aria-hidden="true">✦</span> Customization available · Enquire <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="reference-grid">
