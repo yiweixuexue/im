@@ -8,7 +8,7 @@ import { SiteFooter, SiteHeader } from "../../../components/site-shell";
 export const metadata: Metadata = {
   title: "Heritage Crafts & Product Library | ImArtisan",
   description:
-    "Explore handmade Chinese craft objects by technique, practical use and care. Discover Chanhua, Yangzhou Ronghua, blended incense, Chengdu lacquerware, Bian embroidery art and lion charms, then enquire about sourcing.",
+    "Explore Chanhua, Yangzhou Ronghua, blended incense, Chengdu lacquerware and Bian embroidery—including embroidered lion charms—by product form, practical use and care.",
 };
 
 const craftStories = [
@@ -45,20 +45,12 @@ const craftStories = [
     description: "The patient layers and surface work behind lacquer adornments and home objects.",
   },
   {
-    title: "Bian Embroidery · Pictorial Art",
-    type: "EMBROIDERED HOME ART · AVAILABLE NOW",
+    title: "Bian Embroidery · Art & Accessories",
+    type: "EMBROIDERED OBJECTS · AVAILABLE NOW",
     image: "/images/site/uploads-20261027/lotus-screen-detail.webp",
     alt: "Close detail of a Bian-embroidered lotus screen",
     href: "/en/heritage/bian-embroidery",
-    description: "See how stitches, tonal depth and framing translate into wall art and table screens.",
-  },
-  {
-    title: "Embroidered Lion Charms",
-    type: "TEXTILE ORNAMENTS · AVAILABLE NOW",
-    image: "/images/site/lion-charm.webp",
-    alt: "Small embroidered lion charms with tassels",
-    href: "/en/heritage/lion-charm",
-    description: "Expressive textile ornaments for everyday accessories and joyful gifting.",
+    description: "One embroidery tradition, many forms: from pictures and screens to small embroidered lion charms.",
   },
 ];
 
