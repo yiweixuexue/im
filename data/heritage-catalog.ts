@@ -1,4 +1,4 @@
-export type CraftId = "chanhua" | "ronghua" | "hexiang" | "lacquer" | "bian" | "lion";
+export type CraftId = "chanhua" | "ronghua" | "hexiang" | "lacquer" | "bian";
 export type CatalogStatus = "available" | "past";
 export type UseId = "wear" | "ceremony" | "gift" | "home" | "ritual";
 
@@ -42,8 +42,7 @@ export const crafts: CraftEntry[] = [
   { id: "ronghua", label: "Yangzhou Ronghua · Velvet Flowers", subtitle: "RONGHUA · VELVET FLOWERS", status: "available", href: "/en/heritage/ronghua", summary: "Soft, sculptural floral works for wearing, gifting and lasting display. Available by direct enquiry; pictured variants and pricing need confirmation." },
   { id: "hexiang", label: "He Xiang · Blended Incense", subtitle: "TAIHE XIANGTANG · KAIFENG", status: "available", href: "/en/heritage/taihe-xiangtang", summary: "Incense plaques, pendants, bracelets and gift forms available for direct sourcing enquiries. Confirm scent, materials, quantity and care for each selection." },
   { id: "lacquer", label: "Chengdu Lacquerware", subtitle: "LACQUER · CHENGDU", status: "available", href: "/en/heritage/chengdu-lacquerware", summary: "Lacquer adornments, display pieces and tea-related forms available by enquiry. Functional suitability and exact specifications are assessed piece by piece." },
-  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "available", href: "/en/heritage/bian-embroidery", summary: "Pictorial embroidery in standing screens, framed pictures and vertical panels is available by enquiry. The embroidered evening bags alone remain archived as Past Collection." },
-  { id: "lion", label: "Embroidered Lion Charms", subtitle: "TEXTILE EMBROIDERY · LION MOTIFS", status: "available", href: "/en/heritage/lion-charm", summary: "Expressive small textile charms for personal accessories and celebratory gifting. Check current listings for individual designs." },
+  { id: "bian", label: "Bian Embroidery", subtitle: "PICTORIAL EMBROIDERY · KAIFENG", status: "available", href: "/en/heritage/bian-embroidery", summary: "Bian embroidery includes framed artwork, standing screens and embroidered lion charms. Artworks are available by direct enquiry, while lion charms are also sold on Etsy. Only the peony evening bags are Past Collection." },
 ];
 
 export const catalog: CatalogEntry[] = [
@@ -198,7 +197,7 @@ export const catalog: CatalogEntry[] = [
     consideration: "Past Collection only; not a currently available item or confirmed wholesale option.",
   },
   {
-    id: "LE-01", craft: "lion", name: "Embroidered Lion Charm", form: "Textile charm",
+    id: "LE-01", craft: "bian", salesChannel: "etsy", name: "Embroidered Lion Charm", form: "Textile charm",
     image: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels",
     uses: ["gift", "wear", "ceremony"], howToUse: "Attach where the specific hardware permits, or give as a joyful keepsake.",
     consideration: "Check current variants, hardware, dimensions and prices with the active Etsy listing.",
