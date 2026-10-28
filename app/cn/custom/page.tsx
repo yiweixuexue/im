@@ -38,7 +38,7 @@ const faqs = [
 export default function ChineseCustomPage() {
   return (
     <div className="site-page bespoke-landing" lang="zh-CN">
-      <SiteHeader market="cn" tone="paper" />
+      <SiteHeader market="cn" tone="paper" customPage />
       <main id="main-content">
         <section className="bespoke-editorial-hero shell-wide" aria-labelledby="bespoke-hero-title">
           <div className="bespoke-hero-copy">
