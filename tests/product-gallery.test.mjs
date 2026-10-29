@@ -15,14 +15,25 @@ test('all products have unique existing images, useful alt text and original cov
   for(const photo of item.images){assert.ok(photo.alt.length>10);assert.ok(fs.existsSync('public'+photo.src),photo.src)}
  }
 });
-test('only audited exact-product photo groups have additional views',()=>{
- const multiple=[...bespokeWorks,...catalog].filter(p=>p.images.length>1);
- assert.deepEqual(multiple.map(p=>[p.id,p.images.length]),[['BW-04',4],['BX-01',2],['BX-02',2],['BX-03',2]]);
+test('all audited original photo groups are wired without unreviewed extra views',()=>{
+ const audit=JSON.parse(fs.readFileSync('docs/heritage-gallery-media-20261029.json','utf8'));
+ const expected=new Map([['BW-04',4],['BX-03',2],...Object.entries(audit.products).map(([id,p])=>[id,p.totalPhotos])]);
+ for(const item of [...bespokeWorks,...catalog]){
+  assert.equal(item.images.length,expected.get(item.id)??1,item.id);
+  const reviewed=audit.products[item.id];
+  if(reviewed){
+   assert.deepEqual(item.images.map(p=>p.src),[...reviewed.existingPhotos,...reviewed.addedPhotos].map(p=>p.src),item.id);
+   for(const photo of reviewed.addedPhotos)assert.match(photo.sourceSha256,/^[a-f0-9]{64}$/);
+  }
+ }
+ assert.equal(catalog.filter(p=>p.craft==='ronghua'&&p.images.length>1).length,22);
+ assert.equal(catalog.filter(p=>p.craft==='chanhua'&&p.images.length>1).length,4);
 });
+
 test('export mounts only covers, single-photo cards have no controls, staging paths resolve',()=>{
  for(const route of ['cn/custom','en/heritage/library']){
   const html=fs.readFileSync('out/'+route+'/index.html','utf8').replace(/<script\b[\s\S]*?<\/script>/g,'');
-  const figures=[...html.matchAll(/<figure[^>]*product-gallery[\s\S]*?<\/figure>/g)].map(m=>m[0]);
+  const figures=[...html.matchAll(/<figure[^>]*im-product-gallery[\s\S]*?<\/figure>/g)].map(m=>m[0]);
   assert.ok(figures.length);
   for(const fig of figures){
    assert.equal((fig.match(/<img\b/g)||[]).length,1);

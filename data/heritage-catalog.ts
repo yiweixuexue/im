@@ -53,42 +53,71 @@ export const catalog: CatalogEntry[] = [
   {
     id: "CH-01", craft: "chanhua", name: "Olive Berry Hair Ornament", form: "Hair ornament",
     image: "/images/site/chanhua-worn.webp", alt: "Olive berry Chanhua ornament styled in the hair",
-    images: [{ src: "/images/site/chanhua-worn.webp", alt: "Olive berry Chanhua ornament styled in the hair" }],
+    images: [
+      {"src": "/images/site/chanhua-worn.webp", "alt": "Olive berry Chanhua ornament styled in the hair"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-flat-oblique.webp", "alt": "The same olive-berry U hairpin viewed obliquely on a white surface"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-upright.webp", "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp", "alt": "Side view of the same olive-berry U hairpin in a bun"},
+    ],
     uses: ["wear", "ceremony"], howToUse: "Wear in an updo or as a delicate detail for a celebration.",
     consideration: "Protect the wrapped threads from crushing, moisture and repeated rubbing.",
   },
   {
     id: "CH-02", craft: "chanhua", name: "Olive Branch Hairpin", form: "Hairpin",
     image: "/images/site/olive-hairpin.webp", alt: "Hand-wrapped olive branch floral hairpin",
-    images: [{ src: "/images/site/olive-hairpin.webp", alt: "Hand-wrapped olive branch floral hairpin" }],
+    images: [
+      {"src": "/images/site/olive-hairpin.webp", "alt": "Hand-wrapped olive branch floral hairpin"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-upright.webp", "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp", "alt": "Side view of the same olive-berry U hairpin in a bun"},
+      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-back.webp", "alt": "Back styling view of the same olive-berry U hairpin in a bun"},
+    ],
     uses: ["wear", "gift"], howToUse: "A floral accent for everyday styling or a personal gift.",
     consideration: "Store in a protective box when not worn; current exact design may vary.",
   },
   {
     id: "CH-03", craft: "chanhua", name: "Tulip Floral Brooch", form: "Brooch",
     image: "/images/site/tulip-brooch.webp", alt: "Small handcrafted Chanhua tulip brooches",
-    images: [{ src: "/images/site/tulip-brooch.webp", alt: "Small handcrafted Chanhua tulip brooches" }],
+    images: [
+      {"src": "/images/site/tulip-brooch.webp", "alt": "Small handcrafted Chanhua tulip brooches"},
+      {"src": "/images/site/gallery-20261029/chanhua/red-tulip-worn.webp", "alt": "The same red tulip Chanhua brooch worn on a red garment"},
+    ],
     uses: ["wear", "gift", "ceremony"], howToUse: "Add a small flower to a jacket, dress or event outfit.",
     consideration: "Check fastening details and fabric compatibility before ordering.",
   },
   {
     id: "CH-04", craft: "chanhua", name: "Tulip Occasion Styling", form: "Brooch / styling reference",
     image: "/images/site/tulip-ceremony.webp", alt: "Tulip floral ornament shown in occasion styling",
-    images: [{ src: "/images/site/tulip-ceremony.webp", alt: "Tulip floral ornament shown in occasion styling" }],
+    images: [
+      {"src": "/images/site/tulip-ceremony.webp", "alt": "Tulip floral ornament shown in occasion styling"},
+      {"src": "/images/site/gallery-20261029/chanhua/pink-tulip-upright.webp", "alt": "The same pink tulip brooch upright, showing the pearl-edged leaf and dangling pearl"},
+      {"src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp", "alt": "Side view of the same pink tulip brooch and pearl details on a white surface"},
+    ],
     uses: ["ceremony", "wear"], howToUse: "Consider a floral accent for a wedding guest or meaningful occasion.",
     consideration: "A styling example, not a confirmed made-to-order package.",
   },
   {
     id: "RH-01", craft: "ronghua", name: "Velvet-Flower Brooch", form: "Wearable floral art",
     image: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory",
-    images: [{ src: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory" }],
+    images: [
+      {"src": "/images/site/ronghua/ronghua-worn-brooch.webp", "alt": "Velvet flower brooch worn as an accessory"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp", "alt": "Velvet-Flower Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp", "alt": "Velvet-Flower Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp", "alt": "Velvet-Flower Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp", "alt": "Velvet-Flower Brooch — alternate photograph 4"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp", "alt": "Velvet-Flower Brooch — reverse and fastening view"},
+    ],
     uses: ["wear", "ceremony", "gift"], howToUse: "A sculptural flower accent for a ceremony or special outfit.",
     consideration: "Available by enquiry. Confirm the fastening, finish, care and stock or production options for the specific brooch.",
   },
   {
     id: "RH-02", craft: "ronghua", name: "Velvet Flowers in a Vase", form: "Floral home display",
     image: "/images/site/ronghua/ronghua-home-vase.webp", alt: "Velvet flowers composed in a porcelain vase",
-    images: [{ src: "/images/site/ronghua/ronghua-home-vase.webp", alt: "Velvet flowers composed in a porcelain vase" }],
+    images: [
+      {"src": "/images/site/ronghua/ronghua-home-vase.webp", "alt": "Velvet flowers composed in a porcelain vase"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-02-02.webp", "alt": "Velvet Flowers in a Vase — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-02-03.webp", "alt": "Velvet Flowers in a Vase — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-02-04.webp", "alt": "Velvet Flowers in a Vase — alternate photograph 3"},
+    ],
     uses: ["home", "gift", "ceremony"], howToUse: "Display in a vase as an enduring floral arrangement or keepsake.",
     consideration: "Available by enquiry. Confirm dimensions, display fittings, care and sourcing options for the selected arrangement.",
   },
@@ -214,21 +243,36 @@ export const catalog: CatalogEntry[] = [
   {
     id: "BX-01", craft: "bian", status: "past", name: "Blue Peony Evening Bag", form: "Evening bag",
     image: "/images/site/blue-peony-bag.webp", alt: "Blue peony Bian embroidery evening bag",
-    images: [{ src: "/images/site/blue-peony-bag.webp", alt: "Blue peony Bian embroidery evening bag" }, { src: "/images/site/blue-peony-detail.webp", alt: "Detail of the same blue peony evening bag" }],
+    images: [
+      {"src": "/images/site/blue-peony-bag.webp", "alt": "Blue peony Bian embroidery evening bag"},
+      {"src": "/images/site/blue-peony-detail.webp", "alt": "Detail of the same blue peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-01-side.webp", "alt": "Side view of the blue peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-01-back.webp", "alt": "Back and chain of the blue peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-01-interior.webp", "alt": "Open interior and frame of the blue peony evening bag"},
+    ],
     uses: ["ceremony", "wear"], howToUse: "A past design showing pictorial embroidery carried with occasion wear.",
     consideration: "Past Collection only. Protect embroidery from abrasion; this bag is not currently for sale.",
   },
   {
     id: "BX-02", craft: "bian", status: "past", name: "Red Peony Evening Bag", form: "Evening bag",
     image: "/images/site/red-peony-bag.webp", alt: "Red peony Bian embroidery evening bag",
-    images: [{ src: "/images/site/red-peony-bag.webp", alt: "Red peony Bian embroidery evening bag" }, { src: "/images/site/red-peony-detail.webp", alt: "Detail of the same red peony evening bag" }],
+    images: [
+      {"src": "/images/site/red-peony-bag.webp", "alt": "Red peony Bian embroidery evening bag"},
+      {"src": "/images/site/red-peony-detail.webp", "alt": "Detail of the same red peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-02-side.webp", "alt": "Side view of the red peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-02-back.webp", "alt": "Back and chain of the red peony evening bag"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-02-interior.webp", "alt": "Open interior and frame of the red peony evening bag"},
+    ],
     uses: ["ceremony", "wear"], howToUse: "A design archive example for formal attire and embroidery study.",
     consideration: "Past Collection only; not a currently available item or confirmed wholesale option.",
   },
   {
     id: "LE-01", craft: "bian", salesChannel: "etsy", name: "Embroidered Lion Charm", form: "Textile charm",
     image: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels",
-    images: [{ src: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels" }],
+    images: [
+      {"src": "/images/site/lion-charm.webp", "alt": "Colorful embroidered lion textile charms with tassels"},
+      {"src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp", "alt": "Stitch detail of the same yellow embroidered lion charm"},
+    ],
     uses: ["gift", "wear", "ceremony"], howToUse: "Attach where the specific hardware permits, or give as a joyful keepsake.",
     consideration: "Check current variants, hardware, dimensions and prices with the active Etsy listing.",
   },
@@ -404,7 +448,10 @@ export const catalog: CatalogEntry[] = [
     "name": "Dragon Vase Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/dragon-vase-picture.webp",
-    images: [{ src: "/images/site/uploads-20261027/dragon-vase-picture.webp", alt: "Dragon Vase Picture shown in the user-supplied craft archive" }],
+    images: [
+      {"src": "/images/site/uploads-20261027/dragon-vase-picture.webp", "alt": "Dragon Vase Picture shown in the user-supplied craft archive"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-05-detail.webp", "alt": "Closer view of the dragon vase embroidery picture"},
+    ],
     "alt": "Dragon Vase Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -419,7 +466,10 @@ export const catalog: CatalogEntry[] = [
     "name": "Orchid & Butterfly Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/orchid-framed-picture.webp",
-    images: [{ src: "/images/site/uploads-20261027/orchid-framed-picture.webp", alt: "Orchid & Butterfly Picture shown in the user-supplied craft archive" }],
+    images: [
+      {"src": "/images/site/uploads-20261027/orchid-framed-picture.webp", "alt": "Orchid & Butterfly Picture shown in the user-supplied craft archive"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-06-setting.webp", "alt": "Full framed orchid and butterfly embroidery picture"},
+    ],
     "alt": "Orchid & Butterfly Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -434,7 +484,12 @@ export const catalog: CatalogEntry[] = [
     "name": "Paired Vertical Floral Panels",
     "form": "Framed vertical panels",
     "image": "/images/site/uploads-20261027/paired-vertical-panels.webp",
-    images: [{ src: "/images/site/uploads-20261027/paired-vertical-panels.webp", alt: "Paired Vertical Floral Panels shown in the user-supplied craft archive" }],
+    images: [
+      {"src": "/images/site/uploads-20261027/paired-vertical-panels.webp", "alt": "Paired Vertical Floral Panels shown in the user-supplied craft archive"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-07-pair.webp", "alt": "The same paired vertical embroidery panels arranged for viewing"},
+      {"src": "/images/site/gallery-20261029/embroidery/bx-07-yellow-detail.webp", "alt": "Bird and flower detail in the yellow vertical embroidery panel"},
+      {"src": "/images/site/uploads-20261027/blue-panel-detail.webp", "alt": "Flower and butterfly detail in the blue vertical embroidery panel"},
+    ],
     "alt": "Paired Vertical Floral Panels shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -494,7 +549,10 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Bridal Floral Hair Comb",
     "form": "Ceremonial hair comb",
     "image": "/images/site/ronghua/collection/red-bridal-hair-comb.webp",
-    images: [{ src: "/images/site/ronghua/collection/red-bridal-hair-comb.webp", alt: "Red floral velvet flower hair comb with decorative drops" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/red-bridal-hair-comb.webp", "alt": "Red floral velvet flower hair comb with decorative drops"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-03-02.webp", "alt": "Red Bridal Floral Hair Comb — worn styling view"},
+    ],
     "alt": "Red floral velvet flower hair comb with decorative drops",
     "uses": [
       "wear",
@@ -509,7 +567,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Blossom Floral Pair",
     "form": "Floral embellishments",
     "image": "/images/site/ronghua/collection/red-floral-pair.webp",
-    images: [{ src: "/images/site/ronghua/collection/red-floral-pair.webp", alt: "Two small red velvet blossom ornaments" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/red-floral-pair.webp", "alt": "Two small red velvet blossom ornaments"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-04-02.webp", "alt": "Red Blossom Floral Pair — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-04-03.webp", "alt": "Red Blossom Floral Pair — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-04-04.webp", "alt": "Red Blossom Floral Pair — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-04-05.webp", "alt": "Red Blossom Floral Pair — alternate photograph 4"},
+    ],
     "alt": "Two small red velvet blossom ornaments",
     "uses": [
       "wear",
@@ -525,7 +589,14 @@ export const catalog: CatalogEntry[] = [
     "name": "Coral Leaf Lapel Brooch",
     "form": "Floral lapel ornament",
     "image": "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp",
-    images: [{ src: "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp", alt: "Warm red and coral leaf-shaped velvet flower worn on a dark jacket" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp", "alt": "Warm red and coral leaf-shaped velvet flower worn on a dark jacket"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-05-02.webp", "alt": "Coral Leaf Lapel Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-05-03.webp", "alt": "Coral Leaf Lapel Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-05-04.webp", "alt": "Coral Leaf Lapel Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-05-05.webp", "alt": "Coral Leaf Lapel Brooch — alternate photograph 4"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-05-06.webp", "alt": "Coral Leaf Lapel Brooch — alternate photograph 5"},
+    ],
     "alt": "Warm red and coral leaf-shaped velvet flower worn on a dark jacket",
     "uses": [
       "wear",
@@ -540,7 +611,19 @@ export const catalog: CatalogEntry[] = [
     "name": "Goldfish-Inspired Floral Ornaments",
     "form": "Fish-motif decorative accessories",
     "image": "/images/site/ronghua/collection/goldfish-floral-clips.webp",
-    images: [{ src: "/images/site/ronghua/collection/goldfish-floral-clips.webp", alt: "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/goldfish-floral-clips.webp", "alt": "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-02.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-03.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-04.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-05.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 4"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-06.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 5"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-07.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 6"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-08.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 7"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-09.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 8"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-10.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 9"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-06-11.webp", "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 10"},
+    ],
     "alt": "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish",
     "uses": [
       "wear",
@@ -556,7 +639,10 @@ export const catalog: CatalogEntry[] = [
     "name": "Purple Floral Cluster",
     "form": "Clustered flower ornament",
     "image": "/images/site/ronghua/collection/purple-floral-arrangement.webp",
-    images: [{ src: "/images/site/ronghua/collection/purple-floral-arrangement.webp", alt: "Layered dark-purple and lavender velvet flowers with dangling accents" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/purple-floral-arrangement.webp", "alt": "Layered dark-purple and lavender velvet flowers with dangling accents"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-07-02.webp", "alt": "Purple Floral Cluster — worn styling view"},
+    ],
     "alt": "Layered dark-purple and lavender velvet flowers with dangling accents",
     "uses": [
       "wear",
@@ -572,7 +658,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Floral Hairpin",
     "form": "Statement hairpin",
     "image": "/images/site/ronghua/collection/blue-floral-hairpin.webp",
-    images: [{ src: "/images/site/ronghua/collection/blue-floral-hairpin.webp", alt: "Bright blue cluster of velvet flowers attached to a long hairpin" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/blue-floral-hairpin.webp", "alt": "Bright blue cluster of velvet flowers attached to a long hairpin"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-08-02.webp", "alt": "Blue Floral Hairpin — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-08-03.webp", "alt": "Blue Floral Hairpin — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-08-04.webp", "alt": "Blue Floral Hairpin — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-08-05.webp", "alt": "Blue Floral Hairpin — worn styling view"},
+    ],
     "alt": "Bright blue cluster of velvet flowers attached to a long hairpin",
     "uses": [
       "wear",
@@ -587,7 +679,12 @@ export const catalog: CatalogEntry[] = [
     "name": "Scarlet-and-Ivory Lily Motif",
     "form": "Decorative flower stem",
     "image": "/images/site/ronghua/collection/red-white-lily-flower.webp",
-    images: [{ src: "/images/site/ronghua/collection/red-white-lily-flower.webp", alt: "Red-and-white lily-shaped velvet flower detail against a dark background" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/red-white-lily-flower.webp", "alt": "Red-and-white lily-shaped velvet flower detail against a dark background"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-09-02.webp", "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-09-03.webp", "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-09-04.webp", "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 3"},
+    ],
     "alt": "Red-and-white lily-shaped velvet flower detail against a dark background",
     "uses": [
       "wear",
@@ -603,7 +700,9 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Bird Floral Sculpture",
     "form": "Bird-shaped decorative ornament",
     "image": "/images/site/ronghua/collection/blue-bird-sculpture.webp",
-    images: [{ src: "/images/site/ronghua/collection/blue-bird-sculpture.webp", alt: "Small blue bird-shaped velvet ornament presented in a display box" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/blue-bird-sculpture.webp", "alt": "Small blue bird-shaped velvet ornament presented in a display box"},
+    ],
     "alt": "Small blue bird-shaped velvet ornament presented in a display box",
     "uses": [
       "home",
@@ -618,7 +717,11 @@ export const catalog: CatalogEntry[] = [
     "name": "Violet Floral Vase Arrangement",
     "form": "Floral home arrangement",
     "image": "/images/site/ronghua/collection/violet-floral-vase.webp",
-    images: [{ src: "/images/site/ronghua/collection/violet-floral-vase.webp", alt: "Lavender velvet flowers arranged in a decorated porcelain vase" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/violet-floral-vase.webp", "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp", "alt": "Violet Floral Vase Arrangement — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp", "alt": "Violet Floral Vase Arrangement — alternate photograph 2"},
+    ],
     "alt": "Lavender velvet flowers arranged in a decorated porcelain vase",
     "uses": [
       "home",
@@ -633,7 +736,12 @@ export const catalog: CatalogEntry[] = [
     "name": "Violet Statement Lapel Brooch",
     "form": "Wearable floral arrangement",
     "image": "/images/site/ronghua/collection/violet-brooch-worn.webp",
-    images: [{ src: "/images/site/ronghua/collection/violet-brooch-worn.webp", alt: "Lavender and violet floral corsage worn at the shoulder" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/violet-brooch-worn.webp", "alt": "Lavender and violet floral corsage worn at the shoulder"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-12-02.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 3"},
+    ],
     "alt": "Lavender and violet floral corsage worn at the shoulder",
     "uses": [
       "wear",
@@ -648,7 +756,14 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Blossom Hair Accent",
     "form": "Blue floral accessory",
     "image": "/images/site/ronghua/collection/blue-flower-hair-clip.webp",
-    images: [{ src: "/images/site/ronghua/collection/blue-flower-hair-clip.webp", alt: "Close-up of a blue flower ornament with decorative beads" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/blue-flower-hair-clip.webp", "alt": "Close-up of a blue flower ornament with decorative beads"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 4"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp", "alt": "Blue Blossom Hair Accent — reverse and fastening view"},
+    ],
     "alt": "Close-up of a blue flower ornament with decorative beads",
     "uses": [
       "wear",
@@ -663,7 +778,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Pink Blossom Barrette",
     "form": "Flower hair clip",
     "image": "/images/site/ronghua/collection/pink-blossom-hair-clip.webp",
-    images: [{ src: "/images/site/ronghua/collection/pink-blossom-hair-clip.webp", alt: "Pink blossoms arranged along a gold-toned hair clip" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/pink-blossom-hair-clip.webp", "alt": "Pink blossoms arranged along a gold-toned hair clip"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-14-02.webp", "alt": "Pink Blossom Barrette — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-14-03.webp", "alt": "Pink Blossom Barrette — reverse and fastening view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-14-04.webp", "alt": "Pink Blossom Barrette — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-14-05.webp", "alt": "Pink Blossom Barrette — alternate photograph 4"},
+    ],
     "alt": "Pink blossoms arranged along a gold-toned hair clip",
     "uses": [
       "wear",
@@ -679,7 +800,12 @@ export const catalog: CatalogEntry[] = [
     "name": "Peacock-Feather Brooch",
     "form": "Feather-motif adornment",
     "image": "/images/site/ronghua/collection/peacock-feather-brooch.webp",
-    images: [{ src: "/images/site/ronghua/collection/peacock-feather-brooch.webp", alt: "Two iridescent blue-green feather-shaped velvet elements" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/peacock-feather-brooch.webp", "alt": "Two iridescent blue-green feather-shaped velvet elements"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-15-02.webp", "alt": "Peacock-Feather Brooch — worn styling view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-15-03.webp", "alt": "Peacock-Feather Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-15-04.webp", "alt": "Peacock-Feather Brooch — alternate photograph 3"},
+    ],
     "alt": "Two iridescent blue-green feather-shaped velvet elements",
     "uses": [
       "wear",
@@ -694,7 +820,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Bamboo Leaf Brooch",
     "form": "Botanical lapel ornament",
     "image": "/images/site/ronghua/collection/bamboo-leaf-brooch.webp",
-    images: [{ src: "/images/site/ronghua/collection/bamboo-leaf-brooch.webp", alt: "Green-grey bamboo leaf-shaped botanical brooch" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/bamboo-leaf-brooch.webp", "alt": "Green-grey bamboo leaf-shaped botanical brooch"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-16-02.webp", "alt": "Bamboo Leaf Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-16-03.webp", "alt": "Bamboo Leaf Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-16-04.webp", "alt": "Bamboo Leaf Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-16-05.webp", "alt": "Bamboo Leaf Brooch — alternate photograph 4"},
+    ],
     "alt": "Green-grey bamboo leaf-shaped botanical brooch",
     "uses": [
       "wear",
@@ -709,7 +841,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Framed Botanical Craft Art",
     "form": "Framed velvet-flower composition",
     "image": "/images/site/ronghua/collection/framed-bamboo-art.webp",
-    images: [{ src: "/images/site/ronghua/collection/framed-bamboo-art.webp", alt: "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/framed-bamboo-art.webp", "alt": "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-17-02.webp", "alt": "Framed Botanical Craft Art — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-17-03.webp", "alt": "Framed Botanical Craft Art — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-17-04.webp", "alt": "Framed Botanical Craft Art — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-17-05.webp", "alt": "Framed Botanical Craft Art — alternate photograph 4"},
+    ],
     "alt": "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork",
     "uses": [
       "home",
@@ -724,7 +862,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Apricot Blossom Brooch",
     "form": "Soft orange floral brooch",
     "image": "/images/site/ronghua/collection/peach-blossom-brooch.webp",
-    images: [{ src: "/images/site/ronghua/collection/peach-blossom-brooch.webp", alt: "Apricot-coloured floral brooch with layered rounded petals" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/peach-blossom-brooch.webp", "alt": "Apricot-coloured floral brooch with layered rounded petals"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-18-02.webp", "alt": "Apricot Blossom Brooch — reverse and fastening view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-18-03.webp", "alt": "Apricot Blossom Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-18-04.webp", "alt": "Apricot Blossom Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-18-05.webp", "alt": "Apricot Blossom Brooch — alternate photograph 4"},
+    ],
     "alt": "Apricot-coloured floral brooch with layered rounded petals",
     "uses": [
       "wear",
@@ -739,7 +883,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Lavender Orchid Brooch",
     "form": "Orchid-inspired brooch",
     "image": "/images/site/ronghua/collection/lavender-orchid-brooch.webp",
-    images: [{ src: "/images/site/ronghua/collection/lavender-orchid-brooch.webp", alt: "Purple orchid blossom cluster arranged as a floral accessory" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/lavender-orchid-brooch.webp", "alt": "Purple orchid blossom cluster arranged as a floral accessory"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-19-02.webp", "alt": "Lavender Orchid Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-19-03.webp", "alt": "Lavender Orchid Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-19-04.webp", "alt": "Lavender Orchid Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-19-05.webp", "alt": "Lavender Orchid Brooch — alternate photograph 4"},
+    ],
     "alt": "Purple orchid blossom cluster arranged as a floral accessory",
     "uses": [
       "wear",
@@ -755,7 +905,15 @@ export const catalog: CatalogEntry[] = [
     "name": "Golden Ginkgo Brooch",
     "form": "Ginkgo leaf motif",
     "image": "/images/site/ronghua/collection/golden-ginkgo-brooch.webp",
-    images: [{ src: "/images/site/ronghua/collection/golden-ginkgo-brooch.webp", alt: "Bright golden-yellow fan-shaped ginkgo leaf brooch" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/golden-ginkgo-brooch.webp", "alt": "Bright golden-yellow fan-shaped ginkgo leaf brooch"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-02.webp", "alt": "Golden Ginkgo Brooch — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-03.webp", "alt": "Golden Ginkgo Brooch — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-04.webp", "alt": "Golden Ginkgo Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-05.webp", "alt": "Golden Ginkgo Brooch — worn styling view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-06.webp", "alt": "Golden Ginkgo Brooch — alternate photograph 5"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-20-07.webp", "alt": "Golden Ginkgo Brooch — worn styling view"},
+    ],
     "alt": "Bright golden-yellow fan-shaped ginkgo leaf brooch",
     "uses": [
       "wear",
@@ -770,7 +928,12 @@ export const catalog: CatalogEntry[] = [
     "name": "Golden Ginkgo Earrings",
     "form": "Dangling botanical earrings",
     "image": "/images/site/ronghua/collection/ginkgo-earrings.webp",
-    images: [{ src: "/images/site/ronghua/collection/ginkgo-earrings.webp", alt: "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/ginkgo-earrings.webp", "alt": "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-21-02.webp", "alt": "Golden Ginkgo Earrings — alternate photograph 1"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-21-03.webp", "alt": "Golden Ginkgo Earrings — alternate photograph 2"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-21-04.webp", "alt": "Golden Ginkgo Earrings — alternate photograph 3"},
+    ],
     "alt": "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs",
     "uses": [
       "wear",
@@ -786,7 +949,13 @@ export const catalog: CatalogEntry[] = [
     "name": "Olive Branch Lapel Brooch",
     "form": "Green botanical brooch",
     "image": "/images/site/ronghua/collection/olive-branch-brooch-worn.webp",
-    images: [{ src: "/images/site/ronghua/collection/olive-branch-brooch-worn.webp", alt: "Green leafy brooch worn on a navy patterned garment" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/olive-branch-brooch-worn.webp", "alt": "Green leafy brooch worn on a navy patterned garment"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-22-02.webp", "alt": "Olive Branch Lapel Brooch — worn styling view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-22-03.webp", "alt": "Olive Branch Lapel Brooch — worn styling view"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-22-04.webp", "alt": "Olive Branch Lapel Brooch — alternate photograph 3"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-22-05.webp", "alt": "Olive Branch Lapel Brooch — worn styling view"},
+    ],
     "alt": "Green leafy brooch worn on a navy patterned garment",
     "uses": [
       "wear",
@@ -801,7 +970,10 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Plum Floral Hair Claw",
     "form": "Floral hair claw",
     "image": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
-    images: [{ src: "/images/site/ronghua/collection/red-plum-hair-claw.webp", alt: "Red plum blossom decoration on a dark hair claw" }],
+    images: [
+      {"src": "/images/site/ronghua/collection/red-plum-hair-claw.webp", "alt": "Red plum blossom decoration on a dark hair claw"},
+      {"src": "/images/site/gallery-20261029/ronghua/rh-23-02.webp", "alt": "Red Plum Floral Hair Claw — reverse and fastening view"},
+    ],
     "alt": "Red plum blossom decoration on a dark hair claw",
     "uses": [
       "wear",
