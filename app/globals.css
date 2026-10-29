@@ -6288,3 +6288,13 @@ html{scroll-behavior:smooth}
  .bespoke-shortlist-result{padding:20px}
  .bespoke-empty-shortlist{padding:18px}
 }
+
+/* Shared product galleries reserve the existing card frame and allow vertical scrolling/pinch zoom. */
+.im-product-gallery{touch-action:pan-y pinch-zoom;isolation:isolate}
+.im-product-gallery:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.im-product-gallery .gallery-controls{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:rgba(249,247,242,.96);border-radius:28px;padding:3px;z-index:2;color:#292720;box-shadow:0 2px 12px #0002}
+.im-product-gallery .gallery-controls button{width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:inherit;font:inherit;font-size:22px;cursor:pointer}
+.im-product-gallery .gallery-controls button:hover{background:#e3ded4}
+.im-product-gallery .gallery-controls button:focus-visible{outline:2px solid #292720;outline-offset:-3px}
+.im-product-gallery .gallery-controls output{min-width:44px;text-align:center;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.im-product-gallery .gallery-error{position:absolute;inset:40% 8% auto;background:#f9f7f2;padding:12px;text-align:center}

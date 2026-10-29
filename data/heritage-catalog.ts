@@ -1,3 +1,5 @@
+import type { ProductPhoto } from "../components/product-gallery";
+
 export type CraftId = "chanhua" | "ronghua" | "hexiang" | "lacquer" | "bian";
 export type CatalogStatus = "available" | "past";
 export type UseId = "wear" | "ceremony" | "gift" | "home" | "ritual";
@@ -17,6 +19,7 @@ export type CatalogEntry = {
   name: string;
   form: string;
   image: string;
+  images: ProductPhoto[];
   alt: string;
   uses: UseId[];
   howToUse: string;
@@ -50,156 +53,182 @@ export const catalog: CatalogEntry[] = [
   {
     id: "CH-01", craft: "chanhua", name: "Olive Berry Hair Ornament", form: "Hair ornament",
     image: "/images/site/chanhua-worn.webp", alt: "Olive berry Chanhua ornament styled in the hair",
+    images: [{ src: "/images/site/chanhua-worn.webp", alt: "Olive berry Chanhua ornament styled in the hair" }],
     uses: ["wear", "ceremony"], howToUse: "Wear in an updo or as a delicate detail for a celebration.",
     consideration: "Protect the wrapped threads from crushing, moisture and repeated rubbing.",
   },
   {
     id: "CH-02", craft: "chanhua", name: "Olive Branch Hairpin", form: "Hairpin",
     image: "/images/site/olive-hairpin.webp", alt: "Hand-wrapped olive branch floral hairpin",
+    images: [{ src: "/images/site/olive-hairpin.webp", alt: "Hand-wrapped olive branch floral hairpin" }],
     uses: ["wear", "gift"], howToUse: "A floral accent for everyday styling or a personal gift.",
     consideration: "Store in a protective box when not worn; current exact design may vary.",
   },
   {
     id: "CH-03", craft: "chanhua", name: "Tulip Floral Brooch", form: "Brooch",
     image: "/images/site/tulip-brooch.webp", alt: "Small handcrafted Chanhua tulip brooches",
+    images: [{ src: "/images/site/tulip-brooch.webp", alt: "Small handcrafted Chanhua tulip brooches" }],
     uses: ["wear", "gift", "ceremony"], howToUse: "Add a small flower to a jacket, dress or event outfit.",
     consideration: "Check fastening details and fabric compatibility before ordering.",
   },
   {
     id: "CH-04", craft: "chanhua", name: "Tulip Occasion Styling", form: "Brooch / styling reference",
     image: "/images/site/tulip-ceremony.webp", alt: "Tulip floral ornament shown in occasion styling",
+    images: [{ src: "/images/site/tulip-ceremony.webp", alt: "Tulip floral ornament shown in occasion styling" }],
     uses: ["ceremony", "wear"], howToUse: "Consider a floral accent for a wedding guest or meaningful occasion.",
     consideration: "A styling example, not a confirmed made-to-order package.",
   },
   {
     id: "RH-01", craft: "ronghua", name: "Velvet-Flower Brooch", form: "Wearable floral art",
     image: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory",
+    images: [{ src: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory" }],
     uses: ["wear", "ceremony", "gift"], howToUse: "A sculptural flower accent for a ceremony or special outfit.",
     consideration: "Available by enquiry. Confirm the fastening, finish, care and stock or production options for the specific brooch.",
   },
   {
     id: "RH-02", craft: "ronghua", name: "Velvet Flowers in a Vase", form: "Floral home display",
     image: "/images/site/ronghua/ronghua-home-vase.webp", alt: "Velvet flowers composed in a porcelain vase",
+    images: [{ src: "/images/site/ronghua/ronghua-home-vase.webp", alt: "Velvet flowers composed in a porcelain vase" }],
     uses: ["home", "gift", "ceremony"], howToUse: "Display in a vase as an enduring floral arrangement or keepsake.",
     consideration: "Available by enquiry. Confirm dimensions, display fittings, care and sourcing options for the selected arrangement.",
   },
   {
     id: "HX-01", craft: "hexiang", name: "Cloud Relief Incense Plaque", form: "Scented plaque",
     image: "/images/site/incense/round-cloud.webp", alt: "Round blended-incense plaque with cloud relief on textile",
+    images: [{ src: "/images/site/incense/round-cloud.webp", alt: "Round blended-incense plaque with cloud relief on textile" }],
     uses: ["ritual", "gift", "home"], howToUse: "A shaped aromatic object for a personal scent ritual or considered gift.",
     consideration: "Aromatic ingredients, strength and intended use must be confirmed before purchase.",
   },
   {
     id: "HX-02", craft: "hexiang", name: "Floral Relief Incense Plaque", form: "Scented plaque",
     image: "/images/site/incense/round-floral.webp", alt: "Round incense plaque with layered floral relief",
+    images: [{ src: "/images/site/incense/round-floral.webp", alt: "Round incense plaque with layered floral relief" }],
     uses: ["ritual", "gift"], howToUse: "A small aromatic object chosen for its carved form and composition.",
     consideration: "Available for a sourcing enquiry; confirm the precise composition, selected design and fulfilment terms.",
   },
   {
     id: "HX-03", craft: "hexiang", name: "Gourd Pendant", form: "Corded scent pendant",
     image: "/images/site/incense/gourd.webp", alt: "Gourd-shaped blended-incense ornament on a cord",
+    images: [{ src: "/images/site/incense/gourd.webp", alt: "Gourd-shaped blended-incense ornament on a cord" }],
     uses: ["wear", "gift", "ritual"], howToUse: "An example of an aromatic object designed to be carried on a cord.",
     consideration: "Verify scent composition, cord suitability and contact guidance before wear.",
   },
   {
     id: "HX-04", craft: "hexiang", name: "Rabbit-Motif Ornament", form: "Decorative scent ornament",
     image: "/images/site/incense/rabbit.webp", alt: "Blended-incense ornament with rabbit design and tassel",
+    images: [{ src: "/images/site/incense/rabbit.webp", alt: "Blended-incense ornament with rabbit design and tassel" }],
     uses: ["gift", "ritual"], howToUse: "A symbolic gift form within the scented-object tradition.",
     consideration: "Available by enquiry; confirm motif, composition, quantity and supply for the particular design.",
   },
   {
     id: "HX-05", craft: "hexiang", name: "Narrative Relief Plaque", form: "Rectangular scent plaque",
     image: "/images/site/incense/relief-plaque.webp", alt: "Rectangular incense plaque with hand-worked relief",
+    images: [{ src: "/images/site/incense/relief-plaque.webp", alt: "Rectangular incense plaque with hand-worked relief" }],
     uses: ["gift", "home", "ritual"], howToUse: "A carved object to appreciate visually alongside its aromatic character.",
     consideration: "Storage, surface care and scent information have not yet been finalised.",
   },
   {
     id: "HX-06", craft: "hexiang", name: "Leaf-Form Pendant", form: "Scent pendant",
     image: "/images/site/incense/leaf-form.webp", alt: "Leaf-form incense ornament with vein details",
+    images: [{ src: "/images/site/incense/leaf-form.webp", alt: "Leaf-form incense ornament with vein details" }],
     uses: ["wear", "ritual", "gift"], howToUse: "An example of portable fragrance in a nature-inspired form.",
     consideration: "Enquire about the exact fragrance, wearing instructions, price and fulfilment lead time.",
   },
   {
     id: "HX-07", craft: "hexiang", name: "He Xiang Wrist Ornament", form: "Aromatic wrist ornament",
     image: "/images/site/incense/bracelet-worn-portrait.webp", alt: "Blended-incense bracelet shown on a wrist",
+    images: [{ src: "/images/site/incense/bracelet-worn-portrait.webp", alt: "Blended-incense bracelet shown on a wrist" }],
     uses: ["wear", "ritual", "gift"], howToUse: "A scented detail worn at the wrist rather than used as room fragrance.",
     consideration: "Materials, fit and skin-contact suitability must be checked case by case.",
   },
   {
     id: "HX-08", craft: "hexiang", name: "Slender Corded Ornament", form: "Corded scent form",
     image: "/images/site/incense/slender-form.webp", alt: "Slender blended-incense ornament on a decorative cord",
+    images: [{ src: "/images/site/incense/slender-form.webp", alt: "Slender blended-incense ornament on a decorative cord" }],
     uses: ["wear", "ritual"], howToUse: "A compact example of fragrance given a wearable shape.",
     consideration: "Available by enquiry. Confirm the specific formula, cord construction and current supply.",
   },
   {
     id: "LC-01", craft: "lacquer", name: "Lacquer Tea Vessel", form: "Tea-related object",
     image: "/images/site/lacquer/teapot.webp", alt: "Textured lacquer teapot-shaped vessel",
+    images: [{ src: "/images/site/lacquer/teapot.webp", alt: "Textured lacquer teapot-shaped vessel" }],
     uses: ["ritual", "home"], howToUse: "Explore lacquer as part of a tea-setting or decorative ritual.",
     consideration: "Food contact, heat resistance and liquid suitability must be verified before use.",
   },
   {
     id: "LC-02", craft: "lacquer", name: "Orchid Cup Pair", form: "Cup-shaped objects",
     image: "/images/site/lacquer/orchid-cups.webp", alt: "Red and black lacquer cups with orchid decorations",
+    images: [{ src: "/images/site/lacquer/orchid-cups.webp", alt: "Red and black lacquer cups with orchid decorations" }],
     uses: ["ritual", "home", "gift"], howToUse: "A visual example for an elegant tabletop or tea-related setting.",
     consideration: "Do not assume the pictured objects are drinking-safe without verified specifications.",
   },
   {
     id: "LC-03", craft: "lacquer", name: "Red Lacquer Cup", form: "Cup-shaped object",
     image: "/images/site/lacquer/red-cup.webp", alt: "Red lacquer cup held against a bright sky",
+    images: [{ src: "/images/site/lacquer/red-cup.webp", alt: "Red lacquer cup held against a bright sky" }],
     uses: ["ritual", "home"], howToUse: "An illustration of vivid lacquer surface and handheld scale.",
     consideration: "Functional contact and cleaning instructions require confirmation.",
   },
   {
     id: "LC-04", craft: "lacquer", name: "Red Lacquer Bangle", form: "Wrist adornment",
     image: "/images/site/lacquer/red-bangle.webp", alt: "Red lacquer bangle bracelet",
+    images: [{ src: "/images/site/lacquer/red-bangle.webp", alt: "Red lacquer bangle bracelet" }],
     uses: ["wear", "gift"], howToUse: "A sculptural statement piece for a personal wardrobe.",
     consideration: "Sizing, closure if any, and finish resistance need confirmation.",
   },
   {
     id: "LC-05", craft: "lacquer", name: "Lacquer Pendant Necklaces", form: "Neck adornment",
     image: "/images/site/lacquer/necklaces.webp", alt: "Two handmade lacquer pendant necklaces",
+    images: [{ src: "/images/site/lacquer/necklaces.webp", alt: "Two handmade lacquer pendant necklaces" }],
     uses: ["wear", "gift"], howToUse: "A small area of lacquer colour and texture worn close to the body.",
     consideration: "Confirm pendant dimensions, weight, hardware specifications and current availability when enquiring.",
   },
   {
     id: "LC-06", craft: "lacquer", name: "Red Drop Lacquer Pendant", form: "Pendant",
     image: "/images/site/lacquer/red-pendant.webp", alt: "Red drop-shaped lacquer pendant",
+    images: [{ src: "/images/site/lacquer/red-pendant.webp", alt: "Red drop-shaped lacquer pendant" }],
     uses: ["wear", "gift", "ceremony"], howToUse: "A restrained focal point for a contemporary or formal outfit.",
     consideration: "Available by enquiry; confirm the exact design, quantities and production feasibility.",
   },
   {
     id: "LC-07", craft: "lacquer", name: "Panda & Bamboo Wall Artwork", form: "Wall art",
     image: "/images/site/lacquer/panda-wall.webp", alt: "Lacquer wall artwork featuring pandas and bamboo",
+    images: [{ src: "/images/site/lacquer/panda-wall.webp", alt: "Lacquer wall artwork featuring pandas and bamboo" }],
     uses: ["home", "gift"], howToUse: "Decorative wall art bringing a narrative image into an interior.",
     consideration: "Scale, weight, hanging method and availability are not yet confirmed.",
   },
   {
     id: "LC-08", craft: "lacquer", name: "Maple Detail Object", form: "Decorative home object",
     image: "/images/site/lacquer/maple-vessel.webp", alt: "Dark lacquer decorative piece with maple detail",
+    images: [{ src: "/images/site/lacquer/maple-vessel.webp", alt: "Dark lacquer decorative piece with maple detail" }],
     uses: ["home", "gift"], howToUse: "A tactile decorative object for a shelf or display setting.",
     consideration: "Final purpose, materials and handling guidance require maker confirmation.",
   },
   {
     id: "LC-09", craft: "lacquer", name: "Patterned Lacquer Cup", form: "Cup-shaped object",
     image: "/images/site/lacquer/patterned-cup.webp", alt: "Dark patterned lacquer cup held in a hand",
+    images: [{ src: "/images/site/lacquer/patterned-cup.webp", alt: "Dark patterned lacquer cup held in a hand" }],
     uses: ["ritual", "home"], howToUse: "An example of fine surface ornamentation on a small vessel form.",
     consideration: "Potential food or beverage use cannot be assumed.",
   },
   {
     id: "BX-01", craft: "bian", status: "past", name: "Blue Peony Evening Bag", form: "Evening bag",
     image: "/images/site/blue-peony-bag.webp", alt: "Blue peony Bian embroidery evening bag",
+    images: [{ src: "/images/site/blue-peony-bag.webp", alt: "Blue peony Bian embroidery evening bag" }, { src: "/images/site/blue-peony-detail.webp", alt: "Detail of the same blue peony evening bag" }],
     uses: ["ceremony", "wear"], howToUse: "A past design showing pictorial embroidery carried with occasion wear.",
     consideration: "Past Collection only. Protect embroidery from abrasion; this bag is not currently for sale.",
   },
   {
     id: "BX-02", craft: "bian", status: "past", name: "Red Peony Evening Bag", form: "Evening bag",
     image: "/images/site/red-peony-bag.webp", alt: "Red peony Bian embroidery evening bag",
+    images: [{ src: "/images/site/red-peony-bag.webp", alt: "Red peony Bian embroidery evening bag" }, { src: "/images/site/red-peony-detail.webp", alt: "Detail of the same red peony evening bag" }],
     uses: ["ceremony", "wear"], howToUse: "A design archive example for formal attire and embroidery study.",
     consideration: "Past Collection only; not a currently available item or confirmed wholesale option.",
   },
   {
     id: "LE-01", craft: "bian", salesChannel: "etsy", name: "Embroidered Lion Charm", form: "Textile charm",
     image: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels",
+    images: [{ src: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels" }],
     uses: ["gift", "wear", "ceremony"], howToUse: "Attach where the specific hardware permits, or give as a joyful keepsake.",
     consideration: "Check current variants, hardware, dimensions and prices with the active Etsy listing.",
   },
@@ -210,6 +239,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Tasselled Plaque Pair",
     "form": "Hanging ornaments",
     "image": "/images/site/uploads-20261027/tasselled-plaques.webp",
+    images: [{ src: "/images/site/uploads-20261027/tasselled-plaques.webp", alt: "Tasselled Plaque Pair shown in the user-supplied craft archive" }],
     "alt": "Tasselled Plaque Pair shown in the user-supplied craft archive",
     "uses": [
       "gift",
@@ -224,6 +254,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Beaded Hanging Ornaments",
     "form": "Corded ornaments",
     "image": "/images/site/uploads-20261027/beaded-hanging-ornaments.webp",
+    images: [{ src: "/images/site/uploads-20261027/beaded-hanging-ornaments.webp", alt: "Beaded Hanging Ornaments shown in the user-supplied craft archive" }],
     "alt": "Beaded Hanging Ornaments shown in the user-supplied craft archive",
     "uses": [
       "gift",
@@ -238,6 +269,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Bead & Plaque Wrist Ornament",
     "form": "Bracelet",
     "image": "/images/site/uploads-20261027/bead-and-plaque-bracelet.webp",
+    images: [{ src: "/images/site/uploads-20261027/bead-and-plaque-bracelet.webp", alt: "Bead & Plaque Wrist Ornament shown in the user-supplied craft archive" }],
     "alt": "Bead & Plaque Wrist Ornament shown in the user-supplied craft archive",
     "uses": [
       "wear",
@@ -252,6 +284,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Multicolour Bead Bracelet",
     "form": "Bracelet",
     "image": "/images/site/uploads-20261027/multicolour-bead-bracelet.webp",
+    images: [{ src: "/images/site/uploads-20261027/multicolour-bead-bracelet.webp", alt: "Multicolour Bead Bracelet shown in the user-supplied craft archive" }],
     "alt": "Multicolour Bead Bracelet shown in the user-supplied craft archive",
     "uses": [
       "wear",
@@ -266,6 +299,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Corded Relief Plaques",
     "form": "Pendant assortment",
     "image": "/images/site/uploads-20261027/corded-plaque-assortment.webp",
+    images: [{ src: "/images/site/uploads-20261027/corded-plaque-assortment.webp", alt: "Corded Relief Plaques shown in the user-supplied craft archive" }],
     "alt": "Corded Relief Plaques shown in the user-supplied craft archive",
     "uses": [
       "wear",
@@ -280,6 +314,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Dragon Relief Plaque",
     "form": "Relief ornament",
     "image": "/images/site/uploads-20261027/dragon-relief-plaque.webp",
+    images: [{ src: "/images/site/uploads-20261027/dragon-relief-plaque.webp", alt: "Dragon Relief Plaque shown in the user-supplied craft archive" }],
     "alt": "Dragon Relief Plaque shown in the user-supplied craft archive",
     "uses": [
       "gift",
@@ -294,6 +329,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Sculptural Incense Figure",
     "form": "Display figure",
     "image": "/images/site/uploads-20261027/sculptural-incense-figure.webp",
+    images: [{ src: "/images/site/uploads-20261027/sculptural-incense-figure.webp", alt: "Sculptural Incense Figure shown in the user-supplied craft archive" }],
     "alt": "Sculptural Incense Figure shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -308,6 +344,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Incense Sticks in Tubes",
     "form": "Packaged stick incense",
     "image": "/images/site/uploads-20261027/incense-tube-set.webp",
+    images: [{ src: "/images/site/uploads-20261027/incense-tube-set.webp", alt: "Incense Sticks in Tubes shown in the user-supplied craft archive" }],
     "alt": "Incense Sticks in Tubes shown in the user-supplied craft archive",
     "uses": [
       "ritual",
@@ -322,6 +359,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Mixed-Form Presentation Set",
     "form": "Boxed reference set",
     "image": "/images/site/uploads-20261027/incense-presentation-set.webp",
+    images: [{ src: "/images/site/uploads-20261027/incense-presentation-set.webp", alt: "Mixed-Form Presentation Set shown in the user-supplied craft archive" }],
     "alt": "Mixed-Form Presentation Set shown in the user-supplied craft archive",
     "uses": [
       "gift",
@@ -336,6 +374,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Lotus Standing Screen",
     "form": "Circular standing screen",
     "image": "/images/site/uploads-20261027/lotus-standing-screen.webp",
+    images: [{ src: "/images/site/uploads-20261027/lotus-standing-screen.webp", alt: "Lotus Standing Screen shown in the user-supplied craft archive" }, { src: "/images/site/uploads-20261027/lotus-screen-detail.webp", alt: "Close view of the same lotus embroidery screen" }],
     "alt": "Lotus Standing Screen shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -350,6 +389,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Panda & Bamboo Screen",
     "form": "Circular standing screen",
     "image": "/images/site/uploads-20261027/panda-standing-screen.webp",
+    images: [{ src: "/images/site/uploads-20261027/panda-standing-screen.webp", alt: "Panda & Bamboo Screen shown in the user-supplied craft archive" }],
     "alt": "Panda & Bamboo Screen shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -364,6 +404,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Dragon Vase Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/dragon-vase-picture.webp",
+    images: [{ src: "/images/site/uploads-20261027/dragon-vase-picture.webp", alt: "Dragon Vase Picture shown in the user-supplied craft archive" }],
     "alt": "Dragon Vase Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -378,6 +419,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Orchid & Butterfly Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/orchid-framed-picture.webp",
+    images: [{ src: "/images/site/uploads-20261027/orchid-framed-picture.webp", alt: "Orchid & Butterfly Picture shown in the user-supplied craft archive" }],
     "alt": "Orchid & Butterfly Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -392,6 +434,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Paired Vertical Floral Panels",
     "form": "Framed vertical panels",
     "image": "/images/site/uploads-20261027/paired-vertical-panels.webp",
+    images: [{ src: "/images/site/uploads-20261027/paired-vertical-panels.webp", alt: "Paired Vertical Floral Panels shown in the user-supplied craft archive" }],
     "alt": "Paired Vertical Floral Panels shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -406,6 +449,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Peonies & Butterflies",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/peony-butterfly-picture.webp",
+    images: [{ src: "/images/site/uploads-20261027/peony-butterfly-picture.webp", alt: "Peonies & Butterflies shown in the user-supplied craft archive" }],
     "alt": "Peonies & Butterflies shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -420,6 +464,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Pink Peony Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/pink-peony-picture.webp",
+    images: [{ src: "/images/site/uploads-20261027/pink-peony-picture.webp", alt: "Pink Peony Picture shown in the user-supplied craft archive" }],
     "alt": "Pink Peony Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -434,6 +479,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Mountain Landscape Picture",
     "form": "Framed embroidery picture",
     "image": "/images/site/uploads-20261027/landscape-picture.webp",
+    images: [{ src: "/images/site/uploads-20261027/landscape-picture.webp", alt: "Mountain Landscape Picture shown in the user-supplied craft archive" }],
     "alt": "Mountain Landscape Picture shown in the user-supplied craft archive",
     "uses": [
       "home",
@@ -448,6 +494,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Bridal Floral Hair Comb",
     "form": "Ceremonial hair comb",
     "image": "/images/site/ronghua/collection/red-bridal-hair-comb.webp",
+    images: [{ src: "/images/site/ronghua/collection/red-bridal-hair-comb.webp", alt: "Red floral velvet flower hair comb with decorative drops" }],
     "alt": "Red floral velvet flower hair comb with decorative drops",
     "uses": [
       "wear",
@@ -462,6 +509,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Blossom Floral Pair",
     "form": "Floral embellishments",
     "image": "/images/site/ronghua/collection/red-floral-pair.webp",
+    images: [{ src: "/images/site/ronghua/collection/red-floral-pair.webp", alt: "Two small red velvet blossom ornaments" }],
     "alt": "Two small red velvet blossom ornaments",
     "uses": [
       "wear",
@@ -477,6 +525,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Coral Leaf Lapel Brooch",
     "form": "Floral lapel ornament",
     "image": "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp",
+    images: [{ src: "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp", alt: "Warm red and coral leaf-shaped velvet flower worn on a dark jacket" }],
     "alt": "Warm red and coral leaf-shaped velvet flower worn on a dark jacket",
     "uses": [
       "wear",
@@ -491,6 +540,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Goldfish-Inspired Floral Ornaments",
     "form": "Fish-motif decorative accessories",
     "image": "/images/site/ronghua/collection/goldfish-floral-clips.webp",
+    images: [{ src: "/images/site/ronghua/collection/goldfish-floral-clips.webp", alt: "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish" }],
     "alt": "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish",
     "uses": [
       "wear",
@@ -506,6 +556,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Purple Floral Cluster",
     "form": "Clustered flower ornament",
     "image": "/images/site/ronghua/collection/purple-floral-arrangement.webp",
+    images: [{ src: "/images/site/ronghua/collection/purple-floral-arrangement.webp", alt: "Layered dark-purple and lavender velvet flowers with dangling accents" }],
     "alt": "Layered dark-purple and lavender velvet flowers with dangling accents",
     "uses": [
       "wear",
@@ -521,6 +572,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Floral Hairpin",
     "form": "Statement hairpin",
     "image": "/images/site/ronghua/collection/blue-floral-hairpin.webp",
+    images: [{ src: "/images/site/ronghua/collection/blue-floral-hairpin.webp", alt: "Bright blue cluster of velvet flowers attached to a long hairpin" }],
     "alt": "Bright blue cluster of velvet flowers attached to a long hairpin",
     "uses": [
       "wear",
@@ -535,6 +587,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Scarlet-and-Ivory Lily Motif",
     "form": "Decorative flower stem",
     "image": "/images/site/ronghua/collection/red-white-lily-flower.webp",
+    images: [{ src: "/images/site/ronghua/collection/red-white-lily-flower.webp", alt: "Red-and-white lily-shaped velvet flower detail against a dark background" }],
     "alt": "Red-and-white lily-shaped velvet flower detail against a dark background",
     "uses": [
       "wear",
@@ -550,6 +603,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Bird Floral Sculpture",
     "form": "Bird-shaped decorative ornament",
     "image": "/images/site/ronghua/collection/blue-bird-sculpture.webp",
+    images: [{ src: "/images/site/ronghua/collection/blue-bird-sculpture.webp", alt: "Small blue bird-shaped velvet ornament presented in a display box" }],
     "alt": "Small blue bird-shaped velvet ornament presented in a display box",
     "uses": [
       "home",
@@ -564,6 +618,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Violet Floral Vase Arrangement",
     "form": "Floral home arrangement",
     "image": "/images/site/ronghua/collection/violet-floral-vase.webp",
+    images: [{ src: "/images/site/ronghua/collection/violet-floral-vase.webp", alt: "Lavender velvet flowers arranged in a decorated porcelain vase" }],
     "alt": "Lavender velvet flowers arranged in a decorated porcelain vase",
     "uses": [
       "home",
@@ -578,6 +633,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Violet Statement Lapel Brooch",
     "form": "Wearable floral arrangement",
     "image": "/images/site/ronghua/collection/violet-brooch-worn.webp",
+    images: [{ src: "/images/site/ronghua/collection/violet-brooch-worn.webp", alt: "Lavender and violet floral corsage worn at the shoulder" }],
     "alt": "Lavender and violet floral corsage worn at the shoulder",
     "uses": [
       "wear",
@@ -592,6 +648,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Blue Blossom Hair Accent",
     "form": "Blue floral accessory",
     "image": "/images/site/ronghua/collection/blue-flower-hair-clip.webp",
+    images: [{ src: "/images/site/ronghua/collection/blue-flower-hair-clip.webp", alt: "Close-up of a blue flower ornament with decorative beads" }],
     "alt": "Close-up of a blue flower ornament with decorative beads",
     "uses": [
       "wear",
@@ -606,6 +663,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Pink Blossom Barrette",
     "form": "Flower hair clip",
     "image": "/images/site/ronghua/collection/pink-blossom-hair-clip.webp",
+    images: [{ src: "/images/site/ronghua/collection/pink-blossom-hair-clip.webp", alt: "Pink blossoms arranged along a gold-toned hair clip" }],
     "alt": "Pink blossoms arranged along a gold-toned hair clip",
     "uses": [
       "wear",
@@ -621,6 +679,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Peacock-Feather Brooch",
     "form": "Feather-motif adornment",
     "image": "/images/site/ronghua/collection/peacock-feather-brooch.webp",
+    images: [{ src: "/images/site/ronghua/collection/peacock-feather-brooch.webp", alt: "Two iridescent blue-green feather-shaped velvet elements" }],
     "alt": "Two iridescent blue-green feather-shaped velvet elements",
     "uses": [
       "wear",
@@ -635,6 +694,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Bamboo Leaf Brooch",
     "form": "Botanical lapel ornament",
     "image": "/images/site/ronghua/collection/bamboo-leaf-brooch.webp",
+    images: [{ src: "/images/site/ronghua/collection/bamboo-leaf-brooch.webp", alt: "Green-grey bamboo leaf-shaped botanical brooch" }],
     "alt": "Green-grey bamboo leaf-shaped botanical brooch",
     "uses": [
       "wear",
@@ -649,6 +709,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Framed Botanical Craft Art",
     "form": "Framed velvet-flower composition",
     "image": "/images/site/ronghua/collection/framed-bamboo-art.webp",
+    images: [{ src: "/images/site/ronghua/collection/framed-bamboo-art.webp", alt: "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork" }],
     "alt": "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork",
     "uses": [
       "home",
@@ -663,6 +724,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Apricot Blossom Brooch",
     "form": "Soft orange floral brooch",
     "image": "/images/site/ronghua/collection/peach-blossom-brooch.webp",
+    images: [{ src: "/images/site/ronghua/collection/peach-blossom-brooch.webp", alt: "Apricot-coloured floral brooch with layered rounded petals" }],
     "alt": "Apricot-coloured floral brooch with layered rounded petals",
     "uses": [
       "wear",
@@ -677,6 +739,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Lavender Orchid Brooch",
     "form": "Orchid-inspired brooch",
     "image": "/images/site/ronghua/collection/lavender-orchid-brooch.webp",
+    images: [{ src: "/images/site/ronghua/collection/lavender-orchid-brooch.webp", alt: "Purple orchid blossom cluster arranged as a floral accessory" }],
     "alt": "Purple orchid blossom cluster arranged as a floral accessory",
     "uses": [
       "wear",
@@ -692,6 +755,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Golden Ginkgo Brooch",
     "form": "Ginkgo leaf motif",
     "image": "/images/site/ronghua/collection/golden-ginkgo-brooch.webp",
+    images: [{ src: "/images/site/ronghua/collection/golden-ginkgo-brooch.webp", alt: "Bright golden-yellow fan-shaped ginkgo leaf brooch" }],
     "alt": "Bright golden-yellow fan-shaped ginkgo leaf brooch",
     "uses": [
       "wear",
@@ -706,6 +770,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Golden Ginkgo Earrings",
     "form": "Dangling botanical earrings",
     "image": "/images/site/ronghua/collection/ginkgo-earrings.webp",
+    images: [{ src: "/images/site/ronghua/collection/ginkgo-earrings.webp", alt: "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs" }],
     "alt": "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs",
     "uses": [
       "wear",
@@ -721,6 +786,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Olive Branch Lapel Brooch",
     "form": "Green botanical brooch",
     "image": "/images/site/ronghua/collection/olive-branch-brooch-worn.webp",
+    images: [{ src: "/images/site/ronghua/collection/olive-branch-brooch-worn.webp", alt: "Green leafy brooch worn on a navy patterned garment" }],
     "alt": "Green leafy brooch worn on a navy patterned garment",
     "uses": [
       "wear",
@@ -735,6 +801,7 @@ export const catalog: CatalogEntry[] = [
     "name": "Red Plum Floral Hair Claw",
     "form": "Floral hair claw",
     "image": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+    images: [{ src: "/images/site/ronghua/collection/red-plum-hair-claw.webp", alt: "Red plum blossom decoration on a dark hair claw" }],
     "alt": "Red plum blossom decoration on a dark hair claw",
     "uses": [
       "wear",
