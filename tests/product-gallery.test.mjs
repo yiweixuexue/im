@@ -17,7 +17,7 @@ test('all products have unique existing images, useful alt text and original cov
 });
 test('only audited exact-product photo groups have additional views',()=>{
  const multiple=[...bespokeWorks,...catalog].filter(p=>p.images.length>1);
- assert.deepEqual(multiple.map(p=>[p.id,p.images.length]),[['BW-04',3],['BX-01',2],['BX-02',2],['BX-03',2]]);
+ assert.deepEqual(multiple.map(p=>[p.id,p.images.length]),[['BW-04',4],['BX-01',2],['BX-02',2],['BX-03',2]]);
 });
 test('export mounts only covers, single-photo cards have no controls, staging paths resolve',()=>{
  for(const route of ['cn/custom','en/heritage/library']){

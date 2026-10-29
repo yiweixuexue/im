@@ -66,8 +66,9 @@ export const bespokeWorks: BespokeWork[] = [
     image: "/images/lookbook/ceremony-courtyard.webp", alt: "穿红色中式礼服与黑色男装的新人走过花艺门廊",
     images: [
       { src: "/images/lookbook/ceremony-courtyard.webp", alt: "红色婚礼双人造型 · 花艺门廊 / Wedding ensemble in the courtyard" },
-      { src: "/images/lookbook/ceremony-entrance.webp", alt: "同套红色礼服与黑色男装 · 入场 / Same wedding ensemble at the entrance" },
       { src: "/images/lookbook/ceremony-kiss.webp", alt: "同套婚礼服装 · 近景 / Close view of the same wedding ensemble" },
+      { src: "/images/lookbook/ceremony-portrait.webp", alt: "同件红色礼服 · 肖像 / Portrait in the same red wedding dress" },
+      { src: "/images/lookbook/ceremony-celebration.webp", alt: "同套婚礼服装 · 庆典 / Same wedding ensemble during the celebration" },
     ],
     type: "ceremony", occasions: ["celebration"],
     bestFor: "婚礼出门、迎宾、敬酒及需要整体协调的两人造型。",

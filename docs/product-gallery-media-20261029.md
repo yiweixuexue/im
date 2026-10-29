@@ -4,7 +4,7 @@ PR #12 was already merged as ec9a287. This follow-up starts from that main revis
 
 ## Verified gallery mappings
 
-- BW-04: ceremony-courtyard, ceremony-entrance, ceremony-kiss. Visual review confirms the same couple, sleeveless orange-red high-neck gown with waist detail and veil, and black stand-collar jacket. Other wedding outfits and generic ceremony details are excluded.
+- BW-04: ceremony-courtyard, ceremony-kiss, ceremony-portrait, ceremony-celebration. Visual review confirms the same couple, sleeveless orange-red high-neck gown with waist detail and veil, and black stand-collar jacket. The entrance and floral-detail photos show a textured garment with frog closures rather than the plain portrait dress and are excluded, along with other wedding outfits and generic ceremony details.
 - BX-01: blue-peony-bag + blue-peony-detail. Same embroidered flower placement, bag frame and handle.
 - BX-02: red-peony-bag + red-peony-detail. Same pink peony composition and metal frame.
 - BX-03: lotus-standing-screen + lotus-screen-detail. Same circular black frame and pink lotus composition, from the user-authorized 27 October archive (see craft-media-20261027.json).
