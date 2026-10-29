@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../../components/site-shell";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact 屮微我 for bespoke clothing or ImArtisan for heritage craft, Etsy orders and international enquiries.",
+  description: "Contact ImArtisan by WeChat or email for bespoke clothing, heritage crafts, orders and collaborations. Choose the channel that suits you.",
 };
 
 export default function ContactPage() {
@@ -15,11 +15,10 @@ export default function ContactPage() {
       <SiteHeader market="home" tone="paper" />
       <main id="main-content">
         <section className="paper-hero shell contact-hero">
-          <p className="eyebrow">TWO PATHS · ONE STUDIO</p>
+          <p className="eyebrow">TWO WAYS TO CONNECT · ONE STUDIO</p>
           <h1>让正确的问题，<br />抵达正确的入口。</h1>
           <p>
-            Choose the path that matches what you need. We keep bespoke clothing and international heritage
-            craft enquiries separate so each conversation can begin with useful context.
+            Choose the way you prefer to get in touch. Clients in China often use WeChat, while overseas clients often prefer email. You’re welcome to use either channel for bespoke clothing, heritage crafts, orders or collaborations.
           </p>
         </section>
 
@@ -47,9 +46,9 @@ export default function ContactPage() {
 
           <article className="contact-en" id="international">
             <div className="contact-path-head">
-              <span>INTERNATIONAL</span>
-              <h2>Craft, orders & collaborations</h2>
-              <p>For product questions, Etsy orders, press, maker relationships and selected ceremonial commissions.</p>
+              <span>EMAIL · WHEREVER YOU ARE</span>
+              <h2>Prefer email?</h2>
+              <p>For bespoke clothing, heritage crafts, orders or collaborations, email us directly or leave your details below. We’ll reply by email.</p>
             </div>
             <ContactLeadForm />
             <div className="contact-link-list">
@@ -63,7 +62,7 @@ export default function ContactPage() {
                 <span><small>PROCESS & DAILY STORIES</small><strong>Instagram · @ImArtisan_</strong></span><b aria-hidden="true">↗</b>
               </a>
               <a href="mailto:imartisanme@gmail.com">
-                <span><small>GENERAL & COLLABORATION</small><strong>imartisanme@gmail.com</strong></span><b aria-hidden="true">↗</b>
+                <span><small>EMAIL US DIRECTLY</small><strong>imartisanme@gmail.com</strong></span><b aria-hidden="true">↗</b>
               </a>
             </div>
             <p className="contact-response-note">Please include the product or project name, destination country and any relevant date. Replies are usually sent within 1–2 business days.</p>

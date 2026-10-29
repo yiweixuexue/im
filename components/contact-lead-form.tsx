@@ -32,13 +32,13 @@ export function ContactLeadForm() {
       <div className="contact-lead-heading">
         <p>NOT SURE WHERE TO BEGIN?</p>
         <h3>Leave your details.</h3>
-        <span>We’ll reach out personally and help you find the right next step.</span>
+        <span>We’ll reply personally by email and help you find the right next step.</span>
       </div>
 
       {status === "sent" ? (
         <div className="contact-lead-success" role="status" aria-live="polite">
           <strong>Thank you.</strong>
-          <p>Your details have been received. We’ll be in touch within 1–2 business days.</p>
+          <p>Your details have been received. We’ll reply by email within 1–2 business days.</p>
           <button type="button" onClick={() => setStatus("idle")}>Leave another enquiry</button>
         </div>
       ) : (
