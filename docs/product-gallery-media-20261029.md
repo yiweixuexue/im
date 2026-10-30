@@ -27,14 +27,24 @@ Reviewed the complete existing Lookbook image contact sheet, selected full-size 
 Both libraries use ProductGallery with explicit images[] and per-view alt text. Cards retain their reserved aspect ratio. Only the selected image is mounted, using browser lazy loading and async decoding; secondary full-size images are requested on navigation. Multiple-photo cards expose 44px previous/next controls, current/total indicator, focusable named carousel, Left/Right/Home/End keyboard navigation and horizontal touch/pen swipe while preserving vertical scroll and pinch zoom. One-photo cards show no carousel controls. No autoplay or added gallery dependency. Lightbox is omitted to keep browsing and shortlist interactions compact.
 
 
-## Original heritage archive follow-up
+## Initial original archive follow-up (superseded by consolidation below)
 
 The original brand library was located under its renamed folder. Reviewed 172 Chanhua, 268 Ronghua and 238 embroidery stills (678 total). The source-photo mapping and SHA-256 evidence are recorded in `heritage-gallery-media-20261029.json` with paths relative to the brand Product pics folder. No original files were modified.
 
-- Chanhua: all 4 cards now have multiple photos (4 / 4 / 2 / 3). CH-01/02 show the same olive-berry U hairpin in worn/flat contexts; existing reference IDs remain intact. Red and pink tulips are kept separate.
-- Ronghua: 22 of 23 references now have 2–11 photos, including overall, angle, fastening, detail and worn views where present. RH-01/RH-13 share the same blue accessory, and RH-11/RH-12 share the same detachable purple floral composition; shared assets avoid duplicate downloads. RH-10 remains one verified single-bird image; photos of a pair and a batch were excluded.
-- Embroidery: BX-01/BX-02 now have 5 photos each including side, back and interior; BX-05/BX-06 have 2 each, BX-07 has 4, and LE-01 has 2. BX-03 retains its two established views. BX-04/BX-08/BX-09/BX-10 still need same-object alternate stills.
+- Initial Chanhua audit: all 4 former cards had multiple photos (4 / 4 / 2 / 3). CH-01/02 show the same olive-berry U hairpin in worn/flat contexts; existing reference IDs remain intact. Red and pink tulips are kept separate.
+- Initial Ronghua audit: 22 of 23 former references had 2–11 photos, including overall, angle, fastening, detail and worn views where present. RH-01/RH-13 share the same blue accessory, and RH-11/RH-12 share the same detachable purple floral composition; shared assets avoid duplicate downloads. RH-10 remains one verified single-bird image; photos of a pair and a batch were excluded.
+- Initial embroidery audit: BX-01/BX-02 had 5 photos each including side, back and interior; BX-05/BX-06 have 2 each, BX-07 has 4, and LE-01 has 2. BX-03 retains its two established views. BX-04/BX-08/BX-09/BX-10 still need same-object alternate stills.
 - 94 unique new WebP assets, 5,502,858 bytes total; 104 additional photo associations reuse shared files. All maximum 1280px, no upscaling, EXIF/GPS removed; original visible marks preserved. Images are requested only when that view is selected, so additional source photos do not load upfront.
 - Repeated exports, near-identical takes, different colours/products, unassigned reverse images, workshop context and promotional layouts repeating the same photo are excluded. Original photo group labels and exact fittings/flower placement support associations; no new maker, material, stock or product specification claims are added.
 
 Validation: all 32 static routes export with TypeScript; seven gallery/bilingual regression tests pass. Every added file exists, is unique by SHA-256, has no EXIF and meets the size limit. Existing covers, care/use notes, filters, statuses and shortlists remain unchanged.
+
+
+## User-confirmed product consolidation and colour selection
+
+- Merge RH-13 into RH-01: one Blue Blossom Hair Accessory & Brooch, with both uses in the name, form and practical copy. Existing close/fastening views stay together.
+- Merge RH-12 into RH-11: one Violet Floral Brooch & Vase Arrangement, retaining 5 vase, worn, held and detail views. It appears in wear/home/occasion/gift filters.
+- Merge CH-02 into CH-01: one Olive Berry Hairpin, 6 edited-only photos. Two existing web images were matched to edited DSC09933/DSC09887; four new derivatives use edited DSC09890/DSC09903/DSC09914/DSC09919. Four earlier unedited/redundant web derivatives are removed; originals remain untouched.
+- LE-01 explicitly presents the gold, coral-orange and light-blue variants of the same long rectangular lion charm design. Ten gallery views include a three-colour cover, individual fronts, stitch detail, reverses and grouped angles. Captions name colour/view so variants are distinguishable. Other lion-head necklaces and sachets are different products and remain excluded.
+- Library now contains 61 distinct references: 21 Ronghua (20 multi-photo), 3 Chanhua (all multi-photo), 11 embroidery, 17 incense and 9 lacquer. Existing IDs are retained for surviving cards; no renumbering. Retired duplicate IDs are documented in the source inventory.
+- Sources and hashes are recorded in the updated `heritage-gallery-media-20261029.json`. Raw original image files were not edited or deleted.

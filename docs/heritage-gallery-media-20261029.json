@@ -8,111 +8,104 @@
     "chanhua": {
       "reviewedStillCount": 172,
       "notes": [
-        "CH-01 and CH-02 depict the same six-berry U-shaped hairpin; original worn and flat covers are preserved as separate reference cards.",
+        "CH-01 and former CH-02 depict the same six-berry U-shaped hairpin. They are now merged as CH-01, with edited-only photographs.",
         "CH-03 is the red three-leaf tulip; CH-04 is the pink three-leaf tulip with a pearl-edged leaf and dangling pearl. Their photos are not cross-attached.",
         "Exclude duplicated raw/edited exports, repeated near-identical poses, derivative marketing layouts, making photos, unrelated finished pieces, and pair/group shots containing a different tulip colour.",
         "Red handheld June photo excluded because its mounted pin details cannot be verified against the final photographed brooch."
-      ]
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
     },
     "ronghua": {
       "reviewedStillCount": 268,
       "notes": [
         "268 supplied raster files reviewed in root and 5 subfolders; original camera/design files remain untouched.",
         "Posters that merely repeat the same product photograph, duplicate resized versions and maker/workshop scenes excluded. No watermark removal or generative modification.",
-        "RH-01 and RH-13 are existing duplicate use/reference records for the same blue flower accessory: matching gold clasp, blue petal arrangement, pearl and chain details. Assets shared to avoid duplicate bytes.",
-        "RH-11 and RH-12 show the same detachable violet floral bunch as vase and worn reference; shared detail photos identify the exact same flower arrangement, not a different purple product.",
+        "Former RH-13 is merged into RH-01 as one blue floral accessory supporting hair and brooch uses. The confirmed gallery views are retained together.",
+        "Former RH-12 is merged into RH-11 as one violet floral piece supporting brooch and vase uses. Its worn, held and vase views are retained together.",
         "RH-10 remains one image: source169 shows a pair of birds and source170 a production batch; cannot establish which is the exact single bird held in primary168. No new true alternate verified.",
-        "Root sources0–48 and51–82 show other designs not represented by the current 23 catalog entries and are not attached as extra views.",
+        "Root sources0–48 and51–82 show other designs not represented by the initial 23 reference records before consolidation and are not attached as extra views.",
         "RH-23 alternate224 shows reverse/open mechanism of the same black hair claw (opposite-side flowers account for different visible counts); 222 and225 near-duplicate this view, 226 repeats cover223.",
         "Optimization: EXIF transpose, RGB WebP quality80 method6 maximum edge1280, no upscaling, no EXIF/GPS copied."
-      ]
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
     },
     "embroidery": {
       "reviewedStillCount": 238,
       "notes": [
         "Other bag variants, printed marketing collages, generated composite images and duplicate resized copies excluded.",
-        "LE-01 group display photos include other variants and are excluded to avoid implying those variants are extra views of the pictured object.",
-        "Unassigned lion reverses excluded because exact front/back pairing was not established.",
+        "The initial exact-object review excluded LE-01 group and colour-variant photos. The user subsequently requested all colours: the current LE-01 gallery now explicitly includes the three-colour family, labelled by colour/view.",
+        "Initially unassigned lion reverse photos were excluded. The current colour-variant gallery uses reverses identified within the selected three-colour source group; other lion designs remain excluded.",
         "Near-identical dragon vase full views and paired-panel repeats excluded."
-      ]
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
     }
   },
   "products": {
     "CH-01": {
-      "totalPhotos": 4,
+      "totalPhotos": 6,
       "existingPhotos": [
         {
           "src": "/images/site/chanhua-worn.webp",
-          "alt": "Olive berry Chanhua ornament styled in the hair"
+          "alt": "Olive-berry U hairpin worn in a low bun"
         }
       ],
       "addedPhotos": [
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-flat-oblique.webp",
-          "alt": "The same olive-berry U hairpin viewed obliquely on a white surface",
-          "source": "10_缠花绒花/DSC09904.JPG",
-          "sourceSha256": "2dabae2e04978fd55ead7f825105f604147dd39ad9815af686e0e7dfd7e25235",
-          "width": 1280,
-          "height": 853,
-          "bytes": 18800
-        },
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-upright.webp",
-          "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure",
-          "source": "10_缠花绒花/DSC09879.JPG",
-          "sourceSha256": "dfe7d9df0660cd4d9750e500452bd13510acb2da40e5b030aee3c738418c8b5b",
-          "width": 1280,
-          "height": 853,
-          "bytes": 36288
-        },
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp",
-          "alt": "Side view of the same olive-berry U hairpin in a bun",
-          "source": "10_缠花绒花/DSC09922.JPG",
-          "sourceSha256": "2ce1fd1fce5bedf0979c7f2b3a3ba2f77e280fb69ce5aba9e90a17ca119ad8ba",
-          "width": 1280,
-          "height": 853,
-          "bytes": 53670
-        }
-      ]
-    },
-    "CH-02": {
-      "totalPhotos": 4,
-      "existingPhotos": [
         {
           "src": "/images/site/olive-hairpin.webp",
-          "alt": "Hand-wrapped olive branch floral hairpin"
+          "alt": "Edited flat view of the olive-berry U hairpin and its twin prongs",
+          "source": "10_缠花绒花/edited/DSC09887.jpg",
+          "sourceSha256": "9bdaaf9448d5cc1993041dcf6c022a8be0da7749f10a6d7a4a6495181961a003",
+          "edited": true,
+          "reuseExisting": true,
+          "bytes": 38610
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-upright.webp",
+          "alt": "Edited upright view of the olive-berry U hairpin",
+          "source": "10_缠花绒花/edited/DSC09890.jpg",
+          "sourceSha256": "d46b7271a0f3a8a452e0687b430e60ea77ff6f48a03a3496b2e461edf3b92219",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 23460
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-flat-detail.webp",
+          "alt": "Edited oblique close view of the wrapped leaves and six berries",
+          "source": "10_缠花绒花/edited/DSC09903.jpg",
+          "sourceSha256": "0d72b5500aa22ef59e43a3a670d586e84b875f004e1ff99b6ca3bab6f56fc306",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 21874
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-close.webp",
+          "alt": "Edited close view of the olive-berry U hairpin in a bun",
+          "source": "10_缠花绒花/edited/DSC09914.jpg",
+          "sourceSha256": "f72f67eb16e003ef5301f73d62813b63873c5d463451a34603222b05d5416c98",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 24926
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-angle.webp",
+          "alt": "Edited angled styling view of the same olive-berry U hairpin",
+          "source": "10_缠花绒花/edited/DSC09919.jpg",
+          "sourceSha256": "7388620c851e5967fffc9776a97d8e2c5f9d9a4ece69d819b6b5f80efc3d828f",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 78100
         }
       ],
-      "addedPhotos": [
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-upright.webp",
-          "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure",
-          "source": "10_缠花绒花/DSC09879.JPG",
-          "sourceSha256": "dfe7d9df0660cd4d9750e500452bd13510acb2da40e5b030aee3c738418c8b5b",
-          "width": 1280,
-          "height": 853,
-          "bytes": 36288
-        },
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp",
-          "alt": "Side view of the same olive-berry U hairpin in a bun",
-          "source": "10_缠花绒花/DSC09922.JPG",
-          "sourceSha256": "2ce1fd1fce5bedf0979c7f2b3a3ba2f77e280fb69ce5aba9e90a17ca119ad8ba",
-          "width": 1280,
-          "height": 853,
-          "bytes": 53670
-        },
-        {
-          "src": "/images/site/gallery-20261029/chanhua/olive-worn-back.webp",
-          "alt": "Back styling view of the same olive-berry U hairpin in a bun",
-          "source": "10_缠花绒花/edited/DSC09930.jpg",
-          "sourceSha256": "54e8b191bc8cfb2149b7afb17929f7a12df54d83ae9f43ea607345544a0f3ebe",
-          "width": 1280,
-          "height": 853,
-          "bytes": 31276
-        }
-      ]
+      "evidence": "CH-02 merged into CH-01. Every selected photograph comes from the edited folder; two existing web images were matched to edited originals and reused.",
+      "coverSourceEvidence": {
+        "src": "/images/site/chanhua-worn.webp",
+        "alt": "Olive-berry U hairpin worn in a low bun, edited photograph",
+        "source": "10_缠花绒花/edited/DSC09933.jpg",
+        "sourceSha256": "13b24e2896c9f2c3848f1b122fc30570e40fd2a225c84e758bcb980b6873879f",
+        "edited": true,
+        "reuseExisting": true,
+        "bytes": 77576
+      }
     },
     "CH-03": {
       "totalPhotos": 2,
@@ -561,117 +554,58 @@
       "addedPhotos": []
     },
     "RH-11": {
-      "totalPhotos": 3,
+      "totalPhotos": 5,
       "existingPhotos": [
         {
           "src": "/images/site/ronghua/collection/violet-floral-vase.webp",
           "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"
-        }
-      ],
-      "addedPhotos": [
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
-          "alt": "Violet Floral Vase Arrangement — alternate photograph 1",
-          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691157349.png",
-          "sourceSha256": "067a31ebcf520fad693247a3d084b7ff95afeca0ee14909284deecbcbe470590",
-          "inventoryId": 172,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
         },
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
-          "alt": "Violet Floral Vase Arrangement — alternate photograph 2",
-          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691164796.png",
-          "sourceSha256": "5a377aeadf6561ea9b04ac7ca6520814734c5f3c792d9f5aecef721e1ba4e0c5",
-          "inventoryId": 174,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        }
-      ]
-    },
-    "RH-12": {
-      "totalPhotos": 4,
-      "existingPhotos": [
         {
           "src": "/images/site/ronghua/collection/violet-brooch-worn.webp",
           "alt": "Lavender and violet floral corsage worn at the shoulder"
-        }
-      ],
-      "addedPhotos": [
+        },
         {
           "src": "/images/site/gallery-20261029/ronghua/rh-12-02.webp",
-          "alt": "Violet Statement Lapel Brooch — alternate photograph 1",
-          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691175853.png",
-          "sourceSha256": "a15d5d41af7a0dff560820505d79a1676bf95e51b59a349aa7a8e0deecf92c63",
-          "inventoryId": 177,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          "alt": "Violet Statement Lapel Brooch — alternate photograph 1"
         },
         {
           "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
-          "alt": "Violet Statement Lapel Brooch — alternate photograph 2",
-          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691157349.png",
-          "sourceSha256": "067a31ebcf520fad693247a3d084b7ff95afeca0ee14909284deecbcbe470590",
-          "inventoryId": 172,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          "alt": "Violet Floral Vase Arrangement — alternate photograph 1"
         },
         {
           "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
-          "alt": "Violet Statement Lapel Brooch — alternate photograph 3",
-          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691164796.png",
-          "sourceSha256": "5a377aeadf6561ea9b04ac7ca6520814734c5f3c792d9f5aecef721e1ba4e0c5",
-          "inventoryId": 174,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        }
-      ]
-    },
-    "RH-13": {
-      "totalPhotos": 6,
-      "existingPhotos": [
-        {
-          "src": "/images/site/ronghua/collection/blue-flower-hair-clip.webp",
-          "alt": "Close-up of a blue flower ornament with decorative beads"
+          "alt": "Violet Floral Vase Arrangement — alternate photograph 2"
         }
       ],
-      "addedPhotos": [
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp",
-          "alt": "Blue Blossom Hair Accent — alternate photograph 1",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689282880.png",
-          "sourceSha256": "2512db59c585b6680eae4cab2fbcf655ddc9378791da3031741ce86f28363cfa",
-          "inventoryId": 192,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        },
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp",
-          "alt": "Blue Blossom Hair Accent — alternate photograph 2",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689285689.png",
-          "sourceSha256": "6417c5fad15a273f097d1e4185193b95f5ada565f7f2e94fa74bd3bd07c3f687",
-          "inventoryId": 193,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        },
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp",
-          "alt": "Blue Blossom Hair Accent — alternate photograph 3",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689288570.png",
-          "sourceSha256": "8ee351b9aaafc62ff87205dde471f411f83264f01b43301d2e9d237dfa826f49",
-          "inventoryId": 194,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        },
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp",
-          "alt": "Blue Blossom Hair Accent — alternate photograph 4",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689292230.png",
-          "sourceSha256": "f34922acc85ee36b3524580d70a698801074f9c10582f90d3fa39f861ee6dcd3",
-          "inventoryId": 195,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        },
-        {
-          "src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp",
-          "alt": "Blue Blossom Hair Accent — reverse and fastening view",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689340701.png",
-          "sourceSha256": "26375dc3d8d9f57dce8aeadafee0147f84db78cb33c1b3c80781fbb82a96b6df",
-          "inventoryId": 200,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
-        }
-      ]
+      "addedPhotos": [],
+      "previousSourceEvidence": {
+        "totalPhotos": 3,
+        "existingPhotos": [
+          {
+            "src": "/images/site/ronghua/collection/violet-floral-vase.webp",
+            "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"
+          }
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
+            "alt": "Violet Floral Vase Arrangement — alternate photograph 1",
+            "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691157349.png",
+            "sourceSha256": "067a31ebcf520fad693247a3d084b7ff95afeca0ee14909284deecbcbe470590",
+            "inventoryId": 172,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          },
+          {
+            "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
+            "alt": "Violet Floral Vase Arrangement — alternate photograph 2",
+            "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691164796.png",
+            "sourceSha256": "5a377aeadf6561ea9b04ac7ca6520814734c5f3c792d9f5aecef721e1ba4e0c5",
+            "inventoryId": 174,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          }
+        ]
+      },
+      "evidence": "User confirmed RH-11 and RH-12 are one piece with brooch and vase uses. The worn and held views from RH-12 are retained here."
     },
     "RH-14": {
       "totalPhotos": 5,
@@ -1236,24 +1170,163 @@
       "evidence": "Same yellow bird/flower and blue flower/butterfly panels visible together and individually. Reuse existing blue detail file rather than publish duplicate."
     },
     "LE-01": {
-      "totalPhotos": 2,
+      "totalPhotos": 10,
       "existingPhotos": [
         {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+          "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+          "caption": "Three colours"
+        },
+        {
           "src": "/images/site/lion-charm.webp",
-          "alt": "Colorful embroidered lion textile charms with tassels"
-        }
-      ],
-      "addedPhotos": [
+          "alt": "Colorful embroidered lion textile charms with tassels",
+          "caption": "Gold · Front"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-front.webp",
+          "alt": "Light-blue embroidered lion charm colour variant, front view",
+          "caption": "Light blue · Front"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-front.webp",
+          "alt": "Coral-orange embroidered lion charm colour variant, front view",
+          "caption": "Coral orange · Front"
+        },
         {
           "src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp",
           "alt": "Stitch detail of the same yellow embroidered lion charm",
-          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000006_144_8.jpg",
-          "sourceSha256": "f13bf48cd3cf93549667d8259d8d36b723e5695c116f5f2a0460f20b21522b48",
-          "reuseExisting": false,
-          "inventoryIndex": 178
+          "caption": "Gold · Stitch detail"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-back.webp",
+          "alt": "Reverse of the light-blue lion charm with embroidered characters and blue edging",
+          "caption": "Light blue · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-back.webp",
+          "alt": "Reverse of the coral-orange lion charm with embroidered characters and gold edging",
+          "caption": "Coral orange · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/gold-back.webp",
+          "alt": "Reverse of the gold lion charm with embroidered characters and gold edging",
+          "caption": "Gold · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-back.webp",
+          "alt": "Reverse views of all three lion charm colour variants with matching cords and tassels",
+          "caption": "Three colours · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-angle.webp",
+          "alt": "Angled display of the same three embroidered lion charm colour variants and tassels",
+          "caption": "Three colours · Side view"
         }
       ],
-      "evidence": "Exact same yellow-edged lion, orange/green/teal embroidery, red ball, emerald bead and wooden display stand as cover. Other colour lions and ambiguous reverse photos excluded."
+      "addedPhotos": [],
+      "previousSourceEvidence": {
+        "totalPhotos": 2,
+        "existingPhotos": [
+          {
+            "src": "/images/site/lion-charm.webp",
+            "alt": "Colorful embroidered lion textile charms with tassels"
+          }
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp",
+            "alt": "Stitch detail of the same yellow embroidered lion charm",
+            "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000006_144_8.jpg",
+            "sourceSha256": "f13bf48cd3cf93549667d8259d8d36b723e5695c116f5f2a0460f20b21522b48",
+            "reuseExisting": false,
+            "inventoryIndex": 178
+          }
+        ],
+        "evidence": "Exact same yellow-edged lion, orange/green/teal embroidery, red ball, emerald bead and wooden display stand as cover. Other colour lions and ambiguous reverse photos excluded."
+      },
+      "variantSourceEvidence": [
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+          "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色-2.jpg",
+          "sourceSha256": "6aa35ede07741f3dc5e69a1571c7e7f39172bd003898527b8c7f8d48f5f9a0a1",
+          "width": 960,
+          "height": 1280,
+          "bytes": 139704
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-front.webp",
+          "alt": "Light-blue embroidered lion charm colour variant, front view",
+          "colourVariant": "Light blue",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (3).jpg",
+          "sourceSha256": "f7b0375e97fb159b5d799a7029731d7e916e93f2fed22025669582fbe5115165",
+          "width": 960,
+          "height": 1280,
+          "bytes": 121504
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-front.webp",
+          "alt": "Coral-orange embroidered lion charm colour variant, front view",
+          "colourVariant": "Coral orange",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (2).jpg",
+          "sourceSha256": "bc2322c3a13c5ea17609d618632e1e5aef1ebbe997ff31719f8330ebfb10f03d",
+          "width": 960,
+          "height": 1280,
+          "bytes": 144164
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-back.webp",
+          "alt": "Reverse of the light-blue lion charm with embroidered characters and blue edging",
+          "colourVariant": "Light blue",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000941_157_8.jpg",
+          "sourceSha256": "ff574a3dce87453acb37bc7f6b386a5134bfc2d856f7dcbdc08b0c9fe57f7e21",
+          "width": 960,
+          "height": 1280,
+          "bytes": 141122
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-back.webp",
+          "alt": "Reverse of the coral-orange lion charm with embroidered characters and gold edging",
+          "colourVariant": "Coral orange",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000944_158_8.jpg",
+          "sourceSha256": "746602c687fb5b428980ed9bd4aca18f03b5e367e7593a55b249bb4074a43a0a",
+          "width": 960,
+          "height": 1280,
+          "bytes": 94530
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/gold-back.webp",
+          "alt": "Reverse of the gold lion charm with embroidered characters and gold edging",
+          "colourVariant": "Gold",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000945_159_8.jpg",
+          "sourceSha256": "781b29e265ba1422ab0254b3abf6200a7b44106cfd52d4e9bbc76ad33f194e02",
+          "width": 960,
+          "height": 1280,
+          "bytes": 90232
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-back.webp",
+          "alt": "Reverse views of all three lion charm colour variants with matching cords and tassels",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (4)-2.jpg",
+          "sourceSha256": "4e09c01f900b76bcafd7b71b01f3be9568eb14d6c943d469c71bb6ee893e2603",
+          "width": 960,
+          "height": 1280,
+          "bytes": 103854
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-angle.webp",
+          "alt": "Angled display of the same three embroidered lion charm colour variants and tassels",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (5)-2.jpg",
+          "sourceSha256": "fe6b24944f67845e9fb71a938c730b06248632a3637cb2484b9f867fc3f33830",
+          "width": 960,
+          "height": 1280,
+          "bytes": 72362
+        }
+      ],
+      "evidence": "Same long rectangular embroidered lion charm family in explicitly requested colour variants; not alternate views of one colour. User explicitly requested all colours in one gallery; captions distinguish variants and views."
     }
   },
   "remainingSinglePhoto": {
@@ -1267,5 +1340,18 @@
       "BX-10"
     ],
     "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up."
+  },
+  "mergedProducts": {
+    "CH-02": "CH-01",
+    "RH-13": "RH-01",
+    "RH-12": "RH-11"
+  },
+  "followUp": {
+    "catalogCount": 61,
+    "change": "Merge duplicate use-context records instead of presenting the same product twice. Blue piece supports hair accessory/brooch; violet piece supports brooch/vase; olive hairpin uses edited photos only. Lion design now explicitly includes three colour variants.",
+    "sourceSelection": {
+      "CH-01": "Only edited originals; see edited-source evidence in CH-01.",
+      "LE-01": "Original selected three-colour long rectangular charm family; other lion-head necklaces and sachets excluded."
+    }
   }
 }

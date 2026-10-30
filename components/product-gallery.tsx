@@ -3,7 +3,7 @@
 import { useRef, useState, type ReactNode } from "react";
 import { SiteImage } from "./site-image";
 
-export type ProductPhoto = { src: string; alt: string };
+export type ProductPhoto = { src: string; alt: string; caption?: string };
 
 /** Mount only the selected view: hidden slides never request full-size images. */
 export function ProductGallery({ images, label, className, children, bilingual = false }: {
@@ -47,6 +47,7 @@ export function ProductGallery({ images, label, className, children, bilingual =
         draggable={false} onError={() => setFailed(true)} />
       {failed && <div className="gallery-error" role="status">{bilingual ? "图片暂时无法加载 / Photo unavailable" : "Photo unavailable"}</div>}
       {children}
+      {photo.caption && <figcaption className="im-gallery-caption">{photo.caption}</figcaption>}
       {multiple && <div className="gallery-controls">
         <button type="button" aria-label={bilingual ? "上一张照片 / Previous photo" : "Previous photo"} onClick={() => go(index - 1)}>←</button>
         <output aria-live="polite" aria-atomic="true" aria-label={bilingual ? "照片 / Photo" : "Photo"}>{index + 1} / {images.length}</output>

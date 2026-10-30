@@ -6298,3 +6298,5 @@ html{scroll-behavior:smooth}
 .im-product-gallery .gallery-controls button:focus-visible{outline:2px solid #292720;outline-offset:-3px}
 .im-product-gallery .gallery-controls output{min-width:44px;text-align:center;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .im-product-gallery .gallery-error{position:absolute;inset:40% 8% auto;background:#f9f7f2;padding:12px;text-align:center}
+
+.im-product-gallery .im-gallery-caption{position:absolute;right:12px;top:14px;max-width:50%;padding:9px 10px;background:rgba(249,247,242,.96);color:#292720;font-size:11px;line-height:1.4;text-align:right;z-index:2}

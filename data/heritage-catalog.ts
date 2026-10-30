@@ -51,28 +51,45 @@ export const crafts: CraftEntry[] = [
 
 export const catalog: CatalogEntry[] = [
   {
-    id: "CH-01", craft: "chanhua", name: "Olive Berry Hair Ornament", form: "Hair ornament",
-    image: "/images/site/chanhua-worn.webp", alt: "Olive berry Chanhua ornament styled in the hair",
-    images: [
-      {"src": "/images/site/chanhua-worn.webp", "alt": "Olive berry Chanhua ornament styled in the hair"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-flat-oblique.webp", "alt": "The same olive-berry U hairpin viewed obliquely on a white surface"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-upright.webp", "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp", "alt": "Side view of the same olive-berry U hairpin in a bun"},
+    "id": "CH-01",
+    "craft": "chanhua",
+    "name": "Olive Berry Hairpin",
+    "form": "Hair ornament",
+    "image": "/images/site/chanhua-worn.webp",
+    "alt": "Olive-berry U hairpin worn in a low bun",
+    "images": [
+      {
+        "src": "/images/site/chanhua-worn.webp",
+        "alt": "Olive-berry U hairpin worn in a low bun"
+      },
+      {
+        "src": "/images/site/olive-hairpin.webp",
+        "alt": "flat view of the olive-berry U hairpin and its twin prongs"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua-edited/olive-upright.webp",
+        "alt": "upright view of the olive-berry U hairpin"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua-edited/olive-flat-detail.webp",
+        "alt": "oblique close view of the wrapped leaves and six berries"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-close.webp",
+        "alt": "close view of the olive-berry U hairpin in a bun"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-angle.webp",
+        "alt": "angled styling view of the same olive-berry U hairpin"
+      }
     ],
-    uses: ["wear", "ceremony"], howToUse: "Wear in an updo or as a delicate detail for a celebration.",
-    consideration: "Protect the wrapped threads from crushing, moisture and repeated rubbing.",
-  },
-  {
-    id: "CH-02", craft: "chanhua", name: "Olive Branch Hairpin", form: "Hairpin",
-    image: "/images/site/olive-hairpin.webp", alt: "Hand-wrapped olive branch floral hairpin",
-    images: [
-      {"src": "/images/site/olive-hairpin.webp", "alt": "Hand-wrapped olive branch floral hairpin"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-upright.webp", "alt": "The same olive-berry U hairpin upright on soft cloth, showing the wrapped branch structure"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-side.webp", "alt": "Side view of the same olive-berry U hairpin in a bun"},
-      {"src": "/images/site/gallery-20261029/chanhua/olive-worn-back.webp", "alt": "Back styling view of the same olive-berry U hairpin in a bun"},
+    "uses": [
+      "wear",
+      "ceremony",
+      "gift"
     ],
-    uses: ["wear", "gift"], howToUse: "A floral accent for everyday styling or a personal gift.",
-    consideration: "Store in a protective box when not worn; current exact design may vary.",
+    "howToUse": "Style in an updo for everyday wear or a celebration, or choose as a personal gift.",
+    "consideration": "Protect wrapped threads from crushing, moisture and repeated rubbing. Store in a protective box and confirm current design availability before ordering."
   },
   {
     id: "CH-03", craft: "chanhua", name: "Tulip Floral Brooch", form: "Brooch",
@@ -96,18 +113,45 @@ export const catalog: CatalogEntry[] = [
     consideration: "A styling example, not a confirmed made-to-order package.",
   },
   {
-    id: "RH-01", craft: "ronghua", name: "Velvet-Flower Brooch", form: "Wearable floral art",
-    image: "/images/site/ronghua/ronghua-worn-brooch.webp", alt: "Velvet flower brooch worn as an accessory",
-    images: [
-      {"src": "/images/site/ronghua/ronghua-worn-brooch.webp", "alt": "Velvet flower brooch worn as an accessory"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp", "alt": "Velvet-Flower Brooch — alternate photograph 1"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp", "alt": "Velvet-Flower Brooch — alternate photograph 2"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp", "alt": "Velvet-Flower Brooch — alternate photograph 3"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp", "alt": "Velvet-Flower Brooch — alternate photograph 4"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp", "alt": "Velvet-Flower Brooch — reverse and fastening view"},
+    "id": "RH-01",
+    "craft": "ronghua",
+    "name": "Blue Blossom Hair Accessory & Brooch",
+    "form": "Hair accessory / brooch",
+    "image": "/images/site/ronghua/ronghua-worn-brooch.webp",
+    "alt": "Velvet flower brooch worn as an accessory",
+    "images": [
+      {
+        "src": "/images/site/ronghua/ronghua-worn-brooch.webp",
+        "alt": "Velvet flower brooch worn as an accessory"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp",
+        "alt": "Velvet-Flower Brooch — alternate photograph 1"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp",
+        "alt": "Velvet-Flower Brooch — alternate photograph 2"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp",
+        "alt": "Velvet-Flower Brooch — alternate photograph 3"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp",
+        "alt": "Velvet-Flower Brooch — alternate photograph 4"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp",
+        "alt": "Velvet-Flower Brooch — reverse and fastening view"
+      }
     ],
-    uses: ["wear", "ceremony", "gift"], howToUse: "A sculptural flower accent for a ceremony or special outfit.",
-    consideration: "Available by enquiry. Confirm the fastening, finish, care and stock or production options for the specific brooch.",
+    "uses": [
+      "wear",
+      "ceremony",
+      "gift"
+    ],
+    "howToUse": "Wear as a floral hair accessory or a brooch for an everyday outfit, celebration or meaningful gift.",
+    "consideration": "Available by enquiry. Choose a hair accessory or brooch fitting, then confirm fastening, finish, care and stock or production options for that use."
   },
   {
     id: "RH-02", craft: "ronghua", name: "Velvet Flowers in a Vase", form: "Floral home display",
@@ -267,14 +311,72 @@ export const catalog: CatalogEntry[] = [
     consideration: "Past Collection only; not a currently available item or confirmed wholesale option.",
   },
   {
-    id: "LE-01", craft: "bian", salesChannel: "etsy", name: "Embroidered Lion Charm", form: "Textile charm",
-    image: "/images/site/lion-charm.webp", alt: "Colorful embroidered lion textile charms with tassels",
-    images: [
-      {"src": "/images/site/lion-charm.webp", "alt": "Colorful embroidered lion textile charms with tassels"},
-      {"src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp", "alt": "Stitch detail of the same yellow embroidered lion charm"},
+    "id": "LE-01",
+    "craft": "bian",
+    "salesChannel": "etsy",
+    "name": "Embroidered Lion Charm",
+    "form": "Textile charm · colour variants",
+    "image": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+    "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+    "images": [
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+        "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+        "caption": "Three colours"
+      },
+      {
+        "src": "/images/site/lion-charm.webp",
+        "alt": "Colorful embroidered lion textile charms with tassels",
+        "caption": "Gold · Front"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/light-blue-front.webp",
+        "alt": "Light-blue embroidered lion charm colour variant, front view",
+        "caption": "Light blue · Front"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/coral-orange-front.webp",
+        "alt": "Coral-orange embroidered lion charm colour variant, front view",
+        "caption": "Coral orange · Front"
+      },
+      {
+        "src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp",
+        "alt": "Stitch detail of the same yellow embroidered lion charm",
+        "caption": "Gold · Stitch detail"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/light-blue-back.webp",
+        "alt": "Reverse of the light-blue lion charm with embroidered characters and blue edging",
+        "caption": "Light blue · Reverse"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/coral-orange-back.webp",
+        "alt": "Reverse of the coral-orange lion charm with embroidered characters and gold edging",
+        "caption": "Coral orange · Reverse"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/gold-back.webp",
+        "alt": "Reverse of the gold lion charm with embroidered characters and gold edging",
+        "caption": "Gold · Reverse"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/three-colours-back.webp",
+        "alt": "Reverse views of all three lion charm colour variants with matching cords and tassels",
+        "caption": "Three colours · Reverse"
+      },
+      {
+        "src": "/images/site/gallery-20261029/lion-variants/three-colours-angle.webp",
+        "alt": "Angled display of the same three embroidered lion charm colour variants and tassels",
+        "caption": "Three colours · Side view"
+      }
     ],
-    uses: ["gift", "wear", "ceremony"], howToUse: "Attach where the specific hardware permits, or give as a joyful keepsake.",
-    consideration: "Check current variants, hardware, dimensions and prices with the active Etsy listing.",
+    "uses": [
+      "gift",
+      "wear",
+      "ceremony"
+    ],
+    "howToUse": "Explore gold, coral-orange and light-blue colourways of this embroidered lion design. Attach where the specific hardware permits, or give as a joyful keepsake.",
+    "consideration": "Choose a colour reference from the gallery, then confirm current variants, hardware, dimensions and prices with the active Etsy listing."
   },
 
   {
@@ -714,63 +816,40 @@ export const catalog: CatalogEntry[] = [
   {
     "id": "RH-11",
     "craft": "ronghua",
-    "name": "Violet Floral Vase Arrangement",
-    "form": "Floral home arrangement",
+    "name": "Violet Floral Brooch & Vase Arrangement",
+    "form": "Brooch / floral arrangement",
     "image": "/images/site/ronghua/collection/violet-floral-vase.webp",
-    images: [
-      {"src": "/images/site/ronghua/collection/violet-floral-vase.webp", "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp", "alt": "Violet Floral Vase Arrangement — alternate photograph 1"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp", "alt": "Violet Floral Vase Arrangement — alternate photograph 2"},
+    "images": [
+      {
+        "src": "/images/site/ronghua/collection/violet-floral-vase.webp",
+        "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"
+      },
+      {
+        "src": "/images/site/ronghua/collection/violet-brooch-worn.webp",
+        "alt": "Lavender and violet floral corsage worn at the shoulder"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-12-02.webp",
+        "alt": "Violet Statement Lapel Brooch — alternate photograph 1"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
+        "alt": "Violet Floral Vase Arrangement — alternate photograph 1"
+      },
+      {
+        "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
+        "alt": "Violet Floral Vase Arrangement — alternate photograph 2"
+      }
     ],
     "alt": "Lavender velvet flowers arranged in a decorated porcelain vase",
     "uses": [
-      "home",
-      "gift"
-    ],
-    "howToUse": "An enduring flower arrangement for a console, shelf or celebration keepsake.",
-    "consideration": "The vase and flowers may be separate pieces; clarify what is included."
-  },
-  {
-    "id": "RH-12",
-    "craft": "ronghua",
-    "name": "Violet Statement Lapel Brooch",
-    "form": "Wearable floral arrangement",
-    "image": "/images/site/ronghua/collection/violet-brooch-worn.webp",
-    images: [
-      {"src": "/images/site/ronghua/collection/violet-brooch-worn.webp", "alt": "Lavender and violet floral corsage worn at the shoulder"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-12-02.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 1"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 2"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp", "alt": "Violet Statement Lapel Brooch — alternate photograph 3"},
-    ],
-    "alt": "Lavender and violet floral corsage worn at the shoulder",
-    "uses": [
       "wear",
+      "home",
+      "gift",
       "ceremony"
     ],
-    "howToUse": "A statement floral accent on an outer layer for important occasions.",
-    "consideration": "Confirm weight, fastening and fabric suitability before ordering."
-  },
-  {
-    "id": "RH-13",
-    "craft": "ronghua",
-    "name": "Blue Blossom Hair Accent",
-    "form": "Blue floral accessory",
-    "image": "/images/site/ronghua/collection/blue-flower-hair-clip.webp",
-    images: [
-      {"src": "/images/site/ronghua/collection/blue-flower-hair-clip.webp", "alt": "Close-up of a blue flower ornament with decorative beads"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 1"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 2"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 3"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp", "alt": "Blue Blossom Hair Accent — alternate photograph 4"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp", "alt": "Blue Blossom Hair Accent — reverse and fastening view"},
-    ],
-    "alt": "Close-up of a blue flower ornament with decorative beads",
-    "uses": [
-      "wear",
-      "gift"
-    ],
-    "howToUse": "A delicate blue flower accent for hair or clothing styling.",
-    "consideration": "Request the exact clip or pin configuration; the photograph alone does not verify the fitting."
+    "howToUse": "Wear this violet floral piece as a brooch, or arrange it in a vase for a home display or celebration keepsake.",
+    "consideration": "Choose the intended use when enquiring. Confirm the brooch fastening or display support, dimensions, care and whether a vase is included."
   },
   {
     "id": "RH-14",
