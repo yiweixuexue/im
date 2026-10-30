@@ -50,6 +50,14 @@ Validation: all 32 static routes export with TypeScript; seven gallery/bilingual
 - Sources and hashes are recorded in the updated `heritage-gallery-media-20261029.json`. Raw original image files were not edited or deleted.
 
 
-## Photo recheck · 30 October
+## Initial photo recheck · 30 October (superseded below)
 
 CH-04 now uses one verified edited full-product image. The raw phone photo does not establish the final pin assembly and the worn photo occludes that assembly; these are no longer shown as verified alternate views. The unedited horizontal view is replaced by its clear edited product photograph. Two user-selected Ronghua views (RH-03 worn and RH-23 fastening) use text-removal derivatives; source files remain intact. Current Chanhua coverage is 2 multi-photo cards and one verified single-photo card. See `image-edits-20261030.md` for saved assets, editing method and prompts.
+
+## User-requested tulip completion and claw order · 30 October
+
+CH-04 now has four photos with the model-worn photo first, as explicitly requested by the user, followed by the edited upright product photo and two complementary side/oblique views from the same pink brooch camera sequence. The earlier single-photo selection is superseded. The source review covered 26 stills; repeated phone views, near-duplicate takes and red/paired tulips remain excluded. Only one additional WebP (28,772 bytes) is added, with the other three files reused. All three Chanhua cards again have multiple photos.
+
+RH-23's two photos are reversed: the text-free reverse/fastening view is first and the floral front view is second. Gallery behavior, product-use/care copy and shortlist stay intact. Current ordered source evidence and hashes are recorded in `heritage-gallery-media-20261029.json`.
+
+Validation: 32-route staging export, TypeScript, all 8 gallery/bilingual checks and changed-file ESLint pass. Browser review confirms the worn tulip cover and 1/4 indicator, arrow and Home/End navigation, the two reversed claw views and the 390px mobile card layout.

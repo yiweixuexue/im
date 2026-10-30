@@ -128,21 +128,63 @@
       ]
     },
     "CH-04": {
-      "totalPhotos": 1,
-      "existingPhotos": [],
-      "addedPhotos": [
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/tulip-ceremony.webp",
+          "alt": "Pink tulip brooch worn on a pale embroidered garment",
+          "source": "existing-authorized-site-asset:images/site/tulip-ceremony.webp",
+          "reuseExisting": true,
+          "evidence": "Existing authorized model-worn photograph. User explicitly confirmed this image belongs in the pink tulip gallery and requested it as the first image.",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 79336,
+          "assetSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026",
+          "sourceSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026"
+        },
         {
           "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
-          "alt": "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
+          "alt": "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin",
           "source": "10_缠花绒花/edited/DSC08995.jpg",
-          "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862",
           "edited": true,
+          "reuseExisting": true,
+          "evidence": "Retouched upright product photograph showing the complete pink brooch and capped gold-toned pin.",
           "width": 853,
           "height": 1280,
-          "bytes": 24366
+          "bytes": 24366,
+          "assetSha256": "cfcda39c64bf8f371507d6c97439a3b2ad7386fb80319ec94f4b3aae8f97e30d",
+          "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862"
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+          "alt": "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+          "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+          "edited": false,
+          "reuseExisting": true,
+          "evidence": "Same final pink brooch, lower side perspective; leaves overlap differently, showing the three-dimensional petal and pearl arrangement. No edited version of this angle was found.",
+          "width": 1280,
+          "height": 853,
+          "bytes": 29910,
+          "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
+          "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5"
         }
       ],
-      "evidence": "Rechecked 26 originals. Use the verified edited full-product image. Exclude wood-background phone view with unverified final pin fitting, redundant unedited horizontal view and partially occluded worn capture whose mounted-instance identity is unconfirmed. No different product is used to fill the gallery."
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
+          "alt": "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+          "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
+          "edited": false,
+          "reuseExisting": false,
+          "evidence": "Same final pink brooch at a higher oblique angle than DSC08993, revealing all three leaves and the pearl row more clearly. No edited version of this angle was found.",
+          "width": 1280,
+          "height": 853,
+          "bytes": 28772,
+          "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
+          "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882"
+        }
+      ],
+      "evidence": "User explicitly requested restoring the model-worn photo as the first view and completing the pink tulip brooch gallery. The edited upright photo and complementary same-product camera angles follow; red tulips, paired products and repeated phone captures are excluded."
     },
     "RH-01": {
       "totalPhotos": 6,
@@ -993,27 +1035,42 @@
       "totalPhotos": 2,
       "existingPhotos": [
         {
+          "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+          "alt": "Red Plum Floral Hair Claw — reverse and fastening view"
+        },
+        {
           "src": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
           "alt": "Red plum blossom decoration on a dark hair claw"
         }
       ],
-      "addedPhotos": [
-        {
-          "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
-          "alt": "Red Plum Floral Hair Claw — reverse and fastening view",
-          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692332353.png",
-          "sourceSha256": "d70a1703ac0e3fb89a426cedc96740decf9e72bf824b7a68a4a6843461e71038",
-          "inventoryId": 224,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
-          "originalSrc": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
-          "derivativeEdit": {
-            "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
-            "originalAssetSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
-            "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
-            "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+      "addedPhotos": [],
+      "sourceEvidence": {
+        "totalPhotos": 2,
+        "existingPhotos": [
+          {
+            "src": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+            "alt": "Red plum blossom decoration on a dark hair claw"
           }
-        }
-      ]
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+            "alt": "Red Plum Floral Hair Claw — reverse and fastening view",
+            "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692332353.png",
+            "sourceSha256": "d70a1703ac0e3fb89a426cedc96740decf9e72bf824b7a68a4a6843461e71038",
+            "inventoryId": 224,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
+            "originalSrc": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+            "derivativeEdit": {
+              "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+              "originalAssetSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
+              "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
+              "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+            }
+          }
+        ]
+      },
+      "evidence": "User explicitly requested reversing these two views. The text-free reverse/fastening photo is first; the floral front view is second."
     },
     "BX-01": {
       "totalPhotos": 5,
@@ -1341,10 +1398,8 @@
       "BX-09",
       "BX-10"
     ],
-    "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up. CH-04 is now one verified edited product view after a stricter photo recheck.",
-    "chanhua": [
-      "CH-04"
-    ]
+    "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up.",
+    "chanhua": []
   },
   "mergedProducts": {
     "CH-02": "CH-01",
@@ -1412,6 +1467,71 @@
       "width": 853,
       "height": 1280,
       "bytes": 24366
-    }
+    },
+    "status": "Superseded by user-requested four-photo completion; worn and side views restored below."
+  },
+  "pinkTulipCompletion20261030": {
+    "reviewedStillCount": 26,
+    "photos": [
+      {
+        "src": "/images/site/tulip-ceremony.webp",
+        "alt": "Pink tulip brooch worn on a pale embroidered garment",
+        "source": "existing-authorized-site-asset:images/site/tulip-ceremony.webp",
+        "reuseExisting": true,
+        "evidence": "Existing authorized model-worn photograph. User explicitly confirmed this image belongs in the pink tulip gallery and requested it as the first image.",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 79336,
+        "assetSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026",
+        "sourceSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026"
+      },
+      {
+        "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+        "alt": "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin",
+        "source": "10_缠花绒花/edited/DSC08995.jpg",
+        "edited": true,
+        "reuseExisting": true,
+        "evidence": "Retouched upright product photograph showing the complete pink brooch and capped gold-toned pin.",
+        "width": 853,
+        "height": 1280,
+        "bytes": 24366,
+        "assetSha256": "cfcda39c64bf8f371507d6c97439a3b2ad7386fb80319ec94f4b3aae8f97e30d",
+        "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+        "alt": "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+        "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+        "edited": false,
+        "reuseExisting": true,
+        "evidence": "Same final pink brooch, lower side perspective; leaves overlap differently, showing the three-dimensional petal and pearl arrangement. No edited version of this angle was found.",
+        "width": 1280,
+        "height": 853,
+        "bytes": 29910,
+        "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
+        "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5"
+      },
+      {
+        "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
+        "alt": "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+        "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
+        "edited": false,
+        "reuseExisting": false,
+        "evidence": "Same final pink brooch at a higher oblique angle than DSC08993, revealing all three leaves and the pearl row more clearly. No edited version of this angle was found.",
+        "width": 1280,
+        "height": 853,
+        "bytes": 28772,
+        "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
+        "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882"
+      }
+    ],
+    "selection": [
+      "Model-worn image first, as explicitly requested by the user.",
+      "The only edited pink single-product image follows, then two complementary final-product angles.",
+      "DSC08994 is a near duplicate of DSC08993; raw upright DSC08992 is represented by its edited upright derivative.",
+      "Five April phone photographs on the wooden background repeat the upright view at lower presentation quality and do not add useful fitting detail.",
+      "Red tulip photographs and edited pink/red pair DSC08990 are excluded to keep this pink product gallery specific."
+    ],
+    "processing": "The new oblique view is a resized WebP derivative of an authorized original photograph, without upscaling or EXIF. No image content was generated. Existing assets are reused and source originals are unchanged."
   }
 }

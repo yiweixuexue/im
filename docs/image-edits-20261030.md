@@ -2,7 +2,7 @@
 
 ## Result
 
-- CH-04: reviewed 26 source stills. Replace the unedited horizontal view with the verified edited `10_缠花绒花/edited/DSC08995.jpg`, used as the single product cover. The early phone view has no visible mounted long pin/cap; the worn capture occludes the fitting. Neither is presented as an exact final-instance alternate. Existing product-use/care copy and shortlist remain unchanged. No new product or specification claim.
+- CH-04: reviewed 26 source stills. Following the user's explicit request to complete this gallery and put the model-worn photo first, show four views: worn, edited upright (`10_缠花绒花/edited/DSC08995.jpg`), side and oblique. This supersedes the earlier single-photo selection. The two additional camera angles show the same pink brooch's leaves, pearls and capped pin; no retouched versions of those angles were found. Repeated phone captures and red/paired tulips are excluded. Existing product-use/care copy and shortlist remain unchanged.
 - RH-03: remove Chinese calligraphic logo, slogan and lower-left Chinese sentence from the worn image. Retain the small English RONGMEIQI / RONGHUA wording.
 - RH-23: remove Chinese writing from the reverse/fastening image. Preserve the photographed red floral claw.
 - Searched neighboring source photographs and the original ZIP: all corresponding versions contain embedded Chinese and no editable native artwork was found. Original files are retained.
@@ -10,10 +10,13 @@
 ## Saved project assets
 
 - `public/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp` — real, already-edited original photograph, not generated.
+- `public/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp` — optimized original photograph; no generated content. The gallery also reuses the existing worn and side views.
 - `public/images/site/gallery-20261030/rh03-worn-textfree.webp`
 - `public/images/site/gallery-20261030/rh23-reverse-textfree.webp`
 
 The two text-removal edits used the built-in image_gen tool. Outputs were visually reviewed for text removal, floral structure, fittings, person/clothing and composition, then converted to maximum-1280px WebP without EXIF/GPS. Original source and derivative SHA-256 are recorded in `heritage-gallery-media-20261029.json`. Full-resolution edit outputs also remain in the task workspace under `outputs/website-image-edits-20261030/` (outside this repository).
+
+The user subsequently requested reversing RH-23's two photos: the text-free reverse/fastening view is now first, followed by the floral front view. RH-03 keeps its existing order.
 
 ## Final prompts
 

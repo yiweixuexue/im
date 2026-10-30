@@ -103,8 +103,13 @@ export const catalog: CatalogEntry[] = [
   },
   {
     id: "CH-04", craft: "chanhua", name: "Tulip Occasion Styling", form: "Brooch / styling reference",
-    image: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
-    images: [{ src: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin" }],
+    image: "/images/site/tulip-ceremony.webp", alt: "Pink tulip brooch worn on a pale embroidered garment",
+    images: [
+      { src: "/images/site/tulip-ceremony.webp", alt: "Pink tulip brooch worn on a pale embroidered garment" },
+      { src: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin" },
+      { src: "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp", alt: "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin" },
+      { src: "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp", alt: "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf" },
+    ],
     uses: ["ceremony", "wear"], howToUse: "Consider a floral accent for a wedding guest or meaningful occasion.",
     consideration: "A styling example, not a confirmed made-to-order package.",
   },
@@ -1044,12 +1049,12 @@ export const catalog: CatalogEntry[] = [
     "craft": "ronghua",
     "name": "Red Plum Floral Hair Claw",
     "form": "Floral hair claw",
-    "image": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+    "image": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
     images: [
-      {"src": "/images/site/ronghua/collection/red-plum-hair-claw.webp", "alt": "Red plum blossom decoration on a dark hair claw"},
       {"src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp", "alt": "Red Plum Floral Hair Claw — reverse and fastening view"},
+      {"src": "/images/site/ronghua/collection/red-plum-hair-claw.webp", "alt": "Red plum blossom decoration on a dark hair claw"},
     ],
-    "alt": "Red plum blossom decoration on a dark hair claw",
+    "alt": "Red Plum Floral Hair Claw — reverse and fastening view",
     "uses": [
       "wear",
       "ceremony"
