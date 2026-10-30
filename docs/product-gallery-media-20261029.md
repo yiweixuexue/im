@@ -48,3 +48,8 @@ Validation: all 32 static routes export with TypeScript; seven gallery/bilingual
 - LE-01 explicitly presents the gold, coral-orange and light-blue variants of the same long rectangular lion charm design. Ten gallery views include a three-colour cover, individual fronts, stitch detail, reverses and grouped angles. Captions name colour/view so variants are distinguishable. Other lion-head necklaces and sachets are different products and remain excluded.
 - Library now contains 61 distinct references: 21 Ronghua (20 multi-photo), 3 Chanhua (all multi-photo), 11 embroidery, 17 incense and 9 lacquer. Existing IDs are retained for surviving cards; no renumbering. Retired duplicate IDs are documented in the source inventory.
 - Sources and hashes are recorded in the updated `heritage-gallery-media-20261029.json`. Raw original image files were not edited or deleted.
+
+
+## Photo recheck · 30 October
+
+CH-04 now uses one verified edited full-product image. The raw phone photo does not establish the final pin assembly and the worn photo occludes that assembly; these are no longer shown as verified alternate views. The unedited horizontal view is replaced by its clear edited product photograph. Two user-selected Ronghua views (RH-03 worn and RH-23 fastening) use text-removal derivatives; source files remain intact. Current Chanhua coverage is 2 multi-photo cards and one verified single-photo card. See `image-edits-20261030.md` for saved assets, editing method and prompts.

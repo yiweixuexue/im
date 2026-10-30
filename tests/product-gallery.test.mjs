@@ -27,7 +27,7 @@ test('all audited original photo groups are wired without unreviewed extra views
   }
  }
  assert.equal(catalog.filter(p=>p.craft==='ronghua'&&p.images.length>1).length,20);
- assert.equal(catalog.filter(p=>p.craft==='chanhua'&&p.images.length>1).length,3);
+ assert.equal(catalog.filter(p=>p.craft==='chanhua'&&p.images.length>1).length,2);
 });
 
 test('duplicate use records merge into one product, edited hairpin and colour variants are explicit',()=>{
@@ -39,6 +39,9 @@ test('duplicate use records merge into one product, edited hairpin and colour va
  assert.ok(byId['RH-11'].uses.includes('wear')&&byId['RH-11'].uses.includes('home'));
  const audit=JSON.parse(fs.readFileSync('docs/heritage-gallery-media-20261029.json','utf8'));
  for(const p of audit.products['CH-01'].addedPhotos){assert.ok(p.edited);assert.match(p.source,/edited\//)}
+ assert.equal(byId['CH-04'].images.length,1);
+ assert.match(byId['CH-04'].image,/gallery-20261030\/chanhua\/pink-tulip-edited/);
+ for(const id of ['RH-03','RH-23'])assert.match(byId[id].images[1].src,/textfree\.webp$/);
  const lion=byId['LE-01'];assert.equal(lion.images.length,10);
  for(const colour of ['Gold','Light blue','Coral orange'])assert.ok(lion.images.some(p=>p.caption?.startsWith(colour)));
 });

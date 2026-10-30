@@ -103,12 +103,8 @@ export const catalog: CatalogEntry[] = [
   },
   {
     id: "CH-04", craft: "chanhua", name: "Tulip Occasion Styling", form: "Brooch / styling reference",
-    image: "/images/site/tulip-ceremony.webp", alt: "Tulip floral ornament shown in occasion styling",
-    images: [
-      {"src": "/images/site/tulip-ceremony.webp", "alt": "Tulip floral ornament shown in occasion styling"},
-      {"src": "/images/site/gallery-20261029/chanhua/pink-tulip-upright.webp", "alt": "The same pink tulip brooch upright, showing the pearl-edged leaf and dangling pearl"},
-      {"src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp", "alt": "Side view of the same pink tulip brooch and pearl details on a white surface"},
-    ],
+    image: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
+    images: [{ src: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin" }],
     uses: ["ceremony", "wear"], howToUse: "Consider a floral accent for a wedding guest or meaningful occasion.",
     consideration: "A styling example, not a confirmed made-to-order package.",
   },
@@ -653,7 +649,7 @@ export const catalog: CatalogEntry[] = [
     "image": "/images/site/ronghua/collection/red-bridal-hair-comb.webp",
     images: [
       {"src": "/images/site/ronghua/collection/red-bridal-hair-comb.webp", "alt": "Red floral velvet flower hair comb with decorative drops"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-03-02.webp", "alt": "Red Bridal Floral Hair Comb — worn styling view"},
+      {"src": "/images/site/gallery-20261030/rh03-worn-textfree.webp", "alt": "Red Bridal Floral Hair Comb — worn styling view"},
     ],
     "alt": "Red floral velvet flower hair comb with decorative drops",
     "uses": [
@@ -1051,7 +1047,7 @@ export const catalog: CatalogEntry[] = [
     "image": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
     images: [
       {"src": "/images/site/ronghua/collection/red-plum-hair-claw.webp", "alt": "Red plum blossom decoration on a dark hair claw"},
-      {"src": "/images/site/gallery-20261029/ronghua/rh-23-02.webp", "alt": "Red Plum Floral Hair Claw — reverse and fastening view"},
+      {"src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp", "alt": "Red Plum Floral Hair Claw — reverse and fastening view"},
     ],
     "alt": "Red plum blossom decoration on a dark hair claw",
     "uses": [

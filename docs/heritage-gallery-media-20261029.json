@@ -128,33 +128,21 @@
       ]
     },
     "CH-04": {
-      "totalPhotos": 3,
-      "existingPhotos": [
-        {
-          "src": "/images/site/tulip-ceremony.webp",
-          "alt": "Tulip floral ornament shown in occasion styling"
-        }
-      ],
+      "totalPhotos": 1,
+      "existingPhotos": [],
       "addedPhotos": [
         {
-          "src": "/images/site/gallery-20261029/chanhua/pink-tulip-upright.webp",
-          "alt": "The same pink tulip brooch upright, showing the pearl-edged leaf and dangling pearl",
-          "source": "10_缠花绒花/郁金香胸针/20250423_155341.jpg",
-          "sourceSha256": "6de39495bd96d58c3b4d497a53607b38fdad7740f521caeac688fefb0c3d30cb",
-          "width": 960,
+          "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+          "alt": "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
+          "source": "10_缠花绒花/edited/DSC08995.jpg",
+          "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862",
+          "edited": true,
+          "width": 853,
           "height": 1280,
-          "bytes": 46810
-        },
-        {
-          "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
-          "alt": "Side view of the same pink tulip brooch and pearl details on a white surface",
-          "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
-          "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5",
-          "width": 1280,
-          "height": 853,
-          "bytes": 29910
+          "bytes": 24366
         }
-      ]
+      ],
+      "evidence": "Rechecked 26 originals. Use the verified edited full-product image. Exclude wood-background phone view with unverified final pin fitting, redundant unedited horizontal view and partially occluded worn capture whose mounted-instance identity is unconfirmed. No different product is used to fill the gallery."
     },
     "RH-01": {
       "totalPhotos": 6,
@@ -252,12 +240,19 @@
       ],
       "addedPhotos": [
         {
-          "src": "/images/site/gallery-20261029/ronghua/rh-03-02.webp",
+          "src": "/images/site/gallery-20261030/rh03-worn-textfree.webp",
           "alt": "Red Bridal Floral Hair Comb — worn styling view",
           "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792689668322.png",
           "sourceSha256": "974a2faeee9d0345ec18dc68d13905ab9b263cdb0c3d08028adaa2b2088ea5ee",
           "inventoryId": 88,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
+          "originalSrc": "/images/site/gallery-20261029/ronghua/rh-03-02.webp",
+          "derivativeEdit": {
+            "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+            "originalAssetSha256": "35ac51d9cccad455a0f6921ebea6085f78d2530eed104203b15baf6a70c2583c",
+            "outputSha256": "42e295bb3f1dc4a533605380a933905220d8d6523ed2e71187e0b2bcd7ed8df7",
+            "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+          }
         }
       ]
     },
@@ -1004,12 +999,19 @@
       ],
       "addedPhotos": [
         {
-          "src": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+          "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
           "alt": "Red Plum Floral Hair Claw — reverse and fastening view",
           "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692332353.png",
           "sourceSha256": "d70a1703ac0e3fb89a426cedc96740decf9e72bf824b7a68a4a6843461e71038",
           "inventoryId": 224,
-          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
+          "originalSrc": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+          "derivativeEdit": {
+            "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+            "originalAssetSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
+            "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
+            "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+          }
         }
       ]
     },
@@ -1339,7 +1341,10 @@
       "BX-09",
       "BX-10"
     ],
-    "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up."
+    "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up. CH-04 is now one verified edited product view after a stricter photo recheck.",
+    "chanhua": [
+      "CH-04"
+    ]
   },
   "mergedProducts": {
     "CH-02": "CH-01",
@@ -1352,6 +1357,61 @@
     "sourceSelection": {
       "CH-01": "Only edited originals; see edited-source evidence in CH-01.",
       "LE-01": "Original selected three-colour long rectangular charm family; other lion-head necklaces and sachets excluded."
+    }
+  },
+  "textRemoval20261030": [
+    {
+      "original": "/images/site/gallery-20261029/ronghua/rh-03-02.webp",
+      "originalSha256": "35ac51d9cccad455a0f6921ebea6085f78d2530eed104203b15baf6a70c2583c",
+      "output": "/images/site/gallery-20261030/rh03-worn-textfree.webp",
+      "outputSha256": "42e295bb3f1dc4a533605380a933905220d8d6523ed2e71187e0b2bcd7ed8df7",
+      "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+      "size": [
+        853,
+        1280
+      ],
+      "bytes": 95746
+    },
+    {
+      "original": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+      "originalSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
+      "output": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+      "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
+      "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+      "size": [
+        960,
+        1280
+      ],
+      "bytes": 65394
+    }
+  ],
+  "pinkTulipRecheck20261030": {
+    "reviewedStillCount": 26,
+    "excluded": [
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-upright.webp",
+        "source": "10_缠花绒花/郁金香胸针/20250423_155341.jpg",
+        "reason": "Raw phone photo on wood showing the flower stem without a visible mounted long pin/cap. April prototype/early piece versus final brooch cannot be established from fitting evidence; exclude rather than claiming exact same mounted object."
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+        "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+        "reason": "Unedited horizontal camera shot. Same final camera sequence/design is represented by the clearer edited single-product DSC08995.jpg; replace with edited version rather than keep redundant raw view."
+      },
+      {
+        "src": "/images/site/tulip-ceremony.webp",
+        "reason": "Partly occluded styling capture; exact final pin assembly cannot be independently confirmed. Remains in other existing site contexts but is not presented as a verified CH-04 alternate view."
+      }
+    ],
+    "primarySource": {
+      "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+      "alt": "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
+      "source": "10_缠花绒花/edited/DSC08995.jpg",
+      "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862",
+      "edited": true,
+      "width": 853,
+      "height": 1280,
+      "bytes": 24366
     }
   }
 }
