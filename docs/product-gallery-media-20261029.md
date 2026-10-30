@@ -61,3 +61,7 @@ CH-04 now has four photos with the model-worn photo first, as explicitly request
 RH-23's two photos are reversed: the text-free reverse/fastening view is first and the floral front view is second. Gallery behavior, product-use/care copy and shortlist stay intact. Current ordered source evidence and hashes are recorded in `heritage-gallery-media-20261029.json`.
 
 Validation: 32-route staging export, TypeScript, all 8 gallery/bilingual checks and changed-file ESLint pass. Browser review confirms the worn tulip cover and 1/4 indicator, arrow and Home/End navigation, the two reversed claw views and the 390px mobile card layout.
+
+## Tulip direction correction · 30 October
+
+Following the user's review, CH-04 views 3 and 4 render rotated 90 degrees counterclockwise, with flower heads up and capped pins down. Per-photo rotation metadata drives the shared gallery's dimension-swapped contain frame, keeping the entire photo visible on desktop and mobile. The same original files, gallery order and worn cover are retained; no photo regeneration or recompression is needed. Source files and hashes remain unchanged.

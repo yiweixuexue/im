@@ -3,7 +3,7 @@
 import { useRef, useState, type ReactNode } from "react";
 import { SiteImage } from "./site-image";
 
-export type ProductPhoto = { src: string; alt: string; caption?: string };
+export type ProductPhoto = { src: string; alt: string; caption?: string; rotation?: -90 | 90 };
 
 /** Mount only the selected view: hidden slides never request full-size images. */
 export function ProductGallery({ images, label, className, children, bilingual = false }: {
@@ -21,7 +21,7 @@ export function ProductGallery({ images, label, className, children, bilingual =
   }
   if (!photo) return null;
   return (
-    <figure className={className + " im-product-gallery"} role="group"
+    <figure className={className + " im-product-gallery" + (photo.rotation ? " im-gallery-rotated-frame" : "")} role="group"
       aria-roledescription={multiple ? "carousel" : undefined} aria-label={label}
       tabIndex={multiple ? 0 : undefined}
       onKeyDown={(event) => {
@@ -44,6 +44,8 @@ export function ProductGallery({ images, label, className, children, bilingual =
         if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.5) go(index + (dx < 0 ? 1 : -1));
       }}>
       <SiteImage key={photo.src} src={photo.src} alt={photo.alt} loading="lazy" decoding="async"
+        className={photo.rotation ? "im-gallery-rotated-photo" : undefined}
+        style={photo.rotation ? { transform: `translate(-50%, -50%) rotate(${photo.rotation}deg)` } : undefined}
         draggable={false} onError={() => setFailed(true)} />
       {failed && <div className="gallery-error" role="status">{bilingual ? "图片暂时无法加载 / Photo unavailable" : "Photo unavailable"}</div>}
       {children}

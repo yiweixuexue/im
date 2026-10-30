@@ -107,8 +107,8 @@ export const catalog: CatalogEntry[] = [
     images: [
       { src: "/images/site/tulip-ceremony.webp", alt: "Pink tulip brooch worn on a pale embroidered garment" },
       { src: "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp", alt: "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin" },
-      { src: "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp", alt: "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin" },
-      { src: "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp", alt: "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf" },
+      { src: "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp", alt: "Upright side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin", rotation: -90 },
+      { src: "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp", alt: "Upright oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf", rotation: -90 },
     ],
     uses: ["ceremony", "wear"], howToUse: "Consider a floral accent for a wedding guest or meaningful occasion.",
     consideration: "A styling example, not a confirmed made-to-order package.",

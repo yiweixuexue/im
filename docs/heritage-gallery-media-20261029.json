@@ -157,7 +157,7 @@
         },
         {
           "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
-          "alt": "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+          "alt": "Upright side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
           "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
           "edited": false,
           "reuseExisting": true,
@@ -166,13 +166,14 @@
           "height": 853,
           "bytes": 29910,
           "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
-          "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5"
+          "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5",
+          "rotation": -90
         }
       ],
       "addedPhotos": [
         {
           "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
-          "alt": "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+          "alt": "Upright oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
           "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
           "edited": false,
           "reuseExisting": false,
@@ -181,7 +182,8 @@
           "height": 853,
           "bytes": 28772,
           "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
-          "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882"
+          "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882",
+          "rotation": -90
         }
       ],
       "evidence": "User explicitly requested restoring the model-worn photo as the first view and completing the pink tulip brooch gallery. The edited upright photo and complementary same-product camera angles follow; red tulips, paired products and repeated phone captures are excluded."
@@ -1500,7 +1502,7 @@
       },
       {
         "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
-        "alt": "Side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+        "alt": "Upright side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
         "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
         "edited": false,
         "reuseExisting": true,
@@ -1509,11 +1511,12 @@
         "height": 853,
         "bytes": 29910,
         "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
-        "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5"
+        "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5",
+        "rotation": -90
       },
       {
         "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
-        "alt": "Oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+        "alt": "Upright oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
         "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
         "edited": false,
         "reuseExisting": false,
@@ -1522,7 +1525,8 @@
         "height": 853,
         "bytes": 28772,
         "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
-        "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882"
+        "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882",
+        "rotation": -90
       }
     ],
     "selection": [
@@ -1533,5 +1537,14 @@
       "Red tulip photographs and edited pink/red pair DSC08990 are excluded to keep this pink product gallery specific."
     ],
     "processing": "The new oblique view is a resized WebP derivative of an authorized original photograph, without upscaling or EXIF. No image content was generated. Existing assets are reused and source originals are unchanged."
+  },
+  "pinkTulipOrientation20261030": {
+    "views": [
+      3,
+      4
+    ],
+    "rotationDegrees": -90,
+    "method": "Per-photo CSS rotation with dimension-swapped contain frame; original assets and hashes unchanged",
+    "instruction": "User requested both third and fourth tulip brooch views upright rather than horizontal."
   }
 }

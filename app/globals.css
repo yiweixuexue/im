@@ -6291,6 +6291,9 @@ html{scroll-behavior:smooth}
 
 /* Shared product galleries reserve the existing card frame and allow vertical scrolling/pinch zoom. */
 .im-product-gallery{touch-action:pan-y pinch-zoom;isolation:isolate}
+/* Swap frame dimensions before rotating so portrait views fit fully at every card size. */
+.im-gallery-rotated-frame{container-type:size}
+.im-product-gallery .im-gallery-rotated-photo{position:absolute;left:50%;top:50%;width:100cqh;height:100cqw;max-width:none;object-fit:contain}
 .im-product-gallery:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .im-product-gallery .gallery-controls{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:rgba(249,247,242,.96);border-radius:28px;padding:3px;z-index:2;color:#292720;box-shadow:0 2px 12px #0002}
 .im-product-gallery .gallery-controls button{width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:inherit;font:inherit;font-size:22px;cursor:pointer}
