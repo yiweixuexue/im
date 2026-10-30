@@ -99,7 +99,7 @@ export default function RonghuaPage() {
             ))}
           </div>
           <Link className="button button-ink" href="/en/heritage#ronghua">
-            Browse all 23 Ronghua references &amp; uses
+            Browse all 21 Ronghua references &amp; uses
           </Link>
         </section>
 
@@ -114,7 +114,7 @@ export default function RonghuaPage() {
           </p>
           <p>
             Ronghua is distinct from Chanhua, the thread-wrapped floral technique in our
-            available collection. Ronghua's velvet texture, volume and care requirements
+            available collection. Ronghua&apos;s velvet texture, volume and care requirements
             call for their own design choices and care considerations when selecting a specific piece.
           </p>
           <Link className="arrow-link" href="/en/heritage/chanhua">
@@ -129,7 +129,7 @@ export default function RonghuaPage() {
       <section className="reference-detail-invitation section-space shell">
           <p className="eyebrow">EXPLORE FORMS &amp; USES · AVAILABLE NOW</p>
           <h2>What can this craft become?</h2>
-          <p>Explore 23 documented forms including wedding combs, floral brooches, earrings, hair accessories, bird sculptures and home arrangements. Each design is available for sourcing enquiry, subject to its individual specifications.</p>
+          <p>Explore 21 documented designs including wedding combs, floral brooches, earrings, hair accessories, bird sculptures and home arrangements. Each design is available for sourcing enquiry, subject to its individual specifications.</p>
           <Link className="button button-ink" href="/en/heritage#ronghua">
             View Yangzhou Ronghua in the Craft Library
           </Link>

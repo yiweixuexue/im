@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { SiteImage } from "./site-image";
+import { ProductGallery } from "./product-gallery";
 import {
   catalog, crafts, uses, statusLabels,
   type CatalogEntry, type CatalogStatus, type CraftId, type UseId,
@@ -37,10 +37,9 @@ function ReferenceCard({
   const onEtsy = item.salesChannel === "etsy" || (item.craft === "chanhua" && item.salesChannel !== "enquiry");
   return (
     <article className="reference-card">
-      <figure className="reference-card-image">
-        <SiteImage src={item.image} alt={item.alt} loading="lazy" decoding="async" />
+      <ProductGallery images={item.images} label={item.id + " · " + item.name} className="reference-card-image">
         <StatusTag status={itemStatus} />
-      </figure>
+      </ProductGallery>
       <div className="reference-card-body">
         <p className="reference-card-meta">
           {item.id} · {item.form}

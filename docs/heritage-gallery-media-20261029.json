@@ -1,0 +1,1550 @@
+{
+  "date": "2026-10-29",
+  "scope": "Original Chanhua, Ronghua and Bian embroidery photo groups; follow-up to PR #14",
+  "authorization": "User requested completing website product galleries from their original brand photo library. Originals are read-only; no generated or third-party photos added.",
+  "correction": "First pass missed original heritage photos because the brand library directory had been renamed. This inventory supersedes the initial heritage missing-photo assessment.",
+  "processing": "EXIF orientation corrected; RGB WebP quality80, max edge1280 without upscaling, EXIF/GPS not copied; original visible marks preserved.",
+  "batches": {
+    "chanhua": {
+      "reviewedStillCount": 172,
+      "notes": [
+        "CH-01 and former CH-02 depict the same six-berry U-shaped hairpin. They are now merged as CH-01, with edited-only photographs.",
+        "CH-03 is the red three-leaf tulip; CH-04 is the pink three-leaf tulip with a pearl-edged leaf and dangling pearl. Their photos are not cross-attached.",
+        "Exclude duplicated raw/edited exports, repeated near-identical poses, derivative marketing layouts, making photos, unrelated finished pieces, and pair/group shots containing a different tulip colour.",
+        "Red handheld June photo excluded because its mounted pin details cannot be verified against the final photographed brooch."
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
+    },
+    "ronghua": {
+      "reviewedStillCount": 268,
+      "notes": [
+        "268 supplied raster files reviewed in root and 5 subfolders; original camera/design files remain untouched.",
+        "Posters that merely repeat the same product photograph, duplicate resized versions and maker/workshop scenes excluded. No watermark removal or generative modification.",
+        "Former RH-13 is merged into RH-01 as one blue floral accessory supporting hair and brooch uses. The confirmed gallery views are retained together.",
+        "Former RH-12 is merged into RH-11 as one violet floral piece supporting brooch and vase uses. Its worn, held and vase views are retained together.",
+        "RH-10 remains one image: source169 shows a pair of birds and source170 a production batch; cannot establish which is the exact single bird held in primary168. No new true alternate verified.",
+        "Root sources0–48 and51–82 show other designs not represented by the initial 23 reference records before consolidation and are not attached as extra views.",
+        "RH-23 alternate224 shows reverse/open mechanism of the same black hair claw (opposite-side flowers account for different visible counts); 222 and225 near-duplicate this view, 226 repeats cover223.",
+        "Optimization: EXIF transpose, RGB WebP quality80 method6 maximum edge1280, no upscaling, no EXIF/GPS copied."
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
+    },
+    "embroidery": {
+      "reviewedStillCount": 238,
+      "notes": [
+        "Other bag variants, printed marketing collages, generated composite images and duplicate resized copies excluded.",
+        "The initial exact-object review excluded LE-01 group and colour-variant photos. The user subsequently requested all colours: the current LE-01 gallery now explicitly includes the three-colour family, labelled by colour/view.",
+        "Initially unassigned lion reverse photos were excluded. The current colour-variant gallery uses reverses identified within the selected three-colour source group; other lion designs remain excluded.",
+        "Near-identical dragon vase full views and paired-panel repeats excluded."
+      ],
+      "reviewStage": "Initial original-photo review before user-confirmed consolidation; current gallery configuration is recorded in products and followUp."
+    }
+  },
+  "products": {
+    "CH-01": {
+      "totalPhotos": 6,
+      "existingPhotos": [
+        {
+          "src": "/images/site/chanhua-worn.webp",
+          "alt": "Olive-berry U hairpin worn in a low bun"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/olive-hairpin.webp",
+          "alt": "Edited flat view of the olive-berry U hairpin and its twin prongs",
+          "source": "10_缠花绒花/edited/DSC09887.jpg",
+          "sourceSha256": "9bdaaf9448d5cc1993041dcf6c022a8be0da7749f10a6d7a4a6495181961a003",
+          "edited": true,
+          "reuseExisting": true,
+          "bytes": 38610
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-upright.webp",
+          "alt": "Edited upright view of the olive-berry U hairpin",
+          "source": "10_缠花绒花/edited/DSC09890.jpg",
+          "sourceSha256": "d46b7271a0f3a8a452e0687b430e60ea77ff6f48a03a3496b2e461edf3b92219",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 23460
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-flat-detail.webp",
+          "alt": "Edited oblique close view of the wrapped leaves and six berries",
+          "source": "10_缠花绒花/edited/DSC09903.jpg",
+          "sourceSha256": "0d72b5500aa22ef59e43a3a670d586e84b875f004e1ff99b6ca3bab6f56fc306",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 21874
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-close.webp",
+          "alt": "Edited close view of the olive-berry U hairpin in a bun",
+          "source": "10_缠花绒花/edited/DSC09914.jpg",
+          "sourceSha256": "f72f67eb16e003ef5301f73d62813b63873c5d463451a34603222b05d5416c98",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 24926
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua-edited/olive-worn-angle.webp",
+          "alt": "Edited angled styling view of the same olive-berry U hairpin",
+          "source": "10_缠花绒花/edited/DSC09919.jpg",
+          "sourceSha256": "7388620c851e5967fffc9776a97d8e2c5f9d9a4ece69d819b6b5f80efc3d828f",
+          "edited": true,
+          "reuseExisting": false,
+          "bytes": 78100
+        }
+      ],
+      "evidence": "CH-02 merged into CH-01. Every selected photograph comes from the edited folder; two existing web images were matched to edited originals and reused.",
+      "coverSourceEvidence": {
+        "src": "/images/site/chanhua-worn.webp",
+        "alt": "Olive-berry U hairpin worn in a low bun, edited photograph",
+        "source": "10_缠花绒花/edited/DSC09933.jpg",
+        "sourceSha256": "13b24e2896c9f2c3848f1b122fc30570e40fd2a225c84e758bcb980b6873879f",
+        "edited": true,
+        "reuseExisting": true,
+        "bytes": 77576
+      }
+    },
+    "CH-03": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/tulip-brooch.webp",
+          "alt": "Small handcrafted Chanhua tulip brooches"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/chanhua/red-tulip-worn.webp",
+          "alt": "The same red tulip Chanhua brooch worn on a red garment",
+          "source": "10_缠花绒花/郁金香缠花胸针/1-出门旗袍DSC03669.JPG",
+          "sourceSha256": "f739c3c3d29e87a7b55ebc262ce648d954c3568282af59a136e6138a482a220e",
+          "width": 853,
+          "height": 1280,
+          "bytes": 32736
+        }
+      ]
+    },
+    "CH-04": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/tulip-ceremony.webp",
+          "alt": "Pink tulip brooch worn on a pale embroidered garment",
+          "source": "existing-authorized-site-asset:images/site/tulip-ceremony.webp",
+          "reuseExisting": true,
+          "evidence": "Existing authorized model-worn photograph. User explicitly confirmed this image belongs in the pink tulip gallery and requested it as the first image.",
+          "width": 1365,
+          "height": 2048,
+          "bytes": 79336,
+          "assetSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026",
+          "sourceSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026"
+        },
+        {
+          "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+          "alt": "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin",
+          "source": "10_缠花绒花/edited/DSC08995.jpg",
+          "edited": true,
+          "reuseExisting": true,
+          "evidence": "Retouched upright product photograph showing the complete pink brooch and capped gold-toned pin.",
+          "width": 853,
+          "height": 1280,
+          "bytes": 24366,
+          "assetSha256": "cfcda39c64bf8f371507d6c97439a3b2ad7386fb80319ec94f4b3aae8f97e30d",
+          "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862"
+        },
+        {
+          "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+          "alt": "Upright side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+          "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+          "edited": false,
+          "reuseExisting": true,
+          "evidence": "Same final pink brooch, lower side perspective; leaves overlap differently, showing the three-dimensional petal and pearl arrangement. No edited version of this angle was found.",
+          "width": 1280,
+          "height": 853,
+          "bytes": 29910,
+          "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
+          "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5",
+          "rotation": -90
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
+          "alt": "Upright oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+          "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
+          "edited": false,
+          "reuseExisting": false,
+          "evidence": "Same final pink brooch at a higher oblique angle than DSC08993, revealing all three leaves and the pearl row more clearly. No edited version of this angle was found.",
+          "width": 1280,
+          "height": 853,
+          "bytes": 28772,
+          "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
+          "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882",
+          "rotation": -90
+        }
+      ],
+      "evidence": "User explicitly requested restoring the model-worn photo as the first view and completing the pink tulip brooch gallery. The edited upright photo and complementary same-product camera angles follow; red tulips, paired products and repeated phone captures are excluded."
+    },
+    "RH-01": {
+      "totalPhotos": 6,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/ronghua-worn-brooch.webp",
+          "alt": "Velvet flower brooch worn as an accessory"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-01-02.webp",
+          "alt": "Velvet-Flower Brooch — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689282880.png",
+          "sourceSha256": "2512db59c585b6680eae4cab2fbcf655ddc9378791da3031741ce86f28363cfa",
+          "inventoryId": 192,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-01-03.webp",
+          "alt": "Velvet-Flower Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689285689.png",
+          "sourceSha256": "6417c5fad15a273f097d1e4185193b95f5ada565f7f2e94fa74bd3bd07c3f687",
+          "inventoryId": 193,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-01-04.webp",
+          "alt": "Velvet-Flower Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689288570.png",
+          "sourceSha256": "8ee351b9aaafc62ff87205dde471f411f83264f01b43301d2e9d237dfa826f49",
+          "inventoryId": 194,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-01-05.webp",
+          "alt": "Velvet-Flower Brooch — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689292230.png",
+          "sourceSha256": "f34922acc85ee36b3524580d70a698801074f9c10582f90d3fa39f861ee6dcd3",
+          "inventoryId": 195,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-01-06.webp",
+          "alt": "Velvet-Flower Brooch — reverse and fastening view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792689340701.png",
+          "sourceSha256": "26375dc3d8d9f57dce8aeadafee0147f84db78cb33c1b3c80781fbb82a96b6df",
+          "inventoryId": 200,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-02": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/ronghua-home-vase.webp",
+          "alt": "Velvet flowers composed in a porcelain vase"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-02-02.webp",
+          "alt": "Velvet Flowers in a Vase — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/置景家居/1792438025739.jpg",
+          "sourceSha256": "e8327d7399ab2ceb66e31ad56729a019834a8775d3be8564b2eed2c5b16e9d49",
+          "inventoryId": 167,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-02-03.webp",
+          "alt": "Velvet Flowers in a Vase — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691315320.png",
+          "sourceSha256": "8f23f644f9f0fe8c4fe9eeb0c86860bf347adf6b5e4343e156e8f9f12a80ae53",
+          "inventoryId": 188,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-02-04.webp",
+          "alt": "Velvet Flowers in a Vase — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691319321.png",
+          "sourceSha256": "6ad044c2c0287a190887c67e96ff2269b3731816a26fe98d530242d37e600876",
+          "inventoryId": 189,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-03": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/red-bridal-hair-comb.webp",
+          "alt": "Red floral velvet flower hair comb with decorative drops"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261030/rh03-worn-textfree.webp",
+          "alt": "Red Bridal Floral Hair Comb — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792689668322.png",
+          "sourceSha256": "974a2faeee9d0345ec18dc68d13905ab9b263cdb0c3d08028adaa2b2088ea5ee",
+          "inventoryId": 88,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
+          "originalSrc": "/images/site/gallery-20261029/ronghua/rh-03-02.webp",
+          "derivativeEdit": {
+            "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+            "originalAssetSha256": "35ac51d9cccad455a0f6921ebea6085f78d2530eed104203b15baf6a70c2583c",
+            "outputSha256": "42e295bb3f1dc4a533605380a933905220d8d6523ed2e71187e0b2bcd7ed8df7",
+            "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+          }
+        }
+      ]
+    },
+    "RH-04": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/red-floral-pair.webp",
+          "alt": "Two small red velvet blossom ornaments"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-04-02.webp",
+          "alt": "Red Blossom Floral Pair — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792691873902.png",
+          "sourceSha256": "159abd525400be58e01af809ee78870f620e64fd954b3c08de9777e292845a76",
+          "inventoryId": 93,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-04-03.webp",
+          "alt": "Red Blossom Floral Pair — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792691877580.png",
+          "sourceSha256": "b61b7832eaa16f79b34efd8fddfe7868e4d1aa4dd87860e63d4327160999cfc4",
+          "inventoryId": 94,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-04-04.webp",
+          "alt": "Red Blossom Floral Pair — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792691881581.png",
+          "sourceSha256": "1f1fa25cb95a1ab203301c2e448042224fa5977ab8e80e26db858c2b730ac973",
+          "inventoryId": 95,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-04-05.webp",
+          "alt": "Red Blossom Floral Pair — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/中式婚礼/tb_image_share_1792691887497.png",
+          "sourceSha256": "9b49caaafbe225e050e071477d998e7e1129738cae63b9c3ef96701770b74947",
+          "inventoryId": 96,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-05": {
+      "totalPhotos": 6,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/coral-leaf-brooch-worn.webp",
+          "alt": "Warm red and coral leaf-shaped velvet flower worn on a dark jacket"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-05-02.webp",
+          "alt": "Coral Leaf Lapel Brooch — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792689517530.png",
+          "sourceSha256": "23240cc7a3caa05bdc4c0507763ea2495510a28cdb0b59a40b17de3a48ea6edf",
+          "inventoryId": 98,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-05-03.webp",
+          "alt": "Coral Leaf Lapel Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792689521132.png",
+          "sourceSha256": "4e7968d7b1093efdda134eba8c1b459684d1d42eefe324e0b4e5048851851c9d",
+          "inventoryId": 99,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-05-04.webp",
+          "alt": "Coral Leaf Lapel Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792689524481.png",
+          "sourceSha256": "6468f8910bdb04524de77440948f49cf84bb8aeea51d880f7b2faa4a171f7509",
+          "inventoryId": 100,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-05-05.webp",
+          "alt": "Coral Leaf Lapel Brooch — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792689527730.png",
+          "sourceSha256": "af0e4d1a2e1e882f9cf8859dc91181a32280f6173e62996ea812403369a93fe6",
+          "inventoryId": 101,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-05-06.webp",
+          "alt": "Coral Leaf Lapel Brooch — alternate photograph 5",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792689592154.png",
+          "sourceSha256": "0f72e26abc7bd0c43d2820122d1f61637e845297bb0c2b2f4f41ea412964dfe8",
+          "inventoryId": 106,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-06": {
+      "totalPhotos": 11,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/goldfish-floral-clips.webp",
+          "alt": "A pair of red and pink goldfish-inspired floral ornaments on a ceramic dish"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-02.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792690992622.png",
+          "sourceSha256": "32a7e99983c9a6d5bf2069229c96a4ebf3b59c1223a5fd2252cdac69048ea00d",
+          "inventoryId": 108,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-03.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792690996196.png",
+          "sourceSha256": "762a5e7e6d9c15f45d06d905769d620f424848ddaa59e5670c40a86c02b62313",
+          "inventoryId": 109,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-04.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691000454.png",
+          "sourceSha256": "e47ba8b4a23804a869fdfc9f07589bea98036cd9d3a915ecd6ada4c67f113a6b",
+          "inventoryId": 110,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-05.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691004631.png",
+          "sourceSha256": "f6e2f5b520d1b9b644206b11cc0957684325a9654a7166dea4799d6fd45af5ff",
+          "inventoryId": 111,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-06.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 5",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691012501.png",
+          "sourceSha256": "5aec2999d6070028fd8802576114805c6f70c96fb593f7dae40af375c1854e40",
+          "inventoryId": 113,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-07.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 6",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691046704.png",
+          "sourceSha256": "e3cd360660f2cb742c1060d28875f2a81c8779195e628035a8d10bb35b2665cc",
+          "inventoryId": 114,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-08.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 7",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691058406.png",
+          "sourceSha256": "1b85eb22d2235515b1b53204faff23985731cd0406bdebfbf86068e560da4b0f",
+          "inventoryId": 115,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-09.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 8",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691067908.png",
+          "sourceSha256": "82eb0e5dfa75fc5a4a165d16c25984ff31004aa96407e83777eac016754922cd",
+          "inventoryId": 116,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-10.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 9",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691073917.png",
+          "sourceSha256": "7a7ea5458625fffbdc72ebbb27a13af19cf92383eb160041d46d668c395ab76a",
+          "inventoryId": 117,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-06-11.webp",
+          "alt": "Goldfish-Inspired Floral Ornaments — alternate photograph 10",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691080899.png",
+          "sourceSha256": "5570f6101235c4cffe807bd8bbbf409068092ae00697cc4e92906bb6533e7f0a",
+          "inventoryId": 118,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-07": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/purple-floral-arrangement.webp",
+          "alt": "Layered dark-purple and lavender velvet flowers with dangling accents"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-07-02.webp",
+          "alt": "Purple Floral Cluster — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691369826.png",
+          "sourceSha256": "0a194fe1a45715ba6458003680869ee8e26b4139433948a16c576e2facfbaa49",
+          "inventoryId": 120,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-08": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/blue-floral-hairpin.webp",
+          "alt": "Bright blue cluster of velvet flowers attached to a long hairpin"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-08-02.webp",
+          "alt": "Blue Floral Hairpin — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691767285.png",
+          "sourceSha256": "c814cc75db203b39b358bcb583b73570f9910962fac7c33a2f4b977af98dea27",
+          "inventoryId": 122,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-08-03.webp",
+          "alt": "Blue Floral Hairpin — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691770863.png",
+          "sourceSha256": "4916f49a165aa2861b1e7afa5140bdbe37269939657a531415d1dfa88d5aadd9",
+          "inventoryId": 123,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-08-04.webp",
+          "alt": "Blue Floral Hairpin — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691775075.png",
+          "sourceSha256": "f85c3a67b8780e2c7162dae9c2bd21368f3cf83aff88a4f3b307a1002e4bef79",
+          "inventoryId": 124,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-08-05.webp",
+          "alt": "Blue Floral Hairpin — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691779507.png",
+          "sourceSha256": "a5cc5bd82a5d5b9c7299e9d84e8bff80d36c5f60bf713819e948bf0eba45df9a",
+          "inventoryId": 125,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-09": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/red-white-lily-flower.webp",
+          "alt": "Red-and-white lily-shaped velvet flower detail against a dark background"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-09-02.webp",
+          "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691944967.png",
+          "sourceSha256": "55d43723951f808b6095a8a9317d729609b0aef3025304cd35947015bae071fd",
+          "inventoryId": 127,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-09-03.webp",
+          "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691952363.png",
+          "sourceSha256": "4f556e8f707e4926eb673250466f0df682b0a9eecf656d0b52aaf8bc563a4288",
+          "inventoryId": 129,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-09-04.webp",
+          "alt": "Scarlet-and-Ivory Lily Motif — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/多样性的造型/tb_image_share_1792691955851.png",
+          "sourceSha256": "7be4076b74144accf4fa710e9fb673466da6201eb7fd24082df903d221f0ff20",
+          "inventoryId": 130,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-10": {
+      "totalPhotos": 1,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/blue-bird-sculpture.webp",
+          "alt": "Small blue bird-shaped velvet ornament presented in a display box"
+        }
+      ],
+      "addedPhotos": []
+    },
+    "RH-11": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/violet-floral-vase.webp",
+          "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"
+        },
+        {
+          "src": "/images/site/ronghua/collection/violet-brooch-worn.webp",
+          "alt": "Lavender and violet floral corsage worn at the shoulder"
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-12-02.webp",
+          "alt": "Violet Statement Lapel Brooch — alternate photograph 1"
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
+          "alt": "Violet Floral Vase Arrangement — alternate photograph 1"
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
+          "alt": "Violet Floral Vase Arrangement — alternate photograph 2"
+        }
+      ],
+      "addedPhotos": [],
+      "previousSourceEvidence": {
+        "totalPhotos": 3,
+        "existingPhotos": [
+          {
+            "src": "/images/site/ronghua/collection/violet-floral-vase.webp",
+            "alt": "Lavender velvet flowers arranged in a decorated porcelain vase"
+          }
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261029/ronghua/rh-11-02.webp",
+            "alt": "Violet Floral Vase Arrangement — alternate photograph 1",
+            "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691157349.png",
+            "sourceSha256": "067a31ebcf520fad693247a3d084b7ff95afeca0ee14909284deecbcbe470590",
+            "inventoryId": 172,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          },
+          {
+            "src": "/images/site/gallery-20261029/ronghua/rh-11-03.webp",
+            "alt": "Violet Floral Vase Arrangement — alternate photograph 2",
+            "source": "10_缠花绒花/扬州绒花/置景家居/tb_image_share_1792691164796.png",
+            "sourceSha256": "5a377aeadf6561ea9b04ac7ca6520814734c5f3c792d9f5aecef721e1ba4e0c5",
+            "inventoryId": 174,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+          }
+        ]
+      },
+      "evidence": "User confirmed RH-11 and RH-12 are one piece with brooch and vase uses. The worn and held views from RH-12 are retained here."
+    },
+    "RH-14": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/pink-blossom-hair-clip.webp",
+          "alt": "Pink blossoms arranged along a gold-toned hair clip"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-14-02.webp",
+          "alt": "Pink Blossom Barrette — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792691453518.png",
+          "sourceSha256": "93b3d86bade87ea649c4c18af95bdccfd75b4b271ed4580271aab3b72b6ce557",
+          "inventoryId": 203,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-14-03.webp",
+          "alt": "Pink Blossom Barrette — reverse and fastening view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792691456711.png",
+          "sourceSha256": "ef394d2522184aa0b29d1457b7b1464715a73b27c25870b6ae6178a5fe592a8a",
+          "inventoryId": 204,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-14-04.webp",
+          "alt": "Pink Blossom Barrette — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792691459978.png",
+          "sourceSha256": "cb3dcbd9ed2fbf87a0bd8a69c247fd18e6c75c33a28261200fb2fcdca95fda93",
+          "inventoryId": 205,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-14-05.webp",
+          "alt": "Pink Blossom Barrette — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792691463356.png",
+          "sourceSha256": "68f1b2225c3d11965ad9240aec56315e8ae0f4b22a40dbfd59a3d2343535b3ca",
+          "inventoryId": 206,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-15": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/peacock-feather-brooch.webp",
+          "alt": "Two iridescent blue-green feather-shaped velvet elements"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-15-02.webp",
+          "alt": "Peacock-Feather Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692142874.png",
+          "sourceSha256": "26bab6096b4ee621dfd9cfd85bbdf3687b5c0957f89a819840ba514edee53d03",
+          "inventoryId": 213,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-15-03.webp",
+          "alt": "Peacock-Feather Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692146895.png",
+          "sourceSha256": "096d0c1f4800f9a7b50c448d15ac8a2ddf1bf5590fa01a674aac1272ca0fa483",
+          "inventoryId": 214,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-15-04.webp",
+          "alt": "Peacock-Feather Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692155138.png",
+          "sourceSha256": "97d52d1cbf625345168e7ca9f7d936f1948c9c1f92b24efd7eb79ce76d997e06",
+          "inventoryId": 216,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-16": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/bamboo-leaf-brooch.webp",
+          "alt": "Green-grey bamboo leaf-shaped botanical brooch"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-16-02.webp",
+          "alt": "Bamboo Leaf Brooch — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692192726.png",
+          "sourceSha256": "debead61f0e166ad142f498ba6f509c37604e2ddcb996cd2fdc0ad4e0807dfab",
+          "inventoryId": 218,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-16-03.webp",
+          "alt": "Bamboo Leaf Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692196046.png",
+          "sourceSha256": "3f884f5826fde82125a65d16efcbb277a242c646872151f44f4bb39ff14cb6fd",
+          "inventoryId": 219,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-16-04.webp",
+          "alt": "Bamboo Leaf Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692199600.png",
+          "sourceSha256": "fee5a5dccd8b84efdf781b03b70536923aefd9b7d87e7c858e61af4c4dc1e35b",
+          "inventoryId": 220,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-16-05.webp",
+          "alt": "Bamboo Leaf Brooch — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692203174.png",
+          "sourceSha256": "dc0e046014b6d2762584e257ea24fb736a03a5ccd108428d3d2b6c9ce0896d90",
+          "inventoryId": 221,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-17": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/framed-bamboo-art.webp",
+          "alt": "Framed raised bamboo and botanical composition with Chinese calligraphy as part of the artwork"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-17-02.webp",
+          "alt": "Framed Botanical Craft Art — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693007791.png",
+          "sourceSha256": "6d147d2f9e89af53afadc87fecb57bf2822f509c770393017917176a7e12d585",
+          "inventoryId": 228,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-17-03.webp",
+          "alt": "Framed Botanical Craft Art — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693010942.png",
+          "sourceSha256": "fb753f88e9644bc59a349a9c9186f013b13b46ecd8536a578254306be1810489",
+          "inventoryId": 229,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-17-04.webp",
+          "alt": "Framed Botanical Craft Art — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693015084.png",
+          "sourceSha256": "53ff40faad03f12fff4d08aba63d36236a0bd03456f8fd6d553343bd4d5e276a",
+          "inventoryId": 230,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-17-05.webp",
+          "alt": "Framed Botanical Craft Art — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693019328.png",
+          "sourceSha256": "c03f5322a8afdd5ef2a87d3cc85d8b35dfd7eeaecb5f9eeea01ca0d1149dcd80",
+          "inventoryId": 231,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-18": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/peach-blossom-brooch.webp",
+          "alt": "Apricot-coloured floral brooch with layered rounded petals"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-18-02.webp",
+          "alt": "Apricot Blossom Brooch — reverse and fastening view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693193761.png",
+          "sourceSha256": "f40e332f0a5bc5c15545f4da2edf7177ecf2be2e72eb9f31a6c03a8d557de23c",
+          "inventoryId": 233,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-18-03.webp",
+          "alt": "Apricot Blossom Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693197169.png",
+          "sourceSha256": "0c7510328bf3d348abca58bd0264dd9031ba9c0bb7d9dd5104f77958b61a90e4",
+          "inventoryId": 234,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-18-04.webp",
+          "alt": "Apricot Blossom Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693200212.png",
+          "sourceSha256": "4fcf321e0a230ec708949543869ddecf591a6d454b6174751276bf7bf092db65",
+          "inventoryId": 235,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-18-05.webp",
+          "alt": "Apricot Blossom Brooch — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693203927.png",
+          "sourceSha256": "b7d738c88c61869a401fd3d88662460e27d07ba3b5fbc1b0aac84d0fd4962870",
+          "inventoryId": 236,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-19": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/lavender-orchid-brooch.webp",
+          "alt": "Purple orchid blossom cluster arranged as a floral accessory"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-19-02.webp",
+          "alt": "Lavender Orchid Brooch — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693230502.png",
+          "sourceSha256": "bb42885b7d26f9c673575f7485a923aba7f6bcbe9601b7611f228a604e40d65a",
+          "inventoryId": 240,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-19-03.webp",
+          "alt": "Lavender Orchid Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693233891.png",
+          "sourceSha256": "751a1abcb749aff4067d884771098a02a5667e9eda53b1c470a5d515a576a6aa",
+          "inventoryId": 241,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-19-04.webp",
+          "alt": "Lavender Orchid Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693237090.png",
+          "sourceSha256": "f62967148b34b43ffa3e9fcd37fb7009ff91353e98a9fae71839eeedeac0fe24",
+          "inventoryId": 242,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-19-05.webp",
+          "alt": "Lavender Orchid Brooch — alternate photograph 4",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693240625.png",
+          "sourceSha256": "784a2194a417fff5fb07989b827fa0f1ff68aefee76e7ef9f6620eaba9008987",
+          "inventoryId": 243,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-20": {
+      "totalPhotos": 7,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/golden-ginkgo-brooch.webp",
+          "alt": "Bright golden-yellow fan-shaped ginkgo leaf brooch"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-02.webp",
+          "alt": "Golden Ginkgo Brooch — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693502558.png",
+          "sourceSha256": "6e511465107eed486319b7dbbc5ab0f150ae294afa2691dd7704e7fd8a57af5d",
+          "inventoryId": 250,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-03.webp",
+          "alt": "Golden Ginkgo Brooch — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693506964.png",
+          "sourceSha256": "da35742f4930ec39c405a947fb89ab38d5fee71ecccd30813f8593d0e320cc54",
+          "inventoryId": 251,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-04.webp",
+          "alt": "Golden Ginkgo Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693511166.png",
+          "sourceSha256": "acfd5f80f108e2aa33c6228c23334fdc66f7a2ea1755dd00a1629049aa064cbf",
+          "inventoryId": 252,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-05.webp",
+          "alt": "Golden Ginkgo Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693623193.png",
+          "sourceSha256": "c4fe77431166754983e27001968b7fe754f7bb4356f19ef8e29c05a5bc080e38",
+          "inventoryId": 255,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-06.webp",
+          "alt": "Golden Ginkgo Brooch — alternate photograph 5",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693632698.png",
+          "sourceSha256": "efc01e15c4d19afd8cc70812d5a1590161dab2ecb7889e86b75e8d6a0bc95d3f",
+          "inventoryId": 256,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-20-07.webp",
+          "alt": "Golden Ginkgo Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693641071.png",
+          "sourceSha256": "5f632434a1406a7eaf9b363c3230cde50b13c154ae6e0bb6f6d1819b8e8d11ba",
+          "inventoryId": 257,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-21": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/ginkgo-earrings.webp",
+          "alt": "Pair of long gold-toned earrings with yellow ginkgo-shaped motifs"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-21-02.webp",
+          "alt": "Golden Ginkgo Earrings — alternate photograph 1",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693802098.png",
+          "sourceSha256": "a5117d940ae83299861087d47c8dd7a7f18c6fbc5c2a7a0e44a5b221b254ce02",
+          "inventoryId": 259,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-21-03.webp",
+          "alt": "Golden Ginkgo Earrings — alternate photograph 2",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693808466.png",
+          "sourceSha256": "de6c8d138bb12237d77ca78d438fbd14791c113fcac65bfe6bb8c10838e0945c",
+          "inventoryId": 260,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-21-04.webp",
+          "alt": "Golden Ginkgo Earrings — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693819437.png",
+          "sourceSha256": "bd08ea6dc9ae3c6a3e1a0e285332c210541fd1fb1a9bd797e6ba27e2a2c5a786",
+          "inventoryId": 261,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-22": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/ronghua/collection/olive-branch-brooch-worn.webp",
+          "alt": "Green leafy brooch worn on a navy patterned garment"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-22-02.webp",
+          "alt": "Olive Branch Lapel Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693969733.png",
+          "sourceSha256": "7dc0de950060f32b75c4b9f715dd8cad4e5db57bb30f8506788f7e5fcd94dc9a",
+          "inventoryId": 264,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-22-03.webp",
+          "alt": "Olive Branch Lapel Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693974010.png",
+          "sourceSha256": "e2b3ca90d3e898c813fb804b865ba006781255cbcd05324e1a5a4921bd08fdc9",
+          "inventoryId": 265,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-22-04.webp",
+          "alt": "Olive Branch Lapel Brooch — alternate photograph 3",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693978140.png",
+          "sourceSha256": "e6b1269a16c2791b0477955e675849f4b97b1532eaf42404233af50f860a00aa",
+          "inventoryId": 266,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        },
+        {
+          "src": "/images/site/gallery-20261029/ronghua/rh-22-05.webp",
+          "alt": "Olive Branch Lapel Brooch — worn styling view",
+          "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792693982163.png",
+          "sourceSha256": "b8e15d6b358e8f0c27a65d7db1ba5c33b2898b63380c4b5cf133b80744cb1551",
+          "inventoryId": 267,
+          "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged."
+        }
+      ]
+    },
+    "RH-23": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+          "alt": "Red Plum Floral Hair Claw — reverse and fastening view"
+        },
+        {
+          "src": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+          "alt": "Red plum blossom decoration on a dark hair claw"
+        }
+      ],
+      "addedPhotos": [],
+      "sourceEvidence": {
+        "totalPhotos": 2,
+        "existingPhotos": [
+          {
+            "src": "/images/site/ronghua/collection/red-plum-hair-claw.webp",
+            "alt": "Red plum blossom decoration on a dark hair claw"
+          }
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+            "alt": "Red Plum Floral Hair Claw — reverse and fastening view",
+            "source": "10_缠花绒花/扬州绒花/胸针/tb_image_share_1792692332353.png",
+            "sourceSha256": "d70a1703ac0e3fb89a426cedc96740decf9e72bf824b7a68a4a6843461e71038",
+            "inventoryId": 224,
+            "evidence": "Same form, colour, floral composition and fittings as existing cover; reviewed at contact-sheet scale with ambiguous cases enlarged.",
+            "originalSrc": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+            "derivativeEdit": {
+              "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+              "originalAssetSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
+              "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
+              "instruction": "User explicitly requested removal of Chinese text from this photo; preserve photographed product and subject."
+            }
+          }
+        ]
+      },
+      "evidence": "User explicitly requested reversing these two views. The text-free reverse/fastening photo is first; the floral front view is second."
+    },
+    "BX-01": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/blue-peony-bag.webp",
+          "alt": "Blue peony Bian embroidery evening bag"
+        },
+        {
+          "src": "/images/site/blue-peony-detail.webp",
+          "alt": "Detail of the same blue peony evening bag"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-01-side.webp",
+          "alt": "Side view of the blue peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_蓝色 (2).jpg",
+          "sourceSha256": "2c6d82792c493223e3b80536193746515e3784e82ecf3e253d9c46eb9535cd30",
+          "reuseExisting": false,
+          "inventoryIndex": 96
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-01-back.webp",
+          "alt": "Back and chain of the blue peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_蓝色 (3).jpg",
+          "sourceSha256": "38b45f0c9c1944a080bc8fd6dcdcb24aaaaa5a456a568c5b9f9161513d047c59",
+          "reuseExisting": false,
+          "inventoryIndex": 97
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-01-interior.webp",
+          "alt": "Open interior and frame of the blue peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_蓝色 (5).jpg",
+          "sourceSha256": "b92027aa7d64c63518b2ee669ed6f42cd3db4a7e6db1ee66195ba98eb1bddfc2",
+          "reuseExisting": false,
+          "inventoryIndex": 99
+        }
+      ],
+      "evidence": "Continuous selected photo sequence with same blue peony stitch placement, gold geometric closure, white leather back, handle and chain. Excludes other blue peony variants with differently placed flowers."
+    },
+    "BX-02": {
+      "totalPhotos": 5,
+      "existingPhotos": [
+        {
+          "src": "/images/site/red-peony-bag.webp",
+          "alt": "Red peony Bian embroidery evening bag"
+        },
+        {
+          "src": "/images/site/red-peony-detail.webp",
+          "alt": "Detail of the same red peony evening bag"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-02-side.webp",
+          "alt": "Side view of the red peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_红色 (2).jpg",
+          "sourceSha256": "2e2cf32d450aa21143fc2cb1d5a411b0797f44dd4bc98c4e73e1da81b8005881",
+          "reuseExisting": false,
+          "inventoryIndex": 89
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-02-back.webp",
+          "alt": "Back and chain of the red peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_红色 (4).jpg",
+          "sourceSha256": "abfae5cf40b71ece7f1bf0c6f764f3b2ada21571f12431d90f55304d75dff9b0",
+          "reuseExisting": false,
+          "inventoryIndex": 91
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-02-interior.webp",
+          "alt": "Open interior and frame of the red peony evening bag",
+          "source": "9_非遗汴绣/包包/已选/牡丹刺绣包_红色 (5).jpg",
+          "sourceSha256": "09c73b96b9e840acd54bd85f669471af06dc0721d33b83435c61c8c2ef5aeca9",
+          "reuseExisting": false,
+          "inventoryIndex": 92
+        }
+      ],
+      "evidence": "Continuous selected photo sequence with same pink/red peony stitch composition, gold geometric closure, white back and chain. Excludes the other red peony bag with a single large flower."
+    },
+    "BX-05": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/uploads-20261027/dragon-vase-picture.webp",
+          "alt": "Dragon Vase Picture shown in the user-supplied craft archive"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-05-detail.webp",
+          "alt": "Closer view of the dragon vase embroidery picture",
+          "source": "9_非遗汴绣/摆件/20250228_150550.jpg",
+          "sourceSha256": "5945e58fd91b6e4f63b7bc26416e1b3a6ae65075e60f49ea723bd9fedf2a6f3a",
+          "reuseExisting": false,
+          "inventoryIndex": 196
+        }
+      ],
+      "evidence": "Same red dragon/flower embroidered vase image, dark stippled background and silver frame; new photo is the closer shot, cover remains wider."
+    },
+    "BX-06": {
+      "totalPhotos": 2,
+      "existingPhotos": [
+        {
+          "src": "/images/site/uploads-20261027/orchid-framed-picture.webp",
+          "alt": "Orchid & Butterfly Picture shown in the user-supplied craft archive"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-06-setting.webp",
+          "alt": "Full framed orchid and butterfly embroidery picture",
+          "source": "9_非遗汴绣/摆件/20250228_154240.jpg",
+          "sourceSha256": "c965b2420d53bef430005add7dedf927ff5f69dbbe749f75315bde3c0dda7988",
+          "reuseExisting": false,
+          "inventoryIndex": 199
+        }
+      ],
+      "evidence": "Same orchid, three butterfly positions, dark wood frame and cream fur surface; new image shows complete frame with more surroundings."
+    },
+    "BX-07": {
+      "totalPhotos": 4,
+      "existingPhotos": [
+        {
+          "src": "/images/site/uploads-20261027/paired-vertical-panels.webp",
+          "alt": "Paired Vertical Floral Panels shown in the user-supplied craft archive"
+        }
+      ],
+      "addedPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-07-pair.webp",
+          "alt": "The same paired vertical embroidery panels arranged for viewing",
+          "source": "9_非遗汴绣/摆件/20250228_161701.jpg",
+          "sourceSha256": "2db8b8ca5466ad5156ebdcda887d3770c2110974cc117455d04dd10e7933f037",
+          "reuseExisting": false,
+          "inventoryIndex": 201
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/bx-07-yellow-detail.webp",
+          "alt": "Bird and flower detail in the yellow vertical embroidery panel",
+          "source": "9_非遗汴绣/摆件/20250228_162127.jpg",
+          "sourceSha256": "e8c50938c62ad74fa7394f2c06d208cd5fa433cd8fa352fe9142b70946065a3d",
+          "reuseExisting": false,
+          "inventoryIndex": 204
+        },
+        {
+          "src": "/images/site/uploads-20261027/blue-panel-detail.webp",
+          "alt": "Flower and butterfly detail in the blue vertical embroidery panel",
+          "source": "9_非遗汴绣/摆件/20250228_162135.jpg",
+          "sourceSha256": "b2ac494cd3192b5f797193d9b292d24c93b347fcca96d75aa3a703a421da0edf",
+          "reuseExisting": true,
+          "inventoryIndex": 205
+        }
+      ],
+      "evidence": "Same yellow bird/flower and blue flower/butterfly panels visible together and individually. Reuse existing blue detail file rather than publish duplicate."
+    },
+    "LE-01": {
+      "totalPhotos": 10,
+      "existingPhotos": [
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+          "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+          "caption": "Three colours"
+        },
+        {
+          "src": "/images/site/lion-charm.webp",
+          "alt": "Colorful embroidered lion textile charms with tassels",
+          "caption": "Gold · Front"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-front.webp",
+          "alt": "Light-blue embroidered lion charm colour variant, front view",
+          "caption": "Light blue · Front"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-front.webp",
+          "alt": "Coral-orange embroidered lion charm colour variant, front view",
+          "caption": "Coral orange · Front"
+        },
+        {
+          "src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp",
+          "alt": "Stitch detail of the same yellow embroidered lion charm",
+          "caption": "Gold · Stitch detail"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-back.webp",
+          "alt": "Reverse of the light-blue lion charm with embroidered characters and blue edging",
+          "caption": "Light blue · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-back.webp",
+          "alt": "Reverse of the coral-orange lion charm with embroidered characters and gold edging",
+          "caption": "Coral orange · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/gold-back.webp",
+          "alt": "Reverse of the gold lion charm with embroidered characters and gold edging",
+          "caption": "Gold · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-back.webp",
+          "alt": "Reverse views of all three lion charm colour variants with matching cords and tassels",
+          "caption": "Three colours · Reverse"
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-angle.webp",
+          "alt": "Angled display of the same three embroidered lion charm colour variants and tassels",
+          "caption": "Three colours · Side view"
+        }
+      ],
+      "addedPhotos": [],
+      "previousSourceEvidence": {
+        "totalPhotos": 2,
+        "existingPhotos": [
+          {
+            "src": "/images/site/lion-charm.webp",
+            "alt": "Colorful embroidered lion textile charms with tassels"
+          }
+        ],
+        "addedPhotos": [
+          {
+            "src": "/images/site/gallery-20261029/embroidery/le-01-stitch-detail.webp",
+            "alt": "Stitch detail of the same yellow embroidered lion charm",
+            "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000006_144_8.jpg",
+            "sourceSha256": "f13bf48cd3cf93549667d8259d8d36b723e5695c116f5f2a0460f20b21522b48",
+            "reuseExisting": false,
+            "inventoryIndex": 178
+          }
+        ],
+        "evidence": "Exact same yellow-edged lion, orange/green/teal embroidery, red ball, emerald bead and wooden display stand as cover. Other colour lions and ambiguous reverse photos excluded."
+      },
+      "variantSourceEvidence": [
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-front.webp",
+          "alt": "Three colour variants of the embroidered lion charm: light blue, coral orange and gold",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色-2.jpg",
+          "sourceSha256": "6aa35ede07741f3dc5e69a1571c7e7f39172bd003898527b8c7f8d48f5f9a0a1",
+          "width": 960,
+          "height": 1280,
+          "bytes": 139704
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-front.webp",
+          "alt": "Light-blue embroidered lion charm colour variant, front view",
+          "colourVariant": "Light blue",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (3).jpg",
+          "sourceSha256": "f7b0375e97fb159b5d799a7029731d7e916e93f2fed22025669582fbe5115165",
+          "width": 960,
+          "height": 1280,
+          "bytes": 121504
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-front.webp",
+          "alt": "Coral-orange embroidered lion charm colour variant, front view",
+          "colourVariant": "Coral orange",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (2).jpg",
+          "sourceSha256": "bc2322c3a13c5ea17609d618632e1e5aef1ebbe997ff31719f8330ebfb10f03d",
+          "width": 960,
+          "height": 1280,
+          "bytes": 144164
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/light-blue-back.webp",
+          "alt": "Reverse of the light-blue lion charm with embroidered characters and blue edging",
+          "colourVariant": "Light blue",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000941_157_8.jpg",
+          "sourceSha256": "ff574a3dce87453acb37bc7f6b386a5134bfc2d856f7dcbdc08b0c9fe57f7e21",
+          "width": 960,
+          "height": 1280,
+          "bytes": 141122
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/coral-orange-back.webp",
+          "alt": "Reverse of the coral-orange lion charm with embroidered characters and gold edging",
+          "colourVariant": "Coral orange",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000944_158_8.jpg",
+          "sourceSha256": "746602c687fb5b428980ed9bd4aca18f03b5e367e7593a55b249bb4074a43a0a",
+          "width": 960,
+          "height": 1280,
+          "bytes": 94530
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/gold-back.webp",
+          "alt": "Reverse of the gold lion charm with embroidered characters and gold edging",
+          "colourVariant": "Gold",
+          "source": "9_非遗汴绣/挂饰/已选/Weixin Image_20260912000945_159_8.jpg",
+          "sourceSha256": "781b29e265ba1422ab0254b3abf6200a7b44106cfd52d4e9bbc76ad33f194e02",
+          "width": 960,
+          "height": 1280,
+          "bytes": 90232
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-back.webp",
+          "alt": "Reverse views of all three lion charm colour variants with matching cords and tassels",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (4)-2.jpg",
+          "sourceSha256": "4e09c01f900b76bcafd7b71b01f3be9568eb14d6c943d469c71bb6ee893e2603",
+          "width": 960,
+          "height": 1280,
+          "bytes": 103854
+        },
+        {
+          "src": "/images/site/gallery-20261029/lion-variants/three-colours-angle.webp",
+          "alt": "Angled display of the same three embroidered lion charm colour variants and tassels",
+          "colourVariant": "Three-colour display",
+          "source": "9_非遗汴绣/挂饰/已选/醒狮挂坠_三色 (5)-2.jpg",
+          "sourceSha256": "fe6b24944f67845e9fb71a938c730b06248632a3637cb2484b9f867fc3f33830",
+          "width": 960,
+          "height": 1280,
+          "bytes": 72362
+        }
+      ],
+      "evidence": "Same long rectangular embroidered lion charm family in explicitly requested colour variants; not alternate views of one colour. User explicitly requested all colours in one gallery; captions distinguish variants and views."
+    }
+  },
+  "remainingSinglePhoto": {
+    "ronghua": [
+      "RH-10"
+    ],
+    "embroidery": [
+      "BX-04",
+      "BX-08",
+      "BX-09",
+      "BX-10"
+    ],
+    "notes": "RH-10 has only pair/batch context beyond cover. Listed embroidery works have no additional distinct same-object stills in the available original archive. Existing BX-03 already has two views. Unmapped incense and lacquer galleries were not re-audited in this follow-up.",
+    "chanhua": []
+  },
+  "mergedProducts": {
+    "CH-02": "CH-01",
+    "RH-13": "RH-01",
+    "RH-12": "RH-11"
+  },
+  "followUp": {
+    "catalogCount": 61,
+    "change": "Merge duplicate use-context records instead of presenting the same product twice. Blue piece supports hair accessory/brooch; violet piece supports brooch/vase; olive hairpin uses edited photos only. Lion design now explicitly includes three colour variants.",
+    "sourceSelection": {
+      "CH-01": "Only edited originals; see edited-source evidence in CH-01.",
+      "LE-01": "Original selected three-colour long rectangular charm family; other lion-head necklaces and sachets excluded."
+    }
+  },
+  "textRemoval20261030": [
+    {
+      "original": "/images/site/gallery-20261029/ronghua/rh-03-02.webp",
+      "originalSha256": "35ac51d9cccad455a0f6921ebea6085f78d2530eed104203b15baf6a70c2583c",
+      "output": "/images/site/gallery-20261030/rh03-worn-textfree.webp",
+      "outputSha256": "42e295bb3f1dc4a533605380a933905220d8d6523ed2e71187e0b2bcd7ed8df7",
+      "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+      "size": [
+        853,
+        1280
+      ],
+      "bytes": 95746
+    },
+    {
+      "original": "/images/site/gallery-20261029/ronghua/rh-23-02.webp",
+      "originalSha256": "bff7992f73eb17015b9af69c098d54b703deaa8c8721ce39955f4a7ca2299e49",
+      "output": "/images/site/gallery-20261030/rh23-reverse-textfree.webp",
+      "outputSha256": "7d8810f72d241e9d8f40f31e7876671a5f0e7a750446764ba415cf4086ef2d55",
+      "method": "Built-in image_gen text-removal edit; converted to optimized WebP without EXIF",
+      "size": [
+        960,
+        1280
+      ],
+      "bytes": 65394
+    }
+  ],
+  "pinkTulipRecheck20261030": {
+    "reviewedStillCount": 26,
+    "excluded": [
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-upright.webp",
+        "source": "10_缠花绒花/郁金香胸针/20250423_155341.jpg",
+        "reason": "Raw phone photo on wood showing the flower stem without a visible mounted long pin/cap. April prototype/early piece versus final brooch cannot be established from fitting evidence; exclude rather than claiming exact same mounted object."
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+        "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+        "reason": "Unedited horizontal camera shot. Same final camera sequence/design is represented by the clearer edited single-product DSC08995.jpg; replace with edited version rather than keep redundant raw view."
+      },
+      {
+        "src": "/images/site/tulip-ceremony.webp",
+        "reason": "Partly occluded styling capture; exact final pin assembly cannot be independently confirmed. Remains in other existing site contexts but is not presented as a verified CH-04 alternate view."
+      }
+    ],
+    "primarySource": {
+      "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+      "alt": "Pink thread-wrapped tulip brooch with pearl-edged leaf, dangling pearl and capped pin",
+      "source": "10_缠花绒花/edited/DSC08995.jpg",
+      "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862",
+      "edited": true,
+      "width": 853,
+      "height": 1280,
+      "bytes": 24366
+    },
+    "status": "Superseded by user-requested four-photo completion; worn and side views restored below."
+  },
+  "pinkTulipCompletion20261030": {
+    "reviewedStillCount": 26,
+    "photos": [
+      {
+        "src": "/images/site/tulip-ceremony.webp",
+        "alt": "Pink tulip brooch worn on a pale embroidered garment",
+        "source": "existing-authorized-site-asset:images/site/tulip-ceremony.webp",
+        "reuseExisting": true,
+        "evidence": "Existing authorized model-worn photograph. User explicitly confirmed this image belongs in the pink tulip gallery and requested it as the first image.",
+        "width": 1365,
+        "height": 2048,
+        "bytes": 79336,
+        "assetSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026",
+        "sourceSha256": "f8fdaafdbdc89ef22751624e2252ad5dbb5ef9cc88171266f8f07e22bb42a026"
+      },
+      {
+        "src": "/images/site/gallery-20261030/chanhua/pink-tulip-edited.webp",
+        "alt": "Pink thread-wrapped tulip brooch upright, with pearl-edged leaf, dangling pearl and capped pin",
+        "source": "10_缠花绒花/edited/DSC08995.jpg",
+        "edited": true,
+        "reuseExisting": true,
+        "evidence": "Retouched upright product photograph showing the complete pink brooch and capped gold-toned pin.",
+        "width": 853,
+        "height": 1280,
+        "bytes": 24366,
+        "assetSha256": "cfcda39c64bf8f371507d6c97439a3b2ad7386fb80319ec94f4b3aae8f97e30d",
+        "sourceSha256": "019f3f77455dc6d88bcdd7152b45a234d8b3b9ea7b5d8050ec5c3bc7c6d11862"
+      },
+      {
+        "src": "/images/site/gallery-20261029/chanhua/pink-tulip-side.webp",
+        "alt": "Upright side view of the pink tulip brooch, showing its layered petals, pearl details and long capped pin",
+        "source": "10_缠花绒花/郁金香胸针/DSC08993.JPG",
+        "edited": false,
+        "reuseExisting": true,
+        "evidence": "Same final pink brooch, lower side perspective; leaves overlap differently, showing the three-dimensional petal and pearl arrangement. No edited version of this angle was found.",
+        "width": 1280,
+        "height": 853,
+        "bytes": 29910,
+        "assetSha256": "0997ad4ac605538bcc8a6f8856bfe7794e12b03a2cf6d2546bbe50bb97251bd6",
+        "sourceSha256": "ed1c69dda02d33f46e1c7b032fee22b05c234ebbf2836bfca81599b115ffb7c5",
+        "rotation": -90
+      },
+      {
+        "src": "/images/site/gallery-20261030/chanhua/pink-tulip-oblique.webp",
+        "alt": "Upright oblique view of the pink tulip brooch, showing all three wrapped leaves and the pearl-edged leaf",
+        "source": "10_缠花绒花/郁金香胸针/DSC08995.JPG",
+        "edited": false,
+        "reuseExisting": false,
+        "evidence": "Same final pink brooch at a higher oblique angle than DSC08993, revealing all three leaves and the pearl row more clearly. No edited version of this angle was found.",
+        "width": 1280,
+        "height": 853,
+        "bytes": 28772,
+        "assetSha256": "7077e70520eab10ba45aedf4808448e8586f527044c60a08d54c800515698b2c",
+        "sourceSha256": "43047fc6e4b1ccabd731affe8fd48a6999ac7e71fe27f5be155284b9ffa9d882",
+        "rotation": -90
+      }
+    ],
+    "selection": [
+      "Model-worn image first, as explicitly requested by the user.",
+      "The only edited pink single-product image follows, then two complementary final-product angles.",
+      "DSC08994 is a near duplicate of DSC08993; raw upright DSC08992 is represented by its edited upright derivative.",
+      "Five April phone photographs on the wooden background repeat the upright view at lower presentation quality and do not add useful fitting detail.",
+      "Red tulip photographs and edited pink/red pair DSC08990 are excluded to keep this pink product gallery specific."
+    ],
+    "processing": "The new oblique view is a resized WebP derivative of an authorized original photograph, without upscaling or EXIF. No image content was generated. Existing assets are reused and source originals are unchanged."
+  },
+  "pinkTulipOrientation20261030": {
+    "views": [
+      3,
+      4
+    ],
+    "rotationDegrees": -90,
+    "method": "Per-photo CSS rotation with dimension-swapped contain frame; original assets and hashes unchanged",
+    "instruction": "User requested both third and fourth tulip brooch views upright rather than horizontal."
+  }
+}

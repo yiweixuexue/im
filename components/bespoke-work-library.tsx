@@ -3,7 +3,7 @@
 import { Bilingual as B } from "./bilingual";
 import { useState } from "react";
 import Link from "next/link";
-import { SiteImage } from "./site-image";
+import { ProductGallery } from "./product-gallery";
 import { bespokeWorks, type ClothingType, type ClothingOccasion, type BespokeWork } from "../data/bespoke-works";
 import { bespokeEnglish } from "../data/bespoke-works-en";
 
@@ -100,16 +100,15 @@ function localized(work: BespokeWork, locale: Locale) {
   return locale === "en" ? { ...work, ...bespokeEnglish[work.id] } : work;
 }
 
-function BespokeCard({ work, saved, onToggle, locale }: {
-  work: BespokeWork; saved: boolean; onToggle: (id: string) => void; locale: Locale;
+function BespokeCard({ work, saved, onToggle }: {
+  work: BespokeWork; saved: boolean; onToggle: (id: string) => void;
 }) {
-  const t = bilingualLabels, w = localized(work, locale);
+  const t = bilingualLabels;
   return (
     <article className="bespoke-work-card">
-      <figure className="bespoke-work-image">
-        <SiteImage src={work.image} alt={w.alt} loading="lazy" decoding="async" />
+      <ProductGallery images={work.images} label={work.id + " · " + work.title + " / " + bespokeEnglish[work.id].title} className="bespoke-work-image" bilingual>
         <span>{work.id} · <B text={t.reference} /></span>
-      </figure>
+      </ProductGallery>
       <div className="bespoke-work-content">
         <p className="bespoke-work-category"><B zh={work.category} en={bespokeEnglish[work.id].category} /></p>
         <h3><B zh={work.title} en={bespokeEnglish[work.id].title} /></h3>
@@ -207,7 +206,7 @@ export function BespokeWorkLibrary({ locale = "zh" }: { locale?: Locale }) {
               <p><B text={group.intro} /></p>
             </div>
             <div className="bespoke-work-grid">
-              {group.works.map((work) => <BespokeCard key={work.id} work={work} saved={selected.includes(work.id)} onToggle={toggle} locale={locale} />)}
+              {group.works.map((work) => <BespokeCard key={work.id} work={work} saved={selected.includes(work.id)} onToggle={toggle} />)}
             </div>
           </section>)}
         </> : <div className="bespoke-no-results">
